@@ -1,0 +1,519 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Abstract Objects Layer</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>抽象对象层</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The functions in this chapter interact with Python objects regardless of their type, or with wide classes of object types (e.g. all numerical types, or all sequence types).  When used on object types for which they do not apply, they will raise a Python exception.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>本章中与Python对象进行交互的函数，都忽略了它们的类型，或是使用具有广泛的类的对象类型（例如，所有数值类型，或所有序列类型）。使用时，对他们不适用的对象类型，他们将抛出一个Python异常。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>It is not possible to use these functions on objects that are not properly initialized, such as a list object that has been created by :cfunc:`PyList_New`, but whose items have not been set to some non-\ ``NULL`` value yet.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>对没有正确初始化的对象是无法使用这些函数的。如一个由cfunc:'PyList_New'创建的列表对象，但它每个项目都没有设置一些非空\"NULL"的值。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Allocating Objects on the Heap</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>在堆上分配对象</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See also</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>参考</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>To allocate and create extension modules.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>To allocate and create extension modules. 分配和创建扩展模块。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Parsing arguments and building values</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>Parsing arguments and building values. 解析参数和建值</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These functions are useful when creating your own extensions functions and methods.  Additional information and examples are available in :ref:`extending-index`.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>这些函数在创建你自己的函数和方法时非常有用。更多信息和示例在这：ref:`extending-index`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The first three of these functions described, :cfunc:`PyArg_ParseTuple`, :cfunc:`PyArg_ParseTupleAndKeywords`, and :cfunc:`PyArg_Parse`, all use *format strings* which are used to tell the function about the expected arguments.  The format strings use the same syntax for each of these functions.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>前三个函数描述：:cfunc:`PyArg_ParseTuple`, :cfunc:`PyArg_ParseTupleAndKeywords`, 和:cfunc:`PyArg_Parse`，都使用了*格式化字符串*来告知函数所期望的参数。对这些函数格式化字符串都用相同的语法格式。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Parsing arguments</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>解析参数</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A format string consists of zero or more "format units."  A format unit describes one Python object; it is usually a single character or a parenthesized sequence of format units.  With a few exceptions, a format unit that is not a parenthesized sequence normally corresponds to a single address argument to these functions.  In the following description, the quoted form is the format unit; the entry in (round) parentheses is the Python object type that matches the format unit; and the entry in [square] brackets is the type of the C variable(s) whose address should be passed.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>一个格式字符串由零个或多个“格式单元”组成。一个格式单元描述一个Python对象；它通常是单个字符，或是一个由括号括起来的格式单元序列。对这些函数来说，除少数例外，一个格式单元（没有括号，不是序列）通常对应一个参数的地址。在以下描述中，引号中的是格式单元；圆括号()中的是匹配格式单元的Python对象类型；中括号[]中的是C的需要传址的变量类型</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Strings and buffers</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>字符串和缓冲区</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These formats do not expect you to provide raw storage for the returned string or bytes.  Also, you won't have to release any memory yourself, except with the ``es``, ``es#``, ``et`` and ``et#`` formats.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>这些格式不期望你提供返回的字符串或字节的原始存储。同样，你也不用自己来释放任何内存，除了 ``es``, ``es#``, ``et`` 和 ``et#``格式。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>However, when a :ctype:`Py_buffer` structure gets filled, the underlying buffer is locked so that the caller can subsequently use the buffer even inside a :ctype:`Py_BEGIN_ALLOW_THREADS` block without the risk of mutable data being resized or destroyed.  As a result, **you have to call** :cfunc:`PyBuffer_Release` after you have finished processing the data (or in any early abort case).</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>然而，当一个 :ctype:`Py_buffer`结构被填充，底层缓冲区被锁定，随后调用者可以使用该缓冲区，甚至无风险地对:ctype:`Py_BEGIN_ALLOW_THREADS`块内的可变数据调 整大小或销毁。因此，**你须调用**:cfunc:`PyBuffer_Release` 在你处理完数据以后。（或是在任何提前结止的情况下）</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Unless otherwise stated, buffers are not NUL-terminated.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>除文义另有所指外，缓冲区不以NULL结尾。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>For all ``#`` variants of formats (``s#``, ``y#``, etc.), the type of the length argument (int or :ctype:`Py_ssize_t`) is controlled by defining the macro :cmacro:`PY_SSIZE_T_CLEAN` before including :file:`Python.h`.  If the macro was defined, length is a :ctype:`Py_ssize_t` rather than an :ctype:`int`. This behavior will change in a future Python version to only support :ctype:`Py_ssize_t` and drop :ctype:`int` support. It is best to always define :cmacro:`PY_SSIZE_T_CLEAN`.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>对于所有``#``格式的变种(``s#``, ``y#``,等），参数长度的类型(int 或 :ctype:`Py_ssize_t`)是由在包含头文件 :file:`Python.h`之前定义宏:cmacro:`PY_SSIZE_T_CLEAN`来控制的。如果定义了该宏，长度就是 :ctype:`Py_ssize_t`而不是 :ctype:`int`。这个特性在未来的Python版本中将会变为只支持:ctype:`Py_ssize_t`，取消:ctype:`int` 的支持。最好总是定义宏 :cmacro:`PY_SSIZE_T_CLEAN`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Unicode object to a C pointer to a character string. A pointer to an existing string is stored in the character pointer variable whose address you pass.  The C string is NUL-terminated. The Python string must not contain embedded NUL bytes; if it does, a :exc:`TypeError` exception is raised. Unicode objects are converted to C strings using ``'utf-8'`` encoding. If this conversion fails, a :exc:`UnicodeError` is raised.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>转换Unicode对象到C字符串指针。指向已有字符串的指针存放于你传递的字符指针变量中。C字符串是NUL结尾的。Python字符串不能包含内嵌的NUL字节；如果有的话，就会引发 :exc:`TypeError`异常。Unicode对象转换到C字符串使用``'utf-8'``格式编码。如果转换失败，将引发:exc:`UnicodeError` 异常。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This format does not accept bytes-like objects.  If you want to accept filesystem paths and convert them to C character strings, it is preferrable to use the ``O&amp;`` format with :cfunc:`PyUnicode_FSConverter` as *converter*.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>此格式不接受字节型对象(bytes-like objects)。如果你想要处理文件系统的路径并把它们转换为C字符串，最好使用``O&amp;`` 格式和:cfunc:`PyUnicode_FSConverter`转换器。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This format accepts Unicode objects as well as objects supporting the buffer protocol. It fills a :ctype:`Py_buffer` structure provided by the caller. In this case the resulting C string may contain embedded NUL bytes. Unicode objects are converted to C strings using ``'utf-8'`` encoding.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>此格式接受Unicode对象以及支持缓冲协议的对象。它由调用者填充:ctype:`Py_buffer`结构。在这种情况下，产生的C字符串可能包含嵌入的NUL字节。Unicode对象转换到C字符串使用``'utf-8'``格式编码。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Like ``s*``, except that it doesn't accept mutable buffer-like objects such as :class:`bytearray`.  The result is stored into two C variables, the first one a pointer to a C string, the second one its length. The string may contain embedded null bytes. Unicode objects are converted to C strings using ``'utf-8'`` encoding.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>像 ``s*``,不同的是它不接受可变缓冲类对象如:class:`bytearray`。结果被存放在两个C变量中，第一个是一个C字符串指针，第二个是它的长度。字符串可能包含内嵌的null字节。Unicode对象转换到C字符串使用``'utf-8'``格式编码。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Like ``s``, but the Python object may also be ``None``, in which case the C pointer is set to *NULL*.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>像 ``s``,但Python对象可能也是``None``,这种情况下C指针被置为*NULL*。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Like ``s*``, but the Python object may also be ``None``, in which case the ``buf`` member of the :ctype:`Py_buffer` structure is set to *NULL*.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>像 ``s*``, 但Pyhton对象可能也是"None"，这种情况下 :ctype:`Py_buffer`结构的成员``buf`` 设置为*NULL*。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Like ``s#``, but the Python object may also be ``None``, in which case the C pointer is set to *NULL*.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>像 ``s#``,但Pyhton对象可能也是"None"，这种情况下C指针被置为*NULL*。 </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This format converts a bytes-like object to a C pointer to a character string; it does not accept Unicode objects.  The bytes buffer must not contain embedded NUL bytes; if it does, a :exc:`TypeError` exception is raised.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>这格式转换字节型对象到C字符串指针；它不接受Unicode对象。字节缓冲不允许包含嵌入NUL字节；如果它有，就会触发 :exc:`TypeError`异常。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This variant on ``s*`` doesn't accept Unicode objects, only objects supporting the buffer protocol.  **This is the recommended way to accept binary data.**</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>这个``s*`` 的变体不接受Unicode objects, 只接受支持缓冲协议的对象。**这是推荐的接受二进制数据的方式**。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This variant on ``s#`` doesn't accept Unicode objects, only bytes-like objects.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>这个 ``s#``的变体不接受Unicode 对象，只接受字节型对象。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Requires that the Python object is a :class:`bytes` object, without attempting any conversion.  Raises :exc:`TypeError` if the object is not a bytes object.  The C variable may also be declared as :ctype:`PyObject\*`.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>要求Python对象是一个 :class:`bytes`对象，不尝试任何转换。如果对象不是字节型(bytes)对象会触发 :exc:`TypeError`。C变量可能也被声明为:ctype:`PyObject\*`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Requires that the Python object is a :class:`bytearray` object, without attempting any conversion.  Raises :exc:`TypeError` if the object is not a :class:`bytearray` object. The C variable may also be declared as :ctype:`PyObject\*`.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>要求Python对象是一个 :class:`bytearray`对象，不尝试任何转换。如果对象不是 :class:`bytearray` 对象会触发:exc:`TypeError`。C变量可能也被声明为:ctype:`PyObject\*`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python Unicode object to a C pointer to a NUL-terminated buffer of Unicode characters.  You must pass the address of a :ctype:`Py_UNICODE` pointer variable, which will be filled with the pointer to an existing Unicode buffer.  Please note that the width of a :ctype:`Py_UNICODE` character depends on compilation options (it is either 16 or 32 bits). The Python string must not contain embedded NUL characters; if it does, a :exc:`TypeError` exception is raised.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>把Python Unicode对象转换为C指针，指向一个以NUL结尾的Unicode字符缓冲区。您必须传递 :ctype:`Py_UNICODE`指针变量的地址，它会被填充为指向已有Unicode缓冲区的指针。请注意:ctype:`Py_UNICODE` 字符的宽度取决于编译选项（它可以是16或32位）。Python字符串不可以包含嵌入的NUL字符；如果包含，就会引发:exc:`TypeError` 异常。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Since ``u`` doesn't give you back the length of the string, and it may contain embedded NUL characters, it is recommended to use ``u#`` or ``U`` instead.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>因为``u`` 没有给你返回字符串的长度，而且它可能包含嵌入的NUL字符，故推荐使用``u#`` or ``U``来替代。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This variant on ``u`` stores into two C variables, the first one a pointer to a Unicode data buffer, the second one its length.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>这种``u``的变体存储于两个C变量中，第一个是指针指向Unicode数据缓冲区，第二个是它的长度。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Like ``u``, but the Python object may also be ``None``, in which case the :ctype:`Py_UNICODE` pointer is set to *NULL*.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>像``u``，但Python对象可能也是"None"，这种情况下:ctype:`Py_UNICODE`指针设置为*NULL*.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Like ``u#``, but the Python object may also be ``None``, in which case the :ctype:`Py_UNICODE` pointer is set to *NULL*.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>像``u#``，但Python对象可能也是"None"，这种情况下:ctype:`Py_UNICODE`指针被设置为*NULL*.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Requires that the Python object is a Unicode object, without attempting any conversion.  Raises :exc:`TypeError` if the object is not a Unicode object.  The C variable may also be declared as :ctype:`PyObject\*`.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>要求Python对象是一个Unicode对象，没有尝试任何转换。如果其不是Unicode对象会引发 :exc:`TypeError`。C变量也可能被声明为:ctype:`PyObject\*`。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This format accepts any object which implements the read-write buffer interface. It fills a :ctype:`Py_buffer` structure provided by the caller. The buffer may contain embedded null bytes. The caller have to call :cfunc:`PyBuffer_Release` when it is done with the buffer.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>这种格式接受任何实现了读-写缓冲接口的对象。它填充一个由调用者提供的 :ctype:`Py_buffer`结构体。缓冲区中可能包含嵌入的空(null)字节。调用者需要调用:cfunc:`PyBuffer_Release` 当它完成操作后。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This variant on ``s`` is used for encoding Unicode into a character buffer. It only works for encoded data without embedded NUL bytes.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>这种``s``的变体用来编码Unicode进字符缓冲区中。它只对已编码的没有嵌入NUL字节的数据起作用。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This format requires two arguments.  The first is only used as input, and must be a :ctype:`const char\*` which points to the name of an encoding as a NUL-terminated string, or *NULL*, in which case ``'utf-8'`` encoding is used. An exception is raised if the named encoding is not known to Python.  The second argument must be a :ctype:`char\*\*`; the value of the pointer it references will be set to a buffer with the contents of the argument text. The text will be encoded in the encoding specified by the first argument.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>这种格式需要两个参数。第一个仅用于输入，且必须是:ctype:`const char\*`这种指针类型，指向编码格式名称的字符串(NUL结尾)，或者是*NULL*,这种情况下将使用``'utf-8'``格式编码。如果编码名不为Python所知将会引发异常。第二个参数必须是:ctype:`char\*\*`类型;它引用的指针的值将被设置为一个内容为参数文本的缓冲区。该文本将被编码为第一个参数中指定的编码格式。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cfunc:`PyArg_ParseTuple` will allocate a buffer of the needed size, copy the encoded data into this buffer and adjust *\*buffer* to reference the newly allocated storage.  The caller is responsible for calling :cfunc:`PyMem_Free` to free the allocated buffer after use.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>:cfunc:`PyArg_ParseTuple` 将会按需要大小生成一个缓冲区，把编码后的数据拷贝到这个缓冲区中并调整*\*buffer*引用到新分配的存储空间上。调用者负责在用完后调用 :cfunc:`PyMem_Free`来释放所分配的缓冲区。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Same as ``es`` except that byte string objects are passed through without recoding them.  Instead, the implementation assumes that the byte string object uses the encoding passed in as parameter.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>与 ``es``相同，除了字节字符串对象在传递时没有记录它们。相反，实现假定字节字符串对象使用传入的编码做为参数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This variant on ``s#`` is used for encoding Unicode into a character buffer. Unlike the ``es`` format, this variant allows input data which contains NUL characters.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>这种``s#``的变体用来编码Unicode进字符缓冲区中。与 ``es``格式不同，这种变体允许输入包含NUL字符的数据。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>It requires three arguments.  The first is only used as input, and must be a :ctype:`const char\*` which points to the name of an encoding as a NUL-terminated string, or *NULL*, in which case ``'utf-8'`` encoding is used. An exception is raised if the named encoding is not known to Python.  The second argument must be a :ctype:`char\*\*`; the value of the pointer it references will be set to a buffer with the contents of the argument text. The text will be encoded in the encoding specified by the first argument. The third argument must be a pointer to an integer; the referenced integer will be set to the number of bytes in the output buffer.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>它需要三个参数。第一个仅用于输入，且必须是:ctype:`const char\*`类型指向一个编码名字的字符串以NUL结尾，或是*NULL*，在这种情况下会使用``'utf-8'``编码格式。如果指定的编码格式名称是Python未知的格式会引发异常。第二个参数必须是:ctype:`char\*\*`类型，它引用的指针的值将被设置为参数文本的内容。该文本将被按第一个参数指定的编码格式进行编码。第三个参数必须是一个指向整数的指针；它所引用的整数将会被置为输出缓冲区的字节数。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There are two modes of operation:</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>有两种处理方式：</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If *\*buffer* points a *NULL* pointer, the function will allocate a buffer of the needed size, copy the encoded data into this buffer and set *\*buffer* to reference the newly allocated storage.  The caller is responsible for calling :cfunc:`PyMem_Free` to free the allocated buffer after usage.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>如果*\*buffer* 是空指针，该函数会分配一个所需大小的缓冲区，把编码后的数据复制进来，并把*\*buffer*指向这个新建的缓冲区。而调用者负责在用完后调用:cfunc:`PyMem_Free` 来释放该缓冲区。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If *\*buffer* points to a non-*NULL* pointer (an already allocated buffer), :cfunc:`PyArg_ParseTuple` will use this location as the buffer and interpret the initial value of *\*buffer_length* as the buffer size.  It will then copy the encoded data into the buffer and NUL-terminate it.  If the buffer is not large enough, a :exc:`ValueError` will be set.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>如果*\*buffer* 不是空指针（指向已存在的缓冲区），:cfunc:`PyArg_ParseTuple` 便将该位置用做缓冲区且用*\*buffer_length*的初值做为缓冲区大小。然后它会复制编码后的数据到该缓冲区中并使用NUL结尾。如果buffer不够大，就会被设置:exc:`ValueError` 错误。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In both cases, *\*buffer_length* is set to the length of the encoded data without the trailing NUL byte.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>两种情况下，*\*buffer_length*都被置为编码后数据的长度（不包括结尾的NUL字节）</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Numbers</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>数字</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a nonnegative Python integer to an unsigned tiny int, stored in a C :ctype:`unsigned char`.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>将Python的非负整数转换为无符号小整数(tiny int)，存储于C的:ctype:`unsigned char`中。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python integer to a tiny int without overflow checking, stored in a C :ctype:`unsigned char`.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>将Python整数转换为小整数而不进行溢出检查，存储于C的:ctype:`unsigned char`中.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python integer to a C :ctype:`short int`.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>将Python整数转换为C的短整型:ctype:`short int`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python integer to a C :ctype:`unsigned short int`, without overflow checking.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>将Python整数转换为C的无符号短整型:ctype:`unsigned short int`，没有进行溢出检查。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python integer to a plain C :ctype:`int`.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>将Python整数转换为C的整数 :ctype:`int`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python integer to a C :ctype:`unsigned int`, without overflow checking.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>将Python整数转换为C的无符号整数:ctype:`unsigned int`, 无溢出检查。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python integer to a C :ctype:`long int`.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>将Python整数转换为C的长整数:ctype:`long int`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python integer to a C :ctype:`unsigned long` without overflow checking.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>将Python整数转换为C的长整数:ctype:`unsigned long`，无溢出检查。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python integer to a C :ctype:`long long`.  This format is only available on platforms that support :ctype:`long long` (or :ctype:`_int64` on Windows).</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>将Python整数转换为C的双长整数:ctype:`long long`.这种格式仅在平台支持:ctype:`long long`时可用。(或者是:ctype:`_int64`在Windows中)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python integer to a C :ctype:`unsigned long long` without overflow checking.  This format is only available on platforms that support :ctype:`unsigned long long` (or :ctype:`unsigned _int64` on Windows).</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>将Python整数转换为C的无符号双长整数 :ctype:`unsigned long long`，无溢出检查。这种格式仅在平台支持:ctype:`unsigned long long`时可用。(或者是:ctype:`unsigned _int64`在Windows中)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python integer to a C :ctype:`Py_ssize_t`.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>将Python整数转换为C的:ctype:`Py_ssize_t`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python byte, represented as a :class:`bytes` object of length 1, to a C :ctype:`char`.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>将一个Python字节，表示为类:class:`bytes`其长度为1，转换为C的:ctype:`char`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python character, represented as a :class:`str` object of length 1, to a C :ctype:`int`.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>将一个Python字符，表示为类:class:`str`其长度为1，转换为C的:ctype:`int`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python floating point number to a C :ctype:`float`.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>将一个Python浮点数转换为C的 :ctype:`float`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python floating point number to a C :ctype:`double`.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>将一个Python浮点数转换为C的 :ctype:`double `.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python complex number to a C :ctype:`Py_complex` structure.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>将一个Python复数转换为C的  :ctype:`Py_complex`结构.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Other objects</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>其它对象</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Store a Python object (without any conversion) in a C object pointer.  The C program thus receives the actual object that was passed.  The object's reference count is not increased.  The pointer stored is not *NULL*.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>存储一个Python对象（不经任何转换）到一个C对象指针。C程序从而得到了被传递的真正的对象。对象的引用计数没有增长。该存储的指针不是*NULL*.</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

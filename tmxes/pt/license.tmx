@@ -1,0 +1,599 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>History and License</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>História e Licença</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>History of the software</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>História do software</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python was created in the early 1990s by Guido van Rossum at Stichting Mathematisch Centrum (CWI, see http://www.cwi.nl/) in the Netherlands as a successor of a language called ABC.  Guido remains Python's principal author, although it includes many contributions from others.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Python foi criada no início dos anos 1990 por Guido van Rossum em Stichting Mathematisch Centrum (CWI, consulte http://www.cwi.nl/) na Holanda como um sucessor de uma linguagem chamada ABC. Guido continua sendo o autor principal do Python, ainda que inclua contribuições de muitos outros.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In 1995, Guido continued his work on Python at the Corporation for National Research Initiatives (CNRI, see http://www.cnri.reston.va.us/) in Reston, Virginia where he released several versions of the software.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Em 1995, Guido continuou seu trabalho no Python na Corporation for National Research Initiatives (CNRI, consulte http://www.cnri.reston.va.us/) em Reston, Virginia onde ele lançou várias versões do software.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In May 2000, Guido and the Python core development team moved to BeOpen.com to form the BeOpen PythonLabs team.  In October of the same year, the PythonLabs team moved to Digital Creations (now Zope Corporation; see http://www.zope.com/).  In 2001, the Python Software Foundation (PSF, see http://www.python.org/psf/) was formed, a non-profit organization created specifically to own Python-related Intellectual Property.  Zope Corporation is a sponsoring member of the PSF.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Em maio de 2000, Guido e a equipe principal de desenvolvimento do Python se mudaram para o BeOpen.com para formar a equipe BeOpen PythonLabs. Em outubro do mesmo ano, a equipe PythonLabs mudou-se para a Digital Creations (atual Zope Corporation; consulte http://www.zope.com/). Em 2001, a Python Software Foundation (PSF, consulte http://www.python.org/psf/) foi formada, uma organização sem fins lucrativos criada especificamente para ter propriedade sobre a Propriedade Intelectual relacionada ao Python. A Zope Corporation é uma patrocinadora da PSF.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>All Python releases are Open Source (see http://www.opensource.org/ for the Open Source Definition). Historically, most, but not all, Python releases have also been GPL-compatible; the table below summarizes the various releases.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Todos as versões do Python são Open Source (consulte http://www.opensource.org/ para ver a definição de Open Source). Historicamente, a maioria, mas não todas, as versões do Python também têm sido compatíveis com a GPL; a tabela abaixo resume as várias versões.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Release</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Lançamento</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Derived from</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Derivado de</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Year</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Ano</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Owner</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Proprietário</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>GPL compatible?</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Compatível com GPL?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>0.9.0 thru 1.2</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0.9.0 até 1.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>n/a</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>n/a</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>1991-1995</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>1991-1995</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>CWI</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>CWI</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>yes</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>sim</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>1.3 thru 1.5.2</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>1.3 até 1.5.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>1.2</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>1.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>1995-1999</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>1995-1999</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>CNRI</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>CNRI</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>1.6</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>1.6</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>1.5.2</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>1.5.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2000</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2000</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>no</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>não</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.0</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>BeOpen.com</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>BeOpen.com</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>1.6.1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>1.6.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2001</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2001</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.0+1.6.1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.0+1.6.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>PSF</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>PSF</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.0.1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.0.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.1.1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.1.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.1+2.0.1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.1+2.0.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.2</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.1.2</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.1.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2002</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2002</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.1.3</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.1.3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.2.1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.2.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.2.2</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.2.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.2.3</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.2.3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2002-2003</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2002-2003</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.3</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.3.1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.3.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.3.2</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.3.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2003</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2003</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.3.3</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.3.3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.3.4</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.3.4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2004</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2004</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.3.5</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.3.5</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2005</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2005</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.4</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.4.1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.4.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.4.2</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.4.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.4.3</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.4.3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2006</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2006</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.4.4</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.4.4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.5</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.5</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.5.1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.5.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2007</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2007</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.6</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.6</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2008</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2008</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.6.1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.6.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.6.2</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.6.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2009</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2009</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.6.3</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.6.3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.6.4</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.6.4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>3.0</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>3.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>3.0.1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>3.0.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>3.1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>3.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>3.1.1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>3.1.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>GPL-compatible doesn't mean that we're distributing Python under the GPL.  All Python licenses, unlike the GPL, let you distribute a modified version without making your changes open source. The GPL-compatible licenses make it possible to combine Python with other software that is released under the GPL; the others don't.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>GPL-compatível não significa que estamos distribuindo Python sob a GPL. Todas as licenças Python, ao contrário da GPL, permite você distribuir uma versão modificada sem fazer das suas alterações um código aberto. As licenças GPL-compatíveis tornam possível combinar Python com outro software que é distribuído sob a GPL; as outras não.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Thanks to the many outside volunteers who have worked under Guido's direction to make these releases possible.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Obrigado aos vários voluntários exteriores que trabalharam sob a direção de Guido para tornar estes lançamentos possíveis.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Terms and conditions for accessing or otherwise using Python</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Termos e condições ao acessar ou utilizar de outra maneira Python</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

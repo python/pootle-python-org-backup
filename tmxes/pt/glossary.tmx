@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Glossary</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Glossário</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The default Python prompt of the interactive shell.  Often seen for code examples which can be executed interactively in the interpreter.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>O padrão Python prompt do shell interativo. Muitas vezes visto para exemplos de código que pode ser executado interativamente no interpretador.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The default Python prompt of the interactive shell when entering code for an indented code block or within a pair of matching left and right delimiters (parentheses, square brackets or curly braces).</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>O prompt padrão do shell interativo de Python quando inserir o código de um bloco de código recuado ou dentro de um par de delimitadores corespondentes esquerdo e direito (parênteses, colchetes ou chaves).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A tool that tries to convert Python 2.x code to Python 3.x code by handling most of the incompatibilites which can be detected by parsing the source and traversing the parse tree.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Uma ferramenta que tenta converter o código Python 2.x para 3.x pela manipulação da maioria das incompatibilidades que podem ser detectadas pela análise da origem e percorrendo a árvore de análise.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2to3 is available in the standard library as :mod:`lib2to3`; a standalone entry point is provided as :file:`Tools/scripts/2to3`.  See :ref:`2to3-reference`.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2to3 está disponível na biblioteca padrão como: mod: `lib2to3`; um ponto de entrada é fornecida como autônomo: file: `Tools/scripts/2to3`. Veja :ref:`2to3-reference`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Abstract Base Classes (abbreviated ABCs) complement :term:`duck-typing` by providing a way to define interfaces when other techniques like :func:`hasattr` would be clumsy. Python comes with many built-in ABCs for data structures (in the :mod:`collections` module), numbers (in the :mod:`numbers` module), and streams (in the :mod:`io` module). You can create your own ABC with the :mod:`abc` module.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Abstract Base Classes (abreviado ABCs) complementam :term:`duck-typing`, fornecendo uma maneira de definir as interfaces quando outras técnicas como:func:`hasattr` seria desajeitado. Python vem com muitas ABC embutidas para estruturas de dados (no módulo :mod:`collections`), números (no módulo :mod:`numbers` ), e os fluxos (no módulo :mod:`io`). Você pode criar o seu próprio com o módulo ABC :mod:`abc`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Any expression may be used within the argument list, and the evaluated value is passed to the local variable.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Qualquer expressão pode ser usada dentro da lista de argumentos, e o valor avaliado é passado à variável local.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A value associated with an object which is referenced by name using dotted expressions.  For example, if an object *o* has an attribute *a* it would be referenced as *o.a*.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Um valor associado com um objeto que é referenciado pelo nome usando expressões pontilhada. Por exemplo, se um objeto *o* tem um atributo *a* seria referenciado como *o.a*.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Benevolent Dictator For Life, a.k.a. `Guido van Rossum &lt;http://www.python.org/~guido/&gt;`_, Python's creator.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Benevolente Ditador para a Vida, conhecido também como. `Guido van Rossum &lt;http://www.python.org/~guido/&gt;`_, criador de Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>for i in range(len(food)):     print(food[i])</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>for i in range(len(alimento)): print(alimento[i])</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

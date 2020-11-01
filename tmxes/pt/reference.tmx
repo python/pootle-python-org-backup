@@ -1,0 +1,295 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Compound statements</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Comandos compostos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Compound statements contain (groups of) other statements; they affect or control the execution of those other statements in some way.  In general, compound statements span multiple lines, although in simple incarnations a whole compound statement may be contained in one line.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Comandos compostos contêm (grupos de) outros comandos; eles afetam ou controlam a execução daqueles outros comandos de alguma forma. Em geral, comandos compostos se espalham por múltiplas linhas, apesar de que em simples encarnações um comando composto completo pode estar contido em uma linha.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>if test1: if test2: print(x)</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>if teste1: if teste2: print(x)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>if x &lt; y &lt; z: print(x); print(y); print(z)</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>if x &lt; y &lt; z: print(x); print(y); print(z)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Summarizing:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Resumindo:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The formatting of the grammar rules in the following sections places each clause on a separate line for clarity.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>A formatação das regras gramaticais nas seguintes seções coloca cada cláusula em uma linha separada por uma questão de clareza.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The :keyword:`for` statement</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>O comando :keyword:`for`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Additional information on exceptions can be found in section :ref:`exceptions`, and information on using the :keyword:`raise` statement to generate exceptions may be found in section :ref:`raise`.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Informação adicional sobre exceções pode ser encontrada na seção ref:`exceções`, e informação sobre o uso do comando :keyword:`raise` para gerar exceções pode ser encontrada na seção :ref:`raise`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The :keyword:`with` statement</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>O comando :keyword:`with`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The execution of the :keyword:`with` statement with one "item" proceeds as follows:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>A execução do comando :keyword:`with` com um "item" procede como se segue:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The context expression is evaluated to obtain a context manager.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>A expressão contextual é avaliada para obter um gerenciador de contexto.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>is equivalent to ::</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>é equivalente a ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See also</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Veja também</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Function definitions</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Definições de funções</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>It is also possible to create anonymous functions (functions not bound to a name), for immediate use in expressions.  This uses lambda forms, described in section :ref:`lambda`.  Note that the lambda form is merely a shorthand for a simplified function definition; a function defined in a ":keyword:`def`" statement can be passed around or assigned to another name just like a function defined by a lambda form.  The ":keyword:`def`" form is actually more powerful since it allows the execution of multiple statements and annotations.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>É possível também criar funções anônimas (funções não ligadas a um nome), para uso imediato em expressões. Isso faz uso de formas lambda, descritas na seção :ref:`lambda`. Observe que a forma lambda é meramente um "atalho" para definição de função simplificada; uma função definida em um comando ":keyword:`def`" pode ser passada ou atribuída a outro nome da mesma forma que uma função definida por uma forma lambda o pode. A forma ":keyword:`def`" é na verdade mais poderosa, uma vez que permite a execução de múltiplos comandos e anotações.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Class definitions</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Definições de classes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Footnotes</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Notas de rodapé</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Data model</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Modelo de dados</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Objects, values and types</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos, valores e tipos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Objects are never explicitly destroyed; however, when they become unreachable they may be garbage-collected.  An implementation is allowed to postpone garbage collection or omit it altogether --- it is a matter of implementation quality how garbage collection is implemented, as long as no objects are collected that are still reachable.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos nunca são explicitamente destruídos; no entanto, quando eles se tornam "inalcançáveis", eles podem ser coletados pela operação de garbage collection. Uma implementação tem a permissão de adiar a garbage collection ou de a omitir completamente --- é uma questão de qualidade de implementação a forma com que a garbage collection é implementada, contanto que nenhum objeto que ainda é alcançável seja coletado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The standard type hierarchy</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>A hierarquia de tipos padrão</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Below is a list of the types that are built into Python.  Extension modules (written in C, Java, or other languages, depending on the implementation) can define additional types.  Future versions of Python may add types to the type hierarchy (e.g., rational numbers, efficiently stored arrays of integers, etc.), although such additions will often be provided via the standard library instead.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Abaixo segue uma lista dos tipos que vêm com Python. Módulos de extensão (escritos em C, Java, ou outras linguagens, dependendo da implementação) podem definir tipos adicionais. Futuras versões de Python podem adicionar tipos à hierarquia de tipos (por exemplo, números racionais, arrays de inteiros eficientemente armazenados, etc.), apesar de que tais adições serão frequentemente fornecidas pela standard library (o que pode ser traduzido como "biblioteca padrão") ao invés disso. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Some of the type descriptions below contain a paragraph listing 'special attributes.'  These are attributes that provide access to the implementation and are not intended for general use.  Their definition may change in the future.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Algumas das descrições de tipos abaixo contêm um parágrafo listando 'atributos especiais.' Esses são atributos que fornecem acesso à implementação e não têm a intenção de serem usados de modo geral. Sua definição pode mudar no futuro.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This type has a single value.  There is a single object with this value. This object is accessed through the built-in name ``None``. It is used to signify the absence of a value in many situations, e.g., it is returned from functions that don't explicitly return anything. Its truth value is false.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Esse tipo possui um único valor. Há um único objeto com esse valor. Esse objeto é acessado pelo nome já presente ``None``. Ele é usado para significar a ausência de um valor em muitas situações, por exemplo, ele é retornado por funções que não devolvem nenhum valor explicitamente. Seu valor de verdade é false (traduzido como falso).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python distinguishes between integers, floating point numbers, and complex numbers:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Python faz uma distinção entre inteiros, números de ponto flutuante, e números complexos:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These represent elements from the mathematical set of integers (positive and negative).</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Esses representam elementos do conjunto matemático de inteiros (positivos e negativos).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There are two types of integers:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Existem dois tipos de inteiros:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Integers (:class:`int`)</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Inteiros (:classe:`int`)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The rules for integer representation are intended to give the most meaningful interpretation of shift and mask operations involving negative integers.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>As regras para representação de inteiros têm a intenção de dar a interpretação mais significativa das operações de shift e mask envolvendo inteiros negativos.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Sequences are distinguished according to their mutability:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Sequências são distinguidas de acordo com sua mutabilidade:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The following types are immutable sequences:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Os seguintes tipos são sequências imutáveis:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There are currently two intrinsic mutable sequence types:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Existem atualmente dois tipos sequenciais mutáveis intrínsecos:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The items of a list are arbitrary Python objects.  Lists are formed by placing a comma-separated list of expressions in square brackets. (Note that there are no special cases needed to form lists of length 0 or 1.)</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Os itens de uma lista são objetos Python arbitrários. Listas são formadas colocando-se uma lista de expressões separadas por vírgula entre colchetes quadrados. (Observe que não há casos especiais necessários para a formação de listas de comprimento 0 ou 1.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There are currently two intrinsic set types:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Existem atualmente dois tipos de conjunto intrínsecos:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There is currently a single intrinsic mapping type:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Existe atualmente um único tipo de mapeamento intrínseco:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Special attributes:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Atributos especiais:</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

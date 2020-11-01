@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Glossary</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Glosario</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A tool that tries to convert Python 2.x code to Python 3.x code by handling most of the incompatibilites which can be detected by parsing the source and traversing the parse tree.</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Una herramienta que intenta convertir código Python 2.x a código Python 3.x manejando la mayoría de las incompatibilidades que pueden ser detectadas analizando el código fuente y examinando el árbol de análisis.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2to3 is available in the standard library as :mod:`lib2to3`; a standalone entry point is provided as :file:`Tools/scripts/2to3`.  See :ref:`2to3-reference`.</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>2to3 esta disponible en la librería estándar como :mod:`lib2to3`; un punto de entrada independiente es provisto como :file:`Tools/scripts/2to3`. Véase :ref:`2to3-reference`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>def f(...):     ... f = staticmethod(f)  @staticmethod def f(...):     ...</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>def f(...): ... f = staticmethod(f)  @staticmethod def f(...): ...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>For more information about descriptors' methods, see :ref:`descriptors`.</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Para mas información sobre métodos descriptores, véase :ref:`descriptors`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>for i in range(len(food)):     print(food[i])</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>for i in range(len(food)): print(food[i])</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

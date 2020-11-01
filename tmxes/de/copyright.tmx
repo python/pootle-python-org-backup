@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Copyright</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Copyright</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python and this documentation is:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Python und diese Dokumentation ist:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Copyright © 2001-2010 Python Software Foundation. All rights reserved.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Copyright © 2001-2010 Python Software Foundation. All rights reserved.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Copyright © 2000 BeOpen.com. All rights reserved.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Copyright © 2000 BeOpen.com. All rights reserved.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Copyright © 1995-2000 Corporation for National Research Initiatives. All rights reserved.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Copyright © 1995-2000 Corporation for National Research Initiatives. All rights reserved.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Copyright © 1991-1995 Stichting Mathematisch Centrum. All rights reserved.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Copyright © 1991-1995 Stichting Mathematisch Centrum. All rights reserved.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See :ref:`history-and-license` for complete license and permissions information.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Siehe :ref:`history-and-license` für Informationen zur Lizenz und Benutzungsrechten.</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Whetting Your Appetite</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Einige Leckerbissen vorweg</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If you do much work on computers, eventually you find that there's some task you'd like to automate.  For example, you may wish to perform a search-and-replace over a large number of text files, or rename and rearrange a bunch of photo files in a complicated way. Perhaps you'd like to write a small custom database, or a specialized GUI application, or a simple game.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Wer viel am Computer arbeitet, kommt irgendwann zu dem Schluss, dass es Aufgaben gibt, die er gern automatisieren würde. Beispielsweise ein Suchen-und-Ersetzen für eine Vielzahl von Dateien oder eine Möglichkeit, einen Haufen Fotodateien auf komplizierte Art umzubenennen oder umzuräumen. Oder man hätte gerne eine kleine Datenbank nach Maß, eine spezialisierte GUI-Anwendung oder ein einfaches Spiel.</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Building the documentation</seg>
+      </tuv>
+      <tuv xml:lang="ja">
+        <seg>ドキュメントをビルド中</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Using make</seg>
+      </tuv>
+      <tuv xml:lang="ja">
+        <seg>make を使用中</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>make html</seg>
+      </tuv>
+      <tuv xml:lang="ja">
+        <seg>html を make</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

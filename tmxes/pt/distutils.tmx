@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>API Reference</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Referência da API</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:mod:`distutils.core` --- Core Distutils functionality</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:mod:`distutils.core` --- Núcleo de funcionalidades Distutils</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*name*</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>*nome*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*version*</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>*versão*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The version number of the package</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>O número da versão do pacote</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See :mod:`distutils.version`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Veja :mod:`distutils.version`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*description*</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>*descrição*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*long_description*</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>*descrição_detalhada*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The email address of the package author</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>O endereço de email do autor do pacote</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*maintainer*</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>*mantenedor*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The name of the current maintainer, if different from the author</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>O nome do mantenedor corrente, se diferente do autor</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*maintainer_email*</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>*email_mantenedor*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The email address of the current maintainer, if different from the author</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>O endereço de email do mantenedor corrente, se diferente do autor</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*url*</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>*url*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A URL for the package (homepage)</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Uma URL para o pacote (homepage)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*download_url*</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>*url_download*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A URL to download the package</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Uma URL para baixar o pacote</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*packages*</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>*pacotes*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A list of Python packages that distutils will manipulate</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Uma lista de pacotes que o distutils manipulará</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>a list of strings</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>uma lista de strings</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*py_modules*</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>*módulos_py*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A list of Python modules that distutils will manipulate</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Uma lista de módulos Python que o distutils manipulará</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*scripts*</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>*scripts*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*ext_modules*</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>*módulos_ext*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A list of Python extensions to be built</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Uma lista de extensões Python a serem construídas</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A list of  instances of :class:`distutils.core.Extension`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Uma lista de instâncias da :class:`distutils.core.Extension`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A list of categories for the package</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Uma lista de categorias para o pacote</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*distclass*</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>*distclass*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>the :class:`Distribution` class to use</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>a classe :class:`Distribution` para usar</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

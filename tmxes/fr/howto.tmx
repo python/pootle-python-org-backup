@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Author</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Auteur</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A.M. Kuchling</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>A.M. Kuchling</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Release</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Version</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>0.03</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>0.03</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Abstract</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Résumé</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>It's usually difficult to get your management to accept open source software, and Python is no exception to this rule.  This document discusses reasons to use Python, strategies for winning acceptance, facts and arguments you can use, and cases where you *shouldn't* try to use Python.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Il est souvent difficile de faire accepter les logiciels open source par votre encadrement, et Python n'est pas une exception à cette règle. Ce document traite des raisons d'utiliser Python, des stratégies pour le faire accepter, des faits et arguments que vous pouvez exploiter, et des cas où vous *ne devriez pas* essayer d'utiliser python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Reasons to Use Python</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les raisons de choisir Python</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There are several reasons to incorporate a scripting language into your development process, and this section will discuss them, and why Python has some properties that make it a particularly good choice.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Ce chapitre traite des différentes raisons d'introduire un langage de script dans vos processus de développements, et pourquoi Python est un choix particulièrement judicieux.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Programs are often organized in a modular fashion.  Lower-level operations are grouped together, and called by higher-level functions, which may in turn be used as basic operations by still further upper levels.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les programmes sont en général organisés de manière modulaire. Les opérations de bas niveau sont regroupées, et appelées par des fonctions de niveau supérieur, qui peuvent être à leur tour être utilisées comme des opérations unitaires par du code de niveau encore supérieur.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Often, the lowest levels do very simple things; they implement a data structure such as a binary tree or hash table, or they perform some simple computation, such as converting a date string to a number.  The higher levels then contain logic connecting these primitive operations.  Using the approach, the primitives can be seen as basic building blocks which are then glued together to produce the complete product.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>En général, les niveaux inférieurs réalisent des opérations très simples ; ils implémentent une structure de données comme un arbre binaire ou une table de hachage, ou ils exécutent des opérations simples, comme la conversion d'une date en chaîne de caractères par exemple. Les niveaux supérieurs fournissent la logique pour associer ces opérations primitives. Avec cette approche, les primitives peuvent être considérées comme des simples briques qui sont assemblées afin de construire le produit complet.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Prototyping</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Prototypage</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See also</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Voir aussi</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>mod_python</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>mod_python</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>`Mako &lt;http://www.makotemplates.org/&gt;`_</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>`Mako &lt;http://www.makotemplates.org/&gt;`_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>`Genshi &lt;http://genshi.edgewall.org/&gt;`_</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>`Genshi &lt;http://genshi.edgewall.org/&gt;`_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>`Jinja &lt;http://jinja.pocoo.org/2/&gt;`_</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>`Jinja &lt;http://jinja.pocoo.org/2/&gt;`_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Django</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Django</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>TurboGears</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>TurboGears</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Zope</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Zope</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

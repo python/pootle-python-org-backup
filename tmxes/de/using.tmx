@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The most common use case is, of course, a simple invocation of a script::</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Der gängigste Anwendungsfall ist der einfache Aufruf eines Skripts:</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

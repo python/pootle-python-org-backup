@@ -1,0 +1,679 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Glossary</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Słowniczek</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The default Python prompt of the interactive shell.  Often seen for code examples which can be executed interactively in the interpreter.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Domyślne słowo zachęty wspólnie wykonywanego programu interpretującego polecenia dla języka Pyton. Często spotykany w przykładach kodu, które mogą być wykonywane przy współpracy z programem ujednoznaczniającym polecenia dla komputera.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The default Python prompt of the interactive shell when entering code for an indented code block or within a pair of matching left and right delimiters (parentheses, square brackets or curly braces).</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Domyślne słowo zachęty wspólnie wykonywanego programu interpretującego polecenia języka Pyton podczas wprowadzania zapisów we wciętym zestawie poleceń lub w zakresie pomiędzy lewym i prawym znakiem rozdzielającym (nawiasem, nawiasem prostokątnym lub nawiasem klamrowym).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A tool that tries to convert Python 2.x code to Python 3.x code by handling most of the incompatibilites which can be detected by parsing the source and traversing the parse tree.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Narzędzie, które próbuje zamienić program napisany w odmianie Pytona 2 na odpowiednik zapisany w odmianie Pytona 3, poprzez obsługę większości różnic między wersjami, które mogą zostać wykryte przez przeanalizowanie pierwotnego programu i przegląd zawartości struktury rozłożonego programu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2to3 is available in the standard library as :mod:`lib2to3`; a standalone entry point is provided as :file:`Tools/scripts/2to3`.  See :ref:`2to3-reference`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>moduł 2to3 jest osiągalny przez bibliotece szablonów, jako moduł :mod​​:`lib2to3`; punkt wolnego dostępu do modułu jest określony przez podprogram :file:`Tools/scripts/2to3`. Zobacz też: :ref:`2to3-reference`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Abstract Base Classes (abbreviated ABCs) complement :term:`duck-typing` by providing a way to define interfaces when other techniques like :func:`hasattr` would be clumsy. Python comes with many built-in ABCs for data structures (in the :mod:`collections` module), numbers (in the :mod:`numbers` module), and streams (in the :mod:`io` module). You can create your own ABC with the :mod:`abc` module.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Podstawowe uogólnienia ramowe (w skrócie ang. - ABC) uzupełniają zwyczaj "kaczego typowania" ang. :term:`duck-typing` zapewniając możliwość określenia sposobów dostępu, gdy inne techniki, takie jak odnośnik "mawłasność" ang. - :func:`hasattr` byłyby niezręczne. Język pytonowski posiada wiele wbudowanych ramowych uogólnień podstawowych  dla tworzenia struktur przechowywania informacji(w module kolekcje ang. :mod:`collections`), liczb (w module liczby :mod:`numbers`), i dla operacji szeregowanych (w module wejścia/wyjścia ang. :mod:`io`). Można tworzyć swoje własne ramowe uogólnienia podstawowe używając modułu :mod:`abc`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A value passed to a function or method, assigned to a named local variable in the function body.  A function or method may have both positional arguments and keyword arguments in its definition. Positional and keyword arguments may be variable-length: ``*`` accepts or passes (if in the function definition or call) several positional arguments in a list, while ``**`` does the same for keyword arguments in a dictionary.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wartość przekazana do zadania lub sposobu postępowania, przypisana do lokalnej nazwy we wnętrzu deklaracji zadania. Zadanie lub sposób postępowania może przyjmować na wejściu zarówno zapisy pozycyjne jak i zapisy słów kluczowych podczas definiowania. zapisy pozycyjne i zapisy słów kluczowych mogą być zmiennej długości: ``*`` przyjmuje lub przekazuje do przyjęcia (jeżeli znajduje się w definicji zadania lub w wywołaniu) kilka wytycznych z listy, podczas gdy ``**`` robi to samo dla kluczy słownika.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Any expression may be used within the argument list, and the evaluated value is passed to the local variable.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Dowolne wyrażenie może być użyte jako element listy zapisów wejściowych zadania, a obliczona wartość będzie przekazana do zapisania lokalnego.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A value associated with an object which is referenced by name using dotted expressions.  For example, if an object *o* has an attribute *a* it would be referenced as *o.a*.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wartość związana z przedmiotem, do którego odwołanie następuje przez nazwę przy użyciu kropkowanych wyrażeń. Na przykład, jeśli przedmiot *p* ma atrybut *a* to można się do niego odwołać przez *p.a*.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Benevolent Dictator For Life, a.k.a. `Guido van Rossum &lt;http://www.python.org/~guido/&gt;`_, Python's creator.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Dożywotnio tytułowany "dobrotliwym szaleńcem" - 'Gwidon van Rossum &lt;http://www.python.org/~guido/&gt;'_, pomysłodawca języka pytonowskiego.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python source code is compiled into bytecode, the internal representation of a Python program in the interpreter.  The bytecode is also cached in ``.pyc`` and ``.pyo`` files so that executing the same file is faster the second time (recompilation from source to bytecode can be avoided).  This "intermediate language" is said to run on a :term:`virtual machine` that executes the machine code corresponding to each bytecode.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Polecenia programu w języku pytonowskim są zamieniane na postać kodów ułożonych w równych kęsach, jako wewnętrznej reprezentacji programu pytonowskiego w programie wczytującym polecenia dla komputera. kody zebrane z kęsów są zapamiętywane tymczasowo w plikach o nazwach zakończonych rozszerzeniem ``.pyc`` i ``.pyo`` po to, aby następnym razem ten sam program mógł być wykonany szybciej (można w ten sposób uniknąć ponownego tłumaczenia programu do postaci kodów ułożonych w kęsy). Jest to "język pośredni" o którym mówi się, że jego polecenia są wykonywane na sztucznej maszynie (ang. :term:`virtual machine`), która wykonuje polecenia maszyny odpowiadające pojedynczym kodom w kęsach.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A template for creating user-defined objects. Class definitions normally contain method definitions which operate on instances of the class.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Szablon do tworzenia przedmiotów określonych przez użytkownika. Uogólnienia zwykle zawierają opisy sposobów postępowania, które mają zastosowanie dla konkretnych przypadków przedmiotów w danym uogólnieniu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The implicit conversion of an instance of one type to another during an operation which involves two arguments of the same type.  For example, ``int(3.15)`` converts the floating point number to the integer ``3``, but in ``3+4.5``, each argument is of a different type (one int, one float), and both must be converted to the same type before they can be added or it will raise a ``TypeError``.  Without coercion, all arguments of even compatible types would have to be normalized to the same value by the programmer, e.g., ``float(3)+4.5`` rather than just ``3+4.5``.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Niejawne przemianowanie typu konkretnego przedmiotu z jednego typu do drugiego w trakcie operacji, która jest wykonywana na dwóch przedmiotach o oczekiwanym jednakowym typie na wejściu. Na przykład: ``int(3.15)`` konwertuje liczbę zmiennoprzecinkową do całkowitej ``3``, ale w przypadku ``3+4.5``, każda rzecz jest innego typu (pierwsza liczbą całkowitą, a druga liczbą rzeczywistą), i obie muszą być tego samego typu, zanim będą mogły być dodane. Jeśli zamiana nie jest możliwa, zostanie zgłoszony wyjątek "błąd typu" (ang. ``TypeError``). Bez automatycznej zmiany typu, wszystkie rzeczy na wejściu nawet podobnych typów, musiałyby zostać zamienione do rzeczy tego samego typu przez piszącego program, np. trzeba by napisać ``float(3)+4.5``, zamiast tylko ``3+4.5``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An extension of the familiar real number system in which all numbers are expressed as a sum of a real part and an imaginary part.  Imaginary numbers are real multiples of the imaginary unit (the square root of ``-1``), often written ``i`` in mathematics or ``j`` in engineering.  Python has built-in support for complex numbers, which are written with this latter notation; the imaginary part is written with a ``j`` suffix, e.g., ``3+1j``.  To get access to complex equivalents of the :mod:`math` module, use :mod:`cmath`.  Use of complex numbers is a fairly advanced mathematical feature.  If you're not aware of a need for them, it's almost certain you can safely ignore them.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Rozszerzenie znanego systemu liczb rzeczywistych, do postaci zespolonej w której wszystkie liczby są wyrażone jako suma części rzeczywistej i urojonej. Liczby urojone są rzeczywistymi wielokrotnościami jednostki urojonej (pierwiastek kwadratowy z liczby ``-1``), często zapisywany jako ``i`` w matematyce lub ``j`` w inżynierii. Język Pyton liczby zespolone traktuje jako część języka, i przyjęty został ten drugi zapis, w którym część urojona jest zapisywana z dodaniem litery ``j``, np. ``3+1j``. Aby uzyskać zespolone równoważniki zadań biblioteki matematycznej (biblioteka matematyczna - z ang. - :mod​​: `math`), użyj biblioteki matematycznej z c - z ang. - biblioteka :mod​​: `cmath`. Zastosowanie liczb zespolonych jest całkiem skomplikowaną sprawą w matematyce. Jeśli nie czujesz konieczności ich użycia, to raczej pewne, że nie są ci potrzebne.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An object which controls the environment seen in a :keyword:`with` statement by defining :meth:`__enter__` and :meth:`__exit__` methods. See :pep:`343`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Nazwana rzecz, która wpływa na zbiór nazw dostępnych w obszarze zawartym pomiędzy początkiem polecenia ``z`` ( - ang. :keyword:`with`), a jego końcem, przez określenie sposobów postępowania przy rozpoczynaniu wykonania ( - ang. :meth:`__enter__`) zbioru poleceń zawartych w poleceniu ``z`` i sposobu postępowania przy kończeniu ich wykonania ( - ang. :meth:`__exit__`). Zobacz też :pep:`343`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The canonical implementation of the Python programming language.  The term "CPython" is used in contexts when necessary to distinguish this implementation from others such as Jython or IronPython.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zasadnicze urzeczywistnienie zbioru zasad pytonowskiego języka programowania. Określenie "CPyton" ( - CPython), jest używane gdy trzeba odróżnić to urzeczywistnienie zbioru zasad pytonowskiego języka od innych, takich jak "Pyton javowy" ( - "Jython"), lub "żelazny Pyton" ( - "IronPython").</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A function returning another function, usually applied as a function transformation using the ``@wrapper`` syntax.  Common examples for decorators are :func:`classmethod` and :func:`staticmethod`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>zadanie którego wynikiem jest następne zadanie, zazwyczaj stosowane jako przekształcenie tego drugiego zadania z użyciem składni opakowującej w opakowanie ( - ``@wrapper``). Przykładami powszechnych zadań dla wszystkich opakowań są zadanie "sposobu postępowania dla uogólnienia" ( - z ang. :func:`classmethod`) i zadanie "niezmiennego wspólnego sposobu postępowania" ( - z ang. :func:`staticmethod`).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The decorator syntax is merely syntactic sugar, the following two function definitions are semantically equivalent::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Składnia opakowania jest niczym więcej, niż lukrem składniowym. Równoważne pod względem budowy są określenia dwóch następujących zadań ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>def f(...):     ... f = staticmethod(f)  @staticmethod def f(...):     ...</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>"def f(...): ... f = staticmethod(f)" oraz "@staticmethod def f(...): ..."</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The same concept exists for classes, but is less commonly used there.  See the documentation for :ref:`function definitions &lt;function&gt;` and :ref:`class definitions &lt;class&gt;` for more about decorators.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ta sama zasada ma zastosowanie dla uogólnień, ale jest rzadziej spotykana. Sięgnij do rozdziału podręcznika dotyczącego określania zadań (z ang. - :ref:`function definitions &lt;function&gt;`) i określania uogólnień (z ang - :ref:`class definitions &lt;class&gt;`), po więcej o opakowaniach.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Any object which defines the methods :meth:`__get__`, :meth:`__set__`, or :meth:`__delete__`.  When a class attribute is a descriptor, its special binding behavior is triggered upon attribute lookup.  Normally, using *a.b* to get, set or delete an attribute looks up the object named *b* in the class dictionary for *a*, but if *b* is a descriptor, the respective descriptor method gets called.  Understanding descriptors is a key to a deep understanding of Python because they are the basis for many features including functions, methods, properties, class methods, static methods, and reference to super classes.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg> - Każdy przedmiot, który określa sposoby postępowania - "pozyskania" ( z ang. - :meth:`__get__`), "ustawienia" ( z ang. - :meth:`__set__`), lub "usunięcia" ( z ang. -:meth:`__delete__`). Kiedy własnością uogólnienia jest inne uogólnienie o sposobach postępowania właściwych katalogowaniu, zamiast zwykłych sposobów postępowania "pozyskania", "ustawienia", "usunięcia" - przywoływane są jego powiązane specjalnie określone odmiany tych sposobów postępowania, podczas sprawdzenia własności w spisie własności. Zwykle, gdy posługujemy się odniesieniem *a.b*, aby pozyskać, ustawić, lub usunąć własność, przedmiot nazwany *b* jest odszukiwany w spisie własności uogólnienia *a*, ale jeśli *b* jest uogólnieniem które zawiera określenie katalogowych sposobów  postępowania, to jest przywoływany odpowiadający danemu sposobowi postępowania sposób postępowania dla tego uogólnienia o katalogowych sposobach postępowania. Zrozumienie katalogowych sposobów postępowania jest kluczem do właściwego zrozumienia języka Pyton, ponieważ są one podstawą wielu szczególnych zachowań, w tym zadań, sposobów postępowania, właściwości, sposobów postępowania uogólnień i wspólnych sposobów postępowania dla danego uogólnienia, oraz odniesień do uogólnień nadrzędnych dla danego.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>For more information about descriptors' methods, see :ref:`descriptors`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Po więcej wiadomości o katalogowych sposobach postępowania, sięgnij do rozdziału o uogólnieniach katalogowych ( z ang. - :ref:`descriptors`).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An associative array, where arbitrary keys are mapped to values.  The use of :class:`dict` closely resembles that for :class:`list`, but the keys can be any object with a :meth:`__hash__` function, not just integers. Called a hash in Perl.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg> - Tabela powiązań, w której za pomocą ustalonych kluczy można odnieść się do przyporządkowanych im przedmiotów. W codziennym użyciu uogólnienie tabeli powiązań (in. słownika - z ang. - :class:`dict`) bardzo przypomina użycie uogólnienia listy ( - z ang. - :class:`list`), ale kluczem uogólnienia słownika może być każdy przedmiot dla którego został określony sposób obliczania skrótu tego przedmiotu ( - z ang. - :meth:`__hash__`), nie tylko liczba całkowita. A w języku Perl uogólnienie słownika nazywane jest właśnie skrótem ( - z ang. - hash).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A string literal which appears as the first expression in a class, function or module.  While ignored when the suite is executed, it is recognized by the compiler and put into the :attr:`__doc__` attribute of the enclosing class, function or module.  Since it is available via introspection, it is the canonical place for documentation of the object.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zapis, który pojawia się jako pierwszy w uogólnieniu, zadaniu lub bibliotece zadań i uogólnień. Ignorowany podczas wykonywania zestawu poleceń, ale rozpoznawany przez program tłumaczący kod i wprowadzony do własności "dokumentacji" - z ang. - :attr:`__doc__` dla otaczającego uogólnienia, zadania lub biblioteki zadań i uogólnień. Ponieważ zapis ten jest dostępny poprzez wgląd w zawartość programu, to jest to zasadnicze miejsce dla udokumentowania przedmiotu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A pythonic programming style which determines an object's type by inspection of its method or attribute signature rather than by explicit relationship to some type object ("If it looks like a duck and quacks like a duck, it must be a duck.")  By emphasizing interfaces rather than specific types, well-designed code improves its flexibility by allowing polymorphic substitution.  Duck-typing avoids tests using :func:`type` or :func:`isinstance`. (Note, however, that duck-typing can be complemented with abstract base classes.) Instead, it typically employs :func:`hasattr` tests or :term:`EAFP` programming.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zwyczaj programowania w języku pytonowskim, w którym ustalenie rodzaju przedmiotu dokonuje się poprzez sprawdzenie określonych dla niego sposobów postępowania lub zestawów własności, a nie na podstawie wyraźnego odniesienia do jakiejś nazwy rodzaju przedmiotu (Zgodnie z powiedzeniem: "Jeśli wygląda, jak kaczka i kwacze, jak kaczka, to może to jest kaczka"). Podkreślając znaczenie tego jakie dana rzecz ma własności i co robi, a nie odwołania do uogólnienia jakiegoś przedmiotu, dobrze pomyślany program może mieć większą wszechstronność, umożliwiając podstawienia przedmiotów o zróżnicowanym pochodzeniu. "Kacze uogólnianie" unika sprawdzania uogólnionego rodzaju przedmiotu przy użyciu zadania "określenia rodzaju" ( - z ang. - :func:`type`), a także zadania "określenia czy przedmiot przynależy do szerszego uogólnienia" ( - z ang. - :func:`isinstance`). (Należy jednak zwrócić uwagę na to, że "kacze uogólnianie" może być uzupełnione nadrzędnymi uogólnieniami podstawowymi). Zamiast tych zadań "kacze uogólnianie" zazwyczaj posługuje się sprawdzeniami "czy przedmiot posiada jakąś właśność" ( - z ang. - :func:`hasattr`) lub zasadą - "łatwiej przepraszać niż prosić o pozwolenie" ( - z ang. - :term:`EAFP`).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Easier to ask for forgiveness than permission.  This common Python coding style assumes the existence of valid keys or attributes and catches exceptions if the assumption proves false.  This clean and fast style is characterized by the presence of many :keyword:`try` and :keyword:`except` statements.  The technique contrasts with the :term:`LBYL` style common to many other languages such as C.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zasada - "łatwiej przepraszać niż prosić o pozwolenie". - Wspólna dla pytonowskiego języka maniera, zgodnie z którą program spodziewa się znaleźć prawidłowe odwołania i właściwości, ale określa też postępowanie dla sytuacji wyjątkowych jeśli znalezienie odwołań lub właściwości się nie powiedzie. Ten zwyczaj przyczynia się do oszczędności i poprawenia sprawności wykonywanych programów i cechuje się częstym użyciem zadania "spróbowania" ( - z ang. - :keyword:`try`) i zadania "określenia sytuacji wyjątkowych" ( - z ang. - :keyword:`except`). Zwyczaj ten jest odmienny w stosunku do zwyczaju "patrz gdzie idziesz" ( - z ang. "look before you leap" - :term:`LBYL`) znanego z wielu języków takich, jak np. C.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A piece of syntax which can be evaluated to some value.  In other words, an expression is an accumulation of expression elements like literals, names, attribute access, operators or function calls which all return a value.  In contrast to many other languages, not all language constructs are expressions.  There are also :term:`statement`\s which cannot be used as expressions, such as :keyword:`if`.  Assignments are also statements, not expressions.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wyrażenie, którego wartość może zostać obliczona. Innymi słowy, wyrażenie jest zbiorem składników wyrażenia takich, jak zapisy wartości, zapisy nazw, odwołania do własności przedmiotów, symbole operacji i odwołania do zadań - wszystkiego, co niesie jakąś wartość. W przeciwieństwie do niektórych innych języków, nie wszystkie zapisy języka są wyrażeniami. Istnieją też "polecenia" ( - z ang. - :term:`statement`\s), które nie mogą być stosowane jako wyrażenia, takie jak "jeżeli" ( - z ang. - :keyword:`if`). Także przypisanie wartości jest poleceniem, a nie wyrażeniem (gdyż wynikiem owego przypisania nie jest żadna wartość tylko fakt przekazania wartości, który nie ma w języku pytonowskim swojego odpowiednika).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A module written in C or C++, using Python's C API to interact with the core and with user code.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Fragment utworzony za pomocą języka C lub języka C++, z wykorzystaniem odniesień do sposobów dostępu do zadań z języka C, służących do tworzenia podprogramów, współgrających z zadaniami pytonowskimi i programem stworzonym dla konkretnego zastosowania.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An object that tries to find the :term:`loader` for a module. It must implement a method named :meth:`find_module`. See :pep:`302` for details and :class:`importlib.abc.Finder` for an :term:`abstract base class`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przedmiot, którego zadaniem jest próba odnalezienia zadania ładującego moduł ( - z ang. - :term:`loader`). Przedmiot wymaga urzeczywistnienia sposobu postępowania znanego pod nazwą "znajdź moduł" ( - z ang. - :meth:`find_module`). Po więcej szczegółów sięgnij do propozycji rozszerzeń języka pytonowskiego ( - ang. :pep:`302​​`), a po podstawowe uogólnienie ramowe ( - z ang. - :term:`abstract base class`) sięgnij do opisu uogólnienia :class:`importlib.abc.Finder`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Mathematical division discarding any remainder.  The floor division operator is ``//``.  For example, the expression ``11//4`` evaluates to ``2`` in contrast to the ``2.75`` returned by float true division.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Matematyczne dzielenie nieuwzględniające reszty. Symbolem dzielenia z zaniedbaniem części ułamkowej jest symbol podwójnego ukośnika (``//``). Na przykład wynikiem przeliczenia zapisu ``11//4`` jest ``2``, a nie ``2,75``, które byłoby wynikiem prawdziwego dzielenia na liczbach o pływającym przecinku.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A series of statements which returns some value to a caller. It can also be passed zero or more arguments which may be used in the execution of the body. See also :term:`argument` and :term:`method`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zestaw poleceń, z którego wypływa pewna wartość przekazywana do miejsca odwołania. Może także (ale nie musi) otrzymywać pewne wytyczne, które mogą zostać wykorzystane przy okazji wykonywania owego zestawu poleceń. Zob. też: "wytyczne" ( - z ang. - :term:`argument`) i "sposób postępowania" ( - z ang. - :term:`method`).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A pseudo module which programmers can use to enable new language features which are not compatible with the current interpreter.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zastępcza jednostka zbiorcza, z której piszący program mogą skorzystać dla włączenia do niego nowych właściwości języka, które nie są jeszcze zgodne z obecnym programem tłumaczącym język.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>By importing the :mod:`__future__` module and evaluating its variables, you can see when a new feature was first added to the language and when it becomes the default::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wykorzystując zawartość zapakowaną w pakunku o nazwie "przyszłe" ( - z ang. - :mod:`__future__`) i sprawdzając wykazywane wartości przyporządkowane różnym własnościom pytonowskiego języka, można dowiedzieć się, kiedy ich dodanie do języka zostało zaproponowane i od zaczęły one obowiązywać na stałe::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&gt;&gt;&gt; import __future__ &gt;&gt;&gt; __future__.division _Feature((2, 2, 0, 'alpha', 2), (3, 0, 0, 'alpha', 0), 8192)</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>&gt;&gt;&gt; import __future__ &gt;&gt;&gt; __future__.division _Feature((2, 2, 0, 'alpha', 2), (3, 0, 0, 'alpha', 0), 8192)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The process of freeing memory when it is not used anymore.  Python performs garbage collection via reference counting and a cyclic garbage collector that is able to detect and break reference cycles.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przemiana oznaczenia obszarów pamięci jako nie zajętych, gdy ich zawartość nie jest już potrzebna. Język pytonowski wykonuje zbieranie niepotrzebnych rzeczy w celu ich usunięcia, przy pomocy liczenia odniesień i wielokrotnie powtarzanego usuwania, które ma możliwość wykrywania i przerywania wielokrotnie powtarzających się odniesień.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A function which returns an iterator.  It looks like a normal function except that values are returned to the caller using a :keyword:`yield` statement instead of a :keyword:`return` statement.  Generator functions often contain one or more :keyword:`for` or :keyword:`while` loops which :keyword:`yield` elements back to the caller.  The function execution is stopped at the :keyword:`yield` keyword (returning the result) and is resumed there when the next element is requested by calling the :meth:`__next__` method of the returned iterator.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg> - Zadanie, którego wynikiem jest przedmiot powtarzający wykonanie innych zadań z zawartością kolekcji. Zadanie to wygląda tak, jak zwykłe zadanie, z wyjątkiem tego, że wyniki częściowe są przekazywane na miejsce z którego nastąpiło odniesienie do zadania. Przekazanie to odbywa się z pomocą polecenia "wydawaj" ( - z ang. - :keyword: `yield`), zamiast polecenia "zwróć" ( - z ang. - :keyword:`return`). Zadania wytwarzające często zawierają jedną jedno bądź więcej poleceń "dla..." ( - z ang. - :keyword:`for`), lub "dopóki..." ( - z ang. - :keyword:`while`), które w przypadku wytwarzania zajmują się "wydawaniem" ( - z ang. :keyword:`yield`) wytworzonych przedmiotów  odbiorcom znajdującym się w miejscu odniesienia do zadania wytwarzania. Wykonanie zadania wytwarzania jest zatrzymywane przy każdym napotkaniu polecenia "wydania" ( - z ang. - :keyword:`yield`) (rozumianego jako przekazania pojedynczej cząstki wynikającego zbioru rzeczy) i w tym samym miejscu jest też podejmowane na powrót, kiedy zadanie wytwarzania otrzyma wiadomość o prośbie o wydanie kolejnego przedmiotu ze zbioru wynikowego za pomocą odniesienia się do sposobu postępowania "następny" ( - z ang. - :meth:`__next__`) należącego do przedmiotu powtarzającego operację "wydania".</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An expression that returns an iterator.  It looks like a normal expression followed by a :keyword:`for` expression defining a loop variable, range, and an optional :keyword:`if` expression.  The combined expression generates values for an enclosing function::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wyrażenie, którego wynikiem jest przedmiot powtarzający wykonanie zadań dla zawartości kolekcji. Wygląda tak, jak każde wyrażenie, tylko że następnym idącym za nim wyrażeniem jest polecenie "dla..." ( - z ang. - :keyword:`for`) określające nazwę posiłkową dla przedmiotów należących do kolekcji, tą właśnie kolekcję przedmiotów, i jeśli to konieczne uwagę ", jeżeli..." ( - z ang. - :keyword:`if`) określającą dodatkowe warunki które muszą być spełnione. Złożone w całość stwierdzenie powoduje wytwarzanie przedmiotów dla nadrzędnego zadania::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&gt;&gt;&gt; sum(i*i for i in range(10))         # sum of squares 0, 1, 4, ... 81 285</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>&gt;&gt;&gt; sum(i*i for i in range(10))         # suma kwadratów 0, 1, 4, ... 81 285</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See :term:`global interpreter lock`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zobacz rozdział nadrzędnym zabezpieczeniu programu tłumaczącego polecenia języka pytonowskiego - z ang. - :term:`global interpreter lock`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The lock used by Python threads to assure that only one thread executes in the :term:`CPython` :term:`virtual machine` at a time. This simplifies the CPython implementation by assuring that no two processes can access the same memory at the same time.  Locking the entire interpreter makes it easier for the interpreter to be multi-threaded, at the expense of much of the parallelism afforded by multi-processor machines.  Efforts have been made in the past to create a "free-threaded" interpreter (one which locks shared data at a much finer granularity), but so far none have been successful because performance suffered in the common single-processor case.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zabezpieczenie używane przez jednostki wykonujące polecenia języka  pytonowskiego w celu zapewnienia, że tylko jedna jednostka wykonująca polecenia języka pytonowskiego działa w pośrednim urządzeniu ( - z ang. - :term:`virtual machine`) realizującym język pytonowski zwanym realizacją języka pytonowskiego w języku C ( - z ang. - :term:`CPython`) w każdym razie. To zabezpieczenie upraszcza realizację języka pytonowskiego w języku C przez zagwarantowanie, żeby w tej samej chwili dostępu do tego samego obszaru pamięci nie mogły uzyskać dwie różne jednostki wykonujące polecenia języka pytonowskiego. Zabezpieczenie całego programu tłumaczącego polecenia języka pytonowskiego ułatwia istnienie wielu jednostek wykonujących polecenia języka pytonowskiego w programie tłumaczącym polecenia języka pytonowskiego, ale za cenę większej części możliwości dostępnych dla równoczesnej pracy takich jednostek wykonywanej przez wiele fizycznych układów liczących w urządzeniach zawierających wiele takich układów pracujących równocześnie. W przeszłości podejmowano wysiłki stworzenia programu tłumaczącego polecenia języka pytonowskiego o "uwolnionym sposobie wykonywania przez jednostki wykonujące polecenia języka pytonowskiego" (w znaczeniu takiego, który zabezpiecza dostęp do spółdzielczo używanych wiadomości w skali znacznie bardziej rozdrobnionej), ale jak dotąd żadne z nich nie miały powodzenia, gdyż wykonywanie poleceń języka tym sposobem dla pojedynczego urządzenia wykonującego polecenia, było zbyt powolne.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An object is *hashable* if it has a hash value which never changes during its lifetime (it needs a :meth:`__hash__` method), and can be compared to other objects (it needs an :meth:`__eq__` method).  Hashable objects which compare equal must have the same hash value.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przedmiot jest *możliwy do zapisania w formie skrótu*, jeśli jego skrót ma wartość, która nie zmienia się w czasie wykonywania programu (a wartość ta obliczana jest za pomocą sposobu postępowania występującego pod nazwą "skrótu" - z ang. - :meth:`__hash__`) i jeśli przedmiot może być porównywany z innymi przedmiotami (za pomocą sposobu postępowania "porównania tożsamości" - z ang. - :meth:`__eq__`). Przedmioty możliwe do zapisania w formie skrótu których wynik porównania tożsamości oznacza jednakowość tych przedmiotów muszą mieć ten sam skrót.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Hashability makes an object usable as a dictionary key and a set member, because these data structures use the hash value internally.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Dla przedmiotu możliwość uzyskania postaci skrótu oznacza, że może być on użyty jako hasło w słowniku, lub jako element zbioru przedmiotów, gdyż obydwa systemy gromadzenia przedmiotów używają skrótów przedmiotów jako swoich wewnętrznych reprezentacji tych przedmiotów.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>All of Python's immutable built-in objects are hashable, while no mutable containers (such as lists or dictionaries) are.  Objects which are instances of user-defined classes are hashable by default; they all compare unequal, and their hash value is their :func:`id`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wbudowane przedmioty, których wartości nie mogą się zmieniać, wszystkie bez wyjątku można zapisać w postaci skrótu, zaś spośród pojemników, których zawartość może się zmieniać, (takich jak listy i słowniki), żadnych bez wyjątku nie można zapisać w postaci skrótu. Przedmioty, które są szczególnymi przypadkami określonymi w ramach uogólnień wymyślonych na potrzeby konkretnego zastosowania, mają zawsze z założenia dostępną postać skrótu, a poza tym wyniki porównywania każdej pary takich przedmiotów w żadnym przypadku nie potwierdzą tożsamości przedmiotów z takiej pary, zaś skróty tych przedmiotów są równoważne wynikom zadania ich "identyfikacji" - z ang. - :func:`id`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An Integrated Development Environment for Python.  IDLE is a basic editor and interpreter environment which ships with the standard distribution of Python.  Good for beginners, it also serves as clear example code for those wanting to implement a moderately sophisticated, multi-platform GUI application.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zbiorcze miejsce rozwijania programów w języku pytonowskim ( - z ang. Integrated development environment - w skrócie - IDLE). IDLE jest podstawowym programem do wprowadzania i dokonywania zmian w zapisie programu w języku pytonowskim i jego późniejszego tłumaczenia i wykonania, który jest dostarczany w podstawowym zestawie rozprowadzanego pakunku języka pytonowskiego. Dobry dla początkujących, służy także jako jasny przykład zapisu poleceń programu dla tych, którzy pragnęliby wykonać własny średniej skali skomplikowania, działający w różnych warunkach uruchamiania, program z możliwością zawiadowania obrazkowego przez uruchamiającego.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An object with a fixed value.  Immutable objects include numbers, strings and tuples.  Such an object cannot be altered.  A new object has to be created if a different value has to be stored.  They play an important role in places where a constant hash value is needed, for example as a key in a dictionary.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przedmiot o ustalonej wartości/zawartości. Niezmienne przedmioty obejmują liczby, napisy/teksty i pary/trójki/krotki/n-gramy. W takich przedmioty nie da się wprowadzić odmiany. Trzeba utworzyć nowy przedmiot, jeśli ma być zachowana inna wartość/zawartość/szczegół. Odgrywają istotną rolę wszędzie, gdzie ma znaczenie ich stałość, lub gdzie potrzebna jest wartość skrótowa, na przykład jako hasło w słowniku.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An object that both finds and loads a module; both a :term:`finder` and :term:`loader` object.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przedmiot, który zarówno odnajduje jak też zaciąga do podręcznego zapamiętania bibliotekę zadań i uogólnień. Zarówno przedmiot "odnajdujący" - z ang. - :term:`finder`, jak też "zaciągający" - z ang. - :term:`loader`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python has an interactive interpreter which means you can enter statements and expressions at the interpreter prompt, immediately execute them and see their results.  Just launch ``python`` with no arguments (possibly by selecting it from your computer's main menu). It is a very powerful way to test out new ideas or inspect modules and packages (remember ``help(x)``).</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Język pytonowski posiada program tłumaczący polecenia, współgrający z działaniami piszącego program, co oznacza, że można wprowadzać polecenia i wyrażenia w odpowiedzi na zapytania programu tłumaczącego te polecenia, natychmiastowo wykonywać je i sprawdzać wyniki wykonania. Wystarczy tylko rozpocząć od wydania polecenia uruchomienia programu tłumaczącego polecenia języka pytonowskiego poleceniem ( - z ang. - ) ``python`` bez żadnych dodatkowych wytycznych dla niego. (Z dużym prawdopodobieństwem jest to też możliwe do osiągnięcia przez wybranie i potwierdzenie polecenia tak samo nazwanego, znajdującego się, w sprzyjających warunkach, na liście w głównym spisie narzędzi komputera). Jest to bardzo sprytny sposób wypróbowywania nowych pomysłów, lub podglądania zawartości bibliotek, programów i zestawów narzędziowych (których opisy działania można uzyskać wpisując zapytanie o "pomoc" - z ang. - ``help(x)`` gdzie x - nazwą biblioteki, zadania, czy uogólnienia).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python is an interpreted language, as opposed to a compiled one, though the distinction can be blurry because of the presence of the bytecode compiler.  This means that source files can be run directly without explicitly creating an executable which is then run. Interpreted languages typically have a shorter development/debug cycle than compiled ones, though their programs generally also run more slowly.  See also :term:`interactive`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Język pytonowski jest językiem tłumaczonych i upraszczanych poleceń, w przeciwieństwie do języków w których całe programy są najpierw zbierane a potem dopiero tłumaczone dla urządzenia wykonującego, chociaż to rozróżnienie może się nieco rozmywać, z uwagi na występowanie w języku pytonowskim programu tłumaczącego oznaczenia poleceń dla właściwego urządzenia w podziale na równe kęsy. To powoduje, że programy napisane w języku pytonowskim mogą być włączane bezpośrednio, bez wyraźnie wydzielonego tworzenia zbioru uporządkowanych oznaczeń poleceń podstawowych zrozumiałych dla urządzenia, przez które program będzie wykonywany, a następnie jego uruchamiania. Dla języków tłumaczonych i upraszczanych obieg pomiędzy rozwojem a wprowadzaniem poprawek i na powrót, jest z reguły krótszy niż dla języków w których program jest zbierany i tłumaczony, chociaż programy napisane w tych pierwszych zasadniczo także działają bardziej powolnie. Zobacz też: "współgranie z działaniami użytkownika" - :term:`interactive`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A container object capable of returning its members one at a time. Examples of iterables include all sequence types (such as :class:`list`, :class:`str`, and :class:`tuple`) and some non-sequence types like :class:`dict` and :class:`file` and objects of any classes you define with an :meth:`__iter__` or :meth:`__getitem__` method.  Iterables can be used in a :keyword:`for` loop and in many other places where a sequence is needed (:func:`zip`, :func:`map`, ...).  When an iterable object is passed as an argument to the built-in function :func:`iter`, it returns an iterator for the object.  This iterator is good for one pass over the set of values.  When using iterables, it is usually not necessary to call :func:`iter` or deal with iterator objects yourself.  The ``for`` statement does that automatically for you, creating a temporary unnamed variable to hold the iterator for the duration of the loop.  See also :term:`iterator`, :term:`sequence`, and :term:`generator`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przedmiot pojemnika, zdolny wydawać zawierające się w nim przedmioty składowe po jednym na raz. Przykłady przedmiotów przeliczalnych/przechodnich zawierają wszystkie rodzaje kolejek (takie jak: listy - z ang. - :class:`list`, napisy/ciągi znaków/teksty - z ang. - :class:`str`, i pary(dwójki,trójki,krotki) - z ang. - :class:`tuple`) i niektóre przedmioty rodzaju niekolejkowego takie jak słowniki - z ang. - :class:`dict` i dokumenty - z ang. - :class:`file` i wszystkie przedmioty zaliczane do dowolnego uogólnienia, dla których zostały określone własne odrębne sposoby postępowania pod nazwami "przejdź" - z ang. - :meth:`__iter__`, lub "weź rzecz" - z ang. - :meth:`__getitem__`. Przedmioty kolekcji po których można spacerować/przechodnie mogą być używane w poleceniu powtarzania - "dla..." - z ang. - :keyword:`for` i w wielu innych sytuacjach w których potrzebna jest kolejka (np w zadaniu "spięcia" - z ang. - :func:`zip`, lub w zadaniu "wpasowania" - z ang. - :func:`map`, itp). Gdy przedmiot nadający się do przeglądania po kolei (kolejka) jest przekazywany przedmiot postępowania dla pierwotnego zadania "przechodzenia" - z ang. - :func:`iter`, wynikiem wykoniania tego zadania staje się przedmiot przechodzący po zawartości tej kolejki. Ten przechodzący przedmiot użyteczny jest przy jednokrotnym przespacerowaniu się ponad zbiorem zawartym w tej kolejce. Podczas używania przedmiotów przechodzących, zwykle nie są konieczne bezpośrednie odniesienia do zadania "przechodzenia" - z ang. - :func:`iter`, ani też nie jest wymagane własnoręczne bezpośrednie zajmowanie się przedmiotem przechodzącym. Polecenie "dla..." (- z ang. - ``for``) wykonuje to samodzielnie bez zewnętrznej ingerencji, tworząc tymczasowe nienazwane miejsce przechowywania przedmiot przechodzący na czas wykonywania wszystkich powtórzeń wykonania poleceń podrzędnych poleceniu "dla...". Zobacz także "przedmiot przechodzący" - z ang. - :term:`iterator`, kolejkę - z ang. - :term:`sequence`, i "przedmiot wytwarzający" - z ang. - :term:`generator`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An object representing a stream of data.  Repeated calls to the iterator's :meth:`__next__` (or passing it to the built-in function :func:`next`) method return successive items in the stream.  When no more data are available a :exc:`StopIteration` exception is raised instead.  At this point, the iterator object is exhausted and any further calls to its :meth:`next` method just raise :exc:`StopIteration` again.  Iterators are required to have an :meth:`__iter__` method that returns the iterator object itself so every iterator is also iterable and may be used in most places where other iterables are accepted.  One notable exception is code which attempts multiple iteration passes.  A container object (such as a :class:`list`) produces a fresh new iterator each time you pass it to the :func:`iter` function or use it in a :keyword:`for` loop.  Attempting this with an iterator will just return the same exhausted iterator object used in the previous iteration pass, making it appear like an empty container.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przedmiot służący wyobrażeniu zapisów wyłaniających się w pewnym porządku. Wynikami powtarzanego odnoszenia się do sposobu postępowania znanego pod nazwą "przejścia do następnego zapisu" - z ang. - :meth:`__next__` określonego dla przedmiotu przechodzącego (lub przekazanie owego "przedmiotu przechodzącego" do pierwotnego dla języka pytonowskiego zadania znanego również pod nazwą "przejścia do następnego zapisu" - z ang. - :func:`next`) są kolejne rzeczy pochodzące z tego uporządkowania. Gdy żaden więcej zapis nie wyłania się z uporządkowania, zamiast wyniku zadanie "przejścia do następnego przedmiotu" ogłasza sytuację nadzwyczajną o nazwie "zatrzymania powtórzeń" - z ang. - :exc:`StopIteration`. W tym momencie, przedmiot przechodzący staje się również "pusty/wyczerpany" i każde następne odniesienie się do sposobu postępowania "przejścia do następnej rzeczy" - z ang. - :meth:`next` po prostu spowoduje ponowne ogłoszenie sytuacji nadzwyczajnej "zatrzymania powtórzeń" - z ang. - :exc:`StopIteration`. Wymaga się aby przedmioty przechodzące miały określony sposób postępowania "wtórnego przedmiotu przechodzącego" :meth:`__iter__` którego wynikiem ma być sam przedmiot przechodzący, tak aby każdy przedmiot przechodzący mógł także być przeglądany jak kolejka, którą sam przegląda i mógł być użyty w większości tych przypadków, w których inne przedmioty po których można przechodzić/przeliczalne są oczekiwane. Jednym znaczącym wyjątkiem jest program który próbowałby wielokrotnego przeglądania tych samych elementów. Przedmiot pojemnika - w znaczeniu kolekcji - w znaczeniu kolejki (taki, jak uogólniona lista - z ang. - :class:`list`) wytwarza za każdym razem nowy przedmiot przechodzący dla tej kolejki, za każdym razem gdy jest ona przekazywana jako przedmiot na którym ma zostać wykonane zadanie "przechodzenia do kolejnych przedmiotów w kolejce" - z ang. - :func:`iter` lub ma być użyta jako kolejka dla której przedmiotów będą wykonywane powtórzenia polecenia powtarzania "dla..." - :keyword:`for`. Próbowanie tych samych konstrukcji z przedmiotem przechodzącym po przedmiotach należących do kolejki zamiast niej samej, spowoduje tylko użycie tego samego "opuszczonego - wyczerpanego po jednorazowym przejściu" przedmiotu przechodzącego który "zużyty" został w poprzedniej turze powtórzeń na przejścia do wszystkich elementów kolejki, sprawiając że za drugim razem wygląda on tak jakby był pustym pojemnikiem lub jakby pojemnik po którym ma przechodzić jest pusty. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>More information can be found in :ref:`typeiter`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Więcej szczegółów można znaleźć pod hasłem "uogólnienia powtarzającego" - z ang. - :ref:`typeiter`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Arguments which are preceded with a ``variable_name=`` in the call. The variable name designates the local name in the function to which the value is assigned.  ``**`` is used to accept or pass a dictionary of keyword arguments.  See :term:`argument`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wytyczne które są poprzedzone wyrażeniem "nazwa_wytycznej=" - z ang. - ``variable_name=`` w odniesieniu do zadania. Nazwa wytycznej wyznacza nazwę widoczną tylko we wnętrzu zadania do której przedmiot podany dla wytycznej jest przyporządkowywany. symbol dwóch gwiazdek ``**`` jest używany aby wyznaczyć miejsce lub zamiar przekazania słownika w którym będą uporządkowane wytyczne o kluczowych nazwach. Zobacz też hasło "wytyczna" - z ang. - :term:`argument`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An anonymous inline function consisting of a single :term:`expression` which is evaluated when the function is called.  The syntax to create a lambda function is ``lambda [arguments]: expression``</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zadanie wpisane "na gorąco" nie posiadające nazwy, składające się z pojedynczego wyrażenia - z ang. - :term:`expression`, które jest obliczane gdy rozpoczyna się wykonanie zadania. Składnią tworzenia zadania "lambda" jest ``lambda [wytyczne]: wyrażenie``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Look before you leap.  This coding style explicitly tests for pre-conditions before making calls or lookups.  This style contrasts with the :term:`EAFP` approach and is characterized by the presence of many :keyword:`if` statements.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>"Patrz gdzie stąpasz zanim nadepniesz". Ten zwyczaj pisania programów zaleca wyraźnie odgórne sprawdzanie warunków wstępnych przed wykonaniem jakichkolwiek odniesień do zadań lub do podglądanych ściągawek. Ten zwyczaj różni się od podejścia o nazwie "lepiej proś o przebaczenie niż o pozwolenie" - z ang. - "easier ask forgiveness than please" :term:`EAFP` i cechuje się obecnością wielu stwierdzeń "jeżeli coś to coś, a jeżeli nie to coś innego, itp" - z ang. - :keyword:`if`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A built-in Python :term:`sequence`.  Despite its name it is more akin to an array in other languages than to a linked list since access to elements are O(1).</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Pierwotna dla języka pytonowskiego kolejka - z ang. - :term:`sequence`. Pomimo swojej nazwy jest ona bardziej podobna do macierzy tak jak w innych językach niż do wiązanej listy z racji dostępu do poszczególnych rzeczy w niej zawartych w jednostkowym czasie wykonania - O(1).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A compact way to process all or part of the elements in a sequence and return a list with the results.  ``result = ['{:#04x}'.format(x) for x in range(256) if x % 2 == 0]`` generates a list of strings containing even hex numbers (0x..) in the range from 0 to 255. The :keyword:`if` clause is optional.  If omitted, all elements in ``range(256)`` are processed.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zwarty sposób działania na wszystkich lub części rzeczy z kolejki i sporządzania spis zawierający wyniki tych działań. ``result = ['{:#04x}'.format(x) for x in range(256) if x%2 == 0]`` wytwarza spis napisów zawierających parzyste liczby o podstawie szesnastkowej (0x..) w przedziale od 0 do 255. warunek "jeżeli" - z ang. - :keyword:`if` może występować jeśli zajdzie taka potrzeba. Jeśli pominięty, wszystkie liczby z danego zakresu (``range(256)``) zostaną wzięte pod uwagę.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An object that loads a module. It must define a method named :meth:`load_module`. A loader is typically returned by a :term:`finder`. See :pep:`302` for details and :class:`importlib.abc.Loader` for an :term:`abstract base class`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przedmiot którego podprogram wbudowuje zawartość biblioteki w miejsce późniejszego podręcznego z niej korzystania. Taki przedmiot zwykle zawiera określenie sposobu postępowania podczas wbudowywania zawartości takiej biblioteki w miejsce późniejszego podręcznego z niej korzystania pod nazwą "wbudowania zawartości biblioteki w miejsce podręcznego z niej korzystania" - z ang. - :meth:`load_module`. Przedmiot zawierający podprogram którym wbudowuje się bibliotekę w miejsce późniejszego z niej korzystania jest zwykle wynikiem działania przedmiotu znanego pod nazwą "podprogramu poszukującego biblioteki o podanej nazwie" - z ang. - :term:`finder`. Sięgnij do opisu "propozycji rozszerzenia języka pytonowskiego" nr. 302 z ang. :pep:`302` po opis szczegółów i do uogólnienia przedmiotu wbudowującego zawartość biblioteki w miejsce późniejszego z niej korzystania występującego pod nazwą - z ang. - :class:`importlib.abc.Loader` po opis podstawowego uogólnienia ramowego - z ang. - :term:`abstract base class`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A container object (such as :class:`dict`) which supports arbitrary key lookups using the special method :meth:`__getitem__`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przedmiot pojemnika (taki jak słownik - z ang. - :class:`dict`), który umożliwia podglądanie według zadanych haseł przy użyciu przewidzianego do tego celu sposobu postępowania "wzięcia wpisu" - z ang. - :meth:`__getitem__`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The class of a class.  Class definitions create a class name, a class dictionary, and a list of base classes.  The metaclass is responsible for taking those three arguments and creating the class.  Most object oriented programming languages provide a default implementation.  What makes Python special is that it is possible to create custom metaclasses.  Most users never need this tool, but when the need arises, metaclasses can provide powerful, elegant solutions.  They have been used for logging attribute access, adding thread-safety, tracking object creation, implementing singletons, and many other tasks.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Uogólnienie wszystkich rodzajów uogólnień. założenia uogólnień przewidują nazwę uogólnienia, słownik uogólnienia, i spis uogólnień leżących u podstaw. uogólnienie w swoim szerszym znaczeniu zajmuje się zbieraniem trzech założeń tworzących uogólnienia i następnie tworzeniem według nich wynikającego uogólnienia. Większość języków ukierunkowanych przedmiotowo zastrzega swoje podstawowe określenie wykonania uogólnienia wszystkich uogólnień. Język pytonowski stał się jednak wyjątkowy za sprawą umożliwienia tworzenia uogólnień wyższego rzędu (opisujących zasady tworzenia podstawowych uogólnień) według dowolnego własnego pomysłu. Większość stykających się z tą własnością języka pytonowskiego zwykle nie potrzebuje takiego narzędzia, ale gdy zajdzie potrzeba, uogólnienia wyższego poziomu mogą zapewnić pewne, dopracowane rozwiązania. Były już użyte do notowania dostępu do własności uogólnień, dodania zabezpieczeń współdzielenia, pilnowania kiedy przedmiotów są tworzone, urzeczywistniania przedmiotów jedynych w swoim rodzaju, i wielu innych rozwiązań zaspokajających różnorakie potrzeby.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>More information can be found in :ref:`metaclasses`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Więcej wiadomości na temat uogólnień opisujących w szerszym znaczeniu sposoby tworzenia uogólnień można znaleźć w rozdziale dotyczącym "szerszych uogólnień" - z ang. - :ref:`metaclasses`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A function which is defined inside a class body.  If called as an attribute of an instance of that class, the method will get the instance object as its first :term:`argument` (which is usually called ``self``). See :term:`function` and :term:`nested scope`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zadanie które jest określone jako wewnętrzne względem uogólnienia. Kiedy pojawi się odniesienie do niego jako do własności przedmiotu będącego przykładem tego uogólnienia, ten sposób postępowania otrzyma ten konkretny przedmiot jako pierwszą "wytyczną" do wykonania  ( - z ang. - :term:`argument`) (który często nazywany jest "onym samym" ``self``). Zobacz też hasła "zadanie" ( - z ang. - :term:`function`) i "wewnętrzny odziedziczony zakres widoczności" ( - z ang. - :term:`nested scope`).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Mutable objects can change their value but keep their :func:`id`.  See also :term:`immutable`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przedmioty, których zawartość może ulec zmianie, mogą mieć zmienianą zawartość a swoją tożsamość ( - z ang. - :func:`id`) utrzymywać niezmienioną. Zobacz też: "przedmioty nie ulegające zmianom" ( - z ang. - :term:`immutable`).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Any tuple-like class whose indexable elements are also accessible using named attributes (for example, :func:`time.localtime` returns a tuple-like object where the *year* is accessible either with an index such as ``t[0]`` or with a named attribute like ``t.tm_year``).</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Każde uogólnienie o charakterze przedmiotu wielokrotnego (pary/dwójki/trójki przedmiotów pojedynczych), których kolejno uporządkowane przedmioty przyporządkowane kolejnym liczbom naturalnym, dostępne są także przy użyciu właściwości o ustalonych nazwach (na przykład, wynikiem wykonania zadania "podania czasu w danej strefie czasowej" - :func:`time.localtime` jest przedmiot kolekcji o charakterze przedmiotu składającego się z wielu przedmiotów, w którym właściwość oznaczająca *rok* jest dostępna zarówno przez odniesienie do przedmiotu zawartego w kolekcji na podanej pozycji - czyli na pierwszej pozycji w przypadku *roku* oznaczonej liczbą porządkową zero - tutaj jako odniesienie ``t[0]`` lub przy użyciu nazwanej właściwości takiej, jaką dla tego przypadku jest "rok" - z ang. - ``t.tm_year`` gdzie t oznacza wynik wykonania zadania pobrania czasu w danej strefie czasowej.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A named tuple can be a built-in type such as :class:`time.struct_time`, or it can be created with a regular class definition.  A full featured named tuple can also be created with the factory function :func:`collections.namedtuple`.  The latter approach automatically provides extra features such as a self-documenting representation like ``Employee(name='jones', title='programmer')``.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Nazwany przedmiot wielokrotny może być rodzaju uogólnienia pierwotnego dla języka tak, jak np. uogólnienie określające czas - :class:`time.struct_time`, lub może być utworzony przy użyciu zwykłego planu uogólnienia. Pełnoprawny nazwany przedmiot wielokrotny może być także utworzony za pomocą zadania tworzenia nazwanego przedmiotu wielokrotnego ( - z ang. - :func:`collections.namedtuple`). To ostatnie podejście dostarcza także dodatkowe możliwości takie jak np. postać z od razu załączanymi objaśnieniami pochodzącymi bezpośrednio z wyrażeń (w rodzaju: ``Pracownik(nazwisko='kowalski', rola='piszący programy')`` - z ang. - ``Employee(name='jones', title='programmer')``).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The place where a variable is stored.  Namespaces are implemented as dictionaries.  There are the local, global and built-in namespaces as well as nested namespaces in objects (in methods).  Namespaces support modularity by preventing naming conflicts.  For instance, the functions :func:`builtins.open` and :func:`os.open` are distinguished by their namespaces.  Namespaces also aid readability and maintainability by making it clear which module implements a function.  For instance, writing :func:`random.seed` or :func:`itertools.izip` makes it clear that those functions are implemented by the :mod:`random` and :mod:`itertools` modules, respectively.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Miejsce gdzie nazwany przedmiot jest przechowywany. Przestrzenie nazw są wykonane przy pomocy słowników. Istnieją miejscowe przestrzenie nazw, wszechobecne i właściwe językowi a także dostępne tylko od wewnątrz przedmiotu (z wnętrza jego planów działania). Przestrzenie nazw ułatwiają podzielność na części przez zapobieganie niezgodnościom w nazywaniu przedmiotów. Dla przykładu, zadania "otwierania zawartości (właściwego dla języka)" - z ang. - :func:`builtins.open` i "otwierania zawartości (właściwego dla zasad działania programów podstawowych)" - z ang. - :func:`os.open` można wzajemnie rozróżnić w odniesieniu do przestrzeni nazw tych zadań. Przestrzenie nazw poprawiają także zrozumiałość zapisów i ułatwiają wprowadzanie zmian w zapisie programu i jego działaniu przez jasne wskazywanie, które biblioteki/zbiory zadań i uogólnień zawierają określone zadania w ich szczególnym dla tych zbiorów zadań i uogólnień wykonaniu. Na przykład napisanie "liczba_losowa.zarodek_losowania" - z ang. - :func:`random.seed` lub "narzędzia_wielokrotnego_wykonania.powtarzalnie_zepnij" - z ang. - :func:`itertools.izip` jasno określa, że sposoby wykonania tych zadań zostały umieszczone w zbiorach zadań i uogólnień "liczb losowych" i "narzędzi wielokrotnego wykonania", odpowiednio.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Old name for the flavor of classes now used for all class objects.  In earlier Python versions, only new-style classes could use Python's newer, versatile features like :attr:`__slots__`, descriptors, properties, :meth:`__getattribute__`, class methods, and static methods.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Starsza nazwa odmiany uogólnień, obecnie używanych dla wszystkich przedmiotów uogólnień. W poprzednich wydaniach język pytonowski pozwalał aby tylko uogólnienia korzystające z polecenia "nowy" ( - z ang. - new) używały nowszych, poręcznych własności takich, jak własność "gniazd" - z ang. - :attr:`__slots__`, opisy katalogowe, właściwości, sposób postępowania "weź_własność" - z ang. - :meth:`__getattribute__`, sposoby postępowania dla uogólnienia i współdzielone sposoby postępowania.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Any data with state (attributes or value) and defined behavior (methods).  Also the ultimate base class of any :term:`new-style class`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Dowolne wiadomości znajdujące się w jakimś stanie(określonym przez własności lub wartość) i określone dodatkowo zachowanie (sposoby postępowania). Także uogólnienie leżące u ostatecznej podstawy każdego uogólnienia w rodzaju uwzględniającym tworzenie za pomocą polecenia "nowy" - z ang. - :term:`new-style class`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The arguments assigned to local names inside a function or method, determined by the order in which they were given in the call.  ``*`` is used to either accept multiple positional arguments (when in the definition), or pass several arguments as a list to a function.  See :term:`argument`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wytyczne przyporządkowane miejscowym nazwom we wnętrzu zadań lub sposobów zachowania, określone przez kolejność w jakiej zostały wpisane w odniesieniu do zadania. Znak gwiazdki - ``*`` - jest używany do przyjmowania wielu uporządkowanych względem kolejności wytycznych (kiedy znajdzie się w zapisie warunków w określeniu zadania), lub może też być używany do podania kilku wytycznych jako listy do zadania. Zobacz wyraz "wytyczna" - z ang. - :term:`argument`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Nickname for the Python 3.x release line (coined long ago when the release of version 3 was something in the distant future.)  This is also abbreviated "Py3k".</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Medialne określenie używane dla hasła wiodącego dla języka pytonowskiego w wydaniach powyżej trzeciego w głównej linii (określenie ukute dawno temu gdy wydanie trzecie było czymś z odległej przyszłości). To określenie jest skracane do "pytona 3 tysiące" - z ang. - "Py3k".</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An idea or piece of code which closely follows the most common idioms of the Python language, rather than implementing code using concepts common to other languages.  For example, a common idiom in Python is to loop over all elements of an iterable using a :keyword:`for` statement.  Many other languages don't have this type of construct, so people unfamiliar with Python sometimes use a numerical counter instead::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Pomysł bądź fragment programu, które w zbliżony sposób naśladuje najczęstsze wyrażenia szczególne dla języka pytonowskiego, zamiast wypełniania kodem stosując się do przyzwyczajeń znanych z innych języków. Na przykład, znanym szczególnym wyrażeniem w języku pytonowskim jest powtarzanie wykonania podprogramu dla wszystkich rzeczy pochodzących z kolekcji przy użyciu wyrażenia "dla..." - z ang. - :keyword:`for`. Wiele innych języków nie ma tego rodzaju wyrażeń, więc Ci którzy nie znają jeszcze dobrze języka pytonowskiego zamiennie używają czasami licznika liczbowego::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>for i in range(len(food)):     print(food[i])</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>"dla i w zakresie(rozmiar(jedzenie)): napisz(jedzenie[i])" - z ang. - for i in range(len(food)): print(food[i])</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>As opposed to the cleaner, Pythonic method::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>W przeciwieństwie do bardziej czystego sposobu zapisu pytonowskiego::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>for piece in food:     print(piece)</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>"dla kawałka wśród jedzenia: napisz(kawałek)" - z ang. - for piece in food: print(piece)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The number of references to an object.  When the reference count of an object drops to zero, it is deallocated.  Reference counting is generally not visible to Python code, but it is a key element of the :term:`CPython` implementation.  The :mod:`sys` module defines a :func:`~sys.getrefcount` function that programmers can call to return the reference count for a particular object.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ilość odniesień do określonego przedmiotu. Kiedy ilości odniesień do przedmiotu spada do zera, jest on wymiatany. liczenie odniesień jest w zasadzie niewidoczne w programie pytonowskim, ale jest jedną z najistotniejszych spraw praktycznego wypełnienia założeń języka pytonowskiego - z ang. - ":term:`CPython` implementation". Zbiór zadań i uogólnień "osnowy" - z ang - :mod:`sys` określa zadanie "osnowa.podajilośćodniesień" - z ang. - :func:`~sys.getrefcount` które piszący programy mogą użyć aby otrzymać ilość odniesień do interesującego ich przedmiotu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A declaration inside a class that saves memory by pre-declaring space for instance attributes and eliminating instance dictionaries.  Though popular, the technique is somewhat tricky to get right and is best reserved for rare cases where there are large numbers of instances in a memory-critical application.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zaznaczenie we wnętrzu uogólnienia, którego wynikiem jest oszczędność miejsca składowania przez jego wcześniejsze zaplanowanie dla właściwości przykładowego przedmiotu i odrzucenie słowników przykładowych przedmiotów. Chociaż pozytywnie odebrana, ta możliwość może sprawiać nieco kłopotów przy próbach poprawnego z niej skorzystania i najlepiej zachować ją na szczególne okazje gdy jest dużo przedmiotów będących przykładami konkretnego uogólnienia w zastosowaniach, w których istotna jest jak najoszczędniejsze wykorzystanie przestrzeni na te przedmioty.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An :term:`iterable` which supports efficient element access using integer indices via the :meth:`__getitem__` special method and defines a :meth:`len` method that returns the length of the sequence. Some built-in sequence types are :class:`list`, :class:`str`, :class:`tuple`, and :class:`bytes`. Note that :class:`dict` also supports :meth:`__getitem__` and :meth:`__len__`, but is considered a mapping rather than a sequence because the lookups use arbitrary :term:`immutable` keys rather than integers.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Kolekcja - z ang. - :term:`iterable`, która umożliwia szybkie podawanie przedmiotów w niej zawartych przy użyciu odniesień uzyskanych przez wskazywanie ich numerów na liście przy użyciu szczególnego sposobu postępowania określonego dla "pobranie przedmiotu z kolekcji" :meth:`__getitem__` i określania sposobu postępowania dla "podanie wielkości" (kolekcji) ( - z ang. - :meth:`len`), którego wynikiem jest wielkość kolekcji. Niektórymi podstawowymi dla języka uogólnieniami kolejek są: lista - z ang. - :class:`list`, napis - :class:`str`, przedmiot wielokrotny - :class:`tuple`, i strzępy wiadomości w surowym zapisie :class:`bytes`. Należy zwrócić uwagę, że chociaż słowniki - z ang. - :class:`dict` - także umożliwiają "pobranie i przedmiotu z kolekcji" - z ang. - :meth:`__getitem__` i "podanie wielkości kolekcji" - z ang. - :meth:`__len__`, to jednak słownik jest postrzegany bardziej jako zbiór skojarzeń a w mniejszym stopniu kolejka gdyż sposób podglądania zawartości słownika opiera się na odniesieniu do przedmiotu słownika zbudowanemu na podstawie odniesienia do przedmiotu ze zbioru haseł których rodzaj i uporządkowanie może być raczej dowolne i które są przedmiotami niepodlegającymi zmianom, a nie koniecznie muszą one być określone za pomocą uporządkowanego zbioru liczb całkowitych.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An object usually containing a portion of a :term:`sequence`.  A slice is created using the subscript notation, ``[]`` with colons between numbers when several are given, such as in ``variable_name[1:3:5]``.  The bracket (subscript) notation uses :class:`slice` objects internally.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przedmiot zwykle zawierający fragment kolejki - z ang. - :term:`sequence`. Wycinek jest tworzony przez wykonanie dodatkowego odniesienia zapisywanego w postaci przypisu dolnego, który uzyskuje się przez wpisanie po odniesieniu do kolejki przypisu dolnego jako wyrażenia w nawiasie prostokątnym - ``[]``, rozdzielając wewnątrz liczby dodatkowymi znakami dwukropków wstawianymi pomiędzy gdy jest liczb jest kilka, np. nazwa_kolejki[1:3:5]``. Zapis w nawiasie prostokątnym (rozumianym jako przypis dolny) powoduje skorzystanie z przedmiotów wpisujących się w uogólnienie "wycinka" - z ang. - :class:`slice` po przetłumaczeniu go na wewnętrzną szczegółową postać zapisów w języku pytonowskim.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A method that is called implicitly by Python to execute a certain operation on a type, such as addition.  Such methods have names starting and ending with double underscores.  Special methods are documented in :ref:`specialnames`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Sposób postępowania do którego język pytonowski odnosi się w domyśle aby wykonać pewne działania z przedmiotem określonego rodzaju, takie jak dodawanie. Nazwy takich sposobów postępowania zawsze zaczynają się i kończą dwoma znakami podkreślenia. Szczególne sposoby postępowania są opisane w rozdziale o "szczególnych nazwach" - z ang. - :ref:`specialnames`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A statement is part of a suite (a "block" of code).  A statement is either an :term:`expression` or a one of several constructs with a keyword, such as :keyword:`if`, :keyword:`while` or :keyword:`for`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Stwierdzenie jest częścią zestawu poleceń ("kawałka" programu). Stwierdzenie jest albo "wyrażeniem" - z ang. - :term:`expression`, albo jednym z wielu zestawień złożonych w których występuje słowa o szczególnym znaczeniu, takim jak np. "jeżeli" - z ang. - :keyword:`if`, "dopóki" - z ang. - :keyword:`while` lub "dla" - z ang. - :keyword:`for`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A string which is bound by three instances of either a quotation mark (") or an apostrophe (').  While they don't provide any functionality not available with single-quoted strings, they are useful for a number of reasons.  They allow you to include unescaped single and double quotes within a string and they can span multiple lines without the use of the continuation character, making them especially useful when writing docstrings.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Napis, który jest związany przez trzy powtórzenia znaku cytowania (") lub znaku apostrofu ('). Chociaż nie spełniają one żadnego specjalnego zadania które nie byłoby dostępne w pojedynczo cytowanych zawartościach napisów, jednak są użyteczne z paru powodów. Pozwalają zawrzeć we wnętrzu napisu znaki pojedynczego bądź podwójnego cytowania bez stosowania znaku ucieczki (lewego ukośnika, czyli skośnika - \) i pozwalają umieścić napis w więcej niż jednej linii tekstu bez używania znaku "dalszego ciągu tekstu" (\), czyniąc je szczególnie użytecznymi podczas pisania objaśnień do programu czy zestawu zadań.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The type of a Python object determines what kind of object it is; every object has a type.  An object's type is accessible as its :attr:`__class__` attribute or can be retrieved with ``type(obj)``.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>uogólnienie na którym opiera się dany przedmiot w języku pytonowskim ustala jakiego rodzaju jest to przedmiot. Każdy przedmiot ma swoje uogólnienie, którego jest jest przykładem. Uogólnienie, którego przykładem jest przedmiot, można otrzymać przez odniesienie do jego właściwości "uogólnienia" - z ang. - :attr:`__class__`, lub może być uzyskane jako wynik wykonania zadania "podania rodzaju" przedmiotu - z ang. - ``type(obj)``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The objects returned from :meth:`dict.keys`, :meth:`dict.values`, and :meth:`dict.items` are called dictionary views.  They are lazy sequences that will see changes in the underlying dictionary.  To force the dictionary view to become a full list use ``list(dictview)``.  See :ref:`dict-views`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przedmioty będące wynikami wykonania sposobów postępowania "podania haseł" - z ang. - :meth:`dict.keys`, "podania przedmiotów odpowiadających hasłom" - z ang. - :meth:`dict.values` i "podania parami haseł z przedmiotami im przyporządkowanymi" - z ang. - :meth:`dict.items` zwane są widokami słownika. Są one kolekcjami (kolejkami) o przedmiotach których zawartość jest ustalana "z opóźnieniem", tzn. takimi które uwidocznią zmiany zachodzące w leżącym u ich podstaw słowniku, gdyż są tylko odniesieniami do zawartości słownika. Aby zastosować trwałą zamianę widoku słownika na pełnoprawną listę, należy użyć "lista(widoksłownika)" - z ang. - ``list(dictview)``. Zobacz też: widoki-słowników - z ang. - :ref:`dict-views`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A computer defined entirely in software.  Python's virtual machine executes the :term:`bytecode` emitted by the bytecode compiler.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Urządzenie liczące określone całkowicie w postaci programu. Wynikające urządzenie języka pytonowskiego wykonuje polecenia o postaci surowej właściwe dla tego urządzenia - z ang. - :term:`bytecode` wytworzone przez tłumacza poleceń w postaci surowych wskazań.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Listing of Python design principles and philosophies that are helpful in understanding and using the language.  The listing can be found by typing "``import this``" at the interactive prompt.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Spis założeń projektowania języka pytonowskiego i sposobów patrzenia, które są pomocne w zrozumieniu i używaniu tego języka. Spis można znaleźć wpisując "pobierz to" - z ang. - "``import this``" w odpowiedzi na zapytanie współpracującego z piszącym programy tłumaczem języka.</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

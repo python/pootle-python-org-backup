@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Design and History FAQ</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Часто задаваемые вопросы по дизайну и истории</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Why does Python use indentation for grouping of statements?</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Почему Python использует отступы для группировки стэйтментов?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Guido van Rossum believes that using indentation for grouping is extremely elegant and contributes a lot to the clarity of the average Python program. Most people learn to love this feature after a while.</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Гвидо ван Россум полагает, что использование отступов для группировки - это чрезвычайно элегантно, и вносит значительный вклад в ясность многих программ на Python. Большинство людей через некоторое время привыкает к этой особенности.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Since there are no begin/end brackets there cannot be a disagreement between grouping perceived by the parser and the human reader.  Occasionally C programmers will encounter a fragment of code like this::</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Поскольку начальных/конечных скобок нет, нету и конфликта между группировкой, воспринимаемой парсером, и группировкой, воспринимаемой человеком. Программисты на C порой могут встретить примерно вот такой кусок кода:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>if (x &lt;= y)         x++;         y--; z++;</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>if (x &lt;= y)         x++;         y--; z++;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Only the ``x++`` statement is executed if the condition is true, but the indentation leads you to believe otherwise.  Even experienced C programmers will sometimes stare at it a long time wondering why ``y`` is being decremented even for ``x &gt; y``.</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Если условие истинно, то выполняется только стэйтмент ``x++``, что не соответствует выставленному отступу. Даже опытные программисты на C иногда подолгу смотрят на такой фрагмент, и гадают, почему ``y`` декрементируется, даже если ``x &gt; y``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Because there are no begin/end brackets, Python is much less prone to coding-style conflicts.  In C there are many different ways to place the braces. If you're used to reading and writing code that uses one style, you will feel at least slightly uneasy when reading (or being required to write) another style.</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Поскольку начальных/конечных скобок нет, Python порождает значительно меньше конфликтов на почве оформления кода. В C есть много разных способов выставления скобок. Если ты привык к чтению и написанию кода в одном стиле, то чувствуешь себя по крайней мере неуютно, когда читаешь (или когда приходится писать) код в другом стиле.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Many coding styles place begin/end brackets on a line by themself.  This makes programs considerably longer and wastes valuable screen space, making it harder to get a good overview of a program.  Ideally, a function should fit on one screen (say, 20-30 lines).  20 lines of Python can do a lot more work than 20 lines of C.  This is not solely due to the lack of begin/end brackets -- the lack of declarations and the high-level data types are also responsible -- but the indentation-based syntax certainly helps.</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Многие стили оформления кода помещают начальные/конечные скобки на отдельные строки. Это значительно увеличивает длину программы, и впустую тратит ценное пространство экрана, затрудняя обзор программы. В идеальной ситуации функция должна полностью помещаться на экран (допустим, 20-30 строк). 20 строк на Python способны сделать больше, чем 20 строк на C. Это не только из-за отсутствия начальных/конечных скобок -- отсутствие деклараций и высокоуровневые типы данных тоже вносят свой вклад -- но основанный на отступах синтаксис определённо помогает.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Why am I getting strange results with simple arithmetic operations?</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Почему простые арифметические операции дают странные результаты?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See the next question.</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>См. следующий вопрос.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Why are floating point calculations so inaccurate?</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Почему вычисления с плавающей точкой столь неточны?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>People are often very surprised by results like this::</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Люди часто очень удивляются результатам, подобным нижепреведённому::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&gt;&gt;&gt; 1.2 - 1.0 0.199999999999999996</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>&gt;&gt;&gt; 1.2 - 1.0 0.199999999999999996</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>and think it is a bug in Python. It's not.  This has nothing to do with Python, but with how the underlying C platform handles floating point numbers, and ultimately with the inaccuracies introduced when writing down numbers as a string of a fixed number of digits.</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>и полагают, что это ошибка в Python. Это не так. Это связано совсем не с Python, а с тем, как обрабатывает числа с плавающей точкой находящаяся в его основе платформа C, а также с тем, что преобразование числа в строку фиксированной длины вносит неточности.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The internal representation of floating point numbers uses a fixed number of binary digits to represent a decimal number.  Some decimal numbers can't be represented exactly in binary, resulting in small roundoff errors.</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Внутреннее представление чисел с плавающей точкой использует фикированное количество бинарных цифр для представления десятичного числа. Некоторые десятичные числа не могут быть в точности отражены в бинарной системе, что выливается в небольшие ошибки округления.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In decimal math, there are many numbers that can't be represented with a fixed number of decimal digits, e.g.  1/3 = 0.3333333333.......</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>В десятичной системе есть множество чисел, которые нельзя представить с помощью счётного количества десятичных цифр, например 1/3 = 0.3333333333.......</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In base 2, 1/2 = 0.1, 1/4 = 0.01, 1/8 = 0.001, etc.  .2 equals 2/10 equals 1/5, resulting in the binary fractional number 0.001100110011001...</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>В основании 2 1/2 = 0.1, 1/4 = 0.01, 1/8 = 0.001, и так далее. .2 равно 2/10 равно 1/5, и даёт бинарное дробное число 0.001100110011001...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Floating point numbers only have 32 or 64 bits of precision, so the digits are cut off at some point, and the resulting number is 0.199999999999999996 in decimal, not 0.2.</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>У чисел с плавающей точкой есть только 32 или 64 бита точности, поэтому цифры в каком-то месте обрываются, и в десятичной системе получается число 0.199999999999999996 вместо 0.2.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A floating point number's ``repr()`` function prints as many digits are necessary to make ``eval(repr(f)) == f`` true for any float f.  The ``str()`` function prints fewer digits and this often results in the more sensible number that was probably intended::</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Функция ``repr()`` выводит для чисел с плавающей точкой столько цифр, сколько необходимо, чтобы ``eval(repr(f)) == f`` было истинно для любого дробного f.  Функция ``str()`` выводит меньше цифр, и это часто даёт более вменяемые числа, какие скорее всего и ожидались::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&gt;&gt;&gt; 1.1 - 0.9 0.20000000000000007 &gt;&gt;&gt; print(1.1 - 0.9) 0.2</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>&gt;&gt;&gt; 1.1 - 0.9 0.20000000000000007 &gt;&gt;&gt; print(1.1 - 0.9) 0.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>One of the consequences of this is that it is error-prone to compare the result of some computation to a float with ``==``. Tiny inaccuracies may mean that ``==`` fails.  Instead, you have to check that the difference between the two numbers is less than a certain threshold::</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Одним из следствий этого является то, что сравнение результатов вычисления на дробных числах с помощью ``==`` часто даёт ошибочные результаты. Из-за малейшей неточности операция ``==`` даёт отрицательный результат. Вместо этого следует проверять, не превышает ли разница между двумя числами определённый порог::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>epsilon = 0.0000000000001  # Tiny allowed error expected_result = 0.4  if expected_result-epsilon &lt;= computation() &lt;= expected_result+epsilon:     ...</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>epsilon = 0.0000000000001  # Малая допустимая погрешностьexpected_result = 0.4if expected_result-epsilon &lt;= computation() &lt;= expected_result+epsilon:     ...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Please see the chapter on :ref:`floating point arithmetic &lt;tut-fp-issues&gt;` in the Python tutorial for more information.</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Для дополнительной информации см. главу :ref:`вычисления с плавающей точкой &lt;tut-fp-issues&gt;` в руководстве Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Why are Python strings immutable?</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Почему строки в Python неизменяемы?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There are several advantages.</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Есть несколько преимуществ.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>One is performance: knowing that a string is immutable means we can allocate space for it at creation time, and the storage requirements are fixed and unchanging.  This is also one of the reasons for the distinction between tuples and lists.</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Во-первых, производительность: знание того, что строка неизменяема, позволяет выделить для неё место в определённый момент времени, и требования к её хранению фиксированы, и не меняются. Это также одна из причин существования двух разных типов - кортежей и списков.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Another advantage is that strings in Python are considered as "elemental" as numbers.  No amount of activity will change the value 8 to anything else, and in Python, no amount of activity will change the string "eight" to anything else.</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Другое преимущество заключается в том, что строки в Python считаются такими же "базовыми", как и числа. Никакие усилия никогда не изменят число 8 на что-то другое, и в Python никакие усилия не изменят строку "восемь" на что-либо другое.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Why must 'self' be used explicitly in method definitions and calls?</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Почему необходимо явно использовать 'self' в определениях методов и в вызовах?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The idea was borrowed from Modula-3.  It turns out to be very useful, for a variety of reasons.</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Идея была позаимствована из Modula-3. По ряду причин она оказалась очень полезной.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>First, it's more obvious that you are using a method or instance attribute instead of a local variable.  Reading ``self.x`` or ``self.meth()`` makes it absolutely clear that an instance variable or method is used even if you don't know the class definition by heart.  In C++, you can sort of tell by the lack of a local variable declaration (assuming globals are rare or easily recognizable) -- but in Python, there are no local variable declarations, so you'd have to look up the class definition to be sure.  Some C++ and Java coding standards call for instance attributes to have an ``m_`` prefix, so this explicitness is still useful in those languages, too.</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Во-первых, становится более очевидным использование метода или экземпляра атрибута вместо локальной переменной. После прочтения ``self.x`` или ``self.meth()`` становится совершенно ясно, что используются переменная или метод экземпляра, даже если читатель не помнит определение класса. В C++ об этом можно догадаться по отсутствию объявления локальной переменной (предполагая, что глобальные переменные используются редко, и их легко узнать) -- но в Python объявлений локальных переменных нет, поэтому необходимо было бы смотреть определение класса, чтобы знать точно. Некоторые стандарты написания программ на C++ и Java требуют, чтобы атрибуты экземпляров начинались с ``m_``, так что подобная явность полезна и в этих языках.</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

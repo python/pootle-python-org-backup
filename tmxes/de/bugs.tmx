@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Reporting Bugs</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Fehler melden</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python is a mature programming language which has established a reputation for stability.  In order to maintain this reputation, the developers would like to know of any deficiencies you find in Python.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Python ist eine ausgereifte Programmiersprache, die unter anderem durch den guten Ruf über ihre Stabilität beliebt wurde. Um diesen zu erhalten, würden die Entwickler es gerne erfahren, wenn Sie Fehler in Python finden.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Documentation bugs</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Dokumentationsfehler</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If you find a bug in this documentation or would like to propose an improvement, please send an e-mail to docs@python.org describing the bug and where you found it.  If you have a suggestion how to fix it, include that as well.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Wenn sie einen Fehler finden oder eine Verbesserungen vorschlagen möchten, senden sie eine E-Mail an docs@python.org, die Fehler und Ort beschreibt. Wenn Sie einen Vorschlag zur Behebung des Fehlers haben, senden Sie diesen ebenfalls.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>docs@python.org is a mailing list run by volunteers; your request will be noticed, even if it takes a while to be processed.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>docs@python.org ist eine Mailingliste von Freiwilligen, die Anfrage wird bearbeitet selbst wenn es eine Weile dauert bis dies passiert.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Of course, if you want a more persistent record of your issue, you can use the issue tracker for documentation bugs as well.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Wenn Sie eine permanente Aufzeichnung des Problems wünschen, können Sie den Fehler Tracker benutzen.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Using the Python issue tracker</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Den Python Fehler Tracker benutzen</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See also</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Siehe auch</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

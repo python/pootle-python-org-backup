@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Author</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Autor</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A.M. Kuchling</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>A.M. Kuchling</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Release</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Versão</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>0.03</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>0.03</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Abstract</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Resumo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Reasons to Use Python</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Razões Para Usar Python</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

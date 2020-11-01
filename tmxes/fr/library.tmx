@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2to3 - Automated Python 2 to 3 code translation</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>2to3 - Automatise la traduction du code de Python 2 vers Python 3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Using 2to3</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Utilisation de 2to3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Here is a sample Python 2.x source file, :file:`example.py`::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Voici un exemple de fichier source Python 2.x, :file:`example.py`::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>def greet(name):     print "Hello, {0}!".format(name) print "What's your name?" name = raw_input() greet(name)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>def greet(name):     print "Bonjour, {0}!".format(name) print "Quel est ton nom ?" name = raw_input() greet(name)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>It can be converted to Python 3.x code via 2to3 on the command line::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Il peut être converti en Python 3.x via la commande 2to3::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>$ 2to3 example.py</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>$ 2to3 example.py</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>$ 2to3 -w example.py</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>$ 2to3 -w example.py</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>def greet(name):     print("Hello, {0}!".format(name)) print("What's your name?") name = input() greet(name)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>def greet(name):     print("Bonjour, {0}!".format(name)) print("Quel est ton nom ?") name = input() greet(name)</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

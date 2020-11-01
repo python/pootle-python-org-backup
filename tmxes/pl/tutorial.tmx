@@ -1,0 +1,599 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Whetting Your Appetite</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Na zaostrzenie apetytu</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If you do much work on computers, eventually you find that there's some task you'd like to automate.  For example, you may wish to perform a search-and-replace over a large number of text files, or rename and rearrange a bunch of photo files in a complicated way. Perhaps you'd like to write a small custom database, or a specialized GUI application, or a simple game.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Jeśli dużo pracujesz na komputerach, w końcu zauważysz że są pewne czynności które wolałbyś zautomatyzować. Np., możesz życzyć sobie wykonania przeszukania i zamiany na dużej ilości plików tekstowych, lub zmiany nazwy i przemieszczenia garści plików fotografii w skomplikowany sposób. Być może chciałbyś napisać małą bazę danych do specjalnych zastosowań, lub wyspecjalizowaną aplikację graficznego interfejsu użytkownika, lub prostą grę.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If you're a professional software developer, you may have to work with several C/C++/Java libraries but find the usual write/compile/test/re-compile cycle is too slow.  Perhaps you're writing a test suite for such a library and find writing the testing code a tedious task.  Or maybe you've written a program that could use an extension language, and you don't want to design and implement a whole new language for your application.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Jeśli jesteś zawodowym twórcą oprogramowania, możesz mieć potrzebę pracy z kilkoma bibliotekami C/C++/Java ale odkryć że tradycyjny cykl pisania/kompilacji/testowania/ponownej-kompilacji jest zbyt wolny. Być może piszesz zestaw testów dla takiej biblioteki i odkryłeś że pisanie kodu testującego jest nużącym zajęciem. Lub może napisałeś program któremu przydałby się rozszerzający go język, a nie chcesz projektować i realizować całego nowego języka dla swojego programu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python is just the language for you.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Pyton jest właśnie językiem dla ciebie.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You could write a Unix shell script or Windows batch files for some of these tasks, but shell scripts are best at moving around files and changing text data, not well-suited for GUI applications or games. You could write a C/C++/Java program, but it can take a lot of development time to get even a first-draft program.  Python is simpler to use, available on Windows, Mac OS X, and Unix operating systems, and will help you get the job done more quickly.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Mógłbyś napisać skrypt powłoki systemu Unix lub kilka plików wsadowych systemu Windows dla niektórych z tych zadań, ale skrypty powłoki są najlepsze w przenoszeniu plików i zamianie danych tekstowych, a niezbyt dopasowane do graficznych interfejsów użytkownika czy gier. Mógłbyś napisać program w języku C/C++ czy Java, ale zabrałoby to dużo czasu przeznaczonego na rozwój aby otrzymać nawet pierwszy szkic programu. Język Pyton jest prostszy w użyciu, dostępny w systemach operacyjnych Windows, Mac OS X, i Unix, i pomoże ci szybciej załatwić sprawę.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python is simple to use, but it is a real programming language, offering much more structure and support for large programs than shell scripts or batch files can offer.  On the other hand, Python also offers much more error checking than C, and, being a *very-high-level language*, it has high-level data types built in, such as flexible arrays and dictionaries.  Because of its more general data types Python is applicable to a much larger problem domain than Awk or even Perl, yet many things are at least as easy in Python as in those languages.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Język Pyton jest prosty w użyciu, ale jest językiem programowania z prawdziwego zdarzenia, oferującym dużo więcej możliwości konstrukcji i wsparcia dla dużych programów niż to co skrypty powłoki lub pliki wsadowe mogą zaproponować. Z drugiej strony, język Pyton oferuje też dużo więcej sprawdzania błędów niż język C, i, będąc *językiem bardzo wysokiego poziomu*, posiada wbudowane typy danych wysokiego poziomu, takie jak elastyczne tablice i słowniki. Z uwagi na swoje bardziej ogólne typy danych język Pyton stosuje się do dużo szerszej dziedziny problemów niż np. język Awk lub nawet w język Perl, a jednak wiele rzeczy jest co najmniej tak proste w języku Pyton jak w tych językach.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python allows you to split your program into modules that can be reused in other Python programs.  It comes with a large collection of standard modules that you can use as the basis of your programs --- or as examples to start learning to program in Python.  Some of these modules provide things like file I/O, system calls, sockets, and even interfaces to graphical user interface toolkits like Tk.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>język Pyton pozwoli ci na to abyś podzielił swój program na moduły, które mogą być ponownie użyte w innych programach języka Pyton. Jest on dostarczony ze sporą kolekcją typowych modułów, których można użyć jako podstawy swoich programów --- lub jako przykładów aby zacząć uczyć się programowania w języku Pyton. Niektóre z tych modułów zapewniają załatwienie spraw takich, jak operacje wejścia/wyjścia na pliku, wywołania systemowe, gniazda, a nawet dostęp do zestawów narzędziowych, reprezentacji graficznego środowiska użytkownika, takich jak Tk.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python is an interpreted language, which can save you considerable time during program development because no compilation and linking is necessary.  The interpreter can be used interactively, which makes it easy to experiment with features of the language, to write throw-away programs, or to test functions during bottom-up program development. It is also a handy desk calculator.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Język Pyton jest językiem tłumaczonym, co może oszczędzić ci znacze ilości czasu w trakcie konstruowania programu, gdyż żadna kompilacja ani łączenie nie jest konieczne. Program tłumaczący może być używany w trybie współpracy użytkownika z komputerem, co sprawia że łatwo jest prowadzić doświadczenia z własnościami języka, pisać próbne programy, lub testować podprogramy podczas wstępującego rozwoju programu. Jest także poręcznym biurkowym kalkulatorem.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python enables programs to be written compactly and readably.  Programs written in Python are typically much shorter than equivalent C,  C++, or Java programs, for several reasons:</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Język Pyton pozwala na pisanie programów w sposób zwarty i czytelny. Programy napisane w języku Pyton są zwykle dużo krótsze niż odpowiadające im programy napisane w językach C, C++, czy Java, z kilku powodów:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>the high-level data types allow you to express complex operations in a single statement;</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>rodzaje informacji wysokiego poziomu pozwalają na wyrażenie złożonych operacji w pojedynczej instrukcji;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>statement grouping is done by indentation instead of beginning and ending brackets;</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>łączenie w grupy instrukcji jest osiągane za pomocą wcięć zamiast nawiasów rozpoczynających i kończących;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>no variable or argument declarations are necessary.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>żadne deklaracje zmiennych czy argumentów nie są wymagane.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python is *extensible*: if you know how to program in C it is easy to add a new built-in function or module to the interpreter, either to perform critical operations at maximum speed, or to link Python programs to libraries that may only be available in binary form (such as a vendor-specific graphics library). Once you are really hooked, you can link the Python interpreter into an application written in C and use it as an extension or command language for that application.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Język Python jest *rozszerzalny*: jeśli wiesz jak programować w języku C, łatwo jest dodać nową wbudowaną funkcję lub moduł do tłumacza, zarówno aby wykonać istotne operacje z maksymalną szybkością, jak też aby skojarzyć programy języka Python z bibliotekami, które mogą być dostępne jedynie w postaci binarnej w kodzie maszynowym (takimi jak biblioteka graficzna pochodząca od szczególnego dostawcy). Gdy już się na prawdę wciągniesz, możesz skojarzyć program tłumaczący język Python z aplikacją napisaną w języku C i użyć go jako rozszerzenia lub języka komend dla tej aplikacji.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>By the way, the language is named after the BBC show "Monty Python's Flying Circus" and has nothing to do with reptiles.  Making references to Monty Python skits in documentation is not only allowed, it is encouraged!</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przy okazji, język przyjął imię od tytułu satyry kanału BBC "Latający Cyrk Monty Pythona" i nie ma nic wspólnego z gadami. Odniesienia do skeczy Monty Pythona w dokumentacji są nie tylko dozwolone, ale też oczekiwane!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Now that you are all excited about Python, you'll want to examine it in some more detail.  Since the best way to learn a language is to use it, the tutorial invites you to play with the Python interpreter as you read.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Teraz, gdy już język Python został Ci przedstawiony, będziesz chciał wypróbować go na odrobinę wyższym poziomie szczegółów. Ponieważ najlepszym sposobem uczenia się języka jest używanie go, ten samouczek poleca pobawić się interpreterem języka Python w trakcie dalszej lektury.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In the next chapter, the mechanics of using the interpreter are explained.  This is rather mundane information, but essential for trying out the examples shown later.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>W następnym rozdziale, zostanie wyjaśniona mechanika używania tłumacza. To są raczej niezbyt wyszukane informacje, ale niezbędne dla wypróbowania przykładów pokazanych później.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The rest of the tutorial introduces various features of the Python language and system through examples, beginning with simple expressions, statements and data types, through functions and modules, and finally touching upon advanced concepts like exceptions and user-defined classes.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Reszta poradnika wprowadza różnorakie własności języka pytonowskiego i podprogramy za pomocą przykładów, począwszy od prostych wyrażeń, poleceń i rodzajów wiadomości, poprzez zadania i zbiory zadań i uogólnień, kończąc na wyjaśnieniu kwestii trudniejszych, takich, jak sytuacje wyjątkowe i określone przez użytkownika uogólnienia.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Classes</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Uogólnienia</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python's class mechanism adds classes to the language with a minimum of new syntax and semantics.  It is a mixture of the class mechanisms found in C++ and Modula-3.  As is true for modules, classes in Python do not put an absolute barrier between definition and user, but rather rely on the politeness of the user not to "break into the definition."  The most important features of classes are retained with full power, however: the class inheritance mechanism allows multiple base classes, a derived class can override any methods of its base class or classes, and a method can call the method of a base class with the same name.  Objects can contain an arbitrary amount of data.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Mechanizm klas języka Python dodaje klasy jako składnik języka przy użyciu minimalnej ilości nowej składni i wyrażeń. Jest mieszanką mechanizmów klas z języka C++ i Modula-3. Zarówno jak w przypadku modułów, klasy w języku Python nie stwarzają bezwarunkowej bariery między definicją klasy a użytkownikiem, ale raczej polegają na grzecznym nie "wdzieraniu się do definicji klasy" przez użytkownika. Jednak najważniejsze własności klas są zachowane w pełnej mocy: mechanizm dziedziczenia klas pozwala na wielokrotne klasy bazowe, klasa pochodna może narzucać własne wersje wykonania dowolnych metod klasy lub klas bazowych, a metody mogą odwoływać się do metod o tej samej nazwie, pochodzących z klasy bazowej. Obiekty mogą zawierać dowolnie wybraną ilość danych.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In C++ terminology, normally class members (including the data members) are *public* (except see below :ref:`tut-private`), and all member functions are *virtual*.  As in Modula-3, there are no shorthands for referencing the object's members from its methods: the method function is declared with an explicit first argument representing the object, which is provided implicitly by the call.  As in Smalltalk, classes themselves are objects.  This provides semantics for importing and renaming.  Unlike C++ and Modula-3, built-in types can be used as base classes for extension by the user. Also, like in C++, most built-in operators with special syntax (arithmetic operators, subscripting etc.) can be redefined for class instances.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>W terminologii języka C++, elementy klasy normalnie (włączając elementy danych) są *publiczne* (z wyjątkiem zob. poniżej :ref:`tut-private`), a wszystkie funkcje składowe są *wirtualne*. Tak, jak w języku Modula-3, nie ma żadnych skrótów pozwalających na odwołania do elementów składowych obiektu z wnętrza jego metod: funkcja metody zawiera jawnie zadeklarowany pierwszy argument  reprezentujący obiekt, który jest dostarczany niejawnie przy wywołaniu. Tak jak w języku Smalltalk, klasy same w sobie są obiektami. To dostarcza środków wyrazu dla importowania i zmiany nazewnictwa. W przeciwieństwie do języka C++ i języka Modula-3, typy wbudowane mogą być użyte jako klasy bazowe dla rozszerzania przez użytkownika. Także, podobnie jak w języku C++, znaczenie większości wbudowanych operatorów, o specjalnej składni (operatory arytmetyczne, indeksowe itp.) może być na nowo określone dla instancji danej klasy.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>(Lacking universally accepted terminology to talk about classes, I will make occasional use of Smalltalk and C++ terms.  I would use Modula-3 terms, since its object-oriented semantics are closer to those of Python than C++, but I expect that few readers have heard of it.)</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>(Nie posiadając jednogłośnie przyjętej terminologii do opisu klas, będę okazjonalnie korzystał z określeń właściwych językowi Smalltalk i językowi C++. Byłbym używał okrośleń właściwych językowi Modula 3, ponieważ jego wyrażenia związane z programowaniem obiektowym są bliższe użytym w języku Python, niż w języku C++, ale spodziewam się że niewielu czytających te słowa słyszało o nim.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A Word About Names and Objects</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Słowo o nazwach i obiektach</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Objects have individuality, and multiple names (in multiple scopes) can be bound to the same object.  This is known as aliasing in other languages.  This is usually not appreciated on a first glance at Python, and can be safely ignored when dealing with immutable basic types (numbers, strings, tuples).  However, aliasing has a possibly surprising effect on the semantics of Python code involving mutable objects such as lists, dictionaries, and most other types. This is usually used to the benefit of the program, since aliases behave like pointers in some respects.  For example, passing an object is cheap since only a pointer is passed by the implementation; and if a function modifies an object passed as an argument, the caller will see the change --- this eliminates the need for two different argument passing mechanisms as in Pascal.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Obiekty mają pojedynczą tożsamość, ale różne nazwy (w różnych zakresach widoczności) mogą być związane z tym samym obiektem. Jest to określane w innych językach jako występowanie pod różnymi nazwami (aliasowanie). Ta własność zwykle nie jest doceniana w języku Python przy pierwszym spojrzeniu, i może bez szkody pozostać niezauważona przy operowaniu na niezmiennych podstawowych typach (liczbach, ciągach znaków, krotkach). Jednak występowanie pod różnymi nazwami ma potencjalnie zadziwiający wpływ na wyrażenia zakodowane w języku Python dotyczące zmiennych obiektów takich jak listy, słowniki, i większość innych typów. Jest to zwykle używane na korzyść programiu, gdyż zamienne nazwy zachowują się jak wskaźniki pod niektórymi względami. Na przykład, przekazanie obiektu nie jest kosztowne gdyż tylko wskaźnik jest przekazywany w praktycznej realizacji języka; i jeśli funkcja modyfikuje obiekt przekazywany przez argument, wywołujący funkcję zobaczy zmianę --- to eliminuje potrzebę istnienia dwóch różnych mechanizmów przekazywania argumentów takich jak w języku Pascal.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python Scopes and Namespaces</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zakresy widoczności języka Python i przestrzenie nazw</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Before introducing classes, I first have to tell you something about Python's scope rules.  Class definitions play some neat tricks with namespaces, and you need to know how scopes and namespaces work to fully understand what's going on. Incidentally, knowledge about this subject is useful for any advanced Python programmer.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przed wprowadzaniem klas, najpierw muszę powiedzieć Ci coś o zasadach zakresów widoczności języka Python. Definicje klas płatają figle z przestrzeniami nazw, i trzeba żebyś wiedział, jak zakresy widoczności i przestrzenie nazw działają dla pełnego zrozumienia co się dzieje. Nawiasem mówiąc, wiedza na ten temat jest przydatna każdemu dokonującemu postępów programiście języka Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Let's begin with some definitions.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zacznijmy od pewnych ustaleń.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A *namespace* is a mapping from names to objects.  Most namespaces are currently implemented as Python dictionaries, but that's normally not noticeable in any way (except for performance), and it may change in the future.  Examples of namespaces are: the set of built-in names (functions such as :func:`abs`, and built-in exception names); the global names in a module; and the local names in a function invocation.  In a sense the set of attributes of an object also form a namespace.  The important thing to know about namespaces is that there is absolutely no relation between names in different namespaces; for instance, two different modules may both define a function ``maximize`` without confusion --- users of the modules must prefix it with the module name.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>*Przestrzeń nazw* jest przyporządkowaniem nazw do obiektów. Większość przestrzeni nazw jest obecnie praktycznie zrealizowanych jako słowników języka Python, ale zasadniczo nie jest to dostrzegalne w żaden sposób (z wyjątkiem wydajności), i może się zmienić w przyszłości. Przykładami przestrzeni nazw są: zbiór wbudowanych nazw (funkcje takie jak :func:`abs`, i wbudowane nazwy wyjątków); nazwy zadeklarowane nadrzędnie w module; i nazwy lokalne w wywołaniu funkcji. W pewnym sensie zbiór atrybutów obiektu także tworzy przestrzeń nazw. O przestrzeniach nazw warto wiedzieć to, że nie ma całkowicie żadnego związku pomiędzy nazwami w różnych przestrzeniach nazw; na przykład, dwa różne moduły mogą równocześnie określać funkcję ``maksymalizuj`` bez niejasności --- użytkownicy modułów muszą poprzedzić ją za pomocą nazwy modułu. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>By the way, I use the word *attribute* for any name following a dot --- for example, in the expression ``z.real``, ``real`` is an attribute of the object ``z``.  Strictly speaking, references to names in modules are attribute references: in the expression ``modname.funcname``, ``modname`` is a module object and ``funcname`` is an attribute of it.  In this case there happens to be a straightforward mapping between the module's attributes and the global names defined in the module: they share the same namespace!  [#]_</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przy okazji, używam określenia *atrybut* dla dowolnej nazwy występującej po kropce --- na przykład, w wyrażeniu ``z.rzeczywista``, ``rzeczywista`` jest atrybutem obiektu ``z``. Mówiąc ściśle, odwołania do nazw w modułach są odniesieniami do atrybutów: w wyrażeniu ``nazwamodułu.nazwafunkcji``, ``nazwamodułu`` jest obiektem modułu a ``nazwafunkcji`` jest jej atrybutem. W tym przypadku tak się składa, że istnieje bezpośrednie przyporządkowanie pomiędzy atrybutami modułu i nadrzędnymi nazwami zdefiniowanymi wewnątrz modułu: gdyż współdzielą one tę samą przestrzeń nazw! [#]_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Attributes may be read-only or writable.  In the latter case, assignment to attributes is possible.  Module attributes are writable: you can write ``modname.the_answer = 42``.  Writable attributes may also be deleted with the :keyword:`del` statement.  For example, ``del modname.the_answer`` will remove the attribute :attr:`the_answer` from the object named by ``modname``.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Atrybuty mogą być przeznaczone tylko-do-odczytu lub do odczytu i zapisu. W drugim przypadku, przypisywanie atrybutom wartości jest możliwe. Atrybuty modułu umożliwiją zapis do nich: możesz napisać ``nazwamodułu.odpowiedź = 42``. Atrybuty z możliwością zapisu mogą także zostać skasowane poleceniem :keyword:`del`. Na przykład, ``del nazwamodułu.odpowiedź`` usunie atrybut :attr:`odpowiedź` z obiektu nazwanego jako ``nazwamodułu``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Namespaces are created at different moments and have different lifetimes.  The namespace containing the built-in names is created when the Python interpreter starts up, and is never deleted.  The global namespace for a module is created when the module definition is read in; normally, module namespaces also last until the interpreter quits.  The statements executed by the top-level invocation of the interpreter, either read from a script file or interactively, are considered part of a module called :mod:`__main__`, so they have their own global namespace.  (The built-in names actually also live in a module; this is called :mod:`builtins`.)</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przestrzenie nazw są tworzone w różnych momentach i mają różny czas dostępności. Przestrzeń nazw zawierająca nazwy wbudowane jest tworzona gdy program interpretujący język Python jest uruchamiany, i nigdy nie jest usuwana. Nadrzędna przestrzeń nazw dla modułu jest tworzona gdy definicja modułu jest wczytywana; zazwyczaj przestrzenie nazw modułu także utrzymują się aż do zamknięcia programu interpretera języka Python. Wyrażenia wykonywane przez nadrzędne wywołanie programu interpretera, wczytane z pliku skryptu lub w trybie odpowiedzi na polecenia użytkownika, są uznawane jako część modułu zwanego :mod:`__main__`, więc mają swoją nadrzędną przestrzeń nazw. (Nazwy wbudowane w rzeczywistości też są przechowywane w module; ten moduł nazwa się :mod:`builtins`).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The local namespace for a function is created when the function is called, and deleted when the function returns or raises an exception that is not handled within the function.  (Actually, forgetting would be a better way to describe what actually happens.)  Of course, recursive invocations each have their own local namespace.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wewnętrzne przestrzenie nazw funkcji są tworzone gdy funkcja jest wywoływana, i usuwane gdy sterowanie powraca z funkcji do miejsca wywołania, lub funkcja zgłosi wyjątek który nie jest obsługiwany przez funkcję. (W praktyce, lepszym określeniem na to, co właściwie się dzieje, byłoby zapominanie). Oczywiście, przy odwołaniach cyklicznych (rekurencyjnych) każde wywołanie posiada swoją własną wewnętrzną przestrzeń nazw.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A *scope* is a textual region of a Python program where a namespace is directly accessible.  "Directly accessible" here means that an unqualified reference to a name attempts to find the name in the namespace.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>*Zakres widoczności* jest obszarem tekstu programu w języku Python gdzie przestrzeń nazw jest bezpośrednio dostępna. "Bezpośrednia dostępność" znaczy tu, że niekwalifikowane odwołanie do nazwy próbuje znaleźć nazwę w przestrzeni nazw.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Although scopes are determined statically, they are used dynamically. At any time during execution, there are at least three nested scopes whose namespaces are directly accessible:</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Chociaż zakresy widoczności są określane statycznie, są one używane dynamicznie. W dowolnym momencie wykonania, istnieją co najmniej trzy zagnieżdżone zakresy widoczności, których przestrzenie nazw są bezpośrednio dostępne:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>the innermost scope, which is searched first, contains the local names</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>najbardziej zagnieżdżony zakres widoczności, który jest przeszukiwany w pierwszej kolejności, zawiera nazwy pochodzące z wnętrza funkcji</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>the scopes of any enclosing functions, which are searched starting with the nearest enclosing scope, contains non-local, but also non-global names</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>zakres widoczności wszelkich otaczających funkcji, które są przeszukiwane poczynając od najbliższego otaczającego zakresu widoczności, zawiera nazwy nie pochodzące z wnętrza funkcji, ale też nie będące nazwami najwyższego rzędu</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>the next-to-last scope contains the current module's global names</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>zakres widoczności od-następnego-do-ostatniego zawiera nazwy najwyższego rzędu dla aktualnego modułu</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>the outermost scope (searched last) is the namespace containing built-in names</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>najbardziej zewnętrzny zakres widoczności (przeszukiwany jako ostatni) jest przestrzenią nazw zawierającą nazwy wbudowane</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If a name is declared global, then all references and assignments go directly to the middle scope containing the module's global names.  To rebind variables found outside of the innermost scope, the :keyword:`nonlocal` statement can be used; if not declared nonlocal, those variable are read-only (an attempt to write to such a variable will simply create a *new* local variable in the innermost scope, leaving the identically named outer variable unchanged).</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Jeśli nazwa jest określona na najwyższym poziomie widoczności modułu, wtedy wszystkie odwołania i przypisania dopasowują się do środkowego zakresu widoczności zawierającego nazwy najwyższego poziomu określone dla modułu. Aby ponownie związać zmienne znajdujące się na zewnątrz najgłębszego zakresu, określenie :keyword:`nonlocal` może zostać użyte; jeśli nie określone jako nonlocal, zmienne te są zmiennymi tylko-do-odczytu (próba zapisu do takiej zmiennej po prostu utworzy *nową* zmienną wewnętrzną funkcji w najbardziej zagnieżdżonym zakresie widoczności, pozostawiając jednakowo nazwaną zewnętrzną zmienną bez zmian).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Usually, the local scope references the local names of the (textually) current function.  Outside functions, the local scope references the same namespace as the global scope: the module's namespace. Class definitions place yet another namespace in the local scope.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zwykle, wewnętrzny zakres widoczności odnosi się do nazw wewnętrznych dla (tekstowego zakresu) atualnej funkcji. Na zewnątrz funkcji, wewnętrzny zakres widoczności odwołuje się do tej samej przestrzeni nazw co zakres widoczności na poziomie głównym: przestrzeń nazw nadrzędna dla modułu. Definicje klas umieszczają jeszcze inną przestrzeń nazw w lokalnym zakresie widoczności.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>It is important to realize that scopes are determined textually: the global scope of a function defined in a module is that module's namespace, no matter from where or by what alias the function is called.  On the other hand, the actual search for names is done dynamically, at run time --- however, the language definition is evolving towards static name resolution, at "compile" time, so don't rely on dynamic name resolution!  (In fact, local variables are already determined statically.)</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ważne jest aby rozumieć że zakresy widoczności ustala się tekstowo: najwyższym możliwym zakresem widoczności dla funkcji określonej w module jest przestrzeń nazw tego modułu, niezależnie skąd i pod jaką nazwą funkcja jest wywoływana. Z drugiej strony, faktyczne poszukiwanie nazw wykonywane jest dynamicznie w czasie wykonania --- jednakże, założenia języka rozwijają się w kierunku statycznego rozstrzygania nazw, w czasie "kompilacji", więc nie polegaj na dynamicznym rozstrzyganiu nazw! (W istocie, zmienne lokalne już teraz są ustalane statycznie).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A special quirk of Python is that -- if no :keyword:`global` statement is in effect -- assignments to names always go into the innermost scope.  Assignments do not copy data --- they just bind names to objects.  The same is true for deletions: the statement ``del x`` removes the binding of ``x`` from the namespace referenced by the local scope.  In fact, all operations that introduce new names use the local scope: in particular, :keyword:`import` statements and function definitions bind the module or function name in the local scope.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Specjalnym zachowaniem języka Python jest to, że -- jeśli żadne określenie :keyword:`global` nie pozostaje w mocy -- wtedy przypisania do nazw zawsze odwołują się do najbardziej zagłębionego zakresu widoczności. Przypisania nie kopiują danych --- wiążą tylko nazwy z obiektami. To samo zachodzi dla usunięć: wyrażenie ``del x`` usuwa wiązanie nazwy ``x`` z przestrzeni nazw, do której odnosi się lokalny zakres widoczności. Właściwie wszystkie operacje, które wprowadzają nowe nazwy używają lokalnego zakresu widoczności: w szczególności, instrukcje :keyword:`import` i określenia funkcji wiążą moduł lub nazwę funkcji w lokalnym zakresie widoczności.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The :keyword:`global` statement can be used to indicate that particular variables live in the global scope and should be rebound there; the :keyword:`nonlocal` statement indicates that particular variables live in an enclosing scope and should be rebound there.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Określenie :keyword:`global` może być użyte do oznaczenia, że poszczególne zmienne znajdą się w głównym zakresie widoczności dla danego modułu i powinny być ponownie wiązane tam; określenie :keyword:`nonlocal` sygnalizuje, że określone zmienne znajdują się w otaczającym zakresie widoczności i tam powinny być ponownie wiązane.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Scopes and Namespaces Example</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przykład zakresów widoczności i przestrzeni nazw</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This is an example demonstrating how to reference the different scopes and namespaces, and how :keyword:`global` and :keyword:`nonlocal` affect variable binding::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>To jest przykład demonstrujący jak odwoływać się do różnych zakresów widoczności i przestrzeni nazw, i jak określenia :keyword:`global` i :keyword:`nonlocal` wpływają na wiązanie zmiennej::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>def scope_test():     def do_local():         spam = "local spam"     def do_nonlocal():         nonlocal spam         spam = "nonlocal spam"     def do_global():         global spam         spam = "global spam"      spam = "test spam"     do_local()     print("After local assignment:", spam)     do_nonlocal()     print("After nonlocal assignment:", spam)     do_global()     print("After global assignment:", spam)  scope_test() print("In global scope:", spam)</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>def sprawdzenie_widocznosci():     def wykonuj_miejscowo():         smiecie = "miejscowe śmiecie"     def wykonuj_zamiejscowo():         nonlocal smiecie         smiecie = "zamiejscowe śmiecie"     def wykonuj_nadrzednie():         global smiecie         smiecie = "nadrzędne śmiecie"      smiecie = "próbne śmiecie"     wykonuj_miejscowo()     print("Po miejscowym przypisaniu:", smiecie)     wykonuj_zamiejscowo()     print("Po zamiejscowym przypisaniu:", smiecie)     wykonuj_nadrzednie()     print("Po nadrzędnym przypisaniu:", smiecie)  sprawdzenie_widocznosci() print("W nadrzędnym zakresie widoczności:", smiecie)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The output of the example code is::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wynikiem przykładowego programu jest::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>After local assignment: test spam After nonlocal assignment: nonlocal spam After global assignment: nonlocal spam In global scope: global spam</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Po miejscowym przypisaniu: próbne śmiecie Po zamiejscowym przypisaniu: zamiejscowe śmiecie Po nadrzędnym przypisaniu: zamiejscowe śmiecie W nadrzędnym zakresie widoczności: nadrzędne śmiecie</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Note how the *local* assignment (which is default) didn't change *scope_test*\'s binding of *spam*.  The :keyword:`nonlocal` assignment changed *scope_test*\'s binding of *spam*, and the :keyword:`global` assignment changed the module-level binding.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zauważ jednakże że "miejscowe" (z ang. - *local*) przypisanie (które jest podstawowe) nie zmieniło powiązania *śmieci* w *sprawdzeniu_widoczności*. Przypisanie zamiejscowe ( - z ang. - :keyword:`nonlocal`) zmienił powiąznie *śmieci* w *sprawdzeniu_widoczności*, i nadrzędne przypisanie ( - z ang. - :keyword:`global`) zmieniło powiązanie na poziomie nadrzędnym.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You can also see that there was no previous binding for *spam* before the :keyword:`global` assignment.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Możesz także zauważyć, że nie było poprzedzającego powiązania *śmieci* przed przypisaniem *nadrzędnym* ( - z ang. - :keyword:`global`). </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A First Look at Classes</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Pierwsze Spojrzenie na Uogólnienia</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Classes introduce a little bit of new syntax, three new object types, and some new semantics.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Uogólnienia wprowadzają troszkę nowej składni, trzy nowe rodzaje przedmiotów, i pewną nową terminologię.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Class Definition Syntax</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Składnia Ustanawiania Założeń Uogólnień</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The simplest form of class definition looks like this::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Najprostsza postać ustanawiania założeń uogólnienia wygląda następująco::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>class ClassName:     &lt;statement-1&gt;     .     .     .     &lt;statement-N&gt;</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>class Nazwa_Uogólnienia: &lt;polecenie-1&gt; . . . &lt;polecenie-N&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Class definitions, like function definitions (:keyword:`def` statements) must be executed before they have any effect.  (You could conceivably place a class definition in a branch of an :keyword:`if` statement, or inside a function.)</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>opisy uogólnień, podobnie do opisów zadań (rozpoczynane poleceniem :keyword:`def`) muszą być wykonane zanim będą mogły być użyte. (Jest możliwe umieszczenie opisu uogólnienia w rozgałęzieniu zawartym w poleceniu jeżeli - z ang. - :keyword:`if`, lub we wnętrzu zadania.)  </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In practice, the statements inside a class definition will usually be function definitions, but other statements are allowed, and sometimes useful --- we'll come back to this later.  The function definitions inside a class normally have a peculiar form of argument list, dictated by the calling conventions for methods --- again, this is explained later.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>W praktyce, polecenia we wnętrzu określenia uogólnienia zazwyczaj są określeniami zadań, ale inne polecenia też są dozwolone, i czasami przydatne --- powrócimy do tej kwestii za chwilę. Określenie zadania we wnętrzu uogólnienia z zasady ma osobliwą postać spisu wytycznych, wyznaczoną przez obyczaje odnoszenia się do sposobów postępowania uogólnień --- i znów, zostanie to wyjaśnione w dalszej kolejności.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When a class definition is entered, a new namespace is created, and used as the local scope --- thus, all assignments to local variables go into this new namespace.  In particular, function definitions bind the name of the new function here.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Gdy wprowadzone zostaje określenie uogólnienia, nowa przestrzeń nazw jest tworzona, i używana jako miejscowy zakres widoczności --- stąd, wszystkie przypisania do miejscowych nazw odnoszą się do tej nowej przestrzeni nazw. W szczególności, określenia zadań wiążą tam nazwę nowego zadania.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When a class definition is left normally (via the end), a *class object* is created.  This is basically a wrapper around the contents of the namespace created by the class definition; we'll learn more about class objects in the next section.  The original local scope (the one in effect just before the class definition was entered) is reinstated, and the class object is bound here to the class name given in the class definition header (:class:`ClassName` in the example).</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Gdy wprowadzanie określenia zadania jest kończone zwyczajnie (przez przejście poza miejsca zakończenia), przedmiot przedstawiający porządek tego uogólnienia jest tworzony. Jest on w zasadzie opakowaniem wokół zawartości przestrzeni nazw utworzonej przy okazji wprowadzania określenia uogólnienia. Dowiemy się więcej o przedmiotach przedstawiających porządki uogólnień w następnej części poradnika. Pierwotny miejscowy zakres widoczności (który miał zastosowanie jeszcze zanim wprowadzono określenie uogólnienia) jest przywracany, i przedmiot przedstawiający porządek uogólnienia jest wiązany tamże do nazwy uogólnienia podanej na początku określenia uogólnienia (w podanym przykładzie ":uogólnienie:`Nazwa_Uogólnienia`" - z ang. - :class:`Nazwa_Uogólnienia`).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Class Objects</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przedmioty przedstawiające porządek Uogólnienia</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Class objects support two kinds of operations: attribute references and instantiation.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przedmioty przedstawiające porządek uogólnienia pozwalają na działania dwóch rodzajów: odnoszenie się do właściwości uogólnienia i tworzenie przykładowych przedmiotów.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*Attribute references* use the standard syntax used for all attribute references in Python: ``obj.name``.  Valid attribute names are all the names that were in the class's namespace when the class object was created.  So, if the class definition looked like this::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>*Odniesienia do własności* używają standardowej składni używanej dla wszystkich odniesień do własności w języku pytonowskim: ``przedmiot.nazwa``. Właściwe nazwy własności są to wszystkie nazwy, które były w przestrzeni nazw uogólnienia gdy przedmiot reprezentujący to uogólnienie został utworzony. Więc jeśli definicja uogólnienia wyglądała następująco::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>class MyClass:     """A simple example class"""     i = 12345     def f(self):         return 'hello world'</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>class MojeUogolnienie:     """Prosty przykład uogólnienia"""     i = 12345     def f(self):         return 'witaj świecie'</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>then ``MyClass.i`` and ``MyClass.f`` are valid attribute references, returning an integer and a function object, respectively. Class attributes can also be assigned to, so you can change the value of ``MyClass.i`` by assignment. :attr:`__doc__` is also a valid attribute, returning the docstring belonging to the class: ``"A simple example class"``.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>wtedy ``MojeUogolnienie.i`` i ``MojeUogolnienie.f`` są prawidłowymi odniesieniami do własności, zwracającymi liczbę całkowitą i przedmiot zadania, odpowiednio. Własności uogólnienia mogą także być przedmiotem przypisania więc można zmienić wartość ``MojeUogolnienie.i`` przez przypisanie. :attr:`__doc__` jest także prawidłowym atrybutem, zwracającym ciąg dokumentacji ( - z ang. - docstring ) należący do uogólnienia ``"Prosty przykład uogólnienia"``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Class *instantiation* uses function notation.  Just pretend that the class object is a parameterless function that returns a new instance of the class. For example (assuming the above class)::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>*Dawanie przykładu* uogólnienia używa notacji zadania. Udawajmy że przedmiot uogólnienia jest zadaniem bez parametrów które zwraca nowy przykład uogólnienia. Dla przykładu (przyjmując założenia powyższego uogólnienia)::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>x = MyClass()</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>x = MojeUogolnienie()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>creates a new *instance* of the class and assigns this object to the local variable ``x``.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>tworzy nowy *przykład* uogólnienia i przypisuje ten przedmiot zmiennej lokalnej ``x``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The instantiation operation ("calling" a class object) creates an empty object. Many classes like to create objects with instances customized to a specific initial state. Therefore a class may define a special method named :meth:`__init__`, like this::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>operacja dawanie przykładu ("wezwanie" przedmiotu uogólnienia) tworzy pusty przedmiot. Wiele uogólnień "lubi" tworzyć przedmioty jako przykłady dostosowane przez nadanie szczególnego stanu początkowego. Dlatego uogólnienie może definiować specjalne sposoby postępowania nazwane :meth:`__init__`, jak te::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>def __init__(self):     self.data = []</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>def __init__(self): self.data = []</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When a class defines an :meth:`__init__` method, class instantiation automatically invokes :meth:`__init__` for the newly-created class instance.  So in this example, a new, initialized instance can be obtained by::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Gdy uogólnienie definiuje sposób postępowania :meth:`__init__`, dawanie przykładu danego uogólnienia automatycznie wzywa :meth:`__init__` dla nowo utworzonego przykładu uogólnienia. Więc w tym przykładzie nowy zainicjowany przykład można otrzymać przez::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Of course, the :meth:`__init__` method may have arguments for greater flexibility.  In that case, arguments given to the class instantiation operator are passed on to :meth:`__init__`.  For example, ::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Oczywiście sposób postępowania :meth:`__init__` może mieć parametry dla większej elastyczności. W takim przypadku parametry dostarczone operatorowi dania przykładu uogólnienia są przekazane do :meth:`__init__`. Na przykład, ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&gt;&gt;&gt; class Complex: ...     def __init__(self, realpart, imagpart): ...         self.r = realpart ...         self.i = imagpart ... &gt;&gt;&gt; x = Complex(3.0, -4.5) &gt;&gt;&gt; x.r, x.i (3.0, -4.5)</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>&gt;&gt;&gt; class Zespolone: ... def __init __(self,rzeczczesc,urojonaczesc): ... self.r = rzeczczesc ... self.i = urojonaczesc ... &gt;&gt;&gt; x = Zespolone(3.0,-4.5) &gt;&gt;&gt; x.r, x.i (3.0, -4.5)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Instance Objects</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przedmioty Przykładów</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Now what can we do with instance objects?  The only operations understood by instance objects are attribute references.  There are two kinds of valid attribute names, data attributes and methods.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Co teraz możemy począć z przedmiotami przykładów? Jedynymi operacjami zrozumiałymi dla przedmiotów przykładów są odwołania do właściwości. Są dwa rodzaje prawidłowych nazw właściwości, właściwości danych i sposobów postępowania.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*data attributes* correspond to "instance variables" in Smalltalk, and to "data members" in C++.  Data attributes need not be declared; like local variables, they spring into existence when they are first assigned to.  For example, if ``x`` is the instance of :class:`MyClass` created above, the following piece of code will print the value ``16``, without leaving a trace::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>*właściwości danych* odpowiadają "zmiennym przykładowym" w Smalltalku i do "członków danych" w C++. Właściwości danych nie muszą być deklarowane; tak jak zmienne lokalne wyrastają do życia gdy pierwszy raz nastąpi przypisanie do nich wartości. Na przykład jeśli ``x`` jest przykładem :class:`MojegoUogolnienia` utworzonego powyżej, następujący kawałek kodu wypisze wartość ``16`` bez zostawiania śladu::</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

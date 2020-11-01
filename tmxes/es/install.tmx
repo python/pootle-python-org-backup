@@ -1,0 +1,95 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Installing Python Modules</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Instalar módulos de Python</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Author</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Autor</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Greg Ward</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Greg Ward</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>|version|</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>|version|</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Date</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Fecha</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>|today|</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>|today|</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Abstract</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Resumen</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This document describes the Python Distribution Utilities ("Distutils") from the end-user's point-of-view, describing how to extend the capabilities of a standard Python installation by building and installing third-party Python modules and extensions.</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Este documento describe las Utilidades de Distribución de Python ("Distutils") desde el punto de vista del usuario final, describe cómo ampliar las capacidades de la instalación estándar de Python mediante la construcción e instalación de módulos y extensiones de terceros.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Introduction</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Introducción</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Although Python's extensive standard library covers many programming needs, there often comes a time when you need to add some new functionality to your Python installation in the form of third-party modules.  This might be necessary to support your own programming, or to support an application that you want to use and that happens to be written in Python.</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Aunque la extensa biblioteca estándar de Python cubre muchas necesidades de programación, a veces necesita añadir nueva funcionalidad a su instalación de Python mediante módulos de terceros. Por ejemplo, como apoyo a su propio desarrollo o para poder utilizar una aplicación que desee y esté escrita en Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In the past, there has been little support for adding third-party modules to an existing Python installation.  With the introduction of the Python Distribution Utilities (Distutils for short) in Python 2.0, this changed.</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>En el pasado, ha habido poco soporte para añadir módulos de terceros a una instalación existente de Python. Mediante la introducción de las Utilidades de Distribución de Python (acortado a Distutils) en Python 2.0, esto ha cambiado.</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>API Reference</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>API-Referenz</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>value</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Wert</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>type</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Typ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The name of the package</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Der Name des Paketes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>a string</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>eine Zeichenkette</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The version number of the package</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Die Versionsnummer des Paketes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A single line describing the package</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Einzeilige Beschreibung des Paketes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Longer description of the package</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Längere Beschreibung des Paketes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The name of the package author</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Der Names des Paketautors</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

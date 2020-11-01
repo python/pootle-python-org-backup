@@ -1,0 +1,1423 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Abstract Objects Layer</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Camada de Objetos Abstratos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The functions in this chapter interact with Python objects regardless of their type, or with wide classes of object types (e.g. all numerical types, or all sequence types).  When used on object types for which they do not apply, they will raise a Python exception.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>As funções neste capítulo interagem com objetos Python independentemente de seu tipo, ou com grandes classes de tipos objetos (por exemplo, todos os tipos numéricos, ou todos os tipos sequenciais). Quando usadas em tipos objetos incompatíveis, elas irão levantar uma exceção Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>It is not possible to use these functions on objects that are not properly initialized, such as a list object that has been created by :cfunc:`PyList_New`, but whose items have not been set to some non-\ ``NULL`` value yet.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Não é possível usar estas funções em objetos que não foram inicializados apropriadamente, tal qual um objeto list que foi criado por :cfunc:`PyList_New`, mas cujos itens não foram atribuídos a algum valor não-\ ``NULL`` ainda.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Allocating Objects on the Heap</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Alocando Objetos no Heap</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See also</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Veja também</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>To allocate and create extension modules.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Para alocar e criar módulos de extensão.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Parsing arguments and building values</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Analisando argumentos e construindo valores</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Parsing arguments</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Analisando argumentos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A format string consists of zero or more "format units."  A format unit describes one Python object; it is usually a single character or a parenthesized sequence of format units.  With a few exceptions, a format unit that is not a parenthesized sequence normally corresponds to a single address argument to these functions.  In the following description, the quoted form is the format unit; the entry in (round) parentheses is the Python object type that matches the format unit; and the entry in [square] brackets is the type of the C variable(s) whose address should be passed.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Uma string de formatação consiste de zero ou mais "unidades de formatação". Uma unidade de formatação descreve um objeto Python; ela é geralmente um único caractere ou uma sequência de unidades de formatação entre parênteses. Com algumas poucas exceções, uma unidade de formatação que não é uma sequência entre parênteses normalmente corresponde a um único argumento de endereço para essas funções. Na seguinte descrição, a forma entre aspas é a unidade de formatação; a entrada em parênteses (redondos) é o tipo de objeto Python que corresponde a unidade de formatação; e a entrada em colchetes (quadrados) é o tipo da(s) variável(is) C cujo endereço deve ser passado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Strings and buffers</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Strings e buffers</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Like ``s``, but the Python object may also be ``None``, in which case the C pointer is set to *NULL*.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Como``s``, mas o objeto Python também pode ser ``None``, caso em que o ponteiro C obtém o valor *NULL*.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There are two modes of operation:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Existem dois modos de operação:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Numbers</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Números</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Other objects</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Outros objetos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>status = converter(object, address);</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>status = converter(objeto, endereco);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A few other characters have a meaning in a format string.  These may not occur inside nested parentheses.  They are:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Alguns outros poucos caracteres têm um significado em uma string de formatação. Esses podem não ocorrer dentro de parênteses aninhados. Eles são:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>API Functions</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Funções da API</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Building values</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Construindo valores</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Boolean Objects</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos Booleanos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Buffer Objects</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos de Buffer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Buffer related functions</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Funções relacionadas a buffers</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Direct API functions</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Funções diretas da API</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Macros</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Macros</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Capsules</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Cápsulas</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Complex Numbers as C Structures</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Números Complexos como Estruturas C</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>While the functions described in this chapter carefully check the type of the objects which are passed in, many of them do not check for *NULL* being passed instead of a valid object.  Allowing *NULL* to be passed in can cause memory access violations and immediate termination of the interpreter.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Enquanto as funções descritas neste capítulo cuidadosamente checam o tipo dos objetos passados, muitas delas não checam se *NULL* foi passado ao invés de um objeto válido. Permitir que *NULL* seja passado pode causar violações de acesso de memória e término imediato do interpretador.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Fundamental Objects</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos Fundamentais</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Numeric Objects</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos Numéricos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Sequence Objects</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos de Sequência</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Other Objects</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Outros Objetos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>String conversion and formatting</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Conversão e formatação de string</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Macros to create objects:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Macros para criar objetos:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Macros for the convenience of modules implementing the DB API:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Macros para a conveniência de módulos implementando a API DB:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Dictionary Objects</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos Dicionário</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Exception Handling</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Tratamento de Exceções</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Exception Objects</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos Exceção</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Recursion Control</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Controle de Recursividade</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Standard Exceptions</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Exceções Padrão</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>C Name</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Nome C</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python Name</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Nome Python</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Notes</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Notas</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_BaseException`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_BaseException`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`BaseException`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`BaseException`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>\(1)</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>\(1)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_Exception`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_Exception`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`Exception`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`Exception`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_ArithmeticError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_ArithmeticError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`ArithmeticError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`ArithmeticError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_LookupError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_LookupError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`LookupError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`LookupError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_AssertionError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_AssertionError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`AssertionError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`AssertionError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_AttributeError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_AttributeError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`AttributeError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`AttributeError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_EOFError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_EOFError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`EOFError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`EOFError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_EnvironmentError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_EnvironmentError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`EnvironmentError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`EnvironmentError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_FloatingPointError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_FloatingPointError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`FloatingPointError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`FloatingPointError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_IOError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_IOError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`IOError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`IOError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_ImportError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_ImportError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`ImportError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`ImportError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_IndexError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_IndexError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`IndexError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`IndexError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_KeyError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_KeyError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`KeyError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`KeyError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_KeyboardInterrupt`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_KeyboardInterrupt`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`KeyboardInterrupt`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`KeyboardInterrupt`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_MemoryError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_MemoryError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`MemoryError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`MemoryError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_NameError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_NameError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`NameError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`NameError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_NotImplementedError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_NotImplementedError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`NotImplementedError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`NotImplementedError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_OSError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_OSError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`OSError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`OSError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_OverflowError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_OverflowError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`OverflowError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`OverflowError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_ReferenceError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_ReferenceError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`ReferenceError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`ReferenceError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>\(2)</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>\(2)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_RuntimeError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_RuntimeError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`RuntimeError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`RuntimeError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_SyntaxError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_SyntaxError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`SyntaxError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`SyntaxError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_SystemError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_SystemError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`SystemError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`SystemError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_SystemExit`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_SystemExit`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`SystemExit`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`SystemExit`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_TypeError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_TypeError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`TypeError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`TypeError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_ValueError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_ValueError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`ValueError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`ValueError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_WindowsError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_WindowsError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`WindowsError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`WindowsError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>\(3)</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>\(3)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_ZeroDivisionError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cdata:`PyExc_ZeroDivisionError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`ZeroDivisionError`</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:exc:`ZeroDivisionError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Notes:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Notas:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This is a base class for other standard exceptions.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Esta é uma classe base para outras exceções padrão</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>File Objects</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos Arquivo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Floating Point Objects</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos Ponto Flutuante</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Function Objects</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos Função</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There are a few functions specific to Python functions.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Existem algumas funções específicas para as funções Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Supporting Cyclic Garbage Collection</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Apoiando a Coleta de Lixo Cíclica</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Generator Objects</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos Gerador</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Importing Modules</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Importando Módulos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python/C API Reference Manual</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Manual de Referência à API Python/C</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Release</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Lançamento</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>|version|</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>|versão|</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Date</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Data</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>|today|</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>|hoje|</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Initialization, Finalization, and Threads</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Inicialização, Finalização e Threads</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Thread State and the Global Interpreter Lock</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Estado da Thread e a Trava do Interpretador Global</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When thread support is enabled, the block above expands to the following code::</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Quando o suporte à threads está habilitado, o bloco acima é expandido para o seguinte código::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Introduction</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Introdução</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>#include "Python.h"</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>#include "Python.h"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>C++ users should note that though the API is defined entirely using C, the header files do properly declare the entry points to be ``extern "C"``, so there is no need to do anything special to use the API from C++.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Usuários de C++ devem observar que, apesar da API ser inteiramente definida em C, os arquivos de cabeçalho (header files) fazem uma declaração apropriada dos pontos de entrada como sendo ``extern "C"``, então não há necessidade de se fazer qualquer coisa especial para se fazer uso da API usando-se C++.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Types</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Tipos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Exceptions</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Exceções</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Here is the corresponding C code, in all its glory::</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Aqui está o código C correspondente, em toda a sua glória:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>List Objects</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos Lista</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Integer Objects</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos Inteiro</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Mapping Protocol</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Protocolo de Mapeamento</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Numeric values are stored with the least significant byte first.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Valores numéricos são armazenados com o byte menos significante primeiro.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Memory Management</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Gerenciamento de Memória</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Overview</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Visão Geral</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Memory Interface</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Interface da Memória</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cfunc:`PyMem_MALLOC`, :cfunc:`PyMem_REALLOC`, :cfunc:`PyMem_FREE`.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cfunc:`PyMem_MALLOC`, :cfunc:`PyMem_REALLOC`, :cfunc:`PyMem_FREE`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cfunc:`PyMem_NEW`, :cfunc:`PyMem_RESIZE`, :cfunc:`PyMem_DEL`.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>:cfunc:`PyMem_NEW`, :cfunc:`PyMem_RESIZE`, :cfunc:`PyMem_DEL`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Examples</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Exemplos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Method Objects</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos Método</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Module Objects</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos Módulo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There are only a few functions special to module objects.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Existem apenas algumas funções especiais ao módulo de objetos.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Initializing C modules</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Inicializando módulos C</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These functions are usually used in the module initialization function.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Essas funções são normalmente utilizadas na função de inicialização do módulo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The None Object</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>O Objeto Nulo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Number Protocol</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Protocolo de Número</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Buffer Protocol</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Protocolo de Buffer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Object Protocol</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Protocolo de Objeto</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Reflection</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Reflexão</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Sequence Protocol</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Protocolo de Sequência</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Set Objects</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos Conjunto</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Operating System Utilities</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Utilitários do Sistema Operacional</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>System Functions</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Funções do Sistema</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Process Control</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Controle de Processos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Tuple Objects</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos Tupla</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Type Objects</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos Tipo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Unicode Objects and Codecs</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos Unicode e Codecs</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Unicode Objects</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos Unicode</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Unicode Type</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Tipo Unicode</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Unicode Character Properties</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Propriedades do Caractere Unicode</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>File System Encoding</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Codificação do Sistema de Arquivos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Generic Codecs</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Codecs Genéricos</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These are the generic codec APIs:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Estas são as APIs de codec genéricas:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>UTF-8 Codecs</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Codecs UTF-8</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These are the UTF-8 codec APIs:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Estas são as APIs do codec UTF-8:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>UTF-32 Codecs</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Codecs UTF-32</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These are the UTF-32 codec APIs:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Estas são as APIs do codec UTF-32:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>UTF-16 Codecs</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Codecs UTF-16</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These are the UTF-16 codec APIs:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Estas são as APIs do codec UTF-16:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Unicode-Escape Codecs</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Codecs Unicode-Escape</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These are the "Unicode Escape" codec APIs:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Estas são as APIs do codec "Unicode Escape":</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Raw-Unicode-Escape Codecs</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Codecs Raw-Unicode-Escape</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These are the "Raw Unicode Escape" codec APIs:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Estas são as APIs do codec "Raw Unicode Escape":</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Latin-1 Codecs</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Codecs Latin-1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These are the Latin-1 codec APIs: Latin-1 corresponds to the first 256 Unicode ordinals and only these are accepted by the codecs during encoding.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Estas são as APIs do codec Latin-1: Latin-1 corresponde aos primeiros 256 ordinais Unicode e apenas estes são aceitos pelos codecs durante a codificação.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>ASCII Codecs</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Codecs ASCII</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These are the ASCII codec APIs.  Only 7-bit ASCII data is accepted. All other codes generate errors.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Estas são as APIs do codec ASCII: Apenas dados em ASCII 7-bit são aceitos. Todos os outros códigos geram erros.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Character Map Codecs</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Codecs Mapa de Caracteres</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These are the mapping codec APIs:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Estas são as APIs de mapeamento de codec:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>MBCS codecs for Windows</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Codecs MBCS para Windows</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>They all return *NULL* or ``-1`` if an exception occurs.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Todas elas retornam *NULL* ou ``-1`` se uma exceção ocorre.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Utilities</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Utilitários</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Weak Reference Objects</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Objetos de Referências Fracas</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

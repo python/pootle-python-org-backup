@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Reporting Bugs</seg>
+      </tuv>
+      <tuv xml:lang="ja">
+        <seg>バグ報告</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Documentation bugs</seg>
+      </tuv>
+      <tuv xml:lang="ja">
+        <seg>ドキュメントの不具合</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Using the Python issue tracker</seg>
+      </tuv>
+      <tuv xml:lang="ja">
+        <seg>Python 問題追跡の使用</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See also</seg>
+      </tuv>
+      <tuv xml:lang="ja">
+        <seg>関連項目</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

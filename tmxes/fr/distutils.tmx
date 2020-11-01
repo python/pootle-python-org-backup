@@ -1,0 +1,743 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>API Reference</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Référence de l'API</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The :mod:`distutils.core` module is the only module that needs to be installed to use the Distutils. It provides the :func:`setup` (which is called from the setup script). Indirectly provides the  :class:`distutils.dist.Distribution` and :class:`distutils.cmd.Command` class.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Le module :mod:`distutils.core` est le seul module qui a besoin d'être installé pour utiliser Distutils. Il fournit le :func:`setup` (qui est appelé par le script de setup). Il fournit indirectement les classes :class:`distutils.dist.Distribution` et :class:`distutils.cmd.Command`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The basic do-everything function that does most everything you could ever ask for from a Distutils method. See XXXXX</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>La fonction de base à tout faire qui fait presque tout ce dont vous pourriez attendre d'une méthode Distutils. Voir XXXXX</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The setup function takes a large number of arguments. These are laid out in the following table.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>La fonction setup prend un grand nombre d'arguments. Ils sont présentés dans le tableau suivant.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>argument name</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>nom de l'argument</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>value</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>valeur</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>type</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>type</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*name*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*name*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The name of the package</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Le nom du paquet</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>a string</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>une chaîne de caractères</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*version*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*version*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The version number of the package</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Le numéro de version du paquet</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See :mod:`distutils.version`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Voir :mod:`distutils.version`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*description*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*description*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A single line describing the package</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une ligne unique décrivant le paquet</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*long_description*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*long_description*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Longer description of the package</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une description plus longue du paquet</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*author*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*author*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The name of the package author</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Le nom de l'auteur du paquet</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*author_email*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*author_email*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The email address of the package author</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>L'adresse e-mail de l'auteur du paquet</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*maintainer*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*maintainer*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The name of the current maintainer, if different from the author</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Le nom du mainteneur actuel, si différent de l'auteur</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*maintainer_email*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*maintainer_email*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The email address of the current maintainer, if different from the author</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>L'adresse email de l'actuel mainteneur, si différent de l'auteur</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*url*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*url*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A URL for the package (homepage)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une URL pour le paquet (page d'accueil)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>a URL</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>une URL</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*download_url*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*download_url*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A URL to download the package</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une URL pour télécharger le paquet</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*packages*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*packages*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A list of Python packages that distutils will manipulate</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une liste des paquets Python que distutils va manipuler</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>a list of strings</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>une liste de chaînes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*py_modules*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*py_modules*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A list of Python modules that distutils will manipulate</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une liste de modules Python que distutils va manipuler</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*scripts*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*scripts*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A list of standalone script files to be built and installed</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une liste de scripts autonomes à construire et à installer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*ext_modules*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*ext_modules*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A list of Python extensions to be built</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une liste des extensions Python à construire</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A list of  instances of :class:`distutils.core.Extension`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une liste d'instances de :class:`distutils.core.Extension'</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*classifiers*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*classifiers*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A list of categories for the package</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une liste de catégories pour le paquet</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The list of available categorizations is at http://pypi.python.org/pypi?:action=list_classifiers.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>La liste des catégorisations est disponibles sur http://pypi.python.org/pypi?:action=list_classifiers.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*distclass*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*distclass*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>the :class:`Distribution` class to use</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>la classe :class:`Distribution` à utiliser</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A subclass of :class:`distutils.core.Distribution`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une sous classe de :class:`distutils.core.Distribution`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*script_name*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*script_name*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*script_args*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*script_args*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Arguments to supply to the setup script</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Arguments à fournir au script d'installation</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*options*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*options*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>default options for the setup script</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>options par défaut pour le script d'installation</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*license*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*license*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The license for the package</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>La licence pour le paquet</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*keywords*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*keywords*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Descriptive meta-data, see :pep:`314`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Méta-données descriptives, voir :pep:`314`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*platforms*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*platforms*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*cmdclass*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*cmdclass*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A mapping of command names to :class:`Command` subclasses</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Un mapping des noms de commandes et des sous-classes :class:`Command`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>a dictionary</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>un dictionnaire</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*data_files*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*data_files*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A list of data files to install</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une liste de fichiers de données à installer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>a list</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>une liste</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*package_dir*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*package_dir*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A mapping of package to directory names</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Un mapping des paquets et des noms de dossiers</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*script_name* is a file that will be read and run with :func:`exec`.  ``sys.argv[0]`` will be replaced with *script* for the duration of the call.  *script_args* is a list of strings; if supplied, ``sys.argv[1:]`` will be replaced by *script_args* for the duration  of the call.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*script_name* est un fichier qui sera lu et exécuté avec :func:`exec`. ``sys.argv[0]`` sera remplacé par *script* par la durée de l'appel. *script_args* est une liste de chaînes; si fourni, ``sys.argv[1:]`` sera remplacé par *script_args* pour la durée de l'appel.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*stop_after* tells :func:`setup` when to stop processing; possible  values:</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*stop_after* dit à :func:`setup` quand s'arrêter; valeurs possibles:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>description</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>description</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*init*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*init*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Stop after the :class:`Distribution` instance has been created  and populated with the keyword arguments to :func:`setup`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>S'arrête une fois que l'instance :class:`Distribution` a été créée et renseignée avec les arguments-clés de :func:`setup`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*config*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*config*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Stop after config files have been parsed (and their data stored in the :class:`Distribution` instance)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>S'arrête une fois que les fichiers de configuration ont été parcouru (et que leurs données ont été stockées dans l'instance :class:`Distribution`)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*commandline*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*commandline*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Stop after the command-line (``sys.argv[1:]`` or  *script_args*) have been parsed (and the data stored in the :class:`Distribution` instance.)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>S'arrête une fois que la ligne de commande (``sys.argv[1:]`` ou *script_args*) a été parcouru (et les données stockées dans l'instance :class:`Distribution`)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*run*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*run*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Stop after all commands have been run (the same as  if :func:`setup` had been called in the usual way). This is the default value.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>S'arrête une fois que toutes les commandes ont été exécutées (comme si :func:`setup` fût appelé de la manière habituelle). Ceci est la valeur par défaut.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In addition, the :mod:`distutils.core` module exposed a number of  classes that live elsewhere.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>De plus, le module :mod:`distutils.core` a exposé un nombre de classe qui existent ailleurs.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:class:`Extension` from :mod:`distutils.extension`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:class:`Extension` de :mod:`distutils.extension`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:class:`Command` from :mod:`distutils.cmd`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:class:`Command` de :mod:`distutils.cmd`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:class:`Distribution` from :mod:`distutils.dist`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:class:`Distribution` de :mod:`distutils.dist`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A short description of each of these follows, but see the relevant module for the full reference.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une courte description de chacune d'elle suit, mais consultez le module concerné pour une référence complète.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The Extension class describes a single C or C++extension module in a setup script. It accepts the following keyword arguments in its constructor</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>La class Extension décrit un seul module d'extension C ou C++ dans un script d'installation. Elle accepte dans son constructeur les arguments-clés suivants</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>the full name of the extension, including any packages --- ie. *not* a filename or pathname, but Python dotted name</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>le nom complet de l'extension, incluant n'importe quel paquet --- c-à-d *pas* un nom de fichier ou de chemin mais un nom Python séparé par des points</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*sources*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*sources*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>list of source filenames, relative to the distribution root (where the setup script lives), in Unix form (slash- separated) for portability. Source files may be C, C++, SWIG (.i), platform-specific resource files, or whatever else is recognized by the :command:`build_ext` command as source for a Python extension.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>listes des noms de fichier des sources, relatifs à la racine de la distribution (où est placé le script setup), dans un format Unix (séparé par des slashs) dans un souci de portabilité. Les fichiers de code source peuvent être du C, C++, SWIG (.i), des fichiers de ressources spécifiques à la plateforme ou tout autre reconnu par la commande :command:`build_ext` comme source d'une extension Python</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>list of directories to search for C/C++ header files (in Unix form for portability)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>liste des répertoires où chercher les fichiers d'entêtes C/C++ (en format Unix dans un souci de portabilité)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*define_macros*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*define_macros*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*undef_macros*</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>*undef_macros*</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>list of files that the extension depends on</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>liste des fichiers dont dépend l'extension</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>extension language (i.e. ``'c'``, ``'c++'``, ``'objc'``). Will be detected from the source extensions if not provided.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>langage de l'extension (par exemple ``'c'``, ``'c++'``, ``'objc'``). Il sera détecté selon l'extension de la source s'il n'est pas précisé.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This module provides the following functions.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Ce module fournit les fonctions suivantes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Determine the default compiler to use for the given platform.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Détermine le compilateur par défaut a utiliser par une plateforme donnée</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The default values are ``os.name`` and ``sys.platform`` in case the parameters are not given.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les valeurs par défaut sont ``os.name`` et ``sys.platform`` si les paramètres ne sont pas fournis.</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Reporting Bugs</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>提交BUG</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python is a mature programming language which has established a reputation for stability.  In order to maintain this reputation, the developers would like to know of any deficiencies you find in Python.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>Python是一种成熟的编程语言，它以稳定著称。为了保持这种稳定性，开发者们乐意知道任何Python的不足之处。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Documentation bugs</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>文档Bug</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If you find a bug in this documentation or would like to propose an improvement, please send an e-mail to docs@python.org describing the bug and where you found it.  If you have a suggestion how to fix it, include that as well.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>如果你发现了文档中的Bug或是你想要加以改进，请发送邮件到docs@python.org描述一下这个Bug和在哪里发现它的。如果你有修正它的办法，请在邮件中一并描述。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>docs@python.org is a mailing list run by volunteers; your request will be noticed, even if it takes a while to be processed.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>docs@python.org是由志愿者们维护的邮件列表；您的请求将被注意到，即使它需要一段时间来进行处理。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Of course, if you want a more persistent record of your issue, you can use the issue tracker for documentation bugs as well.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>当然，如果你想要更长久的记录您的问题，您还可以使用文档Bug的问题追踪器(issue tracker)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Using the Python issue tracker</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>使用Python问题追踪器</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Bug reports for Python itself should be submitted via the Python Bug Tracker (http://bugs.python.org/).  The bug tracker offers a Web form which allows pertinent information to be entered and submitted to the developers.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>Python的Bug应该通过Python问题追踪器(Python Bug Tracker)(http://bugs.python.org/)来提交。它提供了一个Web表格来填写相关信息并提交给开发者们。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The first step in filing a report is to determine whether the problem has already been reported.  The advantage in doing so, aside from saving the developers time, is that you learn what has been done to fix it; it may be that the problem has already been fixed for the next release, or additional information is needed (in which case you are welcome to provide it if you can!). To do this, search the bug database using the search box on the top of the page.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>填写报告的第一步是需要确定这问题是否已经提交过了。这样做的好处是，除了节省开发者的时间，你还知道了该问题是怎么解决的；它可能在下一个发行版中就解决了，也可能需要提供更多信息（在这种情况下，您如果可以的话欢迎提供！）。你可以通过使用页面顶部的搜索框来搜索Bug数据库来做这件事。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If the problem you're reporting is not already in the bug tracker, go back to the Python Bug Tracker and log in.  If you don't already have a tracker account, select the "Register" link or, if you use OpenID, one of the OpenID provider logos in the sidebar.  It is not possible to submit a bug report anonymously.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>如果您报告的问题没有在问题追踪器里，返回Pythony Bug Tracker并登录。如果您还没有帐号，选择"Register"链接，或者您使用OpenID的话，选择边栏上的OpenID提供者标识。不可以使用匿名帐号提交问题报告的。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Being now logged in, you can submit a bug.  Select the "Create New" link in the sidebar to open the bug reporting form.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>现在您登录上以后，就可以提交Bug了。选择边栏上的"Create New"链接来打开Bug提交的表单。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The submission form has a number of fields.  For the "Title" field, enter a *very* short description of the problem; less than ten words is good.  In the "Type" field, select the type of your problem; also select the "Component" and "Versions" to which the bug relates.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>提交表格中有好些个栏目。在"Title"栏，输入*很*短的问题描述；最好在10个字以下。在"Type"栏，选择您的问题类型；也要选择问题相关的"Component"(组件)和"Versions"(版本）</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In the "Comment" field, describe the problem in detail, including what you expected to happen and what did happen.  Be sure to include whether any extension modules were involved, and what hardware and software platform you were using (including version information as appropriate).</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>在"Comment"(评论)栏，详细说明问题的细节，包括期望的结果和实际结果。请确保提供依赖的扩展模块和您所使用的软硬件平台信息（最好能有版本信息）。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Each bug report will be assigned to a developer who will determine what needs to be done to correct the problem.  You will receive an update each time action is taken on the bug.  See http://www.python.org/dev/workflow/ for a detailed description of the issue workflow.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>每个错误报告将被分配给开发人员，他们将决定需要做什么来解决问题。每次对Bug采取的行动您都会收到更新。参考 http://www.python.org/dev/workflow/ 来得到详细的工作流程说明。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See also</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>参考</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Article which goes into some detail about how to create a useful bug report. This describes what kind of information is useful and why it is useful.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>Article which goes into some detail about how to create a useful bug report. 关于如何提交有用问题报告的文章。它说明了哪些信息是有用的，为什么有用。</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Information about writing a good bug report.  Some of this is specific to the Mozilla project, but describes general good practices.</seg>
+      </tuv>
+      <tuv xml:lang="zh">
+        <seg>Information about writing a good bug report. 关于如何撰写一份好的Bug报告的信息。其中的一些细节是指Mozilla工程的，但是但描述了一般的良好做法。</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

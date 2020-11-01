@@ -1,0 +1,1591 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Abstract Objects Layer</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Couche d'Abstraction des Objets</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The functions in this chapter interact with Python objects regardless of their type, or with wide classes of object types (e.g. all numerical types, or all sequence types).  When used on object types for which they do not apply, they will raise a Python exception.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Dans ce chapitre, les fonctions s'appliquent à des objets Python sans tenir compte de leur type, ou des classes d'objets au sens large (par exemple, tous les types numériques, ou tous les types de séquence). Quand ils sont utilisés sur des types d'objets qui ne correspondent pas, ils lèveront une exception Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>It is not possible to use these functions on objects that are not properly initialized, such as a list object that has been created by :cfunc:`PyList_New`, but whose items have not been set to some non-\ ``NULL`` value yet.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Il n'est pas possible d'utiliser ces fonctions sur des objets qui n'ont pas été correctement initialisés, comme un objet liste qui a été créé avec :cfunc:`PyList_New` mais dont les éléments n'ont pas encore été mis à une valeur non-\ ``NULL``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Allocating Objects on the Heap</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Allouer des objets dans le tas</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See also</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Voir aussi</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>To allocate and create extension modules.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Allouer et créer des modules d'extension.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Parsing arguments and building values</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Analyse des arguments et construction des valeurs</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These functions are useful when creating your own extensions functions and methods.  Additional information and examples are available in :ref:`extending-index`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Ces fonctions sont utiles pour créer vos propres fonctions et méthodes d'extensions. Des informations supplémentaires et des exemples sont disponibles ici: ref:`extending-index`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The first three of these functions described, :cfunc:`PyArg_ParseTuple`, :cfunc:`PyArg_ParseTupleAndKeywords`, and :cfunc:`PyArg_Parse`, all use *format strings* which are used to tell the function about the expected arguments.  The format strings use the same syntax for each of these functions.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Dans Les trois premières de ces fonctions décrites, :cfunc: `PyArg_ParseTuple`, :cfunc: `PyArg_ParseTupleAndKeywords`, et :cfunc: `PyArg_Parse`, toutes utilisent *des chaînes de format* qui sont utilisées pour indiquer à la fonction les arguments attendus. Les chaînes de format utilise la même syntaxe pour chacune de ces fonctions.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Parsing arguments</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Analyse des arguments</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A format string consists of zero or more "format units."  A format unit describes one Python object; it is usually a single character or a parenthesized sequence of format units.  With a few exceptions, a format unit that is not a parenthesized sequence normally corresponds to a single address argument to these functions.  In the following description, the quoted form is the format unit; the entry in (round) parentheses is the Python object type that matches the format unit; and the entry in [square] brackets is the type of the C variable(s) whose address should be passed.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une chaîne de format se compose de zéro ou plusieurs "unités de format". Une unité de format décrit un objet Python, elle est généralement composée d'un seul caractère ou d'une séquence d'unités de format entre parenthèses. À quelques exceptions près, une unité de format qui n'est pas une séquence entre parenthèses correspond normalement à un argument d'une seule adresse pour ces fonctions. Dans la description qui suit, la forme entre guillemets est l'unité de format, l'entrée entre parenthèses est le type d'objet Python qui correspond à l'unité de format, et l'entrée entre crochets est le type de la variable C (ou des variables) dont l'adresse doit être donnée.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Strings and buffers</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Chaînes et tampons</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These formats do not expect you to provide raw storage for the returned string or bytes.  Also, you won't have to release any memory yourself, except with the ``es``, ``es#``, ``et`` and ``et#`` formats.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Ces formats n'attendent pas que vous fournissiez un stockage sous forme brute pour les chaînes ou octets retournés. Alors, vous n'aurez pas à libérer la mémoire vous-même, excepté pour les formats ``es``, ``es#``, ``et`` et ``et#``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>However, when a :ctype:`Py_buffer` structure gets filled, the underlying buffer is locked so that the caller can subsequently use the buffer even inside a :ctype:`Py_BEGIN_ALLOW_THREADS` block without the risk of mutable data being resized or destroyed.  As a result, **you have to call** :cfunc:`PyBuffer_Release` after you have finished processing the data (or in any early abort case).</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Néanmoins, quand une structure :ctype:`Py_buffer` est en cours de remplissage, le tampon sous-jacent est verrouillé pour permettre à l'appelant d'utiliser le buffer par la suite, même lorsqu'il est à 'intérieur d'un bloc :ctype:`Py_BEGIN_ALLOW_THREADS`. Ceci sans le risque pour les données mutables de voir leur taille changée ou d'être supprimées. En conséquence, **il vous appartient d'appeler** :cfunc:`PyBuffer_Release` après que vous ayez terminé de traiter les données (ou après une interruption prémataturée du traitement de ces données).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Unless otherwise stated, buffers are not NUL-terminated.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Sauf indication contraire, les tampons ne se terminent pas par NUL.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>For all ``#`` variants of formats (``s#``, ``y#``, etc.), the type of the length argument (int or :ctype:`Py_ssize_t`) is controlled by defining the macro :cmacro:`PY_SSIZE_T_CLEAN` before including :file:`Python.h`.  If the macro was defined, length is a :ctype:`Py_ssize_t` rather than an :ctype:`int`. This behavior will change in a future Python version to only support :ctype:`Py_ssize_t` and drop :ctype:`int` support. It is best to always define :cmacro:`PY_SSIZE_T_CLEAN`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Pour toutes les variantes de formats ``#`` (``s#``, ``y#``, etc), le type de l'argument longueur (int ou :ctype:`Py_ssize_t`) est contrôlé en définissant la macro :cmacro:`PY_SSIZE_T_CLEAN` avant d'inclure le fichier :file:`Python.h`. Si la macro est définie, la longueur est de type :ctype:`Py_ssize_t`  au lieu d'être de type :ctype:`int`. Ce comportement changera dans une future version de Python, qui supportera seulement :ctype:`Py_ssize_t` et plus :ctype:`int`. Il est préférable de toujours définir :cmacro:`PY_SSIZE_T_CLEAN`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Unicode object to a C pointer to a character string. A pointer to an existing string is stored in the character pointer variable whose address you pass.  The C string is NUL-terminated. The Python string must not contain embedded NUL bytes; if it does, a :exc:`TypeError` exception is raised. Unicode objects are converted to C strings using ``'utf-8'`` encoding. If this conversion fails, a :exc:`UnicodeError` is raised.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Convertir un objet Unicode en un pointeur C sur une chaîne de caractères. Un pointeur sur une chaîne existante est stocké dans le pointeur de la variable caractère dont vous passez l'adresse. La chaîne C est terminée par le caractère NUL. La chaîne Python ne doit pas contenir d'octets NUL, sinon une exception de type :exc:`TypeError` sera levée. Les objets Unicode sont convertis en chaîne de caractères C avec l'encodage ``'utf-8'``. Si la conversion échoue, une exception :exc:`UnicodeError` sera levée.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This format does not accept bytes-like objects.  If you want to accept filesystem paths and convert them to C character strings, it is preferrable to use the ``O&amp;`` format with :cfunc:`PyUnicode_FSConverter` as *converter*.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Ce format n'accepte pas les objets de type octets. Si vous voulez accepter des chemins de fichiers et les convertir en chaînes de caractères C, il vaut mieux utiliser le format ``O&amp;`` avec :cfunc:`PyUnicode_FSConverter` comme *convertisseur*.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This format accepts Unicode objects as well as objects supporting the buffer protocol. It fills a :ctype:`Py_buffer` structure provided by the caller. In this case the resulting C string may contain embedded NUL bytes. Unicode objects are converted to C strings using ``'utf-8'`` encoding.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Ce format accepte aussi bien les objets Unicode que des objets supportant le protocole de mémoire tampon.Il remplit une structure :ctype:`Py_buffer` fournie par l'appelant. Dans ce cas, La chaîne C qui en résulte peut contenir des octets NUL. Les objets Unicode sont convertis en chaînes C en utilisant un encodage ``'utf-8' ``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Like ``s*``, except that it doesn't accept mutable buffer-like objects such as :class:`bytearray`.  The result is stored into two C variables, the first one a pointer to a C string, the second one its length. The string may contain embedded null bytes. Unicode objects are converted to C strings using ``'utf-8'`` encoding.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Comme ``s*``, excepté qu'il n'accepte pas d'objets de type tampons mutables, comme :class:`bytearray`. Le résultat est stocké dans deux variables C, la première étant un pointeur sur une chaîne de caractères C, la seconde étant sa longueur. La chaîne de caractère peut contenir des octets nuls. Les objets Unicode sont convertis en chaînes de caractères C avec l'encodage ``'utf-8'``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Like ``s``, but the Python object may also be ``None``, in which case the C pointer is set to *NULL*.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Comme ``s``, mais l'objet Python peut aussi être ``None``, auquel cas le pointeur C devient *NULL*.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Like ``s*``, but the Python object may also be ``None``, in which case the ``buf`` member of the :ctype:`Py_buffer` structure is set to *NULL*.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Comme ``s*``, mais l'objet Python peut aussi être ``None``, dans ce cas le champ ``buf`` de la structure :ctype:`Py_buffer` est définie à *NULL*.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Like ``s#``, but the Python object may also be ``None``, in which case the C pointer is set to *NULL*.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Comme ``s#``, mais l'objet Python peut également être ``None``, dans ce cas le pointeur C est définie à *NULL*.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This format converts a bytes-like object to a C pointer to a character string; it does not accept Unicode objects.  The bytes buffer must not contain embedded NUL bytes; if it does, a :exc:`TypeError` exception is raised.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Ce format converti un objet contenant des octets en un pointeur C sur une chaîne de caractères, il n'accepte pas d'objets Unicode. Le buffer ne doit pas contenir d'octets NUL ; s'il en contient, une exception :exc:`TypeError` sera levée.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This variant on ``s*`` doesn't accept Unicode objects, only objects supporting the buffer protocol.  **This is the recommended way to accept binary data.**</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Cette variante sur ``s*`` n'accepte pas d'objets Unicode, seulement des objets supportant le protocole buffer. **C'est le moyen recommandé pour accepter des données binaires.**</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This variant on ``s#`` doesn't accept Unicode objects, only bytes-like objects.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Cette variante de ``s#`` n'accepte pas les objets Unicode, uniquement des objets assimilés à des octets.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Requires that the Python object is a :class:`bytes` object, without attempting any conversion.  Raises :exc:`TypeError` if the object is not a bytes object.  The C variable may also be declared as :ctype:`PyObject\*`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Nécessite que l'objet Python soit un objet class:`bytes`, sans tenter de faire aucune conversion au préalable. Si l'objet n'est pas un objet de type octets, une exception :exc:`TypeError` sera levée. La variable C peut également être de type :ctype:`PyObject\*`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Requires that the Python object is a :class:`bytearray` object, without attempting any conversion.  Raises :exc:`TypeError` if the object is not a :class:`bytearray` object. The C variable may also be declared as :ctype:`PyObject\*`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Nécessite que l'objet Python soit un objet :class:`bytearray`, sans tenter de faire aucune conversion. Si l'objet n'est pas un objet de type :class:`bytearray`, une exception :exc:`TypeError` sera levée. La variable C peut aussi être de type :ctype:`PyObject\*`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python Unicode object to a C pointer to a NUL-terminated buffer of Unicode characters.  You must pass the address of a :ctype:`Py_UNICODE` pointer variable, which will be filled with the pointer to an existing Unicode buffer.  Please note that the width of a :ctype:`Py_UNICODE` character depends on compilation options (it is either 16 or 32 bits). The Python string must not contain embedded NUL characters; if it does, a :exc:`TypeError` exception is raised.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Converti un objet Python Unicode en un pointeur C sur un tampon terminé par NUL de caractères Unicode. Vous devez fournir l'adresse d'une variable pointant sur un :ctype:`Py_UNICODE`, qui sera rempli avec le pointeur sur un tampon Unicode existant. Notez que la taille d'un caractère :ctype:`Py_UNICODE` dépend des options choisies à la compilation (16 ou 32 bits). La chaîne de caractères Python ne doit pas contenir de caractères NUL, sinon une exception  :exc:`TypeError` sera levée.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Since ``u`` doesn't give you back the length of the string, and it may contain embedded NUL characters, it is recommended to use ``u#`` or ``U`` instead.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Comme ``u`` ne vous donne pas en retour la longueur de la chaîne, et comme il peut contenir des caractères NUL, il est recommandé d'utiliser à la place ``u#`` ou ``U``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This variant on ``u`` stores into two C variables, the first one a pointer to a Unicode data buffer, the second one its length.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Cette variante de ``u`` stocke son résultat dans deux variables C, la première pointant vers un tampon de données Unicode, la seconde donnant sa longueur.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Like ``u``, but the Python object may also be ``None``, in which case the :ctype:`Py_UNICODE` pointer is set to *NULL*.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Comme ``u``, mais l'objet Python peut aussi être ``None``, auquel cas le pointeur :ctype:`Py_UNICODE` est fixé à *NULL*.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Like ``u#``, but the Python object may also be ``None``, in which case the :ctype:`Py_UNICODE` pointer is set to *NULL*.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Comme ``u#``, mais l'objet Python peut également être ``None``, auquel cas le pointeur :ctype:`Py_UNICODE` est fixé à *NULL*.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Requires that the Python object is a Unicode object, without attempting any conversion.  Raises :exc:`TypeError` if the object is not a Unicode object.  The C variable may also be declared as :ctype:`PyObject\*`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Exige que l'objet Python soit un objet Unicode, sans tenter aucune conversion. Lève une :exc:`TypeError` si l'objet n'est pas un objet Unicode. La variable C peut également être déclarée en tant que :ctype:`PyObject\*`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This format accepts any object which implements the read-write buffer interface. It fills a :ctype:`Py_buffer` structure provided by the caller. The buffer may contain embedded null bytes. The caller have to call :cfunc:`PyBuffer_Release` when it is done with the buffer.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Ce format accepte n'importe quel objet qui implémente l'interface de mémoire tampon en lecture/écriture. Il remplit une structure :ctype:`Py_buffer` fournie par l'appelant. Le tampon peut contenir des octets nuls. L'appelant doit appeler :cfunc:`PyBuffer_Release` quand il n'a plus l'usage du tampon.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This variant on ``s`` is used for encoding Unicode into a character buffer. It only works for encoded data without embedded NUL bytes.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Cette variante ``s`` est utilisée pour encoder de l'Unicode dans un buffer de caractères. Cela ne fonctionne que pour les données encodées qui ne contiennent pas d'octets NUL.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This format requires two arguments.  The first is only used as input, and must be a :ctype:`const char\*` which points to the name of an encoding as a NUL-terminated string, or *NULL*, in which case ``'utf-8'`` encoding is used. An exception is raised if the named encoding is not known to Python.  The second argument must be a :ctype:`char\*\*`; the value of the pointer it references will be set to a buffer with the contents of the argument text. The text will be encoded in the encoding specified by the first argument.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Ce format requiert deux arguments. Le premier est seulement utilisé en entrée, et doit être de type :ctype:`const char\*`. Il pointe sur une chaîne de caractères contenant le nom d'un encodage, terminée par NUL. Si cette chaîne contient *NULL*, l'encoding ``'utf-8'`` sera utilisé. Une exception sera levé si le nom de l'encodage est inconnu de Python. Le second argument doit être de type :ctype:`char\*\*`, la valeur du pointeur qu'il référence sera fixée à la valeur d'un tampon contenant le texte de l'argument. Le texte sera encodé avec l'encodage spécifié dans le premier argument. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cfunc:`PyArg_ParseTuple` will allocate a buffer of the needed size, copy the encoded data into this buffer and adjust *\*buffer* to reference the newly allocated storage.  The caller is responsible for calling :cfunc:`PyMem_Free` to free the allocated buffer after use.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cfunc:`PyArg_ParseTuple` allouera un tampon de la taille nécessaire, copiera les données encodées dans ce tampon et fera pointer *\*buffer* vers le nouveau tampon alloué. L'appelant est responsable de l'invocation de :cfunc:`PyMem_Free` pour libérer le tampon alloué après utilisatiopn</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Same as ``es`` except that byte string objects are passed through without recoding them.  Instead, the implementation assumes that the byte string object uses the encoding passed in as parameter.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Comme pour ``es``, excepté que les objets chaînes de caractères sont passées sans les ré-encoder. À la place, l'implémentation assume que l'objet chaîne de caractères utilise l'encodage passé en tant que paramètre.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This variant on ``s#`` is used for encoding Unicode into a character buffer. Unlike the ``es`` format, this variant allows input data which contains NUL characters.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Cette variante de ``s#`` est utilisée pour encoder de l'Unicode dans un tampon de caractères. Contrairement au format ``es``, cette variante autorise les caractères NUL dans les données d'entrée.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>It requires three arguments.  The first is only used as input, and must be a :ctype:`const char\*` which points to the name of an encoding as a NUL-terminated string, or *NULL*, in which case ``'utf-8'`` encoding is used. An exception is raised if the named encoding is not known to Python.  The second argument must be a :ctype:`char\*\*`; the value of the pointer it references will be set to a buffer with the contents of the argument text. The text will be encoded in the encoding specified by the first argument. The third argument must be a pointer to an integer; the referenced integer will be set to the number of bytes in the output buffer.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Ce format requiert deux arguments. Le premier est seulement utilisé en entrée, et doit être de type :ctype:`const char\*`. Il pointe sur une chaîne de caractères contenant le nom d'un encodage, terminée par NUL. Si cette chaîne contient *NULL*, l'encoding ``'utf-8'`` sera utilisé. Une exception sera levé si le nom de l'encodage est inconnu de Python. Le second argument doit être de type :ctype:`char\*\*`, la valeur du pointeur qu'il référence sera fixée à la valeur d'un tampon contenant le texte de l'argument. Le texte sera encodé avec l'encodage spécifié dans le premier argument. Le troisième argument doit être un pointeur sur un entier ; l'entier référencé sera positionné avec le nombre d'octets dans le tampon de sortie</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There are two modes of operation:</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Il existe deux modes de fonctionnement :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If *\*buffer* points a *NULL* pointer, the function will allocate a buffer of the needed size, copy the encoded data into this buffer and set *\*buffer* to reference the newly allocated storage.  The caller is responsible for calling :cfunc:`PyMem_Free` to free the allocated buffer after usage.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Si *\*buffer* pointe sur un pointeur *NULL*, la fonction allouera un tampon de la taille nécessaire, copiera les données encodées dans ce tampon et mettra dans *\*buffer* le nouveau tampon alloué. L'appelant est responsable de la libération de la mémoire après utilisation du tampon, par un appel à :cfunc:`PyMem_Free`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If *\*buffer* points to a non-*NULL* pointer (an already allocated buffer), :cfunc:`PyArg_ParseTuple` will use this location as the buffer and interpret the initial value of *\*buffer_length* as the buffer size.  It will then copy the encoded data into the buffer and NUL-terminate it.  If the buffer is not large enough, a :exc:`ValueError` will be set.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Si *\*buffer* pointe sur un pointeur qui n'est pas *NULL* (un tampon déjà alloué), :cfunc:`PyArg_ParseTuple` utilisera cet espace comme le tampon et interprétera la valeur initiale de *\*buffer_length* comme la taille du tampon. Il copiera alors les données encodées dans le tampon et terminera ce dernier par NUL. Si le tampon n'est pas de taille suffisante, une exception :exc:`ValueError` sera levée.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In both cases, *\*buffer_length* is set to the length of the encoded data without the trailing NUL byte.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Dans les deux cas, *\*buffer_length* est la longueur des données encodées, sans l'octet NUL de fin.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Same as ``es#`` except that byte string objects are passed through without recoding them. Instead, the implementation assumes that the byte string object uses the encoding passed in as parameter.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Comme pour ``es#`` excepté que les objets chaînes de caractères sont traités sans recodage. À la place, l'implémentation assume que les objets de type chaînes de caractères utilisent l'encodage passé en tant que paramètre.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Numbers</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Nombres</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a nonnegative Python integer to an unsigned tiny int, stored in a C :ctype:`unsigned char`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Convertit un entier Python positif ou nul en un unsigned tiny int, stocké dans un C :ctype:`unsigned char`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python integer to a tiny int without overflow checking, stored in a C :ctype:`unsigned char`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Convertit un entier Python en un tiny int sans vérifier le débordement, stocké dans un C :ctype:`unsigned char`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python integer to a C :ctype:`short int`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Convertit un entier Python en un C :ctype:`short int`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python integer to a C :ctype:`unsigned short int`, without overflow checking.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Convertit un entier Python en un C :ctype:`unsigned short int`, sans contrôle de débordement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python integer to a plain C :ctype:`int`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Convertit un entier Python en un type C :ctype:`int`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python integer to a C :ctype:`unsigned int`, without overflow checking.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Convertit un entier Python en un type C :ctype:`unsigned int`, sans contrôle de le débordement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python integer to a C :ctype:`long int`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Convertit un entier Python en un type  :ctype:`long int`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python integer to a C :ctype:`unsigned long` without overflow checking.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Convertit un entier Python en un type C :ctype:`unsigned long` sans en vérifier le débordement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python integer to a C :ctype:`long long`.  This format is only available on platforms that support :ctype:`long long` (or :ctype:`_int64` on Windows).</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Convertit un entier Python en un type C :ctype:`long long`. Ce format est uniquement disponible sur les plates-formes qui prennent en charge :ctype:`long long` (ou :ctype:`_int64` sous Windows).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python integer to a C :ctype:`unsigned long long` without overflow checking.  This format is only available on platforms that support :ctype:`unsigned long long` (or :ctype:`unsigned _int64` on Windows).</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Convertit un entier Python en un type C :ctype:`unsigned long long` sans en vérifier le débordement. Ce format est uniquement disponible sur les plates-formes qui prennent en charge :ctype:`unsigned long long` (ou :ctype:`unsigned _int64` sous Windows).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python integer to a C :ctype:`Py_ssize_t`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Convertit un entier Python en un type C :ctype:`Py_ssize_t`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python byte, represented as a :class:`bytes` object of length 1, to a C :ctype:`char`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Convertit un octet Python, représenté comme un objet :class:`bytes` de longueur 1, en un type C :ctype:`char`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python character, represented as a :class:`str` object of length 1, to a C :ctype:`int`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Convertit un caractère Python, représenté comme un objet :class:`str` de longueur 1, en un type C :ctype:`int`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python floating point number to a C :ctype:`float`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Convertit un nombre flottant Python vers un type C :ctype:`float`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python floating point number to a C :ctype:`double`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Convertit un nombre flottant Python vers un type C :ctype:`double`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python complex number to a C :ctype:`Py_complex` structure.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Convertit un nombre complexe Python vers une structure C :ctype:`Py_complex`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Other objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Autres objets</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Store a Python object (without any conversion) in a C object pointer.  The C program thus receives the actual object that was passed.  The object's reference count is not increased.  The pointer stored is not *NULL*.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Stocke un objet Python (sans aucune conversion) en un pointeur sur un objet C. Ainsi, Le programme C reçoit l'objet réel qui a été passé. Le compteur de référence sur l'objet n'est pas incrémenté. Le pointeur stocké n'est pas *NULL*.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Store a Python object in a C object pointer.  This is similar to ``O``, but takes two C arguments: the first is the address of a Python type object, the second is the address of the C variable (of type :ctype:`PyObject\*`) into which the object pointer is stored.  If the Python object does not have the required type, :exc:`TypeError` is raised.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Stocke un objet Python en pointeur sur un objet C. C'est comparable à ``O``, mais la fonction prend deux arguments C : le premier est l'adresse d'un objet de type Python, le second est l'adresse d'une variable C (de type :ctype:`P:exc:`TypeError`yObject\*`) dans laquelle le pointeur sur l'objet sera stocké. Si l'objet Python n'est pas du type requis, une exception :exc:`TypeError` sera levée.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Convert a Python object to a C variable through a *converter* function.  This takes two arguments: the first is a function, the second is the address of a C variable (of arbitrary type), converted to :ctype:`void \*`.  The *converter* function in turn is called as follows::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Converti un objet Python en une variable C en utilisant une fonction de *conversion*. La fonction prend deux arguments : le premier est une fonction, le second est l'adresse d'une variable C (de type arbitraire), convertie en :ctype:`void \*`. La fonction de *conversion* est appellée à son tour de la manière suivante :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>status = converter(object, address);</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>status = conversion(objet, adresse);</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>where *object* is the Python object to be converted and *address* is the :ctype:`void\*` argument that was passed to the :cfunc:`PyArg_Parse\*` function. The returned *status* should be ``1`` for a successful conversion and ``0`` if the conversion has failed.  When the conversion fails, the *converter* function should raise an exception and leave the content of *address* unmodified.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Où *objet* est l'objet Python à convertir et *adresse* est l'argument de type :ctype:`void\*` qui a été passé à la function :cfunc:`PyArg_Parse\*`. Le status retourné devrait être ``1`` pour conversion réussie, et ``0`` si la conversion a échouée. Quand la conversion échoue, la fonction de *conversion* devrait lever une exception et laisser le contenu de *adresse* non modifié.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If the *converter* returns Py_CLEANUP_SUPPORTED, it may get called a second time if the argument parsing eventually fails, giving the converter a chance to release any memory that it had already allocated. In this second call, the *object* parameter will be NULL; *address* will have the same value as in the original call.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Si la fonction de *conversion* retourne Py_CLEANUP_SUPPORTED, elle peut être appelée une seconde fois si l'analyse des arguments échoue, donnant ainsi à la fonction de conversion la possibilité de libérer la mémoire qu'elle avait allouée précédemment. Dans ce second appel, le paramètre correspondant à l'*objet* sera NULL; *adresse* aura la même valeur que dans le premier appel.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The object must be a Python sequence whose length is the number of format units in *items*.  The C arguments must correspond to the individual format units in *items*.  Format units for sequences may be nested.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>L'objet doit être une séquence Python dont la longueur est le nombre d'unités de formats dans *articles*. Les arguments C doivent correspondre à chaque unité de format particulière dans *articles*. Les unités de formats pour les séquences peuvent être imbriquées. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>It is possible to pass "long" integers (integers whose value exceeds the platform's :const:`LONG_MAX`) however no proper range checking is done --- the most significant bits are silently truncated when the receiving field is too small to receive the value (actually, the semantics are inherited from downcasts in C --- your mileage may vary).</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Il est possible de passer des entiers de type "long" (dont la valeur dépasse le :const:`LONG_MAX` de la plateforme), cependant aucun contrôle d'intervalle n'est effectué --- les bits les plus significatifs sont tronqués silencieusement quand le champ cible est trop petit (en fait, la sémantique est héritée du transtypage en C --- la perte peut varier).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A few other characters have a meaning in a format string.  These may not occur inside nested parentheses.  They are:</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Quelques autres caractères ont un sens dans une chaîne de format. On ne doit pas les trouvées dans des parenthèses imbriquées. Ce sont :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Indicates that the remaining arguments in the Python argument list are optional. The C variables corresponding to optional arguments should be initialized to their default value --- when an optional argument is not specified, :cfunc:`PyArg_ParseTuple` does not touch the contents of the corresponding C variable(s).</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Incique que les arguments restants dans la liste Python des arguments sont optionels. Les variables C correspondant à ces arguments optionnels devraient être initialisés avec leur valeur par défaut --- quan un argument optionnel n'est pas spécifié, la fonction :cfunc:`PyArg_ParseTuple` ne modifie par le contenu de la ou des variables C correspondantes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The list of format units ends here; the string after the colon is used as the function name in error messages (the "associated value" of the exception that :cfunc:`PyArg_ParseTuple` raises).</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>La liste des unités de format s'arrête ici ; la chaîne après les deux-points est utilisée comme le nom de la fonction dans les messages d'erreur (la "valeur associée" de l'exception levée par :cfunc:`PyArg_ParseTuple`).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The list of format units ends here; the string after the semicolon is used as the error message *instead* of the default error message.  ``:`` and ``;`` mutually exclude each other.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>La liste des unités de format s'arrête ici ; la chaîne après le point-virgule est utilise comme message d'erreur *au lieu* du message d'erreur par défaut. ``:`` et ``;`` sont mutuellement exclusifs. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Note that any Python object references which are provided to the caller are *borrowed* references; do not decrement their reference count!</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Notez que n'importe quelles références sur un objet Python qui sont données à l'appelant sont des références *empruntées* ; ne décrémentez pas leur compteur de références ! </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Additional arguments passed to these functions must be addresses of variables whose type is determined by the format string; these are used to store values from the input tuple.  There are a few cases, as described in the list of format units above, where these parameters are used as input values; they should match what is specified for the corresponding format unit in that case.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les arguments additionnels qui sont donnés à ces fonctions doivent être des adresses de variables dont le type est déterminé par la chaîine de format. Elles sont utilisées pour stocker les valeurs du n-uplet d'entrée. Il y a quelques cas, comme décrit précédemment dans le liste des unités de formats, où ces paramètres sont utilisés comme valeurs d'entrée. Dans ce cas, ils devraient correspondre à ce qui est spécifié pour l'unité de format correspondante.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>For the conversion to succeed, the *arg* object must match the format and the format must be exhausted.  On success, the :cfunc:`PyArg_Parse\*` functions return true, otherwise they return false and raise an appropriate exception. When the :cfunc:`PyArg_Parse\*` functions fail due to conversion failure in one of the format units, the variables at the addresses corresponding to that and the following format units are left untouched.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Pour que la conversion réussise, l'objet *arg* doit correspondre au format, et le format doit être épuisé. En cas de succès, les fonctions :cfunc:`PyArg_Parse\*` retournent vrai, sinon elles retournent faux et lèvent l'exception appropriée. Quand une fonction :cfunc:`PyArg_Parse\*` échoue en raison d'une erreur de conversion dans une des unités de format, les variables aux adresses correspondantes à cette erreur et les unités de formats suivantes sont laissées telles quelles.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>API Functions</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Fonction de l'API</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Building values</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Construction des valeurs</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Boolean Objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les objets booléens</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Booleans in Python are implemented as a subclass of integers.  There are only two booleans, :const:`Py_False` and :const:`Py_True`.  As such, the normal creation and deletion functions don't apply to booleans.  The following macros are available, however.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les booléens en Python sont implémentés comme une classe dérivée des entiers. Il y a seulement deux booléens, :const:`Py_False` et :const:`Py_True`. Comme tel, les fonctions de création de suppression ne s'appliquent pas aux booléens. Toutefois, les macros suivantes sont disponibles.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Buffer Objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les objets tampons</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python objects implemented in C can export a "buffer interface."  These functions can be used by an object to expose its data in a raw, byte-oriented format. Clients of the object can use the buffer interface to access the object data directly, without needing to copy it first.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les objets Python implémentés en C peuvent exporter une "interface sur des tampons". Ces fonctions peuvent être utilisées par un objets pour rendre publiques ses données, dans un format brut orienté octets. Les clients de ces objets peuvent utiliser l'interface sur les tampons pour accéder directement aux données de  l'objet, sans nécessiter une copie préalable.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Two examples of objects that support the buffer interface are bytes and arrays. The bytes object exposes the character contents in the buffer interface's byte-oriented form. An array can also expose its contents, but it should be noted that array elements may be multi-byte values.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Deux exemples d'objets qui supportent l'interfaces sur les tampons sont les octets et les tableaux. Les objets octets exposent leur contenu en tant que caractètres, dans une interface sur tampon orientée octets. Un tableau peut également exposer son contenu, mais il doit être remarqué que les éléments du tableau peuvent être des valeurs multi-octets.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An example user of the buffer interface is the file object's :meth:`write` method. Any object that can export a series of bytes through the buffer interface can be written to a file. There are a number of format codes to :cfunc:`PyArg_ParseTuple` that operate against an object's buffer interface, returning data from the target object.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Un exemple d'utilisation de l'interface sur les tampons est la méthode :meth:`write` de l'objet fichier. Tout objet qui peut exporter une série d'octets en utilisant l'interface tampons peut être écrit dans un fichier. Il y a un nombre de codes de format pour  :cfunc:`PyArg_ParseTuple` qui contredisent l'interface tampon de l'objet, en retournant les données de l'objet cible.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>More information on the buffer interface is provided in the section :ref:`buffer-structs`, under the description for :ctype:`PyBufferProcs`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Plus d'informations sur l'interface sur les tampons sont données dans la section :ref:`buffer-structs`, dans la description sur :ctype:`PyBufferProcs`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Buffer objects are useful as a way to expose the data from another object's buffer interface to the Python programmer.  They can also be used as a zero-copy slicing mechanism.  Using their ability to reference a block of memory, it is possible to expose any data to the Python programmer quite easily.  The memory could be a large, constant array in a C extension, it could be a raw block of memory for manipulation before passing to an operating system library, or it could be used to pass around structured data in its native, in-memory format.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les objets tampons sont utiles pour exposer les données d'une autre interface d'un objet tampon au développeur Python. Ils peuvent aussi être utilisés comme un mécanisme de découpage sans copie. En utilisant leur capacité à référencer un bloc de mémoire, il est possible d'exposer n'importe quelle donnée au développeur Python assez simplement. La mémoire peut ainsi être un tableau constant de grande taille d'une extension en C, elle peut être un bloc mémoire destiné à être modifié avant de le passer à une librairie système, ou encore elle peut permettre de faire passer des données structurées dans leur format originel en mémoire.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Buffer related functions</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Fonctions relatives aux tampons</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>MemoryView objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Objets de type MemoryView</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A memoryview object exposes the C level buffer interface to Python.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Un objet MemoryView expose l'interface tampon au niveau C à Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Byte Array Objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Objets Tableau d'Octets</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Type check macros</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Macros de vérification de type</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Direct API functions</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Fonctions directes sur l'API</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Macros</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Macros</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These macros trade safety for speed and they don't check pointers.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Ces macros sont taillées pour la vitesse d'exécution et ne vérifient pas les pointeurs.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Bytes Objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Objets bytes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These functions raise :exc:`TypeError` when expecting a bytes parameter and are called with a non-bytes parameter.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Ces fonctions lèvent :exc:`TypeError` lorsqu'elles attendent un paramètre de type octets et qu'elles sont appelées avec un paramètre qui n'est pas un octet.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Capsules</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Capsules</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Refer to :ref:`using-capsules` for more information on using these objects.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Reportez-vous à :ref:`using-capsules` pour plus d'informations sur l'utilisation de ces objets.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Cell Objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Objets Cellules</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>"Cell" objects are used to implement variables referenced by multiple scopes. For each such variable, a cell object is created to store the value; the local variables of each stack frame that references the value contains a reference to the cells from outer scopes which also use that variable.  When the value is accessed, the value contained in the cell is used instead of the cell object itself.  This de-referencing of the cell object requires support from the generated byte-code; these are not automatically de-referenced when accessed. Cell objects are not likely to be useful elsewhere.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les objets "Cellules" sont utilisés pour implémenter des variables référencées dans de multiples enviromments. Pour chacune de ces variables, un objet cellule est créé pour stocker sa valeur ; les variables locales de chaque pile d'exécution qui référence cette valeur contiennent une référence sur les cellules des autres environnements qui utilisent aussi cette variable. Quand la valeur est accédée, la valeur de la cellule est utilisée, au lei de celle de l'objet cellule proprement dit. Ce dé-référencement de l'objet cellule requiert l'intervention du bytecode généré ; il n'est pas automatiquement dé-référencé quand il est accédé. Il est plausible que les objets cellules ne soit utilisés ailleurs.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Code Objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Objets Code</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Code objects are a low-level detail of the CPython implementation. Each one represents a chunk of executable code that hasn't yet been bound into a function.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les objets Code sont un détail bas-niveau de l'implémentation CPython. Chacun d'eux représente une partie de code exécutable, qui n'a pas encore été lié dans une fonction.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Complex Number Objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Objets Nombres Complexes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python's complex number objects are implemented as two distinct types when viewed from the C API:  one is the Python object exposed to Python programs, and the other is a C structure which represents the actual complex number value. The API provides functions for working with both.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les objets Python nombres complexes sont implémentés comme deux types distincts, lorsqu'ils sont vus de l'API C : l'un est l'objet Python tel qu'il est vu par les programmes Python, et l'autre est une structure C qui représente la valeur complexe courante. L'API fournit des fonctions pour travailler avec ces deux représentations.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Complex Numbers as C Structures</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Nombres complexes en tant que structures C</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Note that the functions which accept these structures as parameters and return them as results do so *by value* rather than dereferencing them through pointers.  This is consistent throughout the API.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Remarquez que les fonctions qui acceptent ces structures comme paramètres et les retournent comme résultats le font *par valeur* au lieur de les dé-référencer en utilisant des pointeurs. Cela est constant dans toute l'API.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Complex Numbers as Python Objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Nombres complexes en tant qu'objets Python</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Concrete Objects Layer</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Couche des Objets Concrets</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The functions in this chapter are specific to certain Python object types. Passing them an object of the wrong type is not a good idea; if you receive an object from a Python program and you are not sure that it has the right type, you must perform a type check first; for example, to check that an object is a dictionary, use :cfunc:`PyDict_Check`.  The chapter is structured like the "family tree" of Python object types.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les fonctions dans ce chapitre sont spécifiques à certains types d'objets Python. Leur donner un objet d'un mauvais type n'est pas une bonne idée. Si vous recevez un objet d'un programme Python et que vous n'êtes pas sûr qu'il est du bon type, vous devez tout d'abord vérifier son type. Par exemple, pour vérifier qu'un objet est un dictionnaire, utiliser :cfunc:`PyDict_Check`. Ce chapitre est structuré comme un "arbre des familles" des types d'objets Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>While the functions described in this chapter carefully check the type of the objects which are passed in, many of them do not check for *NULL* being passed instead of a valid object.  Allowing *NULL* to be passed in can cause memory access violations and immediate termination of the interpreter.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Tandis que les fonctions décrites dans ce chapitre vérifient avec soin le type des objets qui leur sont passés, beaucoup d'entre elles ne vérifient pas que *NULL* est passé au lieu d'un objet valide. Autoriser *NULL* à être passé peut provoquer des violations d'accès à la mémoire et ainsi terminer immédiatement l'interpréteur.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Fundamental Objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Objets fondamentaux</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This section describes Python type objects and the singleton object ``None``.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Cette section décrit les objets de type Python et l'objet singleton ``None``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Numeric Objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Objets numériques</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Sequence Objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Objets séquences</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Generic operations on sequence objects were discussed in the previous chapter; this section deals with the specific kinds of sequence objects that are intrinsic to the Python language.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les opérations génériques sur les objets séquences ont été discutées dans le chapitre précédent. Cette section traite des genres spécifiques d'objets séquences qui sont intrinsèques au langage Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Mapping Objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Objets association</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Other Objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Autres Objets</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>String conversion and formatting</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Conversion et formatage de chaînes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Functions for number conversion and formatted string output.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Fonctions de conversion pour les nombres et pour la sortie des chaînes formattées.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>DateTime Objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Objets DateTime</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Dictionary Objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Objets dictionnaires</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Exception Handling</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Gestion des exceptions</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Exception Objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Objets Exception</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Recursion Control</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Contrôle de la récursion</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Standard Exceptions</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Exceptions standards</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>C Name</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Nom C</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python Name</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Nom Python</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Notes</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Notes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_BaseException`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_BaseException`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`BaseException`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`BaseException`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>\(1)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>\(1)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_Exception`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_Exception`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`Exception`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`Exception`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_ArithmeticError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_ArithmeticError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`ArithmeticError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`ArithmeticError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_LookupError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_LookupError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`LookupError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`LookupError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_AssertionError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_AssertionError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`AssertionError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`AssertionError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_AttributeError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_AttributeError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`AttributeError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`AttributeError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_EOFError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_EOFError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`EOFError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`EOFError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_EnvironmentError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_EnvironmentError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`EnvironmentError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`EnvironmentError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_FloatingPointError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_FloatingPointError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`FloatingPointError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`FloatingPointError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_IOError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_IOError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`IOError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`IOError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_ImportError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_ImportError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`ImportError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`ImportError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_IndexError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_IndexError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`IndexError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`IndexError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_KeyError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_KeyError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`KeyError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`KeyError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_KeyboardInterrupt`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_KeyboardInterrupt`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`KeyboardInterrupt`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`KeyboardInterrupt`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_MemoryError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_MemoryError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`MemoryError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`MemoryError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_NameError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_NameError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`NameError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`NameError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_NotImplementedError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_NotImplementedError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`NotImplementedError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`NotImplementedError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_OSError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_OSError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`OSError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`OSError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_OverflowError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_OverflowError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`OverflowError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`OverflowError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_ReferenceError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_ReferenceError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`ReferenceError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`ReferenceError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>\(2)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>\(2)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_RuntimeError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_RuntimeError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`RuntimeError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`RuntimeError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_SyntaxError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_SyntaxError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`SyntaxError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`SyntaxError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_SystemError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_SystemError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`SystemError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`SystemError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_SystemExit`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_SystemExit`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`SystemExit`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`SystemExit`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_TypeError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_TypeError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`TypeError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`TypeError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_ValueError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_ValueError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`ValueError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`ValueError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_WindowsError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_WindowsError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`WindowsError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`WindowsError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>\(3)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>\(3)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:cdata:`PyExc_ZeroDivisionError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:cdata:`PyExc_ZeroDivisionError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:exc:`ZeroDivisionError`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:exc:`ZeroDivisionError`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Notes:</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Notes : </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This is a base class for other standard exceptions.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>C'est la classe de base pour les autres exceptions standards</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This is the same as :exc:`weakref.ReferenceError`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Identique à :exc:`weakref.ReferenceError`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>File Objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Objets fichiers</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Advanced Debugger Support</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Support avancé du debugger</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Introduction</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Introduction</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Exceptions</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Exceptions</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Utilities</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Utilitaires</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

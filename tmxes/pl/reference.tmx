@@ -1,0 +1,1079 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Compound statements</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wyrażenia złożone</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Compound statements contain (groups of) other statements; they affect or control the execution of those other statements in some way.  In general, compound statements span multiple lines, although in simple incarnations a whole compound statement may be contained in one line.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Instrukcje złożone zawierają (grupy) innych instrukcji; Wpływają lub kontrolują wykonanie tych innych instrukcji w pewien sposób.  Na ogół, instrukcje złożone zajmują kilka linii, ale w zwykłej postaci cała instrukcja złożona może być zawarta w jednej linii.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The :keyword:`if`, :keyword:`while` and :keyword:`for` statements implement traditional control flow constructs.  :keyword:`try` specifies exception handlers and/or cleanup code for a group of statements, while the :keyword:`with` statement allows the execution of initialization and finalization code around a block of code.  Function and class definitions are also syntactically compound statements.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Instrukcje :keyword:`if`, :keyword:`while` i :keyword:`for` realizują tradycyjne konstrukcje kontroli przepływu wykonania.  Instrukcja :keyword:`try` określa procedury obsługi wyjątków i/lub kod sprzątania dla grupy instrukcji, podczas gdy instrukcja :keyword:`with` umożliwia wykonanie inicjalizacji i sprzątania wokół bloku kodu.  Definicje funkcji i klas są również składniowo złożonymi instrukcjami.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Compound statements consist of one or more 'clauses.'  A clause consists of a header and a 'suite.'  The clause headers of a particular compound statement are all at the same indentation level. Each clause header begins with a uniquely identifying keyword and ends with a colon.  A suite is a group of statements controlled by a clause.  A suite can be one or more semicolon-separated simple statements on the same line as the header, following the header's colon, or it can be one or more indented statements on subsequent lines.  Only the latter form of suite can contain nested compound statements; the following is illegal, mostly because it wouldn't be clear to which :keyword:`if` clause a following :keyword:`else` clause would belong::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Instrukcje złożone składają się z jednej lub więcej 'klauzul.'  Klauzula składa się z nagłówka i 'bloku instrukcji.'  Nagłówki klauzuli konkretnej instrukcji złożonej występują wszystkie na tym samym poziomie wcięcia tekstu. Każdy nagłówek klauzuli zaczyna się od jednoznacznie identyfikującego słowa kluczowego i kończy się dwukropkiem.  Blok instrukcji jest grupą Instrukcji kontrolowanych przez klauzulę.  Blok instrukcji może być jedną lub więcej rozdzieloną średnikami prostą instrukcją w tej samej linii, co nagłówek, po dwukropku kończącym nagłówek, lub może być jedną lub więcej wciętą instrukcją w kolejnych wierszach.  Tylko ten ostatni rodzaj bloku instrukcji może zawierać zagnieżdżone instrukcje złożone; Poniższy przykład jest nieuprawniony, głównie dlatego, że nie byłoby wiadomo, do której klauzuli :keyword:`if` następująca klauzula :keyword:`else` należałaby::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>if test1: if test2: print(x)</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>if test1: if test2: print(x)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Also note that the semicolon binds tighter than the colon in this context, so that in the following example, either all or none of the :func:`print` calls are executed::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Należy również pamiętać, że średnik wiąże mocniej niż dwukropek w tym kontekście, tak że w poniższym przykładzie, albo wszystkie, albo żadne z wywołań :func:`print` nie są realizowane::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>if x &lt; y &lt; z: print(x); print(y); print(z)</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>if x &lt; y &lt; z: print(x); print(y); print(z)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Summarizing:</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Podsumowując:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Note that statements always end in a ``NEWLINE`` possibly followed by a ``DEDENT``.  Also note that optional continuation clauses always begin with a keyword that cannot start a statement, thus there are no ambiguities (the 'dangling :keyword:`else`' problem is solved in Python by requiring nested :keyword:`if` statements to be indented).</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Należy pamiętać, że instrukcje zawsze kończą się znakiem ``NOWEGO WIERSZA`` po którym następuje ewentualnie ``ZNAK COFNIĘCIA WCIĘCIA``.  Należy również pamiętać, że opcjonalne klauzule kontynuacji zawsze rozpoczynają się od słowa kluczowego, które nie może rozpoczynać instrukcji, więc nie ma żadnych niejasności (problem 'wiszącej klauzuli :keyword:`else`' w Pythonie jest rozwiązany przez wymaganie, aby zagnieżdżone instrukcje :keyword:`if` były wcięte).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The formatting of the grammar rules in the following sections places each clause on a separate line for clarity.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Formatowanie reguł gramatycznych w następujących sekcjach umieszcza każdą klauzulę w osobnej linii dla jasności.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The :keyword:`if` statement</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Instrukcja `jeżeli` ( - z ang. -:keyword:`if`)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The :keyword:`if` statement is used for conditional execution:</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Instrukcja jeżeli ( - z ang. - :keyword:`if`) służy warunkowemu wykonaniu:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>It selects exactly one of the suites by evaluating the expressions one by one until one is found to be true (see section :ref:`booleans` for the definition of true and false); then that suite is executed (and no other part of the :keyword:`if` statement is executed or evaluated).  If all expressions are false, the suite of the :keyword:`else` clause, if present, is executed.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wybiera dokładnie jeden z bloków instrukcji przez obliczenie wyrażeń kolejno, aż do znalezienia zwracającego prawdę (sięgnij do sekcji `wartości logicznych` ( - z ang. - :ref:`booleans`) po definicję wartości logicznych prawdy i fałszu); a następnie ten zestaw instrukcji jest wykonywany (i żadna inna część instrukcji `jeżeli` ( - z ang. - :keyword:`if`) nie jest wykonywana ani obliczana). Jeżeli wszystkie wyrażenia zwracają wartość fałszu ( - z ang. - false), zestaw instrukcji klauzuli `przeciwnego przypadku` ( - z ang. -:keyword:`else`) - jeżeli występuje - jest wykonywany.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The :keyword:`while` statement</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Instrukcja `dopóki` ( - z ang. - :keyword:`while`)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The :keyword:`while` statement is used for repeated execution as long as an expression is true:</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Instrukcja `dopóki` ( - z ang. - :keyword:`while`) służy do wielokrotnego wykonania, dopóki wyrażenie jest prawdziwe:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This repeatedly tests the expression and, if it is true, executes the first suite; if the expression is false (which may be the first time it is tested) the suite of the :keyword:`else` clause, if present, is executed and the loop terminates.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wielokrotnie sprawdza wyrażenie i, jeśli wynikiem jest prawda, wykonuje pierwszy zestaw instrukcji; jeśli wyrażenie zwraca fałsz (co może nawet być przy pierwszym sprawdzeniu) zestaw instrukcji klauzuli `przeciwnego przypadku` ( - z ang. - :keyword:`else`) - jeżeli występuje - jest wykonywany i pętla kończy się.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A :keyword:`break` statement executed in the first suite terminates the loop without executing the :keyword:`else` clause's suite.  A :keyword:`continue` statement executed in the first suite skips the rest of the suite and goes back to testing the expression.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Polecenie `przerwij` ( - z ang. - :keyword:`break`) wykonane w pierwszym zestawie instrukcji, bez wykonywania zestawu instrukcji klauzuli `przeciwnego przypadku` ( - z ang. - :keyword:`else`) kończy pętlę. Instrukcja `dalszego ciągu` ( - z ang. - :keyword:`continue`) wykonywana w pierwszym zestawie instrukcji pomija resztę zestawu instrukcji i wraca do badania wyrażenia warunkowego.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The :keyword:`for` statement</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Instrukcja powtarzania `dla` ( - z ang. - :keyword:`for`)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The :keyword:`for` statement is used to iterate over the elements of a sequence (such as a string, tuple or list) or other iterable object:</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Instrukcja `dla` ( - z ang. - :keyword:`for`) służy do przeglądania elementów sekwencji (np. ciągu, krotki lub listy) lub innych obiektów możliwych do przeglądania:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The expression list is evaluated once; it should yield an iterable object.  An iterator is created for the result of the ``expression_list``.  The suite is then executed once for each item provided by the iterator, in the order of ascending indices.  Each item in turn is assigned to the target list using the standard rules for assignments (see :ref:`assignment`), and then the suite is executed.  When the items are exhausted (which is immediately when the sequence is empty or an iterator raises a :exc:`StopIteration` exception), the suite in the :keyword:`else` clause, if present, is executed, and the loop terminates.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wyrażenie listy jest obliczana raz; powinno zwracać obiekt możliwy do przeglądania. Tworzony jest obiekt przechodzący dla wyniku ``wyrażenia_listy``. Wtedy wykonywany jest podprogram zagnieżdżony pętli `dla`, raz dla każdego elementu dostarczonego przez obiekt przechodzący, w kolejności uporządkowanej rosnąco. Każdy taki element dostarczony przez obiekt przechodzący jest przypisywany do docelowej listy używając reguł przypisań (sięgnij do sekcji :ref:`przypisań` - z ang. - :ref:`assignment`), i wtedy wykonywany jest zestaw instrukcji zagnieżdżonych. Gdy wszystkie elementy zostaną przejrzane (co następuje natychmiast, gdy sekwencja staje się pusta, lub obiekt przeglądający zgłosi sytuację wyjątkową `zakończenia powtórzeń` - z ang. - :exc:`StopIteration`), wtedy zestaw instrukcji w klauzuli `sytuacji wyjątkowej` - z ang. -:keyword:`else` - jeśli występuje - jest wykonywany, i ciąg powtórzeń kończy się.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A :keyword:`break` statement executed in the first suite terminates the loop without executing the :keyword:`else` clause's suite.  A :keyword:`continue` statement executed in the first suite skips the rest of the suite and continues with the next item, or with the :keyword:`else` clause if there was no next item.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Instrukcja :keyword:`break` wykonywana w głównym bloku instrukcji pętli for, bez wykonania bloku dla klauzuli :keyword:`else` kończy pętlę.  Instrukcja :keyword:`continue` wykonana w głównym bloku instrukcji, pomija resztę bloku i kontynuuje wykonanie pętli dla następnego elementu, jeśli jest następny element, lub wykonuje polecenia bloku dla klauzuli :keyword:`else` w przeciwnym wypadku.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The suite may assign to the variable(s) in the target list; this does not affect the next item assigned to it.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>W zagnieżdżonym bloku można zmieniać wartości zmiennej(ych) z listy elementów pętli for; nie ma to wpływu na następną wartość przypisaną do zmiennej przechodzącej po elementach listy.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Names in the target list are not deleted when the loop is finished, but if the sequence is empty, it will not have been assigned to at all by the loop.  Hint: the built-in function :func:`range` returns an iterator of integers suitable to emulate the effect of Pascal's ``for i := a to b do``; e.g., ``list(range(3))`` returns the list ``[0, 1, 2]``.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Nazwy z listy końcowej nie są kasowane, gdy pętla się kończy, ale jeśli lista jest pusta, to nie były one w ogóle przypisane przez pętlę.  Porada: wbudowana funkcja zakres ( - z ang. - :func:`range`) zwraca obiekt przechodzący po liście liczb całkowitych, który można wykorzystać do osiągnięcia rezultatu znanego z Pascala ``for i := a to b do``; np., ``list(range(3))`` zwraca listę ``[0, 1, 2]``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There is a subtlety when the sequence is being modified by the loop (this can only occur for mutable sequences, i.e. lists).  An internal counter is used to keep track of which item is used next, and this is incremented on each iteration.  When this counter has reached the length of the sequence the loop terminates.  This means that if the suite deletes the current (or a previous) item from the sequence, the next item will be skipped (since it gets the index of the current item which has already been treated).  Likewise, if the suite inserts an item in the sequence before the current item, the current item will be treated again the next time through the loop. This can lead to nasty bugs that can be avoided by making a temporary copy using a slice of the whole sequence, e.g., ::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Istnieje pewna subtelność, gdy sekwencja która jest przeglądana w pętli jest modyfikowana przez tę pętlę (może to nastąpić tylko dla modyfikowalnych sekwencji, czyli dla list). Aby śledzić, który element jest używany jako następny, używany jest wewnętrzny licznik, i jest on zwiększany o jeden dla każdego przejścia. Gdy licznik osiąga wartość równą długości sekwencji, pętla jest kończona.  To oznacza, że jeśli blok instrukcji zagnieżdżony w pętli skasuje obecny (lub poprzedni) element w sekwencji, następny element zostanie pominięty (gdyż pętla otrzyma numer porządkowy obecnego elementu, który był już obsługiwany).  Podobnie, jeśli zagnieżdżony w pętli blok instrukcji wstawi element do sekwencji przed obecnym elementem, obecny element zostanie przetworzony raz jeszcze przy następnym obrocie pętli. To może prowadzić do nieciekawych błędów, których można uniknąć tworząc kopię tymczasową przy użyciu wycinka całej sekwencji, np. ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>for x in a[:]:     if x &lt; 0: a.remove(x)</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>for x in a[:]:     if x &lt; 0: a.remove(x)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The :keyword:`try` statement</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Instrukcja `spróbuj` - ang. - :keyword:`try`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The :keyword:`try` statement specifies exception handlers and/or cleanup code for a group of statements:</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Instrukcja `spróbuj` ( - z ang. -:keyword:`try`) określa sytuacje wyjątkowe i/lub program opróżniający pamięć dla zwartego zbioru instrukcji:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The :keyword:`except` clause(s) specify one or more exception handlers. When no exception occurs in the :keyword:`try` clause, no exception handler is executed. When an exception occurs in the :keyword:`try` suite, a search for an exception handler is started.  This search inspects the except clauses in turn until one is found that matches the exception.  An expression-less except clause, if present, must be last; it matches any exception.  For an except clause with an expression, that expression is evaluated, and the clause matches the exception if the resulting object is "compatible" with the exception.  An object is compatible with an exception if it is the class or a base class of the exception object or a tuple containing an item compatible with the exception.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Klauzula(e) `z wyjątkiem` ( - z ang. - :keyword:`except`) określa obsługę jednego lub więcej wyjątków. Gdy żaden wyjątek nie jest zgłaszany w klauzuli `spróbuj ( - z ang. - :keyword:`try`), żaden z podprogramów obsługi wyjątku nie jest wykonywany. Gdy wyjątek wystąpi w zagnieżdżonym bloku instrukcji klauzuli `spróbuj` ( - z ang. - :keyword:`try`), rozpoczynane jest poszukiwanie klauzuli obsługującej ten wyjątek.  Przeszukiwane są wszystkie klauzule wyjątków po kolei, aż napotkana zostanie odpowiadająca danemu wyjątkowi. Klauzula `z wyjątkiem` ( - z ang. - :keyword:`except`), która nie określa wyjątku, jeśli ma się pojawić, powinna być ostatnia; określa ona dowolny wyjątek.  Dla klauzuli `z wyjątkiem` ( - z ang. - :keyword:`except`) z wyrażeniem określającym wyjątek, te wyrażenie jest obliczane, i klauzula odpowiada wyjątkowi, jeśli rodzaj wynikającego obiektu jest "zgodny" z rodzajem wyjątku. Rodzaj obiektu jest zgodny z rodzajem wyjątku jeśli należy do klasy, lub klasy bazowej, obiektu wyjątku lub krotki zawierającej element zgodny z wyjątkiem.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If no except clause matches the exception, the search for an exception handler continues in the surrounding code and on the invocation stack.  [#]_</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Jeśli żadna klauzula wyjątku nie pasuje do zgłoszonego wyjątku, poszukiwanie obsługi wyjątku kontynuowane jest w podprogramie otaczającym i na stercie wywołań. [#]_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If the evaluation of an expression in the header of an except clause raises an exception, the original search for a handler is canceled and a search starts for the new exception in the surrounding code and on the call stack (it is treated as if the entire :keyword:`try` statement raised the exception).</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Jeśli samo obliczenie wyrażenia w nagłówku klauzuli `z wyjątkiem` ( - z ang. - `except`) zwróci wyjątek, wtedy poszukiwanie wyjątku zostanie przerwane i poszukiwanie rozpocznie się dla nowego wyjątku w otaczającym podprogramie i na stercie wywołań (jest to traktowane tak, jakby cała instrukcja `spróbuj` ( - z ang.-:keyword:`try`) zgłosiła wyjątek).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When a matching except clause is found, the exception is assigned to the target specified after the :keyword:`as` keyword in that except clause, if present, and the except clause's suite is executed.  All except clauses must have an executable block.  When the end of this block is reached, execution continues normally after the entire try statement.  (This means that if two nested handlers exist for the same exception, and the exception occurs in the try clause of the inner handler, the outer handler will not handle the exception.)</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Gdy pasująca klauzula except zostanie znaleziona, wyjątek jest przypisywany do celu określonego po słowie kluczowym :keyword:`as` w tej klauzuli wyjątku, jeśli jest obecna i blok klauzuli except jest wykonywany.  Wszystkie klauzule except muszą mieć blok wykonywalny.  Kiedy zostanie osiągnięty koniec tego bloku, wykonanie jest kontynuowane zwyczajnie po całej instrukcji try.  (To znaczy, że jeżeli istnieją dwa zagnieżdżone bloki obsługi tego samego wyjątku i wyjątek występuje w klauzuli try wewnętrznej procedury obsługi, zewnętrzna procedura obsługi nie obsłuży wyjątku.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When an exception has been assigned using ``as target``, it is cleared at the end of the except clause.  This is as if ::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Gdy wyjątek przypisano przy użyciu ``jako cel``, jest on kasowany na końcu klauzuli wyjątku.  To jest tak, jakby ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>except E as N:     foo</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>except E as N:     foo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>was translated to ::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>zostało przetłumaczone na ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>except E as N:     try:         foo     finally:         del N</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>except E as N:     try:         foo     finally:         del N</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This means the exception must be assigned to a different name to be able to refer to it after the except clause.  Exceptions are cleared because with the traceback attached to them, they form a reference cycle with the stack frame, keeping all locals in that frame alive until the next garbage collection occurs.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Oznacza to, że wyjątek musi być przypisany do innej nazwy, aby móc się do niego odwołać po klauzuli wyjątku.  Wyjątki są usuwane, ponieważ z informacjami o stosie dołączonymi do nich, tworzą one cykl odniesień z ramką stosu, z zachowaniem wszystkich zmiennych lokalnych, zmiennych w tej ramce aż do wystąpienia następnego odśmiecania.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Before an except clause's suite is executed, details about the exception are stored in the :mod:`sys` module and can be access via :func:`sys.exc_info`. :func:`sys.exc_info` returns a 3-tuple consisting of: ``exc_type``, the exception class; ``exc_value``, the exception instance; ``exc_traceback``, a traceback object (see section :ref:`types`) identifying the point in the program where the exception occurred. :func:`sys.exc_info` values are restored to their previous values (before the call) when returning from a function that handled an exception.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przed wykonaniem bloku instrukcji klauzuli except szczegóły dotyczące wyjątku są przechowywane w module :mod​​:`sys` i mogą być dostępne przez funkcję :func:`sys.exc_info`. Funkcja :func:`sys.exc_info` zwraca 3-krotkę składającą się z: ``exc_type``, klasy wyjątku; ``exc_value``, instancji wyjątku; ``exc_traceback``, obiektu śladu błędu (zob. sekcję :ref:`types`) identyfikujące punkt w programie, w którym wystąpił wyjątek. Wartości :func:`sys.exc_info` są przywracane do poprzednich (sprzed wywołania) po powrocie z funkcji, która obsłużyła wyjątek.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The optional :keyword:`else` clause is executed if and when control flows off the end of the :keyword:`try` clause. [#]_ Exceptions in the :keyword:`else` clause are not handled by the preceding :keyword:`except` clauses.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Nieobowiązkowa klauzula :keyword:`else` wykonywana jest wtedy, gdy poza koniec klauzuli :keyword:`try` sterowanie jest przekazywane. [#]_ Wyjątki w klauzuli :keyword:`else` nie są obsługiwane przez klauzule :keyword:`except` odnoszące się do pierwotnie otaczanego bloku kodu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If :keyword:`finally` is present, it specifies a 'cleanup' handler.  The :keyword:`try` clause is executed, including any :keyword:`except` and :keyword:`else` clauses.  If an exception occurs in any of the clauses and is not handled, the exception is temporarily saved. The :keyword:`finally` clause is executed.  If there is a saved exception, it is re-raised at the end of the :keyword:`finally` clause. If the :keyword:`finally` clause raises another exception or executes a :keyword:`return` or :keyword:`break` statement, the saved exception is lost.  The exception information is not available to the program during execution of the :keyword:`finally` clause.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Jeżeli słowo kluczowe :keyword:`finally` jest obecne, wtedy określa ono 'porządkującą' proceduję obsługi.  Klauzula :keyword:`try` włącznie z wszelkimi klauzulami :keyword:`except` oraz :keyword:`else` jest wykonywana.  Jeśli wyjątek wystąpi w dowolnej z klauzul i nie zostanie obsłużony, wyjątek zostaje tymczasowo zapamiętany. Klauzula :keyword:`finally` jest wykonywana.  Jeśli istnieje zapisany wcześniej wyjątek, to ponownie po zakończeniu klauzuli :keyword:`finally` jest on zgłaszany. Jeśli klauzula :keyword:`finally` zgłosi inny wyjątek lub któraś z instrukcji :keyword:`return` lub :keyword:`break` zostanie wykonana, to zapisany wyjątek jest tracony.  Informacje o wyjątku nie są dostępne w programie, gdy klauzula :keyword:`finally` jest wykonywana.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When a :keyword:`return`, :keyword:`break` or :keyword:`continue` statement is executed in the :keyword:`try` suite of a :keyword:`try`...\ :keyword:`finally` statement, the :keyword:`finally` clause is also executed 'on the way out.' A :keyword:`continue` statement is illegal in the :keyword:`finally` clause. (The reason is a problem with the current implementation --- this restriction may be lifted in the future).</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Kiedy wykonywana jest instrukcja :keyword:`return`, :keyword:`break` lub :keyword:`continue` w bloku kodu :keyword:`try` wewnętrznym dla instrukcji rozpoczętej przez :keyword:`try`...\ :keyword:`finally` zaś zakończonej, klauzula :keyword:`finally` jest wykonywana również 'po drodze do wyjścia.' Polecenie :keyword:`continue` w klauzuli :keyword:`finally` jest niedozwolone. (Powodem jest problem w obecnej implementacji --- to ograniczenie może zostać zniesione w przyszłości).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Additional information on exceptions can be found in section :ref:`exceptions`, and information on using the :keyword:`raise` statement to generate exceptions may be found in section :ref:`raise`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Dodatkowe informacje na temat wyjątków można znaleźć w sekcji :ref:`wyjątki`, a informacje na temat korzystania z instrukcji :keyword:`raise` do generowania wyjątków można znaleźć w sekcji :ref:`raise`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The :keyword:`with` statement</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Instrukcja :keyword:`with`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The :keyword:`with` statement is used to wrap the execution of a block with methods defined by a context manager (see section :ref:`context-managers`). This allows common :keyword:`try`...\ :keyword:`except`...\ :keyword:`finally` usage patterns to be encapsulated for convenient reuse.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Instrukcja :keyword:`with` służy do otaczania wykonania bloku instrukcji w metody określone przez zarządcę kontekstu (zob. sekcję :ref:`zarządcy-kontekstu`). Pozwala to zwykłym sposobom użytkowania :keyword:`try`...\ :keyword:`except`...\ :keyword:`finally` na enkapsulację dla wygodnego ponownego wykorzystania.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The execution of the :keyword:`with` statement with one "item" proceeds as follows:</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wykonanie instrukcji :keyword:`with` z jednym "elementem" postępuje w sposób następujący:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The context expression is evaluated to obtain a context manager.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wyrażenie jest obliczane w celu uzyskania menedżera kontekstu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The context manager's :meth:`__exit__` is loaded for later use.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Metoda :meth:`__exit__` zarządcy kontekstu jest ładowana do późniejszego wykorzystania.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The context manager's :meth:`__enter__` method is invoked.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Metoda :meth:`__enter__` zarządcy kontekstu jest wywoływana.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If a target was included in the :keyword:`with` statement, the return value from :meth:`__enter__` is assigned to it.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Jeśli cel został określony w instrukcji :keyword:`with`, wartość zwracana z metody :meth:` __enter__` jest przypisywana do niego.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The :keyword:`with` statement guarantees that if the :meth:`__enter__` method returns without an error, then :meth:`__exit__` will always be called. Thus, if an error occurs during the assignment to the target list, it will be treated the same as an error occurring within the suite would be. See step 6 below.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Instrukcja :keyword:`with` gwarantuje, że jeśli metoda :meth:`__enter__` wraca bez błędu, to metoda :meth:`__exit__` zawsze będzie wzywana. Zatem, jeśli wystąpi błąd podczas przypisywania do docelowej listy, będzie to traktowane tak samo, jak byłby traktowany błąd występujący w bloku kodu. Patrz krok 6 poniżej.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The suite is executed.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Bloku kodu jest wykonywany.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The context manager's :meth:`__exit__` method is invoked.  If an exception caused the suite to be exited, its type, value, and traceback are passed as arguments to :meth:`__exit__`. Otherwise, three :const:`None` arguments are supplied.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Metoda :meth:`__exit__` zarządcy kontekstu jest wywoływana.  Jeśli wyjątek spowodował zakończenie bloku kodu, jego typ, wartość i ślad błędu są przekazywane jako argumenty do metody :meth:`__exit__`. W przeciwnym razie, trzy argumenty :const:`None` są dostarczane.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If the suite was exited due to an exception, and the return value from the :meth:`__exit__` method was false, the exception is reraised.  If the return value was true, the exception is suppressed, and execution continues with the statement following the :keyword:`with` statement.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Jeśli wykonanie bloku kodu zostało zakończone z powodu wyjątku, a wartość zwracana z metody :meth:`__exit__` była fałszywa, wyjątek jest ponownie zgłaszany.  Jeśli wartość zwracana była prawdziwa, wyjątek jest wstrzymywany, a wykonanie jest kontynuowane po instrukcji :keyword:`with` od instrukcji następującej po niej.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If the suite was exited for any reason other than an exception, the return value from :meth:`__exit__` is ignored, and execution proceeds at the normal location for the kind of exit that was taken.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Jeśli wykonanie bloku kodu zostało zakończone z powodu innego niż wyjątek, wartość zwracana z metody :meth:`__exit__` jest ignorowana, a program przechodzi do miejsca typowego dla tego rodzaju wyjścia, które nastąpiło.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>With more than one item, the context managers are processed as if multiple :keyword:`with` statements were nested::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Dla więcej niż jednego elementu, zarządzacze kontekstu są przetwarzane tak, jakby wiele instrukcji :keyword:`with` zostało zagnieżdżonych::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>with A() as a, B() as b:     suite</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>with A() as a, B() as b:     blok_kodu</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>is equivalent to ::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>jest równoważne następującemu ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>with A() as a:     with B() as b:         suite</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>with A() as a:     with B() as b:         blok_kodu</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See also</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zobacz też</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The specification, background, and examples for the Python :keyword:`with` statement.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Specyfikacja, okoliczności, i przykłady dla instrukcji :keyword:`with` w języku Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Function definitions</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Definicje funkcji</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A function definition defines a user-defined function object (see section :ref:`types`):</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Definicja funkcji definiuje obiekt funkcji zdefiniowanej przez użytkownika (zob. sekcję :ref:`typy`):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A function definition is an executable statement.  Its execution binds the function name in the current local namespace to a function object (a wrapper around the executable code for the function).  This function object contains a reference to the current global namespace as the global namespace to be used when the function is called.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Definicja funkcji jest wyrażeniem wykonywalnym.  Jego wykonanie wiąże nazwę funkcji w lokalnej przestrzeni nazw z obiektem funkcji (opakowaniem wokół kodu wykonywalnego dla danej funkcji).  Ten obiekt funkcji zawiera odniesienie do obecnej globalnej przestrzeni nazw jako globalnej przestrzeni nazw, która ma zostać użyta, gdy funkcja będzie wywoływana.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The function definition does not execute the function body; this gets executed only when the function is called. [#]_</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Definicja funkcji nie wykonuje ciała tej funkcji, zostaje ona wykonana tylko wtedy, gdy funkcja jest wywoływana. [#]_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A function definition may be wrapped by one or more :term:`decorator` expressions. Decorator expressions are evaluated when the function is defined, in the scope that contains the function definition.  The result must be a callable, which is invoked with the function object as the only argument. The returned value is bound to the function name instead of the function object.  Multiple decorators are applied in nested fashion. For example, the following code ::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Jedno lub więcej wyrażeń :term:`dekoracyjnych` może opakowywać definicję funkcji. Wyrażenia dekoracyjne obliczane są, gdy funkcja jest definiowana, w zakresie, który zawiera definicję funkcji.  Wynik musi być obiektem do którego można się odwołać, który jest wywoływany z obiektem funkcji, jako jedynym argumentem. Zwracana wartość jest związana z nazwą funkcji, zamiast obiektu funkcji.  Wiele dekoratorów stosuje się w zagnieżdżony sposób. Na przykład, następujący kod ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>@f1(arg) @f2 def func(): pass</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>@f1(arg) @f2 def func(): pass</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>def func(): pass func = f1(arg)(f2(func))</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>def func(): pass func = f1(arg)(f2(func))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When one or more parameters have the form *parameter* ``=`` *expression*, the function is said to have "default parameter values."  For a parameter with a default value, the corresponding argument may be omitted from a call, in which case the parameter's default value is substituted.  If a parameter has a default value, all following parameters up until the "``*``" must also have a default value --- this is a syntactic restriction that is not expressed by the grammar.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Gdy jeden lub więcej parametrów mają postać *parametr* ``=`` *wyrażenie*, o funkcji mówi się, że ma "domyślne wartości parametrów."  Dla parametru z wartością domyślną, odpowiadający argument może zostać pominięty w wywołaniu, w którego przypadku domyślna wartość parametru jest podstawiana.  Jeśli parametr ma wartość domyślną, wszystkie następujące po niej parametry, aż do "``*``" muszą także mieć wartość domyślną --- to jest ograniczenie składniowe, które nie jest wyrażone przez gramatykę.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>**Default parameter values are evaluated when the function definition is executed.** This means that the expression is evaluated once, when the function is defined, and that that same "pre-computed" value is used for each call.  This is especially important to understand when a default parameter is a mutable object, such as a list or a dictionary: if the function modifies the object (e.g. by appending an item to a list), the default value is in effect modified. This is generally not what was intended.  A way around this is to use ``None`` as the default, and explicitly test for it in the body of the function, e.g.::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>**Domyślne wartości parametrów są obliczane gdy definicja funkcji jest wykonywana.** Oznacza to, że wyrażenie jest wyliczane raz, gdy funkcja jest definiowana, oraz, że te same "wstępnie-wyliczone" wartości są używane dla każdego wywołania.  Jest to szczególnie ważne, aby rozumieć, że kiedy domyślnym parametrem jest mutowalny obiekt, taki jak lista lub słownik: jeśli funkcja zmienia obiekt (np. przez dodanie elementu do listy), wartość domyślna jest w efekcie zmieniona. Zazwyczaj nie jest to tym co było zamierzane.  Sposobem obejścia tego problemu jest użycie ``None`` jako wartości domyślnej, i wyraźne sprawdzenie tego w ciele funkcji, np.::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>def whats_on_the_telly(penguin=None):     if penguin is None:         penguin = []     penguin.append("property of the zoo")     return penguin</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>def co_w_telewizji(pingwin=None):     if pingwin is None:         pingwin = []     pingwin.append("własność zoo")     return pingwin</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Function call semantics are described in more detail in section :ref:`calls`. A function call always assigns values to all parameters mentioned in the parameter list, either from position arguments, from keyword arguments, or from default values.  If the form "``*identifier``" is present, it is initialized to a tuple receiving any excess positional parameters, defaulting to the empty tuple.  If the form "``**identifier``" is present, it is initialized to a new dictionary receiving any excess keyword arguments, defaulting to a new empty dictionary. Parameters after "``*``" or "``*identifier``" are keyword-only parameters and may only be passed used keyword arguments.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Składnia wywołania funkcji została opisana bardziej szczegółowo w rozdziale :ref:`wywołania`. Wywołanie funkcji zawsze przypisuje wartości do wszystkich parametrów wymienionych na liście parametrów, z argumentów pozycyjnych, z argumentów słów kluczowych, lub z wartości domyślnych.  Jeśli formuła "``*identyfikator``" jest obecna, to jest inicjowana krotką odbierającą wszystkie nadmiarowe parametry pozycyjne, pasujące do pustej krotki.  Jeśli formuła "``**identyfikator``" jest obecna, to jest inicjowana do nowego słownika odbierającego wszelkie nadmiarowe argumenty słów kluczowych, pasujące do nowego pustego słownika. Parametry po "``*``" lub "``*identyfikator``" są wyłącznie parametrami słów kluczowych i można im przekazywać jedynie użyte argumenty słów kluczowych.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Parameters may have annotations of the form "``: expression``" following the parameter name.  Any parameter may have an annotation even those of the form ``*identifier`` or ``**identifier``.  Functions may have "return" annotation of the form "``-&gt; expression``" after the parameter list.  These annotations can be any valid Python expression and are evaluated when the function definition is executed.  Annotations may be evaluated in a different order than they appear in the source code.  The presence of annotations does not change the semantics of a function.  The annotation values are available as values of a dictionary keyed by the parameters' names in the :attr:`__annotations__` attribute of the function object.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Parametry mogą mieć adnotacje w postaci "``: wyrażenie``" po nazwie parametru.  Każdy parametr może mieć adnotację, nawet te w postaci ``*identyfikator`` lub ``**identyfikator``.  Funkcje mogą mieć "zwrotną" adnotację w postaci "``-&gt; wyrażenie``" po liście parametrów.  Adnotacje te mogą być dowolnym prawidłowym wyrażeniem Pythona i są obliczane kiedy definicja funkcji jest wykonywana.  Adnotacje mogą być wyliczane w innej kolejności, niż w kolejności pojawienia się w kodzie źródłowym.  Obecność adnotacji nie zmienia składni funkcji.  Wartości adnotacji są dostępne jako wartości słownika kluczowanego przez nazwy parametrów w atrybucie :attr:`__annotations__` obiektu funkcji.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>It is also possible to create anonymous functions (functions not bound to a name), for immediate use in expressions.  This uses lambda forms, described in section :ref:`lambda`.  Note that the lambda form is merely a shorthand for a simplified function definition; a function defined in a ":keyword:`def`" statement can be passed around or assigned to another name just like a function defined by a lambda form.  The ":keyword:`def`" form is actually more powerful since it allows the execution of multiple statements and annotations.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Możliwe jest także, tworzenie anonimowych funkcji (funkcji nie związanych z nazwą), do bezpośredniego stosowania w wyrażeniach.  Wykorzystuje się przy tym formę lambda opisaną w rozdziale :ref:`lambda`.  Należy zauważyć, że formuła lambda jest jedynie skrótem uproszczonej definicja funkcji; funkcja określona w deklaracji ":keyword:`def`" może być przekazywana, lub przypisywana do innej nazwy, tak jak funkcja zdefiniowana w formie lambda.  Formuła ":keyword:`def`" jest w rzeczywistości mocniejsza, ponieważ pozwala na wykonanie wielu instrukcji i adnotacji.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>**Programmer's note:** Functions are first-class objects.  A "``def``" form executed inside a function definition defines a local function that can be returned or passed around.  Free variables used in the nested function can access the local variables of the function containing the def.  See section :ref:`naming` for details.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>**Uwaga programisty:** Funkcje są obiektami pierwszej klasy.  Formuła "``def``" wykonana z wnętrza definicji funkcji definiuje lokalną funkcję, która może być zwracana lub przekazywana dalej.  Wolne zmienne używane w zagnieżdżonej funkcji mogą uzyskiwać dostęp do zmiennych lokalnych funkcji zawierającej definicję funkcji zagnieżdżonej.  Zobacz rozdział :ref:`nazewnictwo` po więcej szczegółów.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Class definitions</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Definicje klas</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A class definition defines a class object (see section :ref:`types`):</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Definicja klasy definiuje obiekt klasy (zob. sekcję :ref:`typy`):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A class definition is an executable statement.  It first evaluates the inheritance list, if present.  Each item in the inheritance list should evaluate to a class object or class type which allows subclassing.  The class's suite is then executed in a new execution frame (see section :ref:`naming`), using a newly created local namespace and the original global namespace. (Usually, the suite contains only function definitions.)  When the class's suite finishes execution, its execution frame is discarded but its local namespace is saved. [#]_ A class object is then created using the inheritance list for the base classes and the saved local namespace for the attribute dictionary.  The class name is bound to this class object in the original local namespace.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Definicja klasy jest wyrażeniem wykonywalnym.  Najpierw wyliczana jest lista dziedziczenia, jeżeli takowa występuje.  Każda pozycja na liście dziedziczenia powinna zwracać obiekt klasy lub typu klasy, który umożliwia rozszerzanie klasy.  Rozwinięcie klasy jest następnie wykonywane w nowych ramach wykonania (zob. sekcję :ref:`nazewnictwo`), używając nowo utworzonej lokalnej przestrzeń nazw i oryginalnej globalnej przestrzeni nazw. (Zwykle, rozwinięcie zawiera tylko definicje funkcji.)  Gdy rozwinięcie klasy kończy swoje wykonanie, jego rama wykonania jest odrzucana jednak jego przestrzeń nazw lokalnych jest zachowywana. [#]_ Obiekt klasy jest wówczas tworzony za pomocą listy dziedziczenia dla klas bazowych i zapisanej lokalnej przestrzeni nazw dla słownika atrybutów.  Nazwa klasy jest związana z tym obiektem klasy w pierwotnej lokalnej przestrzeni nazw.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Classes can also be decorated; as with functions, ::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Klasy mogą być również dekorowane; tak, jak w przypadku funkcji, ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>@f1(arg) @f2 class Foo: pass</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>@f1(arg) @f2 class Foo: pass</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>class Foo: pass Foo = f1(arg)(f2(Foo))</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>class Foo: pass Foo = f1(arg)(f2(Foo))</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>**Programmer's note:** Variables defined in the class definition are class variables; they are shared by instances. Instance variables can be set in a method with ``self.name = value``.  Both class and instance variables are accessible through the notation "``self.name``", and an instance variable hides a class variable with the same name when accessed in this way.  Class variables can be used as defaults for instance variables, but using mutable values there can lead to unexpected results.  Descriptors can be used to create instance variables with different implementation details.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>**Uwaga programisty:** Zmienne zdefiniowane w definicji klasy są zmiennymi klasy; są dzielone pomiędzy instancjami. Zmienne instancji mogą być ustawione w metodzie w przypadku ``self.name = wartość``.  Zarówno klasy, jak i zmienne instancji są dostępne przez zapis "``self.name``", i zmienna instancji ukrywa zmienną klasy, o tej samej nazwie, kiedy następuje do niej odwołanie w ten sposób.  Zmienne klas mogą być używane jako domyślne dla zmiennych instancji, ale stosowanie mutowalnych wartości, może prowadzić do nieoczekiwanych wyników.  Deskryptory mogą być wykorzystywane do tworzenia zmiennych instancji w przypadku różnych szczegółów implementacji.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:pep:`3129` - Class Decorators</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>:pep:`3129` - Dekoratory klas</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Class definitions, like function definitions, may be wrapped by one or more :term:`decorator` expressions.  The evaluation rules for the decorator expressions are the same as for functions.  The result must be a class object, which is then bound to the class name.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Tak jak definicje funkcji mogą być opakowane w jedno lub więcej wyrażeń :term:`dekoracyjnych` tak samo opakowane mogą być definicje klas.  Zasady ewaluacji dla wyrażeń dekoracyjnych są takie same jak dla funkcji.  Wynik musi być obiektem klasy, który następnie jest dowiązywany do nazwy klasy.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Footnotes</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przypisy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The exception is propagated to the invocation stack only if there is no :keyword:`finally` clause that negates the exception.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wyjątek jest propagowany na stos wywołań tylko jeśli nie występuje klauzula :keyword:`finally` negująca wyjątek.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Currently, control "flows off the end" except in the case of an exception or the execution of a :keyword:`return`, :keyword:`continue`, or :keyword:`break` statement.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Obecnie, kontrola wykonania "płynie do końca" z wyjątkiem przypadku wykonania instrukcji :keyword:`return`, :keyword:`continue`, lub :keyword:`break` lub zgłoszenia wyjątku.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A string literal appearing as the first statement in the function body is transformed into the function's ``__doc__`` attribute and therefore the function's :term:`docstring`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Łańcuch znaków pojawiający się jako pierwsze wyrażenie w ciele funkcji przekształcany jest w atrybut ``__doc__`` funkcji i tym samym w jej dokumentację :term:`docstring`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A string literal appearing as the first statement in the class body is transformed into the namespace's ``__doc__`` item and therefore the class's :term:`docstring`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ciąg znaków pojawiający się jako pierwsze wyrażenie w treści klasy przekształcane jest w element ``__doc__`` przestrzeni nazw i tym samym odpowiadającą jej dokumentację :term:`docstring`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Data model</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Model danych</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Objects, values and types</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Obiekty, wartości i typy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:dfn:`Objects` are Python's abstraction for data.  All data in a Python program is represented by objects or by relations between objects. (In a sense, and in conformance to Von Neumann's model of a "stored program computer," code is also represented by objects.)</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>:dfn:`Obiekty` są abstrakcyjnym określeniem Pythona dla danych.  Wszystkie dane w programie Pythona są reprezentowane przez obiekty lub relacje pomiędzy nimi. (W pewnym sensie, w zgodzie z modelem von Neumanna "komputera zapisanego programu," kod programu jest również reprezentowany przez obiekty.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Every object has an identity, a type and a value.  An object's *identity* never changes once it has been created; you may think of it as the object's address in memory.  The ':keyword:`is`' operator compares the identity of two objects; the :func:`id` function returns an integer representing its identity (currently implemented as its address). An object's :dfn:`type` is also unchangeable. [#]_ An object's type determines the operations that the object supports (e.g., "does it have a length?") and also defines the possible values for objects of that type.  The :func:`type` function returns an object's type (which is an object itself).  The *value* of some objects can change.  Objects whose value can change are said to be *mutable*; objects whose value is unchangeable once they are created are called *immutable*. (The value of an immutable container object that contains a reference to a mutable object can change when the latter's value is changed; however the container is still considered immutable, because the collection of objects it contains cannot be changed.  So, immutability is not strictly the same as having an unchangeable value, it is more subtle.) An object's mutability is determined by its type; for instance, numbers, strings and tuples are immutable, while dictionaries and lists are mutable.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Każdy obiekt posiada identyfikator, typ i wartość.  Ów *identyfikator* obiektu nigdy nie zmienia się od momentu jego utworzenia; można traktować go, jak adres obiektu w pamięci.  Operator ':keyword:`is`' porównuje identyfikatory dwóch obiektów; funkcja :func:`id` zwraca liczbę całkowitą, reprezentującą identyfikator obiektu (obecnie realizowany jako jego adres). Typ :dfn:`type` obiektu jest także niezmienialny. [#]_ Typ obiektu, określa operacje, które obiekt wspiera (na przykład "czy ma on długość?") a także określa możliwe wartości dla obiektów tego typu.  Funkcja :func:`type` zwraca typ obiektu, (którym jest sam obiekt).  Mogą zmieniać się *wartości* niektórych obiektów.  O obiektach, których wartość może się zmieniać mówi się, że są *mutowalne*; obiekty, których wartość jest niezmienialna od momentu ich utworzenia, są nazywane *niemutowalnymi*. (Wartość obiektu niemutowalnego pojemnika, który zawiera odniesienie do obiektu mutowalnego może się zmienić, jeśli wartość tego ostatniego zostanie zmieniona; jednakże pojemnik jest nadal uważany za niemutowalny, ponieważ kolekcja obiektów, którą zawiera, nie może być zmieniona.  Zatem, niemutowalność nie jest ściśle tym samym co posiadaniem niezmienialnej wartości, jest to bardziej subtelne.) Mutowalność obiektu zależy od jego rodzaju; na przykład: liczby, ciągi znaków i krotki są niemutowalne, podczas gdy słowniki i listy są mutowalne.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Objects are never explicitly destroyed; however, when they become unreachable they may be garbage-collected.  An implementation is allowed to postpone garbage collection or omit it altogether --- it is a matter of implementation quality how garbage collection is implemented, as long as no objects are collected that are still reachable.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Obiekty nigdy nie są jawnie niszczone, jednak gdy stają się nieosiągalne mogą być usuwane.  Implementacja ma prawo do odroczenia czyszczenia pamięci lub pominąć je całkowicie --- jest to kwestia jakości implementacji, jak zbieranie śmieci jest realizowane, tak długo jak żadne obiekty nie są usuwane z tych które są nadal dostępne.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>CPython currently uses a reference-counting scheme with (optional) delayed detection of cyclically linked garbage, which collects most objects as soon as they become unreachable, but is not guaranteed to collect garbage containing circular references.  See the documentation of the :mod:`gc` module for information on controlling the collection of cyclic garbage. Other implementations act differently and CPython may change.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>CPython obecnie używa systemu zliczania odwołań z (dodatkowym) opóźnionym wykrywaniem cyklicznie powiązanych śmieci, który zbiera większość obiektów, gdy tylko staną się nieosiągalne, ale nie gwarantuje zbierania śmieci zawierającego odwołania cykliczne.  Zobacz dokumentację modułu :mod:`gc` dla informacji na temat kontrolowania zbierania śmieci z cyklicznymi odwołaniami. Inne implementacje działają w różny sposób, a także i implementacja CPython może się zmienić.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Note that the use of the implementation's tracing or debugging facilities may keep objects alive that would normally be collectable. Also note that catching an exception with a ':keyword:`try`...\ :keyword:`except`' statement may keep objects alive.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Należy pamiętać, że używanie urządzeń implementacji służących do śledzenia błędów i odpluskwiania może przechowywać uruchomione obiekty, które normalnie podlegałyby zbieraniu śmieci. Należy również zauważyć, że złapanie wyjątku z wyrażenia ':keyword:`try`...\ :keyword:`except`' może utrzymywać obiekty w ruchu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Some objects contain references to "external" resources such as open files or windows.  It is understood that these resources are freed when the object is garbage-collected, but since garbage collection is not guaranteed to happen, such objects also provide an explicit way to release the external resource, usually a :meth:`close` method. Programs are strongly recommended to explicitly close such objects.  The ':keyword:`try`...\ :keyword:`finally`' statement and the ':keyword:`with`' statement provide convenient ways to do this.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Niektóre obiekty zawierają odniesienia do "zewnętrznych" zasobów, takich jak otwarte pliki lub okna.  Przyjmuje się, że zasoby te są zwalniane, gdy obiekt podlega zbieraniu śmieci, ale ponieważ nie gwarantuje się, że zbieranie śmieci nastąpi, takie obiekty również dostarczają specjalnych sposobów, zwykle metodę :meth:`close` służcą do zwalniania zewnętrznych zasobów. Szczególnie zaleca się aby programy jawnie zamykały takie obiekty.  Instrukcja ':keyword:`try`...\ :keyword:`finally`' i instrukcja ':keyword:`with`' zapewniają użyteczne sposoby służące temu celowi.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Some objects contain references to other objects; these are called *containers*. Examples of containers are tuples, lists and dictionaries.  The references are part of a container's value.  In most cases, when we talk about the value of a container, we imply the values, not the identities of the contained objects; however, when we talk about the mutability of a container, only the identities of the immediately contained objects are implied.  So, if an immutable container (like a tuple) contains a reference to a mutable object, its value changes if that mutable object is changed.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Niektóre obiekty zawierają odniesienia do innych obiektów; są to tak zwane *pojemniki*. Przykładami pojemników są krotki, listy i słowniki.  Odniesienia są częścią wartości pojemnika.  W większości przypadków, kiedy mówimy o wartości pojemnika, to mamy na myśli wartości, a nie identyfikatory znajdujących się wewnątrz obiektów; jednakże, jeśli mówimy o mutowalności pojemnika, mamy na myśli wyłącznie identyfikatory bezpośrednio zawartych obiektów.  Tak więc, jeśli niemutowalny pojemnik (taki, jak krotka) zawiera odniesienie do mutowalnego obiektu, to jego wartość zmienia się jeśli mutowalny obiekt zostanie zmieniony.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Types affect almost all aspects of object behavior.  Even the importance of object identity is affected in some sense: for immutable types, operations that compute new values may actually return a reference to any existing object with the same type and value, while for mutable objects this is not allowed.  E.g., after ``a = 1; b = 1``, ``a`` and ``b`` may or may not refer to the same object with the value one, depending on the implementation, but after ``c = []; d = []``, ``c`` and ``d`` are guaranteed to refer to two different, unique, newly created empty lists. (Note that ``c = d = []`` assigns the same object to both ``c`` and ``d``.)</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Typy wpływają niemal na wszystkie aspekty zachowania obiektu.  Nawet znaczenie identyfikatora obiektu zależy od nich w pewnym sensie: dla typów niemutowalnych, operacje, które obliczają nowe wartości mogą w rzeczywistości zwrócić odwołanie do istniejącego obiektu o tym samym typie i wartości, natomiast w przypadku mutowalnych obiektów nie jest to dozwolone.  Np. po ``a = 1; b = 1``, ``a`` i ``b`` mogą odnosić się, lub mogę nie odnosić się do tego samego obiektu o wartości jeden, w zależności od implementacji, ale po ``c = []; d = []``, gwarantuje się, że ``c`` i ``d`` będą odwoływały się do dwóch różnych, niepowtarzalnych, nowo utworzonych pustych list. (Należy zwrócić uwagę, że ``c = d = []`` przypisuje ten sam obiekt zarówno do ``c`` jak i do ``d``.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The standard type hierarchy</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Standardowa hierarchia typów</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Below is a list of the types that are built into Python.  Extension modules (written in C, Java, or other languages, depending on the implementation) can define additional types.  Future versions of Python may add types to the type hierarchy (e.g., rational numbers, efficiently stored arrays of integers, etc.), although such additions will often be provided via the standard library instead.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Poniżej znajduje się lista typów wbudowanych w Pythonie.  Moduły rozszerzeń (napisane w C, Javie lub innych językach, w zależności od implementacji) mogą definiować dodatkowe typy.  Przyszłe wersje Pythona mogą dodawać typy do hierarchii typów (np. liczby wymierne, wydajnie składowane tablice liczb, itp.), chociaż takie dodatki często będą w zastępstwie dostarczane za pośrednictwem standardowej biblioteki.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Some of the type descriptions below contain a paragraph listing 'special attributes.'  These are attributes that provide access to the implementation and are not intended for general use.  Their definition may change in the future.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Niektóre poniższych opisów typów zawierają ustęp wyszczegulniający 'specjalne atrybuty.'  Są to cechy, które zapewniają dostęp do implementacji i nie są przeznaczone do ogólnego użytku.  Ich definicja może się zmienić w przyszłości.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This type has a single value.  There is a single object with this value. This object is accessed through the built-in name ``None``. It is used to signify the absence of a value in many situations, e.g., it is returned from functions that don't explicitly return anything. Its truth value is false.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ten typ ma pojedynczą wartość. Istnieje jeden obiekt z tą wartością.  Ten obiekt jest dostępny za pośrednictwem wbudowanej nazwy ``None``. Jest on używany do oznaczenia brak wartości w wielu sytuacjach, na przykład, jest ona zwracana z funkcji, które wyraźnie nic nie zwracają. Jego wartością w sensie logicznym jest fałsz.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This type has a single value.  There is a single object with this value. This object is accessed through the built-in name ``NotImplemented``. Numeric methods and rich comparison methods may return this value if they do not implement the operation for the operands provided.  (The interpreter will then try the reflected operation, or some other fallback, depending on the operator.)  Its truth value is true.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ten typ ma pojedynczą wartość.  Istnieje jeden obiekt o tej wartości. Ten obiekt jest dostępny przez wbudowaną nazwę ``NotImplemented``. Metody numeryczne i wielorakie metody porównawcze mogą zwracać tą wartość, jeśli nie implementują jakiejś operacji dla dostarczonych argumentów.  (Interpreter będzie wtedy próbował operacji zreflektowanej lub jakiejś innej zastępczej operacji, w zależności od operatora.)  Jego wartością w sensie logicznym jest prawda.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This type has a single value.  There is a single object with this value. This object is accessed through the literal ``...`` or the built-in name ``Ellipsis``.  Its truth value is true.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ten typ ma pojedynczą wartość.  Istnieje jeden obiekt o tej wartości. Ten obiekt jest dostępny przez literał ``...`` lub przez nazwę wbudowaną ``Ellipsis``.  Jego wartością logiczną jest prawda.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These are created by numeric literals and returned as results by arithmetic operators and arithmetic built-in functions.  Numeric objects are immutable; once created their value never changes.  Python numbers are of course strongly related to mathematical numbers, but subject to the limitations of numerical representation in computers.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Te oto są tworzone przez literały liczbowe i zwracane jako wyniki przez operatory arytmetyczne i wbudowane funkcje arytmetyczne.  Obiekty numeryczne są niemutowalne, po utworzeniu ich wartość nigdy nie jest zmieniana.  Liczby Pythona są oczywiście silnie związane z liczbami matematycznymi, ale z zastrzeżeniem ograniczeń reprezentacji liczb w komputerach.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python distinguishes between integers, floating point numbers, and complex numbers:</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Python rozróżnia liczby całkowite, liczby zmiennoprzecinkowe i liczby zespolone:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These represent elements from the mathematical set of integers (positive and negative).</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Te stanowią elementy z matematycznego zbioru liczb całkowitych (dodatnich i ujemnych).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There are two types of integers:</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Istnieją dwa rodzaje liczb całkowitych:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Integers (:class:`int`)</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Liczby całkowite (:class:`int`)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These represent numbers in an unlimited range, subject to available (virtual) memory only.  For the purpose of shift and mask operations, a binary representation is assumed, and negative numbers are represented in a variant of 2's complement which gives the illusion of an infinite string of sign bits extending to the left.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Te stanowią liczby o nieograniczonym zakresie, jedynie z zastrzeżeniem ograniczenia w ramach dostępnej (wirtualnej) pamięci.  Dla potrzeb operacji przesuwania i maskowania, przyjęta jest reprezentacja binarna, a wartości ujemne są reprezentowane w wariancie kodu uzupełnień do 2, która daje wrażenie nieskończonego ciągu bitów znaku rozciągających się po lewej stronie.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These represent the truth values False and True.  The two objects representing the values False and True are the only Boolean objects. The Boolean type is a subtype of the integer type, and Boolean values behave like the values 0 and 1, respectively, in almost all contexts, the exception being that when converted to a string, the strings ``"False"`` or ``"True"`` are returned, respectively.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Te stanowią wartości logiczne fałszu i prawdy.  Te dwa obiekty reprezentujące wartości False i True są jedynymi obiektami typu Boolean. Typ Boolean jest podtypem typu całkowitego i wartości typu Boolean zachowują się jak wartości 0 i 1, odpowiednio, w prawie wszystkich kontekstach, z wyjątkiem tego, że po przekonwertowaniu na łańcuch znaków, łańcuchy ``"False"`` lub ``"True"`` są odpowiednio zwracane.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The rules for integer representation are intended to give the most meaningful interpretation of shift and mask operations involving negative integers.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zasady reprezentacji liczb całkowitych mają na celu dostarczenie najbardziej znaczącej interpretacji operacji przesunięcia i maskowania z uwzględnieniem liczb całkowitych ujemnych.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These represent machine-level double precision floating point numbers. You are at the mercy of the underlying machine architecture (and C or Java implementation) for the accepted range and handling of overflow. Python does not support single-precision floating point numbers; the savings in processor and memory usage that are usually the reason for using these is dwarfed by the overhead of using objects in Python, so there is no reason to complicate the language with two kinds of floating point numbers.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Te reprezentują liczby zmiennoprzecinkowe na poziomie maszynowym podwójnej precyzji. Jesteś na łasce leżącej u podstaw architektury maszynowej (i implementacji C lub Javy) dla przyjętego zakresu i sposobu obsługi przepełnienia. Python nie obsługuje liczb zmiennoprzecinkowych pojedynczej precyzji; oszczędności w wykorzystaniu procesora i pamięci, które są zazwyczaj powodem korzystania z nich są znacznie niższe od narzutu użycia obiektów w Pythonie, więc nie ma powodu, aby komplikować język z dwoma rodzajami liczb zmiennoprzecinkowych.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These represent complex numbers as a pair of machine-level double precision floating point numbers.  The same caveats apply as for floating point numbers. The real and imaginary parts of a complex number ``z`` can be retrieved through the read-only attributes ``z.real`` and ``z.imag``.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Te stanowią liczby zespolone jako pary liczb zmiennoprzecinkowych podwójnej precyzji na poziomie maszynowym.  Obowiązują te same zastrzeżenia co w przypadku liczb zmiennoprzecinkowych. Części rzeczywista i urojona liczby zespolonej ``z`` mogą być odczytane przez odwołanie się do atrybutów tylko do odczytu ``z.real`` i ``z.imag``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These represent finite ordered sets indexed by non-negative numbers. The built-in function :func:`len` returns the number of items of a sequence. When the length of a sequence is *n*, the index set contains the numbers 0, 1, ..., *n*-1.  Item *i* of sequence *a* is selected by ``a[i]``.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Te oto stanowią skończone uporządkowane zbiory indeksowane przez liczby nieujemne. Wbudowana funkcja :func:`len` zwraca liczbę elementów w sekwencji. Gdy długość sekwencji jest *n*, zbiór indeksów zawiera liczby 0, 1, ..., *n*-1. Element *i* sekwencji *a* jest wybierany przez ``a[i]``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Sequences also support slicing: ``a[i:j]`` selects all items with index *k* such that *i* ``&lt;=`` *k* ``&lt;`` *j*.  When used as an expression, a slice is a sequence of the same type.  This implies that the index set is renumbered so that it starts at 0.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Sekwencje obsługują również wycinki: ``a[i:j] `` wybiera wszystkie elementy z indeksem *k* takie, że *i* ``&lt;=`` *k* ``&lt;`` *j*.  Gdy stosowane jako wyrażenie, wycinek jest sekwencją tego samego typu.  Oznacza to, że zbiór indeksów jest przenumerowany tak, że rozpoczyna się od 0.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Some sequences also support "extended slicing" with a third "step" parameter: ``a[i:j:k]`` selects all items of *a* with index *x* where ``x = i + n*k``, *n* ``&gt;=`` ``0`` and *i* ``&lt;=`` *x* ``&lt;`` *j*.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Niektóre sekwencje obsługują również "rozszerzone wycinki" z trzecim parametrem "kroku": ``a[i:j:k]`` wybiera wszystkie elementy *a* o indeksie *x*, gdzie ``x = i + ​​n*k``, *n* ``&gt;=`` ``0`` oraz *i* ``&lt;=`` *x* ``&lt;`` *j*.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Sequences are distinguished according to their mutability:</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Sekwencje można rozróżnić w zależności od ich mutowalności:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An object of an immutable sequence type cannot change once it is created.  (If the object contains references to other objects, these other objects may be mutable and may be changed; however, the collection of objects directly referenced by an immutable object cannot change.)</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Obiekt sekwencji niemutowalnego typu nie może zostać zmieniony gdy już zostanie utworzony.  (Jeśli obiekt zawiera odwołania do innych obiektów, te inne obiekty mogą być mutowalne i mogą ulec zmianie; jednakże, kolekcja obiektów do której bezpośrednio odwołuje się obiekt niemutowalny nie może się zmienić.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The following types are immutable sequences:</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Następujące typy są niemutowalnymi sekwencjami:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The items of a string object are Unicode code units.  A Unicode code unit is represented by a string object of one item and can hold either a 16-bit or 32-bit value representing a Unicode ordinal (the maximum value for the ordinal is given in ``sys.maxunicode``, and depends on how Python is configured at compile time).  Surrogate pairs may be present in the Unicode object, and will be reported as two separate items.  The built-in functions :func:`chr` and :func:`ord` convert between code units and nonnegative integers representing the Unicode ordinals as defined in the Unicode Standard 3.0. Conversion from and to other encodings are possible through the string method :meth:`encode`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Elementy obiektu ciągu znaków są jednostkami kodu Unicode.  Jednostka kodu Unicode jest reprezentowana przez obiekt ciągu znaków składający się z jednej pozycji i może pomieścić zarówno 16-bitową jak też 32-bitową wartość reprezentującą liczbę porządkową Unicode (maksymalna wartość dla liczby porządkowej przechowywana jest w ``sys.maxunicode`` i zależy od tego, jak Python został skonfigurowany w czasie kompilacji).  Zastępcze pary mogą być obecne w obiekcie Unicode, i zostaną zgłoszone jako dwa osobne elementy.  Funkcje wbudowane :func:`chr` i :func:`ord` dokonują konwersji pomiędzy jednostkami kodu i nieujemnymi liczbami całkowitymi reprezentującymi liczby porządkowe Unicode jak określono w standardzie Unicode 3.0. Konwersja z i do innych kodowań jest możliwa dzięki metodzie operującej na ciągu znaków :meth:`encode`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The items of a tuple are arbitrary Python objects. Tuples of two or more items are formed by comma-separated lists of expressions.  A tuple of one item (a 'singleton') can be formed by affixing a comma to an expression (an expression by itself does not create a tuple, since parentheses must be usable for grouping of expressions).  An empty tuple can be formed by an empty pair of parentheses.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Elementy krotki mogą być dowolnymi obiektami Pythona. Krotki dwóch lub więcej elementów, są tworzone przez listy rozdzielanych przecinkami wyrażeń.  Krotka składająca się z jednego elementu ('singleton' - jedynak) może być utworzona poprzez przytwierdzenie przecinka na końcu wyrażenia (wyrażenie samo nie tworzy krotki, gdyż nawiasy muszą być użyteczne przy grupowaniu wyrażeń).  Pusta krotka może być utworzona przez pustą parę nawiasów.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A bytes object is an immutable array.  The items are 8-bit bytes, represented by integers in the range 0 &lt;= x &lt; 256.  Bytes literals (like ``b'abc'`` and the built-in function :func:`bytes` can be used to construct bytes objects.  Also, bytes objects can be decoded to strings via the :meth:`decode` method.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Obiekt bytes jest tablicą niemutowalną.  Elementami są 8-bitowe bajty, reprezentowane przez liczby całkowite z przedziału 0 &lt;= x &lt; 256.  Literały bajtowe (takie, jak ``b'abc'`` i wbudowana funkcja :func:`bytes` mogą być używane do konstruowania obiektów bytes.  Można również poprzez metodę :meth:`decode` dekodować obiekty bytes do ciągów znaków.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Mutable sequences can be changed after they are created.  The subscription and slicing notations can be used as the target of assignment and :keyword:`del` (delete) statements.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Mutowalne sekwencje mogą być zmieniane po ich utworzeniu.  Notacje indeksu dolnego i wycinków mogą być używane jako cel instrukcji przypisania i :keyword:`del` (usuwania).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There are currently two intrinsic mutable sequence types:</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Obecnie istnieją dwa główne rodzaje mutowalnych sekwencji:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The items of a list are arbitrary Python objects.  Lists are formed by placing a comma-separated list of expressions in square brackets. (Note that there are no special cases needed to form lists of length 0 or 1.)</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Elementami listy mogą być dowolne obiekty Pythona.  Listy są tworzone poprzez umieszczenie roddzielonej przecinkami listy wyrażeń w nawiasach kwadratowych. (Należy zauważyć, że nie ma szczególnych przypadków niezbędnych do utworzenia listy o długości 0 lub 1).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A bytearray object is a mutable array. They are created by the built-in :func:`bytearray` constructor.  Aside from being mutable (and hence unhashable), byte arrays otherwise provide the same interface and functionality as immutable bytes objects.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Obiekt bytearray jest mutowalną tablicą. Wbudowany konstruktor :func:`bytearray` używany jest do ich wytwarzenia.  Poza tym, że są mutowalne (a więc nie nadają się do haszowania), tablice bajtów zasadniczo dostarczają ten sam interfejs i funkcjonalność, co niemutowalne obiekty bytes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The extension module :mod:`array` provides an additional example of a mutable sequence type, as does the :mod:`collections` module.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Moduł rozszerzający :mod:`array` zapewnia dodatkowy przykład mutowalnego typu sekwencyjnego, podobnie jak moduł :mod:`collections`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These represent unordered, finite sets of unique, immutable objects. As such, they cannot be indexed by any subscript. However, they can be iterated over, and the built-in function :func:`len` returns the number of items in a set. Common uses for sets are fast membership testing, removing duplicates from a sequence, and computing mathematical operations such as intersection, union, difference, and symmetric difference.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Te reprezentują nieuporządkowane, skończone zbiory niepowtarzalnych niemutowalnych obiektów. Jako takie, nie mogą być indeksowane jakimkolwiek indeksem dolnym. Jednakże, można po nich iterować, a wbudowana funkcja :func:`len` zwraca liczbę elementów w zbiorze. Typowym zastosowaniem dla zbiorów są szybkie testy przynależności, usuwanie duplikatów z sekwencji, i obliczanie działań matematycznych, takich jak część wspólna, suma, różnica, i różnica symetryczna.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>For set elements, the same immutability rules apply as for dictionary keys. Note that numeric types obey the normal rules for numeric comparison: if two numbers compare equal (e.g., ``1`` and ``1.0``), only one of them can be contained in a set.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Dla elementów zbioru, te same zasady niemutowalności obowiązują co w przypadku kluczy słownika. Należy zauważyć, że typy liczbowe przestrzegają zwykłych zasad numerycznego porównania: jeśli dwie liczby są równe (na przykład, ``1`` i ``1.0``), tylko jedna z nich może być zawarta w zbiorze.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There are currently two intrinsic set types:</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Obecnie istnieją dwa główne typy zbioru:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These represent a mutable set. They are created by the built-in :func:`set` constructor and can be modified afterwards by several methods, such as :meth:`add`.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Stanowią one mutowalny zbiór. Są one tworzone przez wbudowany konstruktor :func:`zbioru` i mogą być modyfikowane później przez kilka metod, takich jak :meth:`add`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These represent an immutable set.  They are created by the built-in :func:`frozenset` constructor.  As a frozenset is immutable and :term:`hashable`, it can be used again as an element of another set, or as a dictionary key.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Stanowią one niemutowalny zbiór.  Są one tworzone przez wbudowany konstruktor :func:`frozenset`.  Ponieważ frozenset jest niemutowalny i: term:`haszowalny`, to może zostać ponownie użyty jako element innego zbioru, lub jako klucz słownika.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These represent finite sets of objects indexed by arbitrary index sets. The subscript notation ``a[k]`` selects the item indexed by ``k`` from the mapping ``a``; this can be used in expressions and as the target of assignments or :keyword:`del` statements. The built-in function :func:`len` returns the number of items in a mapping.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Te oto reprezentują skończone zbiory obiektów zaindeksowane dowolnym zbiorem indeksowym. Notacja indeksu dolnego ``a[k]`` wybiera element indeksowany przez ``k`` z mapowania ``a``; te konstrukcje można stosować w wyrażeniach, instrukcji :keyword:`del` lub jako cel przypisań. Wbudowana funkcja :func:`len` zwraca liczbę elementów w mapowaniu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There is currently a single intrinsic mapping type:</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Istnieje obecnie jeden wewnętrzny rodzaj dopasowania:</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

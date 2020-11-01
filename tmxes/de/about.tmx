@@ -1,0 +1,1799 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>About these documents</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Über diese Dokumente</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These documents are generated from `reStructuredText`_ sources by `Sphinx`_, a document processor specifically written for the Python documentation.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Diese Dokumente werden aus `reStructuredText`_-Quellen durch `Sphinx`_ -- einen speziell für die Dokumentation von Python entwickelten Dokumentprozessor -- erzeugt.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Development of the documentation and its toolchain takes place on the docs@python.org mailing list.  We're always looking for volunteers wanting to help with the docs, so feel free to send a mail there!</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Die Entwicklung der Dokumentation und der dazu verwendeten Kette von Werkzeugen findet auf der Mailingliste docs@python.org statt. Wir freuen uns über jede/n Freiwillige/n, die/der bei der Dokumentation helfen möchte und laden alle dazu ein, eine E-Mail dorthin zu schreiben!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Many thanks go to:</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Vielen Dank an:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Fred L. Drake, Jr., the creator of the original Python documentation toolset and writer of much of the content;</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Fred L. Drake, Jr., welcher das original Python Dokumentations-Toolkit erschaffen hat und viel Inhalt einpflegte;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>the `Docutils &lt;http://docutils.sf.net/&gt;`_ project for creating reStructuredText and the Docutils suite;</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>das `Docutils &lt;http://docutils.sf.net/&gt;`_-Projekt für reStructuredText und die Docutils-Suite;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Fredrik Lundh for his `Alternative Python Reference &lt;http://effbot.org/zone/pyref.htm&gt;`_ project from which Sphinx got many good ideas.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Fredrik Lundh für sein `Alternative Python Reference &lt;http://effbot.org/zone/pyref.htm&gt;`_-Projekt durch welches Sphinx auf viele gute Ideen kam.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See :ref:`reporting-bugs` for information how to report bugs in this documentation, or Python itself.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Siehe :ref:`reporting-bugs` für Informationen über das Melden von Fehlern in dieser Dokumentation oder Python selbst.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Contributors to the Python Documentation</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Beitragende zu der Python-Dokumentation</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This section lists people who have contributed in some way to the Python documentation.  It is probably not complete -- if you feel that you or anyone else should be on this list, please let us know (send email to docs@python.org), and we'll be glad to correct the problem.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Dieser Abschnitt listet Personen auf, die in irgendeiner Weise zu der Python-Dokumentation beigetragen haben. Er ist wahrscheinlich nicht vollständig -- wenn Sie das Gefühl haben, dass Sie oder jemand anders auf dieser Liste sein sollte, lassen Sie es uns bitte wissen (E-Mail an docs@python.org schreiben) und wir werden froh sein, das Problem zu beheben.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Aahz</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Aahz</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Michael Abbott</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Michael Abbott</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Steve Alexander</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Steve Alexander</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Jim Ahlstrom</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Jim Ahlstrom</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Fred Allen</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Fred Allen</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A. Amoroso</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>A. Amoroso</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Pehr Anderson</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Pehr Anderson</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Oliver Andrich</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Oliver Andrich</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Heidi Annexstad</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Heidi Annexstad</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Jesús Cea Avión</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Jesús Cea Avión</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Manuel Balsera</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Manuel Balsera</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Daniel Barclay</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Daniel Barclay</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Chris Barker</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Chris Barker</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Don Bashford</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Don Bashford</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Anthony Baxter</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Anthony Baxter</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Alexander Belopolsky</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Alexander Belopolsky</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Bennett Benson</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Bennett Benson</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Jonathan Black</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Jonathan Black</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Robin Boerdijk</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Robin Boerdijk</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Michal Bozon</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Michal Bozon</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Aaron Brancotti</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Aaron Brancotti</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Georg Brandl</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Georg Brandl</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Keith Briggs</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Keith Briggs</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Ian Bruntlett</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ian Bruntlett</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Lee Busby</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Lee Busby</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Lorenzo M. Catucci</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Lorenzo M. Catucci</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Carl Cerecke</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Carl Cerecke</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Mauro Cicognini</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Mauro Cicognini</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Gilles Civario</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Gilles Civario</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Mike Clarkson</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Mike Clarkson</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Steve Clift</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Steve Clift</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Dave Cole</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Dave Cole</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Matthew Cowles</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Matthew Cowles</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Jeremy Craven</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Jeremy Craven</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Andrew Dalke</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Andrew Dalke</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Ben Darnell</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ben Darnell</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>L. Peter Deutsch</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>L. Peter Deutsch</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Robert Donohue</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Robert Donohue</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Fred L. Drake, Jr.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Fred L. Drake, Jr.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Josip Dzolonga</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Josip Dzolonga</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Jeff Epler</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Jeff Epler</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Michael Ernst</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Michael Ernst</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Blame Andy Eskilsson</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Blame Andy Eskilsson</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Carey Evans</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Carey Evans</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Martijn Faassen</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Martijn Faassen</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Carl Feynman</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Carl Feynman</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Dan Finnie</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Dan Finnie</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Hernán Martínez Foffani</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Hernán Martínez Foffani</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Stefan Franke</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Stefan Franke</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Jim Fulton</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Jim Fulton</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Peter Funk</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Peter Funk</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Lele Gaifax</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Lele Gaifax</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Matthew Gallagher</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Matthew Gallagher</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Gabriel Genellina</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Gabriel Genellina</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Ben Gertzfield</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ben Gertzfield</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Nadim Ghaznavi</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Nadim Ghaznavi</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Jonathan Giddy</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Jonathan Giddy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Matt Giuca</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Matt Giuca</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Shelley Gooch</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Shelley Gooch</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Nathaniel Gray</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Nathaniel Gray</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Grant Griffin</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Grant Griffin</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Thomas Guettler</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Thomas Guettler</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Anders Hammarquist</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Anders Hammarquist</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Mark Hammond</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Mark Hammond</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Harald Hanche-Olsen</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Harald Hanche-Olsen</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Manus Hand</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Manus Hand</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Gerhard Häring</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Gerhard Häring</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Travis B. Hartwell</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Travis B. Hartwell</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Tim Hatch</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Tim Hatch</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Janko Hauser</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Janko Hauser</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Thomas Heller</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Thomas Heller</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Bernhard Herzog</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Bernhard Herzog</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Magnus L. Hetland</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Magnus L. Hetland</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Konrad Hinsen</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Konrad Hinsen</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Stefan Hoffmeister</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Stefan Hoffmeister</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Albert Hofkamp</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Albert Hofkamp</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Gregor Hoffleit</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Gregor Hoffleit</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Steve Holden</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Steve Holden</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Thomas Holenstein</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Thomas Holenstein</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Gerrit Holl</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Gerrit Holl</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Rob Hooft</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Rob Hooft</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Brian Hooper</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Brian Hooper</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Randall Hopper</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Randall Hopper</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Michael Hudson</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Michael Hudson</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Eric Huss</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Eric Huss</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Jeremy Hylton</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Jeremy Hylton</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Roger Irwin</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Roger Irwin</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Jack Jansen</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Jack Jansen</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Philip H. Jensen</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Philip H. Jensen</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Pedro Diaz Jimenez</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Pedro Diaz Jimenez</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Kent Johnson</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Kent Johnson</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Lucas de Jonge</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Lucas de Jonge</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Andreas Jung</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Andreas Jung</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Robert Kern</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Robert Kern</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Jim Kerr</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Jim Kerr</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Jan Kim</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Jan Kim</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Greg Kochanski</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Greg Kochanski</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Guido Kollerie</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Guido Kollerie</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Peter A. Koren</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Peter A. Koren</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Daniel Kozan</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Daniel Kozan</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Andrew M. Kuchling</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Andrew M. Kuchling</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Dave Kuhlman</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Dave Kuhlman</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Erno Kuusela</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Erno Kuusela</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Thomas Lamb</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Thomas Lamb</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Detlef Lannert</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Detlef Lannert</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Piers Lauder</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Piers Lauder</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Glyph Lefkowitz</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Glyph Lefkowitz</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Robert Lehmann</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Robert Lehmann</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Marc-André Lemburg</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Marc-André Lemburg</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Ross Light</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ross Light</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Ulf A. Lindgren</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ulf A. Lindgren</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Everett Lipman</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Everett Lipman</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Mirko Liss</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Mirko Liss</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Martin von Löwis</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Martin von Löwis</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Fredrik Lundh</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Fredrik Lundh</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Jeff MacDonald</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Jeff MacDonald</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>John Machin</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>John Machin</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Andrew MacIntyre</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Andrew MacIntyre</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Vladimir Marangozov</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Vladimir Marangozov</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Vincent Marchetti</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Vincent Marchetti</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Laura Matson</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Laura Matson</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Daniel May</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Daniel May</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Rebecca McCreary</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Rebecca McCreary</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Doug Mennella</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Doug Mennella</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Paolo Milani</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Paolo Milani</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Skip Montanaro</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Skip Montanaro</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Paul Moore</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Paul Moore</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Ross Moore</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ross Moore</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Sjoerd Mullender</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Sjoerd Mullender</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Dale Nagata</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Dale Nagata</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Ng Pheng Siong</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ng Pheng Siong</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Koray Oner</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Koray Oner</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Tomas Oppelstrup</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Tomas Oppelstrup</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Denis S. Otkidach</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Denis S. Otkidach</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Zooko O'Whielacronx</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Zooko O'Whielacronx</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Shriphani Palakodety</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Shriphani Palakodety</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>William Park</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>William Park</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Joonas Paalasmaa</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Joonas Paalasmaa</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Harri Pasanen</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Harri Pasanen</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Bo Peng</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Bo Peng</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Tim Peters</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Tim Peters</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Benjamin Peterson</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Benjamin Peterson</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Christopher Petrilli</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Christopher Petrilli</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Justin D. Pettit</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Justin D. Pettit</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Chris Phoenix</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Chris Phoenix</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>François Pinard</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>François Pinard</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Paul Prescod</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Paul Prescod</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Eric S. Raymond</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Eric S. Raymond</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Edward K. Ream</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Edward K. Ream</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Terry J. Reedy</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Terry J. Reedy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Sean Reifschneider</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Sean Reifschneider</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Bernhard Reiter</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Bernhard Reiter</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Armin Rigo</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Armin Rigo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Wes Rishel</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Wes Rishel</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Armin Ronacher</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Armin Ronacher</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Jim Roskind</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Jim Roskind</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Guido van Rossum</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Guido van Rossum</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Donald Wallace Rouse II</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Donald Wallace Rouse II</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Mark Russell</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Mark Russell</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Nick Russo</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Nick Russo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Chris Ryland</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Chris Ryland</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Constantina S.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Constantina S.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Hugh Sasse</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Hugh Sasse</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Bob Savage</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Bob Savage</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Scott Schram</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Scott Schram</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Neil Schemenauer</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Neil Schemenauer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Barry Scott</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Barry Scott</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Joakim Sernbrant</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Joakim Sernbrant</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Justin Sheehy</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Justin Sheehy</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Charlie Shepherd</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Charlie Shepherd</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Michael Simcich</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Michael Simcich</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Ionel Simionescu</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ionel Simionescu</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Michael Sloan</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Michael Sloan</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Gregory P. Smith</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Gregory P. Smith</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Roy Smith</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Roy Smith</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Clay Spence</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Clay Spence</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Nicholas Spies</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Nicholas Spies</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Tage Stabell-Kulo</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Tage Stabell-Kulo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Frank Stajano</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Frank Stajano</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Anthony Starks</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Anthony Starks</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Greg Stein</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Greg Stein</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Peter Stoehr</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Peter Stoehr</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Mark Summerfield</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Mark Summerfield</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Reuben Sumner</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Reuben Sumne</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Kalle Svensson</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Kalle Svensson</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Jim Tittsler</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Jim Tittsler</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>David Turner</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>David Turner</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Ville Vainio</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ville Vainio</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Martijn Vries</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Martijn Vries</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Charles G. Waldman</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Charles G. Waldman</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Greg Ward</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Greg Ward</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Barry Warsaw</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Barry Warsaw</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Corran Webster</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Corran Webster</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Glyn Webster</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Glyn Webster</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Bob Weiner</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Bob Weiner</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Eddy Welbourne</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Eddy Welbourne</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Jeff Wheeler</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Jeff Wheeler</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Mats Wichmann</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Mats Wichmann</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Gerry Wiener</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Gerry Wiener</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Timothy Wild</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Timothy Wild</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Paul Winkler</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Paul Winkler</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Collin Winter</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Collin Winter</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Blake Winton</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Blake Winton</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Dan Wolfe</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Dan Wolfe</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Steven Work</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Steven Work</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Thomas Wouters</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Thomas Wouters</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Ka-Ping Yee</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ka-Ping Yee</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Rory Yorke</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Rory Yorke</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Moshe Zadka</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Moshe Zadka</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Milan Zamazal</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Milan Zamazal</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Cheng Zhang</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Cheng Zhang</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Trent Nelson</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Trent Nelson</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Michael Foord</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Michael Foord</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>It is only with the input and contributions of the Python community that Python has such wonderful documentation -- Thank You!</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Alleinig aufgrund der Beiträge aus der Python Nutzergemeinschaft verfügt Python über eine so wundervolle Dokumentation -- Vielen Dank!</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

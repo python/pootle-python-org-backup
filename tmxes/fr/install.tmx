@@ -1,0 +1,535 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Installing Python Modules</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>installation des modules python</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Author</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>auteur</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Greg Ward</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Greg Ward</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Release</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Publication</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>|version|</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>|version|</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Date</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Date</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>|today|</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>|today|</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Abstract</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Résumé</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This document describes the Python Distribution Utilities ("Distutils") from the end-user's point-of-view, describing how to extend the capabilities of a standard Python installation by building and installing third-party Python modules and extensions.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Ce document décrit les utilitaires de distribution de Python ("Distutils") du point de vue de l'utilisateur final, décrivant comment étendre les capacités d'une installation standard de python en construisant et installant des modules python tiers et des extensions.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Introduction</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>introduction</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Although Python's extensive standard library covers many programming needs, there often comes a time when you need to add some new functionality to your Python installation in the form of third-party modules.  This might be necessary to support your own programming, or to support an application that you want to use and that happens to be written in Python.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bien que la vaste bibliothèque standard de Python comble beaucoup de besoins en programmation, il arrive souvent un moment où vous avez besoin d'ajouter de nouvelles fonctionnalités à votre installation de Python, via des modules tiers. Cela peut être nécessaire pour vous aider à écrire vos programmes ou pour prendre en charge une application écrite en Python que vous souhaitez utiliser.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In the past, there has been little support for adding third-party modules to an existing Python installation.  With the introduction of the Python Distribution Utilities (Distutils for short) in Python 2.0, this changed.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Dans le passé, il y a eu peu de prise d'aide à l'ajout de modules tiers sur une installation existante de Python. Avec l'introduction des utilitaires de distribution de Python (Distutils pour faire plus court) dans Python 2.0, ceci a changé.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This document is aimed primarily at the people who need to install third-party Python modules: end-users and system administrators who just need to get some Python application running, and existing Python programmers who want to add some new goodies to their toolbox.  You don't need to know Python to read this document; there will be some brief forays into using Python's interactive mode to explore your installation, but that's it.  If you're looking for information on how to distribute your own Python modules so that others may use them, see the :ref:`distutils-index` manual.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Ce document s'adresse principalement aux personnes qui ont besoin d'installer des modules tiers de Python : les utilisateurs finaux et les administrateurs système, qui ont juste besoin de faire fonctionner une application Python, et les programmeurs Python, qui veulent ajouter de nouvelles fonctionnalités à leur boîte à outils. Vous n'avez pas besoin de connaître Python pour lire ce document. Il y aura quelques brèves utilisations du mode interactif de Python pour explorer votre installation, mais c'est tout. Si vous cherchez des informations sur la façon de distribuer vos propres modules Python afin que d'autres puissent les utiliser, allez voir le manuel de :ref:`distutils-index`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Best case: trivial installation</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Le meilleur des cas : l'installation simple</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In the best case, someone will have prepared a special version of the module distribution you want to install that is targeted specifically at your platform and is installed just like any other software on your platform.  For example, the module developer might make an executable installer available for Windows users, an RPM package for users of RPM-based Linux systems (Red Hat, SuSE, Mandrake, and many others), a Debian package for users of Debian-based Linux systems, and so forth.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Dans le meilleur des cas, quelqu'un aura préparé une version spéciale de la distribution du module que vous souhaitez installer qui est destiné spécifiquement à votre plateforme et elle va s'installer comme n'importe quel autre logiciel sur votre plateforme. Par exemple, le développeur du module pourrait faire un installeur exécutable disponible pour les utilisateurs Windows, un paquetage RPM pour les utilisateurs de systèmes Linux basés sur RPM (Red Hat, SuSE, Mandrake et bien d'autres), un paquet Debian pour les utilisateurs de Linux basé sur le système Debian et ainsi de suite.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In that case, you would download the installer appropriate to your platform and do the obvious thing with it: run it if it's an executable installer, ``rpm --install`` it if it's an RPM, etc.  You don't need to run Python or a setup script, you don't need to compile anything---you might not even need to read any instructions (although it's always a good idea to do so anyways).</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Dans ce cas, vous devez télécharger le programme d'installation approprié à votre plateforme et faire d'elle ce qui vous semble évident : l'exécuter s'il s'agit d'un exécutable d'installation,  ``rpm --install`` si c'est un RPM, etc. Vous n'avez même pas besoin d'exécuter Python ou un script d'installation, vous n'avez pas besoin de compiler quoi que ce soit -- vous devriez même pas avoir besoin de lire toutes les instructions (même si c'est toujours une bonne idée de le faire).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Of course, things will not always be that easy.  You might be interested in a module distribution that doesn't have an easy-to-use installer for your platform.  In that case, you'll have to start with the source distribution released by the module's author/maintainer.  Installing from a source distribution is not too hard, as long as the modules are packaged in the standard way.  The bulk of this document is about building and installing modules from standard source distributions.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bien sûr, les choses ne seront pas toujours aussi simple que cela. Vous pourriez être intéressés par une distribution d'un module qui n'a pas de programme d'installation facile à utiliser pour votre plateforme. Dans ce cas, vous allez devoir repartir des fichiers sources publiés par l'auteur/mainteneur du module. L'installation à partir des sources n'est pas très difficile, du moment que les modules en question sont packagés de façon standard. Le cœur de ce document explique comment configurer et installer des modules à partir des sources.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The new standard: Distutils</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Le nouveau standard: Distutils</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If you download a module source distribution, you can tell pretty quickly if it was packaged and distributed in the standard way, i.e. using the Distutils. First, the distribution's name and version number will be featured prominently in the name of the downloaded archive, e.g. :file:`foo-1.0.tar.gz` or :file:`widget-0.9.7.zip`.  Next, the archive will unpack into a similarly-named directory: :file:`foo-1.0` or :file:`widget-0.9.7`.  Additionally, the distribution will contain a setup script :file:`setup.py`, and a file named :file:`README.txt` or possibly just :file:`README`, which should explain that building and installing the module distribution is a simple matter of running ::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Si vous téléchargez une distribution source du module, vous pouvez dire assez rapidement s'il a été packagé et distribué de la façon standard, c'est à dire en utilisant Distutils. Premièrement, le nom et le numéro de version de la distribution seront affichés en bonne place dans le nom de l'archive téléchargée, par exemple :file:`foo-1.0.tar.gz` ou :file:`widget-0.9.7.zip`. Ensuite, l'archive va se décompresser dans un répertoire du même nom : :file:`foo-1.0` ou :file:`widget-0.9.7`. En outre, la distribution va contenir un script d'installation :file:`setup.py` et un fichier nommé :file:`README.txt` ou éventuellement juste :file:`README`, qui doit expliquer que la construction et l'installation de la distribution du module se fait simplement en exécutant ceci ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>python setup.py install</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>python setup.py install</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If all these things are true, then you already know how to build and install the modules you've just downloaded:  Run the command above. Unless you need to install things in a non-standard way or customize the build process, you don't really need this manual.  Or rather, the above command is everything you need to get out of this manual.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Si toutes ces choses sont vérifiées, alors vous savez déjà comment construire et installer le module que vous venez de télécharger : en exécutant la commande ci-dessus. Sauf si vous avez besoin d'installer les choses d'une manière non standard ou de personnaliser le processus de construction, vous n'avez pas vraiment besoin de ce manuel. Ou plutôt, la commande ci-dessus est tout ce dont vous avez besoin de sortir de ce manuel.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Standard Build and Install</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Construction standard et installation</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>As described in section :ref:`inst-new-standard`, building and installing a module distribution using the Distutils is usually one simple command::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Comme décrit dans la section :ref:`inst-new-standard`, la construction et l'installation d'une distribution d'un module en utilisant Distutils est habituellement fait avec la commande ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>On Unix, you'd run this command from a shell prompt; on Windows, you have to open a command prompt window ("DOS box") and do it there; on Mac OS X, you open a :command:`Terminal` window to get a shell prompt.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Sous Unix, vous devriez exécuter cette commande à partir d'une invite de shell ; sous Windows, vous devez ouvrir une fenêtre d'invite de commande ("fenêtre DOS") et le faire dedans ; sous Mac OS X, vous ouvrez une fenêtre :command:`Terminal` pour obtenir une invite de shell.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Platform variations</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Différences selon les plateformes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You should always run the setup command from the distribution root directory, i.e. the top-level subdirectory that the module source distribution unpacks into.  For example, if you've just downloaded a module source distribution :file:`foo-1.0.tar.gz` onto a Unix system, the normal thing to do is::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Vous devez toujours exécuter la commande "setup" à partir du répertoire racine de la distribution, à savoir le sous-répertoire de niveau supérieur à celui où se sont décompressées les sources de la distribution du module. Par exemple, si vous venez de télécharger les sources d'une distribution du module :file:`foo-1.0.tar.gz` sous un système Unix, la méthode normale consiste à faire ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>gunzip -c foo-1.0.tar.gz | tar xf -    # unpacks into directory foo-1.0 cd foo-1.0 python setup.py install</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>gunzip -c foo-1.0.tar.gz | tar xf -    # décompresse dans le répertoire foo-1.0 cd foo-1.0 python setup.py install</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>On Windows, you'd probably download :file:`foo-1.0.zip`.  If you downloaded the archive file to :file:`C:\\Temp`, then it would unpack into :file:`C:\\Temp\\foo-1.0`; you can use either a archive manipulator with a graphical user interface (such as WinZip) or a command-line tool (such as :program:`unzip` or :program:`pkunzip`) to unpack the archive.  Then, open a command prompt window ("DOS box"), and run::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Sous Windows, vous avez probablement téléchargé :file:`foo-1.0.zip`. Si vous avez téléchargé le fichier d'archive dans :file:`C:\Temp`, il se décompressera alors dans :file:`C:\Temp\foo-1.0` ; vous pouvez utiliser soit un manipulateur d'archive avec une interface graphique (comme WinZip) soit un outil de ligne de commande (telles que :program:`unzip` ou :program:`pkunzip`) pour décompresser l'archive. Ensuite, ouvrez une fenêtre d'invite de commandes ("fenêtre DOS") et exécutez ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>cd c:\Temp\foo-1.0 python setup.py install</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>cd c:\Temp\foo-1.0 python setup.py install</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Splitting the job up</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Fractionnement du travail</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Running ``setup.py install`` builds and installs all modules in one run.  If you prefer to work incrementally---especially useful if you want to customize the build process, or if things are going wrong---you can use the setup script to do one thing at a time.  This is particularly helpful when the build and install will be done by different users---for example, you might want to build a module distribution and hand it off to a system administrator for installation (or do it yourself, with super-user privileges).</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Exécuter ``setup.py install`` construit et installe tous les modules en un seul coup. Si vous préférez travailler progressivement -- ce qui est particulièrement utile si vous souhaitez personnaliser le processus de construction, ou si les choses vont mal -- vous pouvez utiliser le script de configuration pour faire une chose à la fois. Cela est particulièrement utile lorsque la construction et l'installation doit être faite par différents utilisateurs -- par exemple, vous pouvez vouloir construire une distribution d'un module et la transférer à un administrateur système pour l'installation (ou le faire vous-même, avec les privilèges de super-utilisateur).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>For example, you can build everything in one step, and then install everything in a second step, by invoking the setup script twice::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Par exemple, vous pouvez construire tout en une seule étape et ensuite installer le tout dans une deuxième étape, en invoquant le script d'installation deux fois ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>python setup.py build python setup.py install</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>python setup.py build python setup.py install</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If you do this, you will notice that running the :command:`install` command first runs the :command:`build` command, which---in this case---quickly notices that it has nothing to do, since everything in the :file:`build` directory is up-to-date.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Si vous faites cela, vous remarquerez que l'exécution de la commande :command:`install` lance d'abord la commande :command:`build`, qui, dans ce cas, s'aperçoit vite qu'il n'a rien à faire, puisque tout dans le dossier :file:`build` est à jour.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You may not need this ability to break things down often if all you do is install modules downloaded off the 'net, but it's very handy for more advanced tasks.  If you get into distributing your own Python modules and extensions, you'll run lots of individual Distutils commands on their own.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Il se peut que vous n'ayez pas souvent besoin de cette capacité à découper les étapes si tout ce que vous faite est d'installer les modules téléchargés sur le Net, mais c'est très pratique pour des tâches plus avancées. Si vous en venez à distribuer vos propres modules et extensions Python, vous allez exécuter beaucoup de commandes individuelles de Distutils, indépendamment les unes des autres.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>How building works</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Comment fonctionne une construction</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>As implied above, the :command:`build` command is responsible for putting the files to install into a *build directory*.  By default, this is :file:`build` under the distribution root; if you're excessively concerned with speed, or want to keep the source tree pristine, you can change the build directory with the :option:`--build-base` option. For example::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Comme sous-entendu ci-dessus, la commande :command:`build` est chargé de mettre les fichiers à installer dans un *répertoire de travail*. Par défaut, c'est :file:`build` sous la racine de la distribution ; si vous êtes très préoccupés par la vitesse, ou si vous voulez conserver l'arborescence des sources d'origine, vous pouvez changer le répertoire de construction avec l'option :option:`--build-base`. Par exemple ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>python setup.py build --build-base=/tmp/pybuild/foo-1.0</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>python setup.py build --build-base=/tmp/pybuild/foo-1.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>(Or you could do this permanently with a directive in your system or personal Distutils configuration file; see section :ref:`inst-config-files`.)  Normally, this isn't necessary.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>(Ou vous pourriez le faire de façon permanente avec une directive dans votre système ou dans le fichier de configuration personnelle de Distutils ; voir la section :ref:`inst-config-files`.) Normalement, ce n'est pas nécessaire.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The default layout for the build tree is as follows::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>La mise en page par défaut pour l'arbre de compilation se présente comme suit ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>--- build/ --- lib/ or --- build/ --- lib.&lt;plat&gt;/                temp.&lt;plat&gt;/</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>--- build/ --- lib/ or --- build/ --- lib.&lt;plat&gt;/ temp.&lt;plat&gt;/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>where ``&lt;plat&gt;`` expands to a brief description of the current OS/hardware platform and Python version.  The first form, with just a :file:`lib` directory, is used for "pure module distributions"---that is, module distributions that include only pure Python modules.  If a module distribution contains any extensions (modules written in C/C++), then the second form, with two ``&lt;plat&gt;`` directories, is used.  In that case, the :file:`temp.{plat}` directory holds temporary files generated by the compile/link process that don't actually get installed.  In either case, the :file:`lib` (or :file:`lib.{plat}`) directory contains all Python modules (pure Python and extensions) that will be installed.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>où ``&lt;plat&gt;`` représente une brève description de l'actuel système d'exploitation / plateforme matérielle et la version Python. La première forme, avec juste un dossier :file:`lib` est utilisé pour les «distributions de modules purs" -- c'est-à-dire des distributions de module qui ne incorporent que des modules en Python. Si un module de la distribution contient au moins une extension (modules écrits en C/C++), alors il faut utiliser la deuxième forme, avec deux dossiers ``&lt;plat&gt;``. Dans ce cas, le répertoire :file:`temp.{plat}` contient les fichiers temporaires générés par le processus de compilation et de lien qui ne seront pas installés. Dans les deux cas, le dossier :file:`lib` (ou :file:`lib.{plat}`) contient tous les modules Python (Python pur et extensions) qui seront installés.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In the future, more directories will be added to handle Python scripts, documentation, binary executables, and whatever else is needed to handle the job of installing Python modules and applications.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Dans l'avenir, d'autres répertoires seront ajoutés pour gérer les scripts Python, de la documentation, des exécutables binaires et tout ce qui est nécessaire pour gérer le travail de l'installation de modules et d'applications Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>How installation works</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Comment fonctionne l'installation</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>After the :command:`build` command runs (whether you run it explicitly, or the :command:`install` command does it for you), the work of the :command:`install` command is relatively simple: all it has to do is copy everything under :file:`build/lib` (or :file:`build/lib.{plat}`) to your chosen installation directory.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Après l'exécution de la commande :command:`build` (que vous l'ayez exécutez explicitement ou que la commande :command:`install` l'ai fait pour vous), le travail de la commande :command:`install` est relativement simple : tout ce qu'il a à faire est de copier tout ce qui est sous :file:`build/lib` (ou :file:`build/lib.{plat}`) dans le répertoire que vous avez choisi pour l'installation.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If you don't choose an installation directory---i.e., if you just run ``setup.py install``\ ---then the :command:`install` command installs to the standard location for third-party Python modules.  This location varies by platform and by how you built/installed Python itself.  On Unix (and Mac OS X, which is also Unix-based), it also depends on whether the module distribution being installed is pure Python or contains extensions ("non-pure"):</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Si vous ne choisissez aucun répertoire d'installation -- c'est-à-dire, si vous lancez simplement ``setup.py install``\ -- alors la commande :command:`install` installe à l'emplacement standard pour les modules tiers de Python. Cet emplacement varie selon la plateforme et selon la façon dont vous avez construit et/ou installés Python lui-même. Sous Unix (et Mac OS X, qui est également basé sur Unix), il dépend aussi de savoir si le module de la distribution en cours d'installation est en pur Python ou contient des extensions ("non-pur"):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Platform</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Plateforme</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Standard installation location</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Emplacement standard de l'installation</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Default value</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Valeur par défaut</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Notes</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Notes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Unix (pure)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Unix (pur)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:file:`{prefix}/lib/python{X.Y}/site-packages`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:file:`{prefix}/lib/python{X.Y}/site-packages`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:file:`/usr/local/lib/python{X.Y}/site-packages`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:file:`/usr/local/lib/python{X.Y}/site-packages`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>\(1)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>\(1)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Unix (non-pure)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Unix (non-pur)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:file:`{exec-prefix}/lib/python{X.Y}/site-packages`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:file:`{exec-prefix}/lib/python{X.Y}/site-packages`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Windows</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Windows</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:file:`{prefix}`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:file:`{prefix}`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:file:`C:\\Python`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:file:`C:\Python`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>\(2)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>\(2)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Notes:</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Notes:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Most Linux distributions include Python as a standard part of the system, so :file:`{prefix}` and :file:`{exec-prefix}` are usually both :file:`/usr` on Linux.  If you build Python yourself on Linux (or any Unix-like system), the default :file:`{prefix}` and :file:`{exec-prefix}` are :file:`/usr/local`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>La plupart des distributions Linux incluent Python comme un élément de base du système, donc : file: `{prefix}` et : ​​file: `{exec-prefix}` sont généralement tous les deux : file: `/ usr` sous Linux. Si vous construisez vous-même Python sous Linux (ou tout autre système de type Unix), les valeurs par défaut de : file: `{prefix}` et: ​​file: `{exec-prefix}` sont souvent : file: `/ usr /` locales.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The default installation directory on Windows was :file:`C:\\Program Files\\Python` under Python 1.6a1, 1.5.2, and earlier.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Sous Windows, le dossier d'installation par défaut était : :file:`C:\Program Files\Python` sous Python 1.6a1, 1.5.2 et avant.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:file:`{prefix}` and :file:`{exec-prefix}` stand for the directories that Python is installed to, and where it finds its libraries at run-time.  They are always the same under Windows, and very often the same under Unix and Mac OS X.  You can find out what your Python installation uses for :file:`{prefix}` and :file:`{exec-prefix}` by running Python in interactive mode and typing a few simple commands. Under Unix, just type ``python`` at the shell prompt.  Under Windows, choose :menuselection:`Start --&gt; Programs --&gt; Python X.Y --&gt; Python (command line)`.   Once the interpreter is started, you type Python code at the prompt.  For example, on my Linux system, I type the three Python statements shown below, and get the output as shown, to find out my :file:`{prefix}` and :file:`{exec-prefix}`::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:file:`{prefix}` et :file:`{exec-prefix}` désignent les répertoires dans lesquels Python est installé et où il trouve les librairies lors de l'exécution. Ils sont toujours identiques sous Windows et très souvent les mêmes sous Unix et Mac OS X. Vous pouvez trouver ce que votre installation de Python utilise pour :file:`{prefix}` et :file:`{exec-prefix}` en exécutant Python en mode interactif et en tapant quelques commandes simples. Sous Unix,  taper seulement ``python`` à l'invite du shell. Sous Windows, sélectionner :menuselection:`Démarrer --&gt; Programmes --&gt; Python X.Y --&gt; Python (ligne de commande)`. Un fois l'interpréteur démarré, vous taper du code Python à l'invite de commande. Par exemple, sur mon système Linux, je tape les trois instructions ci-dessous et obtient la sortie comme indiqué pour trouver mes  :file:`{prefix}` et :file:`{exec-prefix}`::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python 2.4 (#26, Aug  7 2004, 17:19:02) Type "help", "copyright", "credits" or "license" for more information. &gt;&gt;&gt; import sys &gt;&gt;&gt; sys.prefix '/usr' &gt;&gt;&gt; sys.exec_prefix '/usr'</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Python 2.4 (#26, Aug 7 2004, 17:19:02) Type "help", "copyright", "credits" or "license" for more information. &gt;&gt;&gt; import sys &gt;&gt;&gt; sys.prefix '/usr' &gt;&gt;&gt; sys.exec_prefix '/usr'</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If you don't want to install modules to the standard location, or if you don't have permission to write there, then you need to read about alternate installations in section :ref:`inst-alt-install`.  If you want to customize your installation directories more heavily, see section :ref:`inst-custom-install` on custom installations.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Si vous ne voulez pas installer des modules à l'emplacement standard, ou si vous n'avez pas la permission d'écrire là-bas, alors vous avez besoin de lire la section ref: `inst-alt-installer` sur les alternatives d'installation. Si vous souhaitez personnaliser vos répertoires d'installation plus fortement, allez voir la section ref: `inst-sur-install` sur les installations personnalisées.</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

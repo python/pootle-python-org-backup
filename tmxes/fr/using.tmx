@@ -1,0 +1,655 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Command line and environment</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Ligne de commande et environnement</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The CPython interpreter scans the command line and the environment for various settings.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>L'interpréteur CPython analyse la ligne de commande et l'environnement à la recherche de différents paramètres/</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Other implementations' command line schemes may differ.  See :ref:`implementations` for further resources.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Le format des lignes de commandes utilisées par d'autres implémentations peut être différent. Voir :ref:`implementations` pour plus d'informations.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Command line</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Ligne de commande</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When invoking Python, you may specify any of these options::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Quand vous invoquez Python, vous pouvez spécifier n’importe laquelle de ces options :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>python [-bBdEhiOsSuvVWx?] [-c command | -m module-name | script | - ] [args]</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>python [-bBdEhiOsSuvVWx?] [-c commande | -m nom-de-module | script | - ] [arguments]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The most common use case is, of course, a simple invocation of a script::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Le cas d'utilisation le plus courant est, bien entendu, la simple invocation d'un script ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>python myscript.py</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>python monscript.py</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Interface options</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Options de l'interface</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The interpreter interface resembles that of the UNIX shell, but provides some additional methods of invocation:</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>L'interface de l’interpréteur ressemble à celle du shell UNIX, mais fournit quelques méthodes d'invocation supplémentaires :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When called with standard input connected to a tty device, it prompts for commands and executes them until an EOF (an end-of-file character, you can produce that with *Ctrl-D* on UNIX or *Ctrl-Z, Enter* on Windows) is read.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Quand l'interpréteur est appelé avec l'entrée standard connectée à un périphérique tty, il lit les lignes de commande et les exécute jusqu'à ce qu'un caractère EOF (un caractère fin de fichier, que vous pouvez produire avec *Ctrl-D* sous UNIX ou *Ctrl-Z, Entrée* sous Windows) soit lu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When called with a file name argument or with a file as standard input, it reads and executes a script from that file.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Quand l'interpréteur est appelé avec argument correspondant à un nom de fichier ou avec un fichier comme entrée standard, il lit et exécute le script contenu dans ce fichier.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When called with a directory name argument, it reads and executes an appropriately named script from that directory.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Quand l'interpréteur est appelé avec un argument correspondant à un répertoire, il lit et exécute un script nommé d’une certaine façon depuis ce répertoire.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When called with ``-c command``, it executes the Python statement(s) given as *command*.  Here *command* may contain multiple statements separated by newlines. Leading whitespace is significant in Python statements!</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Quand l'interpréteur est appelé avec l'option ``-c commande``, il exécute la ou les instructions Python données comme *commande*. Ici *commande* peut contenir plusieurs instructions séparées par des fins de ligne. Les blancs en début de ligne ne sont pas ignorés dans les instructions Python !</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When called with ``-m module-name``, the given module is located on the Python module path and executed as a script.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Quand l'interpréteur est appelé avec l'option ``-m nom-de-module``, le module donné est recherché dans le chemin des modules Python et est exécuté en tant que script.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In non-interactive mode, the entire input is parsed before it is executed.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>En mode non-interactif, toute l’entrée est analysée avant d’être exécutée. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An interface option terminates the list of options consumed by the interpreter, all consecutive arguments will end up in :data:`sys.argv` -- note that the first element, subscript zero (``sys.argv[0]``), is a string reflecting the program's source.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une option d'interface termine la listes des options consommées par l'interpréteur ; tous les arguments échoueront dans :data:`sys.argv` — notez que le premier élément, à l'indice zéro (``sys.argv|0]``), est une chaîne de caractères indiquant la source du programme.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Execute the Python code in *command*.  *command* can be one ore more statements separated by newlines, with significant leading whitespace as in normal module code.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Exécute le code Python dans *commande*. *commande* peut être une ou plusieurs instructions, séparées par des fins de ligne, avec des blancs en début de ligne qui ne sont pas ignorés, comme dans le code d’un module.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If this option is given, the first element of :data:`sys.argv` will be ``"-c"`` and the current directory will be added to the start of :data:`sys.path` (allowing modules in that directory to be imported as top level modules).</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Si cette option est donnée, le premier élément de :data: `sys.argv` sera ``"-c"`` et le répertoire courant sera ajouté au début de :data: `sys.path` (permettant aux modules de ce répertoire d'être importé comme des modules de premier niveau).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Search :data:`sys.path` for the named module and execute its contents as the :mod:`__main__` module.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Parcourir :data:`sys.path` à la recherche du module donné et exécuter son contenu en tant que module :mod:`__main__`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Since the argument is a *module* name, you must not give a file extension (``.py``).  The ``module-name`` should be a valid Python module name, but the implementation may not always enforce this (e.g. it may allow you to use a name that includes a hyphen).</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>L'argument étant un nom de *module*, vous ne devez pas fournir d’extension de fichier (``.py``). Le ``nom-du-module` devrait être un nom de module Python valide, mais l'implémentation n’est pas tenue de le vérifier (par exemple, l'utilisation d'un trait d'union peut être autorisée).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Package names are also permitted. When a package name is supplied instead of a normal module, the interpreter will execute ``&lt;pkg&gt;.__main__`` as the main module. This behaviour is deliberately similar to the handling of directories and zipfiles that are passed to the interpreter as the script argument.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les noms de paquets sont aussi autorisés. Quand un nom de paquet est donné à la place d'un module habituel, l'interpréteur exécutera ``&lt;pkg&gt;.__main`` comme module principal. Ce comportement est délibérement identique que pour un répertoire on un fichier zip donné à l'interpréteur comme argument à exécuter.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This option cannot be used with built-in modules and extension modules written in C, since they do not have Python module files. However, it can still be used for precompiled modules, even if the original source file is not available.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Cette option ne peut pas être utilisée avec les modules intégrés et les modules d'extension écrits en C, étant donné qu'il ne possèdent pas de fichiers modules en Python. Cependant, elle peut toujours être utilisées pour les modules pré-complilés, même si le fichier source original n'est pas disponible.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If this option is given, the first element of :data:`sys.argv` will be the full path to the module file. As with the :option:`-c` option, the current directory will be added to the start of :data:`sys.path`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Si cette option est donnée, le premier élément de :data:`sys.argv` sera le chemin complet d'accès au fichier du module. Comme pour l'option :option:`-c`, le répertoire courant sera ajouté au début de :data:`sys.path`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Many standard library modules contain code that is invoked on their execution as a script.  An example is the :mod:`timeit` module::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>De nombreux modules de la bibliothèque standard contiennent du code qui est invoqué quand ils sont exécutés comme scripts. Un exemple est le module :mod:`timeit`\ ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>python -mtimeit -s 'setup here' 'benchmarked code here' python -mtimeit -h # for details</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>python -mtimeit -s 'préparation ici' 'code à chronométrer ici'python -mtimeit -h # pour les détails</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See also</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Voir aussi</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:pep:`338` -- Executing modules as scripts</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:pep:`338` --  Exécuter des modules en tant que scripts</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Read commands from standard input (:data:`sys.stdin`).  If standard input is a terminal, :option:`-i` is implied.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Lit les commandes depuis l'entrée standard (:data:`sys.stdin`). Si l'entrée standard est un terminal, l':option:`-i` est activée implicitement.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Execute the Python code contained in *script*, which must be a filesystem path (absolute or relative) referring to either a Python file, a directory containing a ``__main__.py`` file, or a zipfile containing a ``__main__.py`` file.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Exécute le code Python contenu dans *script*, qui doit être un chemin d'accès au fichier (absolu ou relatif), se référant à un fichier Python, à un répertoire contenant un fichier ``__main__.py`` ou à un fichier zip contenant un fichier ``__main__.py``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If this option is given, the first element of :data:`sys.argv` will be the script name as given on the command line.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Si cette option est donnée, le premier élément de :data:`sys.argv` sera le nom du script comme donné sur la ligne de commande.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Issue a warning when comparing str and bytes. Issue an error when the option is given twice (:option:`-bb`).</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Émettre un avertissement lorsque l'on compare un str et un bytes. Émettre une erreur lorsque l'option est donné deux fois (:option:`-bb`).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If given, Python won't try to write ``.pyc`` or ``.pyo`` files on the import of source modules.  See also :envvar:`PYTHONDONTWRITEBYTECODE`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Si donné, Python ne tentera pas d'écrire de fichier ``.pyc``` ou ``.pyo`` à l'importation des modules source. Voir aussi :envvar:`PYTHONDONTWRITEBYTECODE`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Turn on parser debugging output (for wizards only, depending on compilation options).  See also :envvar:`PYTHONDEBUG`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Activer la sortie de l'analyseur de débogage (pour les magiciens uniquement, en fonction des options de compilation). Voir aussi :envvar:`PYTHONDEBUG`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Ignore all :envvar:`PYTHON*` environment variables, e.g. :envvar:`PYTHONPATH` and :envvar:`PYTHONHOME`, that might be set.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Ignorer toutes les variables d'environnement :envvar:`PYTHON*`, par exemple, :envvar:`PYTHONPATH` et :envvar:`PYTHONHOME`, qui pourraient être définies.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When a script is passed as first argument or the :option:`-c` option is used, enter interactive mode after executing the script or the command, even when :data:`sys.stdin` does not appear to be a terminal.  The :envvar:`PYTHONSTARTUP` file is not read.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Quand un script est passé comme premier argument ou que l'option :option:`-c` est utilisée, entrer en mode interactif après avoir exécuté le script ou la commande, même lorsque :data:`sys.stdin` ne semble pas être un terminal. Le fichier :envvar:`PYTHONSTARTUP` n'est pas lu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This can be useful to inspect global variables or a stack trace when a script raises an exception.  See also :envvar:`PYTHONINSPECT`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Cela peut être utile pour examiner les variables globales ou une trace de la pile lorsque le script lève une exception. Voir aussi :envvar:`PYTHONINSPECT`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Turn on basic optimizations.  This changes the filename extension for compiled (:term:`bytecode`) files from ``.pyc`` to ``.pyo``.  See also :envvar:`PYTHONOPTIMIZE`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Activer les optimisations de base. Cela modifie l'extension du fichier pour les fichiers compilés (:term:`bytecode`) de ``.pyc`` à ``.pyo``. Voir aussi :envvar:`PYTHONOPTIMIZE`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Discard docstrings in addition to the :option:`-O` optimizations.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Supprimer les docstrings en plus des optimisations réalisés par :option:`-O`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Don't add user site directory to sys.path</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Ne pas ajouter le répertoire spécifique de l’utilisateur à sys.path</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Disable the import of the module :mod:`site` and the site-dependent manipulations of :data:`sys.path` that it entails.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Désactiver l’importation du module :mod:`site` et les modifications de :data:`sys.path` spécifiques au site qu’elle implique.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See also :envvar:`PYTHONUNBUFFERED`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Voir aussi :envvar:`PYTHONUNBUFFERED`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>file:line: category: message</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>file:line: category: message</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>action:message:category:module:line</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>action:message:category:module:line</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:pep:`230` -- Warning framework</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:pep:`230` -- Gestion des alertes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Options you shouldn't use</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Options que vous ne devriez pas utiliser</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Environment variables</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Variables d'environnement</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>How To Manage Environment Variables in Windows XP</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Comment gérer les variables d'environnement sous Windows XP</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Setting Environment variables, Louis J. Farrugia</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Définir les variables d'environnement, Louis J. Farrugia</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>C:\WINDOWS\system32;C:\WINDOWS;C:\Python25</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>C:\WINDOWS\system32;C:\WINDOWS;C:\Python25</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>PyWin32</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>PyWin32</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The `PyWin32 &lt;http://python.net/crew/mhammond/win32/&gt;`_ module by Mark Hammond is a collection of modules for advanced Windows-specific support.  This includes utilities for:</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Le module `PyWin32 &lt;http://python.net/crew/mhammond/win32/&gt;`_ de Mark Hammond est une collection de modules pour un support avancé spécifique à Windows.  Cela inclut les services pour :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>`Component Object Model &lt;http://www.microsoft.com/com/&gt;`_ (COM)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>`Component Object Model &lt;http://www.microsoft.com/com/&gt;`_ (COM)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Win32 API calls</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Appels à l'API Win32</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>`Microsoft Foundation Classes &lt;http://msdn.microsoft.com/en-us/library/fe1cf721%28VS.80%29.aspx&gt;`_ (MFC) user interfaces</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>`Microsoft Foundation Classes &lt;http://msdn.microsoft.com/en-us/library/fe1cf721%28VS.80%29.aspx&gt;`_ (MFC) interfaces utilisateur</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>`PythonWin &lt;http://web.archive.org/web/20060524042422/ http://www.python.org/windows/pythonwin/&gt;`_ is a sample MFC application shipped with PyWin32.  It is an embeddable IDE with a built-in debugger.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>`PythonWin &lt;http://web.archive.org/web/20060524042422/ http://www.python.org/windows/pythonwin/&gt;`_ est une exemple d'application MFC livrée avec PyWin32. Il s'agit d'un IDE embarqué avec débogueur intégré.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>by Tim Golden</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>par Tim Golden</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>by David and Paul Boddie</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>par David et Paul Boddie</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Py2exe</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Py2exe</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>WConio</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>WConio</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Compiling Python on Windows</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Compiler Python sous Windows</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Directory</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Répertoire</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>MSVC version</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>version de MSVC</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Visual Studio version</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Version de Visual Studio</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:file:`PC/VC6/`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:file:`PC/VC6/`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>6.0</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>6.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>97</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>97</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:file:`PC/VS7.1/`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:file:`PC/VS7.1/`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>7.1</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>7.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2003</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>2003</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:file:`PC/VS8.0/`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:file:`PC/VS8.0/`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>8.0</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>8.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2005</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>2005</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:file:`PCbuild/`</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>:file:`PCbuild/`</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>9.0</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>9.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2008</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>2008</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Check :file:`PC/readme.txt` for general information on the build process.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Vérifiez :file:`PC/readme.txt` pour des informations générales sur le processus de construction.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>by Trent Apted et al, 2007</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>par Trent Apted et al, 2007</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Other resources</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Autres ressources</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>"Help for Windows Programmers" by Mark Hammond and Andy Robinson, O'Reilly Media, 2000, ISBN 1-56592-621-8</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>"Help for Windows Programmers" de Mark Hammond et Andy Robinson, O'Reilly Media, 2000, ISBN 1-56592-621-8</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>by Amanda Birmingham, 2004</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>par Amanda Birmingham, 2004</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

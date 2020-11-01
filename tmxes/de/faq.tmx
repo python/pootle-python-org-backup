@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>if (x &lt;= y)         x++;         y--; z++;</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>if (x &lt;= y)         x++;         y--; z++;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See the next question.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Die nächste Frage anzeigen.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There are several advantages.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Es gibt mehrere Vorteile.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>which gives the result::</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>welches Ihnen dieses Ergebnis liefert:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>"1, 2, 4, 8, 16"</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>"1, 2, 4, 8, 16"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Why isn't all memory freed when Python exits?</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Weshalb wird nicht aller Speicher freigegeben, wenn Python beendet wird?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Objects referenced from the global namespaces of Python modules are not always deallocated when Python exits.  This may happen if there are circular references.  There are also certain bits of memory that are allocated by the C library that are impossible to free (e.g. a tool like Purify will complain about these).  Python is, however, aggressive about cleaning up memory on exit and does try to destroy every single object.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Aus dem globalen Namensraum von Python-Modulen referenzierte Objekte werden nicht immer freigegeben, wenn Python beendet wird. Dies kann geschehen, wenn Kreisbezüge vorliegen. Es gibt auch bestimmte Teile des Speichers, die von der C-Bibliothek alloziert werden und unmöglich freigegeben werden können (z. B. wird sich ein Werkzeug wie Purify über diese beschweren). Python geht jedoch aggressiv bei der Reinigung des Speichers beim Verlassen vor und versucht jedes einzelne Objekt zu zerstören.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If you want to force Python to delete certain things on deallocation use the :mod:`atexit` module to run a function that will force those deletions.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Wenn Python gezwungen werden soll bestimmte Dinge  bei Deallozierung zu löschen, nutze das :mod: `atexit` Modul  um eine Funktion aufzurufen, die diese Löschungen erzwingt.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Why are there separate tuple and list data types?</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Warum gibt es getrennte Tupel- und Listen-Datentypen?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Lists and tuples, while similar in many respects, are generally used in fundamentally different ways.  Tuples can be thought of as being similar to Pascal records or C structs; they're small collections of related data which may be of different types which are operated on as a group.  For example, a Cartesian coordinate is appropriately represented as a tuple of two or three numbers.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Listen und Tupel werden - obwohl in vielerlei Hinsicht ähnlich -  generell auf grundsätzlich verschiedenen Wegen genutzt. Tupel kann man sich ähnlich den records von Pascal oder den structs von C vorstellen; Es sind kleine Sammlungen untereinander verwandter Daten, die von unterschiedlichem Typ sein können und auf denen Operationen als Gruppe angewendet werden. Zum Beispiel wird eine kartesische Koordinate angemessen durch ein Tupel von zwei oder drei Zahlen repräsentiert.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>module = PyImport_ImportModule("&lt;modulename&gt;");</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>module = PyImport_ImportModule("&lt;modulename&gt;");</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>attr = PyObject_GetAttrString(module, "&lt;attrname&gt;");</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>attr = PyObject_GetAttrString(module, "&lt;attrname&gt;");</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>For Debian, run ``apt-get install python-dev``.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>In Debian, führen Sie ``apt-get install python-dev`` aus.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>General Python FAQ</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Allgemeines Python FAQ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>General Information</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Allgemeine Informationen</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>What is Python?</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Was ist Python?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>What is Python good for?</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Wofür ist Python gut?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>How do I get documentation on Python?</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Wie bekomme Ich Dokumentation zu Python?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>How do I get a beta test version of Python?</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Wie bekomme Ich eine beta Test-Version von Python?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>No, but it helps.  :)</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Nein, aber es hilft.  :)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>How stable is Python?</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Wie stabil ist Python?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>How many people are using Python?</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Wie viele Leute benutzen Python?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Is Python a good language for beginning programmers?</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ist Python eine gute Sprache für Programmieranfänger?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Yes.</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Ja.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Upgrading Python</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Python aktualisieren</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>wxWidgets</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>wxWidgets</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Qt</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Qt</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Gtk+</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Gtk+</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>FLTK</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>FLTK</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>FOX</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>FOX</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>OpenGL</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>OpenGL</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python Frequently Asked Questions</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Python Häufig Gestellte Fragen</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>"Why is Python Installed on my Computer?" FAQ</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>"Warum ist Python auf meinem Rechner installiert?" FAQ</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Can I delete Python?</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Kann Ich Python löschen?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>#!/usr/local/bin/python</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>#!/usr/local/bin/python</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>#!/usr/bin/env python</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>#!/usr/bin/env python</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>How do I copy a file?</seg>
+      </tuv>
+      <tuv xml:lang="de">
+        <seg>Wie kopiere ich eine Datei?</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Command line and environment</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wiersz poleceń i środowisko</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The CPython interpreter scans the command line and the environment for various settings.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>interpreter CPython skanuje wiersz poleceń i środowisko w poszukiwaniu różnych ustawień</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Other implementations' command line schemes may differ.  See :ref:`implementations` for further resources.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>zwyczaje panujące w wierszach poleceń w innych implementacjach mogą się różnić. Zobacz :ref:`implementations` dla dalszych zasobów.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Command line</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wiersz poleceń</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When invoking Python, you may specify any of these options::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>wywołując Pythona, możesz podać dowolną z tych opcji::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>python [-bBdEhiOsSuvVWx?] [-c command | -m module-name | script | - ] [args]</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>python [-bBdEhiOsSuvVWx?] [-c command | -m module-name | script | - ] [args]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The most common use case is, of course, a simple invocation of a script::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Najczęstszym przypadkiem użycia jest oczywiście zwykłe wywołanie uruchomienia skryptu</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>python myscript.py</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>python myscript.py</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Interface options</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Opcje środowiska</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The interpreter interface resembles that of the UNIX shell, but provides some additional methods of invocation:</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Środowisko interpretera przypomina to znane z powłoki UNIXa, ale dostarcza pewne dodatkowe metody wywołania:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When called with standard input connected to a tty device, it prompts for commands and executes them until an EOF (an end-of-file character, you can produce that with *Ctrl-D* on UNIX or *Ctrl-Z, Enter* on Windows) is read.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Gdy wzywane ze standardowym wejściem podłączonym do terminala, przyjmuje komendy i wykonuje je aż otrzyma znak EOF (znak końca wiersza, można go wytworzyć używając *Ctrl-D* w UNIXie lub *Ctrl-Z, Enter* w Windows) na wejście.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When called with a file name argument or with a file as standard input, it reads and executes a script from that file.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Gdy wezwane z nazwą pliku w argumencie, lub z plikiem na standardowym wejściu, wczytuje i wykonuje skrypt z tego pliku.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When called with a directory name argument, it reads and executes an appropriately named script from that directory.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Gdy wezwane z nazwą katalogu jako argument, wczytuje i wykonuje właściwie nazwany skrypt z tego katalogu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When called with ``-c command``, it executes the Python statement(s) given as *command*.  Here *command* may contain multiple statements separated by newlines. Leading whitespace is significant in Python statements!</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Gdy wezwane z parametrem ``-c komenda``, wykonuje polecenia Pythona podane jako *komenda*. Tu *komenda* może zawierać wielokrotne polecenia rozdzielone znakami nowego wiersza. Białe znaki na początku wyrażenia mają istotne znaczenie przy wykonywaniu poleceń w Pythonie.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When called with ``-m module-name``, the given module is located on the Python module path and executed as a script.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Gdy wywołane z ``-m nazwa-modułu``, dany moduł jest poszukiwany w ścieżce modułów Pythona i wykonywany jako skrypt.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In non-interactive mode, the entire input is parsed before it is executed.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>W trybie wsadowym (nie-interakcyjnym) całe wejście jest wczytywane przed jego wykonaniem.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An interface option terminates the list of options consumed by the interpreter, all consecutive arguments will end up in :data:`sys.argv` -- note that the first element, subscript zero (``sys.argv[0]``), is a string reflecting the program's source.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Opcje środowiska kończą listę opcji przetwarzanych przez interpreter, wszystkie kolejne argumenty zostaną zakwalifikowane jako :data:`sys.argv` -- Zauważ, że pierwszy element, o indeksie 0 (``sys.argv[0]``), jest napisem wskazującym na źródło programu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Execute the Python code in *command*.  *command* can be one ore more statements separated by newlines, with significant leading whitespace as in normal module code.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wykonaj kod kod Pythona w *komendzie*. *komenda* może być jednym lub więcej wyrażeniami rozdzielonymi znakami nowej linii, ze znaczącymi białymi znakami poprzedzającymi, tak jak w zwykłym kodzie modułu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If this option is given, the first element of :data:`sys.argv` will be ``"-c"`` and the current directory will be added to the start of :data:`sys.path` (allowing modules in that directory to be imported as top level modules).</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Jeśli ta opcja jest podana, pierwszym elementem :data:`sys.argv` będzie ``"-c"`` i bierzący katalog będzie dodany na początek :data:`sys.path` (pozwalając modułom w tym katalogu na bycie załączonymi jako moduły najwyższego poziomu).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Search :data:`sys.path` for the named module and execute its contents as the :mod:`__main__` module.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przeszukaj :data:`sys.path` w poszukiwaniu modułu o podanej nazwie i wykonaj jego zawartość jako moduł :mod:`__main__`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Since the argument is a *module* name, you must not give a file extension (``.py``).  The ``module-name`` should be a valid Python module name, but the implementation may not always enforce this (e.g. it may allow you to use a name that includes a hyphen).</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ponieważ argument jest nazwą *modułu*, nie podaje się rozszerzenia pliku (``.py``). ``Nazwa-modułu`` powinna być właściwą nazwą modułu Pythona, ale implementacja nie zawsze musi to narzucać (np. może pozwalać na użycie nazwy która zawiera myślnik).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Package names are also permitted. When a package name is supplied instead of a normal module, the interpreter will execute ``&lt;pkg&gt;.__main__`` as the main module. This behaviour is deliberately similar to the handling of directories and zipfiles that are passed to the interpreter as the script argument.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Nazwy pakietów są także dozwolone. Gdy nazwa pakietu jest dostarczona zamiast typowego modułu, wtedy interpreter wykona ``&lt;pkg&gt;.__main__`` jako główny moduł. Ta właściwość jest celowo podobna do obsługi katalogów i archiwów które są podawane dla interpretera jako argumenty skryptu.</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

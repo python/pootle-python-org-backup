@@ -1,0 +1,263 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2to3 - Automated Python 2 to 3 code translation</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2to3 - Conversão automatizada de código Python 2 para 3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2to3 is a Python program that reads Python 2.x source code and applies a series of *fixers* to transform it into valid Python 3.x code.  The standard library contains a rich set of fixers that will handle almost all code.  2to3 supporting library :mod:`lib2to3` is, however, a flexible and generic library, so it is possible to write your own fixers for 2to3.  :mod:`lib2to3` could also be adapted to custom applications in which Python code needs to be edited automatically.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2to3 é um programa que lê código fonte Python 2.x e aplica uma série de *fixers* para transformá-lo em código Python 3.x válido. A biblioteca padrão contém um rico conjunto de fixers que irão lidar com quase todo o código. A biblioteca :mod:`lib2to3`de suporte ao 2to3 é, no entanto, uma biblioteca flexível e genérica, por isso, é possível escrever seus próprios fixers para 2to3. :mod:`lib2to3` também pode ser adaptada para aplicações personalizadas nas quais o código Python precisa ser editado automaticamente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Using 2to3</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Usando 2to3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2to3 will usually be installed with the Python interpreter as a script.  It is also located in the :file:`Tools/scripts` directory of the Python root.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2to3 é normalmente instalada como um script, juntamente com o interpretador Python. Ela também pode ser encontrada no diretório :file:`Tools/scripts`, a partir do diretório raiz do Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2to3's basic arguments are a list of files or directories to transform.  The directories are to recursively traversed for Python sources.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Os argumentos básicos de 2to3 são uma lista dos arquivos ou diretórios que deverão ser convertidos. Os diretórios serão recursivamente analisados por arquivos-fonte Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Here is a sample Python 2.x source file, :file:`example.py`::</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Aqui está um exemplo de código fonte Python 2.x, :file:`exemplo.py`::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>def greet(name):     print "Hello, {0}!".format(name) print "What's your name?" name = raw_input() greet(name)</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>def cumprimentar(nome): print "Olá, {0}!".format(nome) print "Qual é o seu nome?" name = raw_input() cumprimentar(nome)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>It can be converted to Python 3.x code via 2to3 on the command line::</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Isto pode ser convertido para código Python 3.x via 2to3 pela linha de comando::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>$ 2to3 example.py</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>$ 2to3 exemplo.py</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>$ 2to3 -w example.py</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>$ 2to3 -w exemplo.py</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Comments and exact indentation are preserved throughout the translation process.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Comentários e indentações são preservados durante o processo de tradução.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>L = list(some_iterable) L.sort()</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>L = list(some_iterable) L.sort()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>is changed to ::</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>mudou para:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>L = sorted(some_iterable)</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>L = sorted(some_iterable)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.1.0b1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.1.0b1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.2</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.2.0a1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.2.0a1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.3</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.2.0a2</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.2.0a2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>3.0</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>3.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.5.0a1</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.5.0a1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.7</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.7</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.6</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.6</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.6.0a2</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>2.6.0a2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See also</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Veja também</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>if __name__ == "__main__":     main()</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>if __name__ == "__main__": main()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Return the number of audio channels (1 for mono, 2 for stereo).</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Retorna o número dos canais de áudio (1 para mono, 2 para stereo).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Return the size in bytes of individual samples.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Retorna o tamanho em bytes de amostras individuais.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Return the sampling rate (number of audio frames per second).</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Retorna a taxa de amostragem (número de frames de áudio por segundo).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Return the number of audio frames in the file.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Retorna o número de frames de áudio no arquivo.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>description</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>descrição</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Must be zero.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Precisa ser zero.</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

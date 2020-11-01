@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Installing Python Modules</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Instalando módulos Python</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Author</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Autor</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Greg Ward</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Greg Ward</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Release</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Release</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>|version|</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>|version|</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Date</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Data</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>|today|</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>|today|</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Abstract</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Sumário</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This document describes the Python Distribution Utilities ("Distutils") from the end-user's point-of-view, describing how to extend the capabilities of a standard Python installation by building and installing third-party Python modules and extensions.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Este documento descreve os Utilitários de Distribuição Python ("Distutils") na visão de um usuário final, descrevendo como estender as capacidades de uma instalação Python padrão através da construção e instalação de módulos e extensões Python de terceiros.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Introduction</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Introdução</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Although Python's extensive standard library covers many programming needs, there often comes a time when you need to add some new functionality to your Python installation in the form of third-party modules.  This might be necessary to support your own programming, or to support an application that you want to use and that happens to be written in Python.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Embora a extensa biblioteca padrão do Python cubra muitas necessidades da programação, frequentemente surge um momento em que você precisa adicionar algumas novas funcionalidades à sua instalação Python na forma de módulos de terceiros. Isso pode ser necessário para dar suporte à sua própria programação, ou para dar suporte à uma aplicação que você deseja utilizar e acontece dela ser escrita em Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In the past, there has been little support for adding third-party modules to an existing Python installation.  With the introduction of the Python Distribution Utilities (Distutils for short) in Python 2.0, this changed.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>No passado, existia pouco suporte à adição de módulos de terceiros à uma instalação Python existente. Com a introdução dos Utilitários de Distribuição Python (Distutils para abreviar) no Python 2.0, isso mudou.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This document is aimed primarily at the people who need to install third-party Python modules: end-users and system administrators who just need to get some Python application running, and existing Python programmers who want to add some new goodies to their toolbox.  You don't need to know Python to read this document; there will be some brief forays into using Python's interactive mode to explore your installation, but that's it.  If you're looking for information on how to distribute your own Python modules so that others may use them, see the :ref:`distutils-index` manual.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Este documento é focado primeiramente em pessoas que precisam instalar módulos Python de terceiros: usuários finais e administradores de sistema que apenas precisam ter alguma aplicação Python rodando, e programadores Python que querem adicionar algumas coisas novas à sua caixa de ferramentas. Você não precisa saber Python para ler esse documento; haverão alguns poucos momento em que utilizaremos o modo interativo do Python para explorar a sua instalação, mas será apenas isso. Se você está buscando informações sobre como distribuir seus próprios módulos Python para que outros possam usá-los, veja o manual :ref:`distutils-index`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Best case: trivial installation</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Melhor caso: instalação trivial</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In the best case, someone will have prepared a special version of the module distribution you want to install that is targeted specifically at your platform and is installed just like any other software on your platform.  For example, the module developer might make an executable installer available for Windows users, an RPM package for users of RPM-based Linux systems (Red Hat, SuSE, Mandrake, and many others), a Debian package for users of Debian-based Linux systems, and so forth.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>No melhor caso, alguém terá preparado uma versão especial do módulo de distribuição que você quer instalar específica para a sua plataforma e que é instalada exatamente como qualquer outro programa para a sua plataforma. Por exemplo, o desenvolvedor do módulo poderia fazer um instalador executável para usuários Windows, um pacote RPM para usuários de sistemas Linux baseados em RPM (Red Hat, SuSE, Mandrake, e muitos outros), um pacote Debian para usuários de sistemas Linux baseados no Debian, e assim por diante.   </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In that case, you would download the installer appropriate to your platform and do the obvious thing with it: run it if it's an executable installer, ``rpm --install`` it if it's an RPM, etc.  You don't need to run Python or a setup script, you don't need to compile anything---you might not even need to read any instructions (although it's always a good idea to do so anyways).</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Neste caso, você faria o download do instalador apropriado para a sua plataforma e faria a coisa óbvia com isto: rodaria se fosse um executável, executaria``rpm --install`` se fosse um pacote RPM, etc. Você não precisa executar o Python ou um script setup, você não precisa compilar nada -- você poderia até mesmo nem precisar ler qualquer instrução (embora é sempre uma boa ideia fazer isso).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Of course, things will not always be that easy.  You might be interested in a module distribution that doesn't have an easy-to-use installer for your platform.  In that case, you'll have to start with the source distribution released by the module's author/maintainer.  Installing from a source distribution is not too hard, as long as the modules are packaged in the standard way.  The bulk of this document is about building and installing modules from standard source distributions.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Claro que nem sempre as coisas serão fáceis assim. Você poderia estar interessado em um módulo de distribuição que não possui um instalador fácil-de-usar para a sua plataforma. Neste caso, você terá que começar com o fonte de distribuição liberado pelo autor/mantenedor do módulo. Instalar a partir do fonte de distribuição não é tão difícil, desde que os módulos estejam empacotados na forma padrão. A maior parte deste documento é sobre construir e instalar módulos a partir dos fontes de distribuição padrões.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The new standard: Distutils</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>O novo padrão. Distutils</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If you download a module source distribution, you can tell pretty quickly if it was packaged and distributed in the standard way, i.e. using the Distutils. First, the distribution's name and version number will be featured prominently in the name of the downloaded archive, e.g. :file:`foo-1.0.tar.gz` or :file:`widget-0.9.7.zip`.  Next, the archive will unpack into a similarly-named directory: :file:`foo-1.0` or :file:`widget-0.9.7`.  Additionally, the distribution will contain a setup script :file:`setup.py`, and a file named :file:`README.txt` or possibly just :file:`README`, which should explain that building and installing the module distribution is a simple matter of running ::</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Se você baixar o fonte de distribuição de um módulo, você pode dizer rapidamente se ele foi empacotado e distribuído na forma padrão, i.e. usando Distutils. Primeiramente, o nome da distribuição e o número da versão estarão com destaque no nome do arquivo baixado, e.g. :arquivo:`foo-1.0.tar.gz` ou :arquivo:`widget-0.9.7.zip`. Em seguida, o arquivo irá ser descompactado em um diretório de nome similar: :arquivo:`foo-1.0` ou :arquivo:`widget-0.9.7`. Além do mais, a distribuição conterá um script setup: :arquivo:`setup.py`, e um arquivo chamado :arquivo:`README.txt` ou possivelmente somente :arquivo:`README`, o qual explicará que construir e instalar o módulo é uma simples questão de execução.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>python setup.py install</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>python setup.py install</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If all these things are true, then you already know how to build and install the modules you've just downloaded:  Run the command above. Unless you need to install things in a non-standard way or customize the build process, you don't really need this manual.  Or rather, the above command is everything you need to get out of this manual.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Se todas essas coisas são verdade, então você já sabe como construir e instalar os módulos que você baixou: Execute o comando acima. A menos que vocẽ precise instalar coisas de uma forma não-padrão ou customizar o processo de construção, você não precisa ler esse manual. Ou ao invés, o comando acima é tudo que você precisa para sair desse manual. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Standard Build and Install</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Construção padrão e Instalação</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>As described in section :ref:`inst-new-standard`, building and installing a module distribution using the Distutils is usually one simple command::</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Como descrito na seção :ref:`inst-new-standard`, construir e instalar um módulo de distribuição usando o Distutils é usualmente um comando simples::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>On Unix, you'd run this command from a shell prompt; on Windows, you have to open a command prompt window ("DOS box") and do it there; on Mac OS X, you open a :command:`Terminal` window to get a shell prompt.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>No Unix, você rodaria esse comando a partir de um terminal shell; No Windows, você tem que abrir uma janela do terminal de comando ("DOS box") e fazer isso lá; No Mac OS X, você abre uma janela  :command:`Terminal` para ter o terminal shell.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Platform variations</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Variação de Plataformas</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

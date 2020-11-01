@@ -1,0 +1,231 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Design and History FAQ</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>FAQ Design e História</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Why does Python use indentation for grouping of statements?</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Porque Python usa identação para blocos de codigos?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Guido van Rossum believes that using indentation for grouping is extremely elegant and contributes a lot to the clarity of the average Python program. Most people learn to love this feature after a while.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Guido van Rossum acredita que usar identação para blocos de codigo é extremamente elegante e contribui muito o entendimento do programa Python</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Since there are no begin/end brackets there cannot be a disagreement between grouping perceived by the parser and the human reader.  Occasionally C programmers will encounter a fragment of code like this::</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Como não existem os delimitadores de bloco de código begin/end não pode haver uma discordância entre o compilador e o programador. Ocasionalmente programadores C encontrarão um fragmento de código como esse:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>if (x &lt;= y)         x++;         y--; z++;</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>if(x &lt;= y) x++; y--; z++;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Only the ``x++`` statement is executed if the condition is true, but the indentation leads you to believe otherwise.  Even experienced C programmers will sometimes stare at it a long time wondering why ``y`` is being decremented even for ``x &gt; y``.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>A declaração "x++" é executada se a condição é verdadeira, mas a identação leva a crer o contrario. Mesmo programadores experientes em C, por vezes, olham para a declaração e se perguntam porque "y" está sendo decrementado mesmo para "x &gt; y".</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Because there are no begin/end brackets, Python is much less prone to coding-style conflicts.  In C there are many different ways to place the braces. If you're used to reading and writing code that uses one style, you will feel at least slightly uneasy when reading (or being required to write) another style.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Já que não existe delimitadores begin/end, Python é muito menos propenso a conflitos de estilo de código. Em C existem muitas diferentes maneiras para usar estes delimitadores. Se você estava acostumado a ler e escrever código que usa um determinado estilo, você se sentirá um pouco desconfortável quando for ler (ou ser requisitado a escrever) outro estilo</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Why am I getting strange results with simple arithmetic operations?</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Por que estou tendo resultados estranhos com operações aritméticas simples?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See the next question.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Veja a próxima questão.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Why are floating point calculations so inaccurate?</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Por que cálculos com pontos flutuantes são tão imprecisos?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>People are often very surprised by results like this::</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Pessoas ficam frequentemente muito surpresas com resultados como estes:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&gt;&gt;&gt; 1.2 - 1.0 0.199999999999999996</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>&gt;&gt;&gt; 1.2 - 1.0 0.199999999999999996</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In decimal math, there are many numbers that can't be represented with a fixed number of decimal digits, e.g.  1/3 = 0.3333333333.......</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Na matemática decimal há vários números que não podem ser representados por um número fixo de casas decimais, e.g. 1/3 = 0.3333333333...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In base 2, 1/2 = 0.1, 1/4 = 0.01, 1/8 = 0.001, etc.  .2 equals 2/10 equals 1/5, resulting in the binary fractional number 0.001100110011001...</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Na base 2, 1/2 = 0.1, 1/4 = 0.01, 1/8 = 0.001, etc.  .2 é igual a 2/10 é igual a 1/5, resultando no número binário fracionário 0.001100110011001...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&gt;&gt;&gt; 1.1 - 0.9 0.20000000000000007 &gt;&gt;&gt; print(1.1 - 0.9) 0.2</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>&gt;&gt;&gt; 1.1 - 0.9 0.20000000000000007 &gt;&gt;&gt; print(1.1 - 0.9) 0.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There are several advantages.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Existem várias vantagens.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>One is performance: knowing that a string is immutable means we can allocate space for it at creation time, and the storage requirements are fixed and unchanging.  This is also one of the reasons for the distinction between tuples and lists.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Uma é a performance: saber que uma string é imutável significa que podemos alocar espaço para ela na sua criação, e os requisitos de armazenamento são fixados e não mudam. Esta também é uma das razões para a distinção entre tuplas e listas.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>while (line = readline(f)) {     // do something with line }</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>while (line = readline(f)) {     // faz algo com line }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>where in Python you're forced to write this::</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>onde em Python você é forçado a escrever isto::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>while True:     line = f.readline()     if not line:         break     ... # do something with line</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>while True: line = f.readline() if not line: break     ... # faz algo com line</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>if (x = 0) {     // error handling } else {     // code that only works for nonzero x }</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>if (x = 0) { // erro de manipulação } else { // código que funciona para x diferente de 0 }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>line = f.readline() while line:     ... # do something with line...     line = f.readline()</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>line = f.readline() while line: ... # faz algo com line... line = f.readline()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>for line in f:     ... # do something with line...</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>for line in f: ... # faz algo com line...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Why is join() a string method instead of a list or tuple method?</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Por que join() é um método de string em vez de um método de uma lista ou tupla?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>", ".join(['1', '2', '4', '8', '16'])</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>", ".join(['1', '2', '4', '8', '16'])</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>"1, 2, 4, 8, 16"</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>"1, 2, 4, 8, 16"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>"1, 2, 4, 8, 16".split(", ")</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>"1, 2, 4, 8, 16".split(", ")</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>def function_1(...):     ...  functions = {'a': function_1,              'b': function_2,              'c': self.method_1, ...}  func = functions[value] func()</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>def function_1(...): ... functions = {'a': function_1, 'b': function_2, 'c': self.method_1, ...} func = functions[value] func()</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

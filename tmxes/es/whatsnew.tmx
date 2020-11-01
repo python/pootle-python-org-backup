@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>What's New in Python 2.0</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Useful information, many thanks to the author. It is puzzling to me now, but in general, the usefulness and importance is overwhelming. Very much thanks again and good luck! Please keep up the good articles, thanks! http://www.kizi2.com | http://www.friv-games.us | http://www.y8flashgames.net | http://www.gamesyepi.net</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A.M. Kuchling and Moshe Zadka</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Useful information, many thanks to the author. It is puzzling to me now, but in general, the usefulness and importance is overwhelming. Very much thanks again and good luck! Please keep up the good articles, thanks! http://www.kizi2.com | http://www.friv-games.us | http://www.y8flashgames.net | http://www.gamesyepi.net</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Introduction</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Thank you for posting the great content.I was looking for something like this.I found it quiet interesting, hopefully you will keep posting such blogs..Keep sharing.http://www.angrybirdsgames.us | http://www.friv9.info | http://www.zizigames.org | http://www.kizionline.net</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

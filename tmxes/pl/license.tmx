@@ -1,0 +1,751 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>History and License</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Historia i zapisy prawne</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>History of the software</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Historia programu</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python was created in the early 1990s by Guido van Rossum at Stichting Mathematisch Centrum (CWI, see http://www.cwi.nl/) in the Netherlands as a successor of a language called ABC.  Guido remains Python's principal author, although it includes many contributions from others.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Język pytonowski został stworzony we wczesnych latach 90' XX wieku przez Gwidona van Rossuma w Ośrodku Podstaw Matematyki (w skrócie CWI, zob. http://www.cwi.nl/) w Holandii jako następca języka o nazwie ABC. Guido pozostaje głównym twórcą języka pytonowskiego, mimo że języki ten zawiera wiele przyczynków i wkładów pochodzących od innych osób. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In 1995, Guido continued his work on Python at the Corporation for National Research Initiatives (CNRI, see http://www.cnri.reston.va.us/) in Reston, Virginia where he released several versions of the software.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>W roku 1995, Gwidon czynił postępy w swojej pracy nad językiem pytonowskim w "Narodowej Korporacji Przedsięwzięć na rzecz Badań" (w skrócie CNRI, zobacz: http://www.cnri.reston.va.us/) w Reston w stanie Virginia, gdzie opublikował kilka wydań programu. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In May 2000, Guido and the Python core development team moved to BeOpen.com to form the BeOpen PythonLabs team.  In October of the same year, the PythonLabs team moved to Digital Creations (now Zope Corporation; see http://www.zope.com/).  In 2001, the Python Software Foundation (PSF, see http://www.python.org/psf/) was formed, a non-profit organization created specifically to own Python-related Intellectual Property.  Zope Corporation is a sponsoring member of the PSF.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>W maju roku dwutysięcznego (2000), Gwidon i zespół podstawowy rozwoju języka pytonowskiego przenieśli się do firmy "BądźOtwartym" ( - z ang. - BeOpen.com) aby utworzyć zespół w laboratorium języka pytonowskiego ( - z ang. PythonLabs team) w ramach projektu BądźOtwartym. W październiku tego samego roku, zespół do spraw laboratorium języka pytonowskiego przeniósł się do "Cyfrowych Twórczości" ( - z ang. Digital Creations) - obecnie "Korporacja Leszcz" ( - z ang. Zope Corporation); zobacz: http://www.zope.com/). W roku 2001, utworzona została Fundacja Programu Języka Pytonowskiego - z ang. - Python Software Foundation (w skrócie PSF,  zobacz: http://www.python.org/psf/), jako organizacja dobroczynna utworzona szczególnie do celu zachowania praw własności do pomysłów związanych z językiem pytonowskim - z ang. - Python-related Intelectual Property. Korporacja Leszcz stała się członkiem-fundatorem działania fundacji (PSF).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>All Python releases are Open Source (see http://www.opensource.org/ for the Open Source Definition). Historically, most, but not all, Python releases have also been GPL-compatible; the table below summarizes the various releases.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wszystkie wydania języka pytonowskiego są Otwartymi Źródłami ( - z ang. - Open Source) (sięgnij do strony o otwartym źródle pod adresem http://www.opensource.org/ po "Założenia Otwartych Źródeł" - z ang. - Open Source Definition). Wcześniej większość, choć nie wszystkie z wydań języka pytonowskiego były także zgodne z Uprawnieniami Ogólnie Powszechnymi - z ang. - General Public License - w skrócie GPL. Poniższe zestawienie pokazuje różne wydania.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Release</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wydanie</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Derived from</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Pochodne po</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Year</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Rok</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Owner</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Właściciel</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>GPL compatible?</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zgodne z Uprawnieniami Ogólnie Powszechnymi (GPL)?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>0.9.0 thru 1.2</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>od 0.9.0 do 1.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>n/a</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>nie podano</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>1991-1995</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>od 1991 do 1995</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>CWI</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>CWI</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>yes</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>tak</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>1.3 thru 1.5.2</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>od 1.3 do 1.5.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>1.2</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>1.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>1995-1999</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>od 1995 do 1999</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>CNRI</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>CNRI</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>1.6</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>1.6</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>1.5.2</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>1.5.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2000</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2000</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>no</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>nie</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.0</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>BeOpen.com</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>BeOpen.com</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>1.6.1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>1.6.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2001</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2001</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.0+1.6.1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.0 i 1.6.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>PSF</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Fundacja Programu języka Pytonowskiego (PSF)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.0.1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.0.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.1.1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.1.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.1+2.0.1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.1 i 2.0.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.2</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.1.2</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.1.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2002</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2002</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.1.3</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.1.3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.2.1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.2.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.2.2</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.2.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.2.3</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.2.3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2002-2003</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>od 2002 do 2003</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.3</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.3.1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.3.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.3.2</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.3.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2003</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2003</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.3.3</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.3.3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.3.4</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.3.4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2004</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2004</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.3.5</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.3.5</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2005</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2005</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.4</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.4.1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.4.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.4.2</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.4.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.4.3</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.4.3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2006</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2006</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.4.4</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.4.4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.5</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.5</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.5.1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.5.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2007</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2007</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.6</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.6</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2008</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2008</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.6.1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.6.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.6.2</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.6.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2009</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2009</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.6.3</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.6.3</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2.6.4</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>2.6.4</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>3.0</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>3.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>3.0.1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>3.0.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>3.1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>3.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>3.1.1</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>3.1.1</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>GPL-compatible doesn't mean that we're distributing Python under the GPL.  All Python licenses, unlike the GPL, let you distribute a modified version without making your changes open source. The GPL-compatible licenses make it possible to combine Python with other software that is released under the GPL; the others don't.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zgodność z uprawnieniami ogólnie powszechnymi (w skrócie - z ang. - GPL) nie oznacza, że rozprowadzamy język pytonowski z uprawnieniami ogólnie powszechnymi (w skrócie - z ang. - GPL). Wszystkie uprawnienia dostarczane z językiem pytonowskim, w przeciwieństwie do uprawnień ogólnie powszechnych (w skrócie - z ang. - GPL), pozwalają na rozpowszechnianie programów języka pytonowskiego z wprowadzonymi zmianami bez ustanawiania tych zmian w ramach otwartych źródeł. Uprawnienia zgodne z ogólnie powszechnymi uprawnieniami (w skrócie - z ang. - GPL) pozwalają na łączenie wydań programu języka pytonowskiego z innymi programami które są wydane z uprawnieniami ogólnie powszechnymi (w skrócie - z ang. - GPL). Inne uprawnienia, niezgodne z ogólnie powszechnymi, na to nie zezwalają.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Thanks to the many outside volunteers who have worked under Guido's direction to make these releases possible.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Podziękowania dla wielu ochotników przychodzących z zewnątrz, którzy pracowali pod kierunkiem Gwidona aby umożliwić te wydania programu języka pytonowskiego.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Terms and conditions for accessing or otherwise using Python</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zasady i warunki postępowania z programem języka pytonowskiego i ogólnie jego użycia. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This LICENSE AGREEMENT is between the Python Software Foundation ("PSF"), and the Individual or Organization ("Licensee") accessing and otherwise using Python |release| software in source or binary form and its associated documentation.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ta umowa uprawniająca zawierana jest pomiędzy Fundacją Programów Języka Pytonowskiego ( - z ang. - Python Software Foundation - w skrócie - "PSF") i Osobami lub Związkami ("Uprawnionymi") podchodzącymi i jakkolwiek inaczej używającymi |wydania| ( - z ang. - release) programu języka pytonowskiego w postaci źródłowej i gotowej do uruchomienia i ich powiązanych pouczeń.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Subject to the terms and conditions of this License Agreement, PSF hereby grants Licensee a nonexclusive, royalty-free, world-wide license to reproduce, analyze, test, perform and/or display publicly, prepare derivative works, distribute, and otherwise use Python |release| alone or in any derivative version, provided, however, that PSF's License Agreement and PSF's notice of copyright, i.e., "Copyright © 2001-2010 Python Software Foundation; All Rights Reserved" are retained in Python |release| alone or in any derivative version prepared by Licensee.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Podlegając zasadom i warunkom tej umowy uprawniająco-zobowiązującej, Fundacja Programów Języka Pytonowskiego, tym samym przyznaje Uprawnionemu powszechne, bezpłatne i ponadnarodowe uprawnienie do powielania, rozbierania, wypróbowywania, odtwarzania i/lub publicznego pokazywania, przygotowywania dzieł pochodnych, rozprowadzania i jakkolwiek używania |wydania| programów i zbiorów zadań języka pytonowskiego, pojedynczo lub w przystosowanej postaci, pod warunkiem zobowiązania się przez niego, że zapisów uzgodnień uprawniających Fundacji Programów Języka Pytonowskiego i zapisy powiadomienia o jej prawach autorskich - "Prawa autorskie © dotyczące lat 2001-2010 własnością Fundacji Programów Języka Pytonowskiego. Wszelkie Prawa Zastrzeżone" - z ang. - "Copyright © 2001-2010 Python Software Foundation; All Rights Reserved" nie odłączy od zawartości |wydania| programów języka pytonowskiego rozprowadzanego pojedynczo lub w jakiejkolwiek przystosowanej odmianie przygotowanej przez Uprawnionego ( - z ang. - Licensee).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In the event Licensee prepares a derivative work that is based on or incorporates Python |release| or any part thereof, and wants to make the derivative work available to others as provided herein, then Licensee hereby agrees to include in any such work a brief summary of the changes made to Python |release|.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Jeśliby Uprawniony przygotował dzieło przetworzone w oparciu o |wydanie| programów języka pytonowskiego lub z załączeniem owego lub jakiejkolwiek jego części, i chciałby uczynić to dzieło przetworzone przeznaczonym dla przekazania pozostałym tak jak tu to określono, wtedy Uprawniony ( - z ang. Licensee) na mocy tego zobowiązania powinien załączyć w każdym takim dziele krótkie podsumowanie zmian wprowadzonych w takim |wydaniu| języka pytonowskiego w stosunku do wydania poprzedniego.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>PSF is making Python |release| available to Licensee on an "AS IS" basis. PSF MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED.  BY WAY OF EXAMPLE, BUT NOT LIMITATION, PSF MAKES NO AND DISCLAIMS ANY REPRESENTATION OR WARRANTY OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF PYTHON |release| WILL NOT INFRINGE ANY THIRD PARTY RIGHTS.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Fundacja Programów Języka Pytonowskiego (w skrócie - z ang - PSF) przekazuje |wydanie| programów języka pytonowskiego do uprawnionego/zobowiązanego zgodnie z zasadą "stanu zastanego" (z ang. - "as is" basis). &lt;dalszy zapis dużymi literami&gt; Fundacja Programów Języka Pytonowskiego (w skrócie - z ang. - PSF) nie gwarantuje, że będzie występować w obronie jakichkolwiek uprawnień ani też nie udziela gwarancji na rzeczy przekazane, ani wyraźnie ani też w sposób pośredni. Zamiast stawiać ograniczenia, Fundacja Języka Pytonowskiego korzystając z przykładu nie czyni jakichkolwiek wystąpień w obronie ani nie gwarantuje możliwości sprzedaży lub przydatności do jakichkolwiek celów, a także nie czyni wystąpień w obronie ani też nie gwarantuje że użycie |wydania| programów języka pytonowskiego nie naruszy żadnych praw osób postronnych i wszelkim takim gwarancjom zaprzecza.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>PSF SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF PYTHON |release| FOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS A RESULT OF MODIFYING, DISTRIBUTING, OR OTHERWISE USING PYTHON |release|, OR ANY DERIVATIVE THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Fundacja Rozwijająca Programy Języka Pytonowskiego nie zgadza się na odpowiadanie przed Uprawnionym/Zobowiązanym ( - z ang. - Licensee) za jakiekolwiek przypadkowe, szczególne, ani wynikłe szkody lub straty spowodowane wprowadzeniem zmian, rozprowadzaniem lub jakimkolwiek innym użyciem |wydania| programów języka pytonowskiego, lub jakichkolwiek późniejszych potworów z nich zrodzonych nawet jeśli przed nimi ostrzegano. &lt;koniec zapisu dużymi literami&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This License Agreement will automatically terminate upon a material breach of its terms and conditions.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ta Umowa Uprawniająca wygasa samoczynnie z chwilą fizycznego przekroczenia jej zasad i warunków.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Nothing in this License Agreement shall be deemed to create any relationship of agency, partnership, or joint venture between PSF and Licensee.  This License Agreement does not grant permission to use PSF trademarks or trade name in a trademark sense to endorse or promote products or services of Licensee, or any third party.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Żadna ze spraw w tej Umowie Uprawniającej nie powinna być odbierana jako tworząca jakiegokolwiek układu przedstawicielstwa, współpracy, czy wspólnego przedsięwzięcia pomiędzy Fundacją Programów Języka Pytonowskiego a Uprawnionym. Ta Umowa Uprawniająca nie zezwala na użycie znaków towarowych Fundacji Programów Języka Pytonowskiego ani nazw handlowych w znaczeniu znaków towarowych dla podpisywania nimi lub polecania sprzedawanych rzeczy lub płatnej pomocy przez Uprawnionego, ani żadnej innej osoby.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>By copying, installing or otherwise using Python |release|, Licensee agrees to be bound by the terms and conditions of this License Agreement.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przez powielanie, montowanie lub w inny sposób używanie |wydania| programów języka pytonowskiego, Uprawniony potwierdza swoją zgodę na skutki wywołane zasadami i warunkami tych Uzgodnień Uprawniających.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This LICENSE AGREEMENT is between BeOpen.com ("BeOpen"), having an office at 160 Saratoga Avenue, Santa Clara, CA 95051, and the Individual or Organization ("Licensee") accessing and otherwise using this software in source or binary form and its associated documentation ("the Software").</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Te Uzgodnienia Uprawniające zawierane są pomiędzy firmą "Bądź Otwarty" ( - z ang. - BeOpen.com "BeOpen" ), z siedzibą przy Ulicy Saratogi w Świętej Klarze, w Kaliforni, kod pocztowy - 95051, a Osobą lub Stowarzyszeniem ("Uprawnionym" - z ang. - Licensee), która / które używa tego programu w postaci źródłowej lub gotowej do uruchomienia i związanych z nim pouczeń w formie pisemnej ("Programu" - z ang. - "the Software").</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Subject to the terms and conditions of this BeOpen Python License Agreement, BeOpen hereby grants Licensee a non-exclusive, royalty-free, world-wide license to reproduce, analyze, test, perform and/or display publicly, prepare derivative works, distribute, and otherwise use the Software alone or in any derivative version, provided, however, that the BeOpen Python License is retained in the Software, alone or in any derivative version prepared by Licensee.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Podlegając zasadom i warunkom tej Umowy Uprawniającej do Programów Języka Pytonowskiego z firmą BeOpen, firma BeOpen niniejszym udziela Uprawnionemu powszechnych, bezpłatnych, ponadnarodowych uprawnień do powielania, rozbierania, poddawania sprawdzeniu, publicznego wykonywania i/lub pokazywania, przygotowywania dzieł w oparciu o program, rozprowadzania lub jakiegokolwiek innego używania Programu pojedynczo lub w jakiejkolwiek dalej przetworzonej postaci, pod warunkiem, jednakże, że Oświadczenie o Uprawnieniach względem programów języka pytonowskiego darowanych przez firmę BeOpen nie zostanie odłączone od Programu, występującego pojedynczo ani od dzieł wywodzących się z tego Programu przygotowanych w ramach udzielonych Uprawnień.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>BeOpen is making the Software available to Licensee on an "AS IS" basis. BEOPEN MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED.  BY WAY OF EXAMPLE, BUT NOT LIMITATION, BEOPEN MAKES NO AND DISCLAIMS ANY REPRESENTATION OR WARRANTY OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF THE SOFTWARE WILL NOT INFRINGE ANY THIRD PARTY RIGHTS.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Firma "Bądź Otwarty" ( - z ang. - BeOpen) przekazuje Program/Programy Uprawnionemu do nich na zasadzie "stanu zastanego" ( - z ang. - "AS IS"). &lt;początek dużych liter&gt; Firma "Bądź Otwarty" ( - z ang. - BeOpen) nie będzie bronić Uprawnionego, ani nie udziela mu żadnej gwarancji, wyraźnej ani pośredniej. Idąc za przykładem, a nie przez wprowadzanie specjalnych ograniczeń, firma "Bądź Otwarty" - z ang. - BeOpen nie udziela i odmawia jakiegokolwiek poświadczania, ani gwarancji przydatności do celów zakłamanych, ani też w ogóle przystosowania do jakiegokolwiek konkretnego celu, albo że używanie programu nie naruszy czyichś jeszcze innych praw.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>BEOPEN SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF THE SOFTWARE FOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS A RESULT OF USING, MODIFYING OR DISTRIBUTING THE SOFTWARE, OR ANY DERIVATIVE THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Firma "Bądź Otwarty" nie będzie odpowiadać przed uprawnionym ani żadną inną osobą używającą programu za jakiekolwiek przypadkowe, szczególne, ani wynikłe szkody czy straty powstałe w wyniku użycia, wprowadzenia wewnętrznych zmian lub rozprowadzenia programu/programów, ani żadnych dzieł na nim / nich opartych, nawet jeśli ostrzegano przed możliwością ich wystąpienia.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This License Agreement shall be governed by and interpreted in all respects by the law of the State of California, excluding conflict of law provisions. Nothing in this License Agreement shall be deemed to create any relationship of agency, partnership, or joint venture between BeOpen and Licensee.  This License Agreement does not grant permission to use BeOpen trademarks or trade names in a trademark sense to endorse or promote products or services of Licensee, or any third party.  As an exception, the "BeOpen Python" logos available at http://www.pythonlabs.com/logos.html may be used according to the permissions granted on that web page.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Te Postanowienia Prawne będą podlegały rządom i będą rozstrzygane pod każdym względem przez prawo stanu Kalifornia, bez względu na konflikty prawa. Żadne z tych Postanowień Prawnych nie powinno być odbierane jako tworzące jakiekolwiek przedstawicielstwo, współdziałanie, ani wspólne przedsięwzięcie pomiędzy firmą "Bądź Otwartym" - z ang. - BeOpen, a odbiorcą praw. Te Uzgodnienia Prawne nie zezwalają na użycie znaków firmowych firmy "Bądź Otwarty" - z ang. - BeOpen ani nazw handlowych w znaczeniu znaków towarowych dla zachwalania ani namawiania do zakupu rzeczy ani pracy zleconej należącej do lub wykonywanej przez odbiorcę praw ani żadnej innej osoby. Wyjątek stanowią znaki rozpoznawcze "Język Pytonowski firmy "Bądź Otwarty"" - z ang. -"BeOpen Python" dostępne pod adresem http://www.pythonlabs.com/logos.html, które mogą być używane zgodnie z pozwoleniem udzielanym na tej stronie.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>By copying, installing or otherwise using the software, Licensee agrees to be bound by the terms and conditions of this License Agreement.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przez powielanie, montowanie, lub innego rodzaju użycie programu, przyjmujący uprawnienia zgadza się aby zasady i warunki tego uzgodnienia uprawnień były dla niego wiążące.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This LICENSE AGREEMENT is between the Corporation for National Research Initiatives, having an office at 1895 Preston White Drive, Reston, VA 20191 ("CNRI"), and the Individual or Organization ("Licensee") accessing and otherwise using Python 1.6.1 software in source or binary form and its associated documentation.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>To uzgodnienie uprawnień zachodzi pomiędzy Narodowym Zjednoczeniem na rzecz Przedsięwzięć Badawczych ( - z ang. - Corporation for National Research Initiatives) z siedzibą w Reston przy białej drodze Prestona nr 1895 w Virginii kod pocztowy 20191 (w skrócie - z ang. - "CNRI") i osobą bądź organizacją ("Uprawnioną") wykorzystującą i jakkolwiek używającą programów języka pytonowskiego w wydania o numerze 1.6.1 w postaci źródłowej i gotowej do uruchomienia na urządzeniu i związanych z nimi pouczeń w formie pisemnej.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Subject to the terms and conditions of this License Agreement, CNRI hereby grants Licensee a nonexclusive, royalty-free, world-wide license to reproduce, analyze, test, perform and/or display publicly, prepare derivative works, distribute, and otherwise use Python 1.6.1 alone or in any derivative version, provided, however, that CNRI's License Agreement and CNRI's notice of copyright, i.e., "Copyright © 1995-2001 Corporation for National Research Initiatives; All Rights Reserved" are retained in Python 1.6.1 alone or in any derivative version prepared by Licensee.  Alternately, in lieu of CNRI's License Agreement, Licensee may substitute the following text (omitting the quotes): "Python 1.6.1 is made available subject to the terms and conditions in CNRI's License Agreement.  This Agreement together with Python 1.6.1 may be located on the Internet using the following unique, persistent identifier (known as a handle): 1895.22/1013.  This Agreement may also be obtained from a proxy server on the Internet using the following URL: http://hdl.handle.net/1895.22/1013."</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Podlegając zasadom i warunkom tych uzgodnień uprawnień, Narodowe Zjednoczenie na rzecz Przedsięwzięć Badawczych (w skrócie - z ang. - CNRI) tym samym udziela Uprawnionemu powszechnego, bezpłatnego, ponadnarodowego pozwolenia na powielanie, rozbieranie, wypróbowywanie, uruchamianie i/lub oficjalne pokazywanie, przygotowywanie dzieł w oparciu o program, rozprowadzanie, i innego rodzaju używanie wydania o numerze 1.6.1 programu języka pytonowskiego pojedynczo lub w dowolnej postaci na nim opartej, zakładając jednakże, że pisemna umowa uprawniająca z Narodowym Zjednoczeniem na rzecz Przedsięwzięć Badawczych i jego powiadomienie o warunkach sporządzania kopii, tj. stwierdzenie "Warunki Sporządzania kopii © dla dzieł z lat 1995-2001 zależne od Narodowego Zjednoczenia na rzecz Przedsięwzięć Badawczych; Prawo strzeżone" ( - z ang. - "Copyright © 1995-2001 Corporation for National Research Initiatives; All Rights Reserved" ) nie zostaną odłączone od wydania o numerze 1.6.1 programu języka pytonowskiego występującego pojedynczo lub w dowolnej postaci zmienionej lub go dziedziczącej przygotowanej przez Uprawnionego. Wyjątkowo, w miejscu Uzgodnień Uprawniających zawartych z Narodowym Zjednoczeniem na rzecz Przedsięwzięć Badawczych ( - w skrócie - z ang. -"CNRI") Uprawniony, może umieścić następujący zapis (z pominięciem znaków cytowania): "Wydanie o numerze 1.6.1 programów języka pytonowskiego stało się możliwym do przekazania na zasadach i warunkach Uzgodnień Uprawniających zawartych z Narodowym  Zjednoczeniem na rzecz Przedsięwzięć Badawczych ( w skrócie - z ang. - CNRI). To Porozumienie wraz z wydaniem o numerze 1.6.1 programów języka pytonowskiego można odnaleźć w internecie używając następującego niepowtarzalnego, trwałego zapisu porządkowego (zwanego odnośnikiem): 1895.22/1013. Ta Ugoda może także być otrzymana przez urządzenie pośredniczące używając adresu jednolicie umiejscowionych zasobów (z ang. Unified Resource Locator - w skrócie - URL): http://hdl.handle.net/1895.22/1013."</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In the event Licensee prepares a derivative work that is based on or incorporates Python 1.6.1 or any part thereof, and wants to make the derivative work available to others as provided herein, then Licensee hereby agrees to include in any such work a brief summary of the changes made to Python 1.6.1.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>W razie gdyby Uprawniony przygotował dzieło włączając lub w oparciu o  wydanie o numerze 1.6.1 programów języka pytonowskiego lub jakichś ich części, i chciałby uczynić je możliwymi do dostarczenia dla innych tak jak to tu zaznaczono, wtedy Uprawniony za swoją zgodą na to, co jest tu uwidocznione, powinien dołączyć do każdego takiego dzieła krótkie podsumowanie zmian wprowadzonych do wydania o numerze 1.6.1 programów języka pytonowskiego.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>CNRI is making Python 1.6.1 available to Licensee on an "AS IS" basis.  CNRI MAKES NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED.  BY WAY OF EXAMPLE, BUT NOT LIMITATION, CNRI MAKES NO AND DISCLAIMS ANY REPRESENTATION OR WARRANTY OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR PURPOSE OR THAT THE USE OF PYTHON 1.6.1 WILL NOT INFRINGE ANY THIRD PARTY RIGHTS.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Narodowe Zjednoczenie na rzecz Przedsięwzięć Badawczych ( - z ang. - Corporation of National Research Initiatives - w skrócie CNRI) przekazuje programy języka pytonowskiego w wydaniu o numerze 1.6.1 Uprawnionemu na zasadzie "stanu zastanego" ( - z ang. - "as is" basis). Narodowe Zjednoczenie na rzecz Przedsięwzięć Badawczych ( - z ang. - Corporation of National Research Initiatives - w skrócie CNRI) nie jest niczyim przedstawicielem ani niczego nie gwarantuje, wyraźnie ani pośrednio. Przez przykład, nie zaś ograniczenia, Narodowe Zjednoczenie na rzecz Przedsięwzięć Badawczych - z ang.  - Corporation of National Research Initiatives - w skrócie - CNRI) nie ustanawia i odmawia jakiegokolwiek przedstawicielstwa, ani zapewniania zdolności osiągania zysków, przystosowania do jakiegokolwiek konkretnego celu, ani też że użycie wydania o numerze 1.6.1 programów języka pytonowskiego nie będzie naruszało czyichś jeszcze innych uprawnień.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>CNRI SHALL NOT BE LIABLE TO LICENSEE OR ANY OTHER USERS OF PYTHON 1.6.1 FOR ANY INCIDENTAL, SPECIAL, OR CONSEQUENTIAL DAMAGES OR LOSS AS A RESULT OF MODIFYING, DISTRIBUTING, OR OTHERWISE USING PYTHON 1.6.1, OR ANY DERIVATIVE THEREOF, EVEN IF ADVISED OF THE POSSIBILITY THEREOF.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Narodowe Zjednoczenie na rzecz Przedsięwzięć Badawczych ( - z ang. - Corporation of National Research Initiatives - w skrócie CNRI) nie będzie odpowiadać przed Uprawnionym ani żadnymi innymi osobami używającymi wydania o numerze 1.6.1 programów języka pytonowskiego za żadne przypadkowe, umyślne ani wynikłe szkody czy straty poniesione w wyniku przekształcania, rozprowadzania, czy w jeszcze inny sposób używania wydania o numerze 1.6.1 programów języka pytonowskiego, ani żadnych jego przetworzeń, nawet jeśli poinformowano o możliwości wystąpienia takowych.  </seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>What's New in Python 2.0</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>O que há de novo no Python 2.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Author</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Autor</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Introduction</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Introdução</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A new release of Python, version 2.0, was released on October 16, 2000. This article covers the exciting new features in 2.0, highlights some other useful changes, and points out a few incompatible changes that may require rewriting code.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Uma nova versão de Python, a versão 2.0, foi lançada em 16 de Outubro de 2000. Esse artigo cobre as excitantes novas características nessa versão, dá ênfase a algumas outras mudanças úteis, e aponta algumas mudanças incompatíveis que podem necessitar de reescrita de código.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>New Development Process</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Novo Processo de Desenvolvimento</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Unicode</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Unicode</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The largest new feature in Python 2.0 is a new fundamental data type: Unicode strings.  Unicode uses 16-bit numbers to represent characters instead of the 8-bit number used by ASCII, meaning that 65,536 distinct characters can be supported.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>A maior nova característica em Python 2.0 é um novo tipo fundamental de dado: strings Unicode. O Unicode utiliza números de 16 bits para representar caracteres ao invés do número de 8 bits usado por ASCII, o que significa que 65.536 caracteres distintos podem ser representados.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The final interface for Unicode support was arrived at through countless often- stormy discussions on the python-dev mailing list, and mostly implemented by Marc-André Lemburg, based on a Unicode string type implementation by Fredrik Lundh.  A detailed explanation of the interface was written up as :pep:`100`, "Python Unicode Integration". This article will simply cover the most significant points about the Unicode interfaces.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>A interface final para o suporte à Unicode foi alcançada através de incontáveis e às vezes turbulentas discussões na lista de e-mails python-dev, com sua maioria tendo sido implementada por Marc-André Lemburg, com base em uma implementação de tipo de string Unicode de Fredrik Lundh. Uma explicação detalhada da interface foi escrita como :pep:`100`, "Python Unicode Integration" - o que poderia ser traduzido como "Integração de Unicode Python". Este artigo simplesmente cobrirá os pontos mais significantes sobre as interfaces Unicode.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>For example, the following code writes a Unicode string into a file,  encoding it as UTF-8::</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Por exemplo, o seguinte código escreves uma string em Unicode em um arquivo, codificando-se como UTF-8::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Because of Python's scoping rules, a default argument is used so that the anonymous function created by the :keyword:`lambda` statement knows what substring is being searched for.  List comprehensions make this cleaner::</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Por causa das regras de escopo de Python, um argumento padrão é usada para que a função anônima criada pelo comando :palavra-chave:`lambda` saiba qual substring está sendo procurada. Compreensões de lista tornam isso mais limpo::</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

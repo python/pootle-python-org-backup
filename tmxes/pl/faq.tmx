@@ -1,0 +1,567 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Design and History FAQ</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>FAQ Projektowanie i Historia</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Why does Python use indentation for grouping of statements?</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Dlaczego język pytonowski używa wcięć dla grupowania instrukcji?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Guido van Rossum believes that using indentation for grouping is extremely elegant and contributes a lot to the clarity of the average Python program. Most people learn to love this feature after a while.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Guido van Rossum uważa, że ​​wykorzystanie wcięć do grupowania jest niezwykle eleganckie i przyczynia się w dużym stopniu do jasności typowego programu pytonowskiego. Większość ludzi, przyzwyczaja się do tej własności po chwili.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Since there are no begin/end brackets there cannot be a disagreement between grouping perceived by the parser and the human reader.  Occasionally C programmers will encounter a fragment of code like this::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ponieważ nie ma nawiasów rozpoczynających/kończących nie ma też miejsca na spór między postrzeganiem grupowania przez parser i przez człowieka czytającego kod. Czasami programiści C spotykają się z takim fragmentem kodu ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>if (x &lt;= y)         x++;         y--; z++;</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>if (x &lt;= y) x++; y--; z++;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Only the ``x++`` statement is executed if the condition is true, but the indentation leads you to believe otherwise.  Even experienced C programmers will sometimes stare at it a long time wondering why ``y`` is being decremented even for ``x &gt; y``.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Tylko instrukcja ``x++`` jest wykonywana jeśli warunek jest prawdziwy, ale wcięcia wskazują na co innego. Nawet doświadczeni programiści C czasami patrzą długo zastanawiając się, dlaczego ``y`` jest zmniejszane nawet dla ``x &gt; y``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Because there are no begin/end brackets, Python is much less prone to coding-style conflicts.  In C there are many different ways to place the braces. If you're used to reading and writing code that uses one style, you will feel at least slightly uneasy when reading (or being required to write) another style.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ponieważ nie ma nawiasów rozpoczynających/kończących, język pytonowski jest znacznie mniej podatny na konflikty stylu kodowania. W języku C istnieje wiele różnych sposobów, aby umieścić nawiasy. Jeśli jesteś przyzwyczajony do czytania i pisania kodu, który używa jednego stylu, poczujesz się przynajmniej w minimalnym stopniu nieswojo podczas czytania (lub będąc zmuszonym do pisania), w innym stylu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Many coding styles place begin/end brackets on a line by themself.  This makes programs considerably longer and wastes valuable screen space, making it harder to get a good overview of a program.  Ideally, a function should fit on one screen (say, 20-30 lines).  20 lines of Python can do a lot more work than 20 lines of C.  This is not solely due to the lack of begin/end brackets -- the lack of declarations and the high-level data types are also responsible -- but the indentation-based syntax certainly helps.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wiele stylów kodowania umieszcza nawiasy rozpoczynające/zakończące w osobnym wierszu. To sprawia, że ​​programy są znacznie dłuższe i marnuje się cenne miejsce na ekranie, co powoduje, że ​​trudniej jest uzyskać dobry wgląd w program. W idealnym przypadku, każda funkcja powinna mieścić się na jednym ekranie (powiedzmy, 20-30 linijek). 20 linijek kodu Pythona może wykonać dużo więcej niż 20 linijek kodu C. Nie wynika to wyłącznie z braku nawiasów rozpoczynających/kończących - brak deklaracji typów danych wysokiego poziomu jest również za to odpowiedzialny - ale składnia oparta o wcięcia na pewno też się do tego przyczynia.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Why am I getting strange results with simple arithmetic operations?</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Dlaczego dostaję dziwne wyniki w prostych operacjach arytmetycznych?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See the next question.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zobacz następne pytanie.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Why are floating point calculations so inaccurate?</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Dlaczego obliczenia zmiennoprzecinkowe są tak niedokładne?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>People are often very surprised by results like this::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ludzie często są bardzo zdziwieni wynikami takimi jak te::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&gt;&gt;&gt; 1.2 - 1.0 0.199999999999999996</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>&gt;&gt;&gt; 1.2 - 1.0 0.199999999999999996</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>and think it is a bug in Python. It's not.  This has nothing to do with Python, but with how the underlying C platform handles floating point numbers, and ultimately with the inaccuracies introduced when writing down numbers as a string of a fixed number of digits.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>i myślą że to błąd języka pytonowskiego. A nie. To nie ma nic wspólnego z językiem pytonowskim, ale z tym jak leżąca u podstaw maszyna/środowisko obsługuje liczby zmiennoprzecinkowe, i ostatecznie z niedokładnościami wprowadzanymi na etapie zapisywania liczb jako ciągu ustalonej liczby cyfr.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The internal representation of floating point numbers uses a fixed number of binary digits to represent a decimal number.  Some decimal numbers can't be represented exactly in binary, resulting in small roundoff errors.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wewnętrzna reprezentacja zmiennoprzecinkowych liczb używa skończonej liczby dwójkowych cyfr aby reprezentować liczbę w systemie dziesiątkowym. Niektóre dziesiątkowe liczby nie mogą być reprezentowane dokładnie w systemie dwójkowym, dając małe błędy zaokrąglania.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In decimal math, there are many numbers that can't be represented with a fixed number of decimal digits, e.g.  1/3 = 0.3333333333.......</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>W dziesiątkowej matematyce, istnieje wiele liczb których nie da się przedstawić w skończonej liczbie dziesiątkowych cyfr, np. 1/3 = 0.3333333333.......</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In base 2, 1/2 = 0.1, 1/4 = 0.01, 1/8 = 0.001, etc.  .2 equals 2/10 equals 1/5, resulting in the binary fractional number 0.001100110011001...</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Przy bazie 2, 1/2 = 0.1, 1/4 = 0/01, 1/8 = 0.001 itd. .2 równe jest 2/10 równe 1/5, dającym dwójkowo liczbę ułamkową 0.001100110011001...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Floating point numbers only have 32 or 64 bits of precision, so the digits are cut off at some point, and the resulting number is 0.199999999999999996 in decimal, not 0.2.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Liczby zmiennoprzecinkowe mają tylko 32 lub 64 bity precyzji, więc cyfry są odcinane w pewnym momencie, i wynikająca liczba jest 0.199999999999999996 w dziesiątkowym systemie, nie 0.2.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A floating point number's ``repr()`` function prints as many digits are necessary to make ``eval(repr(f)) == f`` true for any float f.  The ``str()`` function prints fewer digits and this often results in the more sensible number that was probably intended::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Zadanie zmiennoprzecinkowych liczb ``repr()`` wypisuje tak wiele cyfr jak jest to konieczne aby uczynić ``eval(repr(f)) == f`` prawdziwym dla każdej zmiennoprzecinkowej liczby f. Zadanie ``str()`` drukuje mniej cyfr i często powoduje to bardziej rozsądną liczbę niż prawdopodobnie było to zamierzone::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&gt;&gt;&gt; 1.1 - 0.9 0.20000000000000007 &gt;&gt;&gt; print(1.1 - 0.9) 0.2</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>&gt;&gt;&gt; 1.1 - 0.9 0.20000000000000007 &gt;&gt;&gt; print(1.1 - 0.9) 0.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>One of the consequences of this is that it is error-prone to compare the result of some computation to a float with ``==``. Tiny inaccuracies may mean that ``==`` fails.  Instead, you have to check that the difference between the two numbers is less than a certain threshold::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Jedną z konsekwencji tego jest to, że to jest podatne na błędy porównywać wynik niektórych obliczeń do liczby zmiennoprzecinkowej za pomocą ``==``. Drobne niedokładności mogą oznaczać że porównanie ``==`` zawiedzie. Zamiast tego, musisz sprawdzić czy różnica między dwoma liczbami jest mniejsza niż pewien próg::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>epsilon = 0.0000000000001  # Tiny allowed error expected_result = 0.4  if expected_result-epsilon &lt;= computation() &lt;= expected_result+epsilon:     ...</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>epsilon = 0.0000000000001  # Mały dozwolony błąd expected_result = 0.4  if expected_result-epsilon &lt;= computation() &lt;= expected_result+epsilon:     ...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Please see the chapter on :ref:`floating point arithmetic &lt;tut-fp-issues&gt;` in the Python tutorial for more information.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Proszę po więcej informacji sięgnij do rozdziału o :ref:`floating point arithmetic &lt;tut-fp-issues&gt;` - z ang. - :ref:`arytmetyce zmiennoprzecinkowej &lt;tut-fp-issues&gt;` w samouczku języka pytonowskiego.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Why are Python strings immutable?</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Dlaczego ciągi znaków języka pytonowskiego są niezmienne?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There are several advantages.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Jest kilka zalet.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>One is performance: knowing that a string is immutable means we can allocate space for it at creation time, and the storage requirements are fixed and unchanging.  This is also one of the reasons for the distinction between tuples and lists.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Jedną jest wydajność: wiedzieć że ciąg jest niezmienny oznacza, że możemy przeznaczyć miejsce dla niego w czasie utworzenia, i wymagania przechowywania są stałe i niezmienne. To także jest jednym z powodów dla rozróżnienia pomiędzy krotkami i listami.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Another advantage is that strings in Python are considered as "elemental" as numbers.  No amount of activity will change the value 8 to anything else, and in Python, no amount of activity will change the string "eight" to anything else.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Inną zaletą jest to że ciągi w języku pytonowskim uważa się za podstawowe tak jak liczby. Żadna ilość działań nie zmieni wartości 8 na nic innego, i w języku pytonowskim, żadna ilość działań nie zmieni ciągu "osiem" na nic innego.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Why must 'self' be used explicitly in method definitions and calls?</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Dlaczego muszą być używane 'self' jawnie w definicjach sposobów postępowania i wywołaniach?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The idea was borrowed from Modula-3.  It turns out to be very useful, for a variety of reasons.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Pomysł został pożyczony od Modula-3. Okazuje się być bardzo użytecznym, z wielu powodów.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>First, it's more obvious that you are using a method or instance attribute instead of a local variable.  Reading ``self.x`` or ``self.meth()`` makes it absolutely clear that an instance variable or method is used even if you don't know the class definition by heart.  In C++, you can sort of tell by the lack of a local variable declaration (assuming globals are rare or easily recognizable) -- but in Python, there are no local variable declarations, so you'd have to look up the class definition to be sure.  Some C++ and Java coding standards call for instance attributes to have an ``m_`` prefix, so this explicitness is still useful in those languages, too.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Na początek, jest to bardziej oczywiste że, używasz sposobów postępowania lub własności przykładu zamiast zmiennej lokalnej. Czytając ``self.x`` lub ``self.meth()`` sprawia to absolutnie jasnym, że zmienna  przykładu lub sposób postępowania jest używany nawet jeśli nie znasz definicji uogólnienia na pamięć. W C++, możesz się zorientować przez brak deklaracji zmiennej lokalnej (zakładając że zmienne nadrzędne są rzadkością lub są łatwo rozpoznawalne) -- ale w języku pytonowskim, nie ma deklaracji lokalnych zmiennych, więc musiałbyś sprawdzić definicję uogólnienia aby się upewnić. Niektóre standardy kodowania C++ i Java wzywają aby właściwości przykładów miały przedrostek ``m_``, więc ta jawna wyjątkowość jest wciąż użyteczna także w tych językach.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Second, it means that no special syntax is necessary if you want to explicitly reference or call the method from a particular class.  In C++, if you want to use a method from a base class which is overridden in a derived class, you have to use the ``::`` operator -- in Python you can write ``baseclass.methodname(self, &lt;argument list&gt;)``.  This is particularly useful for :meth:`__init__` methods, and in general in cases where a derived class method wants to extend the base class method of the same name and thus has to call the base class method somehow.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Po drugie, oznacza to, że żadna specjalna składnia nie jest konieczna, jeśli chcesz jawnie odnieść się lub wezwać sposób postępowania ze szczególnego uogólnienia. W C++, jeśli chcesz użyć sposobu postępowania z uogólnienia bazowego które jest obchodzone w uogólnieniu pochodnym, musisz użyć operatora ``::`` --  w języku pytonowskim możesz napisać ``uogolnieniebazowe.nazwasposobu(self,&lt;argument list&gt;)``. To jest szczególnie użyteczne dla sposobów postępowania :meth:`__init__`, i ogólnie w przypadkach gdzie pochodne uogólnienie chce rozszerzyć sposób postępowania uogólnienia bazowego o tej samej nazwie i dlatego musi wzywać sposobu postępowania uogólnienia bazowego w jakiś sposób.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Finally, for instance variables it solves a syntactic problem with assignment: since local variables in Python are (by definition!) those variables to which a value is assigned in a function body (and that aren't explicitly declared global), there has to be some way to tell the interpreter that an assignment was meant to assign to an instance variable instead of to a local variable, and it should preferably be syntactic (for efficiency reasons).  C++ does this through declarations, but Python doesn't have declarations and it would be a pity having to introduce them just for this purpose.  Using the explicit ``self.var`` solves this nicely.  Similarly, for using instance variables, having to write ``self.var`` means that references to unqualified names inside a method don't have to search the instance's directories.  To put it another way, local variables and instance variables live in two different namespaces, and you need to tell Python which namespace to use.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ostatecznie, dla zmiennych przykładów, rozwiązuje to problem składniowy z przypisaniem: skoro zmienne lokalne w języku pytonowskim są (z definicji!) tymi zmiennymi do których wartość jest przypisywana w ciele zadania (i które nie są jawnie zadeklarowane nadrzędnie), musi istnieć jakiś sposób aby poinformować program interpretujący polecenia języka pytonowskiego, że przypisanie było pomyślane aby przyporządkować zmienną przykładu zamiast zmiennej lokalnej i że powinno ono być preferencyjnie składniowe (z powodów wydajnościowych). Język C++ robi to przez deklaracje, ale język pytonowski nie ma deklaracji i byłoby szkoda musieć wprowadzać je tylko z tego powodu. Uźywając jawnego ``self.var`` jest ładnym rozwiązaniem. Podobnie dla użycia zmiennych przykładu, konieczność pisania ``self.var`` oznacza, że odniesienia do niekwalifikowanych nazw wewnątrz sposobu postępowania nie muszą szukać katalogów przykładu. Aby powiedzieć to innymi słowami, zmienne lokalne i zmienne przykładów znajdują się w dwóch różnych przestrzeniach nazw, i potrzebujesz powiedzieć językowi pytonowskiemu której przestrzeni nazw używać.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Why can't I use an assignment in an expression?</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Dlaczego nie mogę użyć przypisania w wyrażeniu?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Many people used to C or Perl complain that they want to use this C idiom:</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wiele osób przyzwyczajonych do C lub Perla narzeka ze chcieliby używać tego idiomu C:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>while (line = readline(f)) {     // do something with line }</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>while (line = readline(f)) {     // rób coś z tą linią }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>where in Python you're forced to write this::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>gdzie w języku pytonowskim jesteś zmuszony pisać to::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>while True:     line = f.readline()     if not line:         break     ... # do something with line</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>while True:     line = f.readline()     if not line:         break     ... # rób coś z linią</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The reason for not allowing assignment in Python expressions is a common, hard-to-find bug in those other languages, caused by this construct:</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Powodem nie zezwalania w wyrażeniach języka pytonowskiego na przypisania jest częsty, trudny-do-znalezienia błąd w tych innych językach, spowodowany przez tą konstrukcję:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>if (x = 0) {     // error handling } else {     // code that only works for nonzero x }</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>if (x = 0) {     // obsługa błędów } else {     // kod który działa tylko dla niezerowych x }</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The error is a simple typo: ``x = 0``, which assigns 0 to the variable ``x``, was written while the comparison ``x == 0`` is certainly what was intended.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Błąd jest zwykłą pomyłką ``x = 0`` które przypisuje 0 do wartości ``x``, zostało napisane podczas gdy ``x == 0`` jest jasne, że było zamierzone.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Many alternatives have been proposed.  Most are hacks that save some typing but use arbitrary or cryptic syntax or keywords, and fail the simple criterion for language change proposals: it should intuitively suggest the proper meaning to a human reader who has not yet been introduced to the construct.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Wiele alternatyw było proponowanych. Większość jest przeróbkami które oszczędzają nieco pisania ale używają ustalonej lub tajemniczej składni lub słów kluczowych, i zawodzą proste kryterium dla propozycji zmian języka: że powinny intuicyjnie sugerować właściwe znaczenie dla człowieka czytającego, który nie został jeszcze wprowadzony w temat tej konstrukcji.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An interesting phenomenon is that most experienced Python programmers recognize the ``while True`` idiom and don't seem to be missing the assignment in expression construct much; it's only newcomers who express a strong desire to add this to the language.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Interesujący fenomen polega na tym że większość doświadczonych programistów języka pytonowskiego rozpoznaje idiom ``while True`` i nie wydaje się stęsknionymi za bardzo za konstrukcją przypisania w wyrażeniu; To tylko dotyczy nowo-przybyłych, którzy wyrażają silną potrzebę dodania tego do języka.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There's an alternative way of spelling this that seems attractive but is generally less robust than the "while True" solution::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Istniej alternatywny sposób przeliterowania tego, który wydaje się atrakcyjny ale jest raczej mniej wydajny niż rozwiązanie "while True"::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>line = f.readline() while line:     ... # do something with line...     line = f.readline()</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>line = f.readline() while line:     ... # rób coś z linią...     line = f.readline()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The problem with this is that if you change your mind about exactly how you get the next line (e.g. you want to change it into ``sys.stdin.readline()``) you have to remember to change two places in your program -- the second occurrence is hidden at the bottom of the loop.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Problem z tym polega na tym że jeśli zmienisz zdanie o tym dokładnie w jaki sposób otrzymasz następną linię (np. chcesz zmienić ją w ``sys.stdin.readline()``) musisz pamiętać aby zmienić dwa miejsca w twoim programie -- drugie wystąpienie jest schowane na dole pętli.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The best approach is to use iterators, making it possible to loop through objects using the ``for`` statement.  For example, in the current version of Python file objects support the iterator protocol, so you can now write simply::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Najlepszym podejściem jest użycie iteratorów, czyniąc to możliwym aby przejść w pętli po przedmiotach używając wyrażenia ``for``. Dla przykładu, w obecnej wersji języka pytonowskiego przedmioty plikowe wspierają protokół przedmiotów iterujących, więc można teraz napisać po prostu::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>for line in f:     ... # do something with line...</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>for line in f:     ... # zrób coś z linią...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Why does Python use methods for some functionality (e.g. list.index()) but functions for other (e.g. len(list))?</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Dlaczego język pytonowski używa sposobów postępowania dla niektórych działań (np. list.index()) ale zadań dla innych (np. len(list))?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The major reason is history. Functions were used for those operations that were generic for a group of types and which were intended to work even for objects that didn't have methods at all (e.g. tuples).  It is also convenient to have a function that can readily be applied to an amorphous collection of objects when you use the functional features of Python (``map()``, ``apply()`` et al).</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Główną przyczyną jest historia. Zadania były używane dla tych operacji, które były zastępcze dla grupy typów i były zamierzone do pracy nawet dla przedmiotów które nie miały sposobów postępowania w ogóle (np. krotki). To jest także wygodne mieć zadanie które w gotowy sposób może być zastosowane do bezkształtnej kolekcji przedmiotów gdy używasz właściwości zadaniowych języka pytonowskiego (``map()``, ``apply()`` etc.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In fact, implementing ``len()``, ``max()``, ``min()`` as a built-in function is actually less code than implementing them as methods for each type.  One can quibble about individual cases but it's a part of Python, and it's too late to make such fundamental changes now. The functions have to remain to avoid massive code breakage.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Faktycznie, wypełnienie ``len()``, ``max()``, ``min()`` jako wbudowanych zadań jest właściwie mniej kodu niż wypełnianie ich jako sposobów postępowania dla każdego typu. Można spierać się o pojedyncze przypadki ale jest to już częścią języka pytonowskiego, i jest już za późno aby czynić tak znaczące zmiany teraz. Zadania muszą pozostać aby uniknąć masywnego popsucia się kodu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>For string operations, Python has moved from external functions (the ``string`` module) to methods.  However, ``len()`` is still a function.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Dla operacji na ciągach znaków, język pytonowski migrował z zewnętrznych zadań (moduł ``string``) na sposoby postępowania. Jednakże ``len()`` jest wciąż zadaniem.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Why is join() a string method instead of a list or tuple method?</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Dlaczego join() jest sposobem postępowania na ciągach znaków zamiast na listach lub na krotkach? </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Strings became much more like other standard types starting in Python 1.6, when methods were added which give the same functionality that has always been available using the functions of the string module.  Most of these new methods have been widely accepted, but the one which appears to make some programmers feel uncomfortable is::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Ciągi znaków stały się podobne do innych standardowych typów poczynając od języka pytonowskiego w wersji 1.6 gdy sposoby postępowania zostały dodane które dają tę samą funkcjonalność która zawsze była obecna przy użyciu zadań modułu ciągów znaków. Większość z tych nowych sposobów postępowania było szeroko akceptowanymi, ale jedną która wydaje się czynić niektórych programistów niekomfortowo jest::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>", ".join(['1', '2', '4', '8', '16'])</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>", ".join(['1', '2', '4', '8', '16'])</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>which gives the result::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>co daje w rezultacie::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>"1, 2, 4, 8, 16"</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>"1, 2, 4, 8, 16"</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>There are two common arguments against this usage.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Istnieją dwa wspólne argumenty przeciwko temu użyciu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The first runs along the lines of: "It looks really ugly using a method of a string literal (string constant)", to which the answer is that it might, but a string literal is just a fixed value. If the methods are to be allowed on names bound to strings there is no logical reason to make them unavailable on literals.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Pierwszy biegnie mniej więcej tak: "To wygląda naprawdę brzydko używanie sposobów postępowania od literału ciągu znaków (stałego ciągu znaków)", na który odpowiedź jest taka, że to możliwe, ale literał ciągu znaków jest po prostu stałą wartością. Jeśli sposoby postępowania są dozwolone na nazwach doczepionych do ciągów znaków to nie istnieje żaden logiczny powód aby czynić je niedostępnymi dla literałów.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The second objection is typically cast as: "I am really telling a sequence to join its members together with a string constant".  Sadly, you aren't.  For some reason there seems to be much less difficulty with having :meth:`~str.split` as a string method, since in that case it is easy to see that ::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Drugi sprzeciw jest typowo rzucany jako: "Nakazuję sekwencji połączyć swoje członki razem za pomocą stałego ciągu znaków". Ze smutkiem stwierdzić należy że nie. Z jakiegoś powodu wydaje się dużo łatwiejszym posiadanie :meth:`~str.split` jako sposobu postępowania ciągu znaków, skoro w tym przypadku jest łatwo zobaczyć że::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>"1, 2, 4, 8, 16".split(", ")</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>"1, 2, 4, 8, 16".split(", ")</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>is an instruction to a string literal to return the substrings delimited by the given separator (or, by default, arbitrary runs of white space).</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>jest instrukcją dla literału ciągu znaków aby zwróciła podciągi rozdzielone przez dany separator (lub domyślnie, zadane ciągi białych znaków).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>:meth:`~str.join` is a string method because in using it you are telling the separator string to iterate over a sequence of strings and insert itself between adjacent elements.  This method can be used with any argument which obeys the rules for sequence objects, including any new classes you might define yourself. Similar methods exist for bytes and bytearray objects.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>:meth:`~str.join` jest sposobem postępowania ciągów znaków ponieważ używając go mówisz ciągowi znaków separatora aby iterował ponad sekwencją ciągów znaków i wstawił się pomiędzy sąsiadujące elementy. Ta metoda może być użyta z dowolnymi argumentami co zgadza się z zasadami przedmiotów sekwencji, włączając w to jakiekolwiek nowe uogólnienia które sam możesz zdefiniować. Podobne metody istnieją dla kęsów i przedmiotów tablic-kęsów.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>How fast are exceptions?</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Jak szybkie są wyjątki?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A try/except block is extremely efficient.  Actually catching an exception is expensive.  In versions of Python prior to 2.0 it was common to use this idiom::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Blok try/except jest wyjątkowo efektywny. Samo złapanie wyjątku jest kosztowne. W wersjach języka pytonowskiego wcześniejszych od 2.0 częste było użycie tego idiomu::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>try:     value = mydict[key] except KeyError:     mydict[key] = getvalue(key)     value = mydict[key]</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>try:     value = mydict[key] except KeyError:     mydict[key] = getvalue(key)     value = mydict[key]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This only made sense when you expected the dict to have the key almost all the time.  If that wasn't the case, you coded it like this::</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>To miało sens tylko wtedy gdy spodziewałeś się że słownik będzie miał klucze prawie zawsze. Jeśli tak nie było, kodowałeś to w następujący sposób::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>if mydict.has_key(key):     value = mydict[key] else:     mydict[key] = getvalue(key)     value = mydict[key]</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>if mydict.has_key(key):     value = mydict[key] else:     mydict[key] = getvalue(key)     value = mydict[key]</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>For this specific case, you could also use ``value = dict.setdefault(key, getvalue(key))``, but only if the ``getvalue()`` call is cheap enough because it is evaluated in all cases.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Dla tego szczególnego przypadku, mogłeś także użyć ``value=dict.setdefault(key,getvalue(key))``, ale tylko jeśli wywołanie ``getvalue()`` było wystarczająco tanie obliczeniowo ponieważ było obliczane we wszystkich przypadkach.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Why isn't there a switch or case statement in Python?</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Dlaczego nie ma wyrażenia switch lub case w języku pytonowskim?</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You can do this easily enough with a sequence of ``if... elif... elif... else``. There have been some proposals for switch statement syntax, but there is no consensus (yet) on whether and how to do range tests.  See :pep:`275` for complete details and the current status.</seg>
+      </tuv>
+      <tuv xml:lang="pl">
+        <seg>Możesz tego dokonać wystarczająco łatwo za pomocą sekwencji ``if... elif... elif... else``. Były pewne propozycje na składnię instrukcji wyboru, ale nie ma konsensusu (jeszcze) o tym czy i jak wykonywać testy zakresu. Zob. :pep:`275` dla kompletnych szczegółów i obecnego statusu. </seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

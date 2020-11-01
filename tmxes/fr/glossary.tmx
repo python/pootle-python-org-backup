@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Glossary</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Glossaire</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The default Python prompt of the interactive shell.  Often seen for code examples which can be executed interactively in the interpreter.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>L'invite de commande utilisée par défaut dans l'interpréteur interactif. On la voit souvent dans des exemples de code qui peuvent être exécutés interactivement dans l'interpréteur.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The default Python prompt of the interactive shell when entering code for an indented code block or within a pair of matching left and right delimiters (parentheses, square brackets or curly braces).</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>L'invite de commande utilisée par défaut dans l'interpréteur interactif lorsqu'on entre un bloc de code indenté ou entre deux délimiteurs (parenthèses, crochets ou accolades).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>2to3 is available in the standard library as :mod:`lib2to3`; a standalone entry point is provided as :file:`Tools/scripts/2to3`.  See :ref:`2to3-reference`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>2to3 est disponible dans la bibliothèque standard sous le nom de :mod:`lib2to3`\ ; un point d’entrée indépendant est fourni via :file:`Tools/scripts/2to3`. Cf. \ :ref:`2to3-reference`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Abstract Base Classes (abbreviated ABCs) complement :term:`duck-typing` by providing a way to define interfaces when other techniques like :func:`hasattr` would be clumsy. Python comes with many built-in ABCs for data structures (in the :mod:`collections` module), numbers (in the :mod:`numbers` module), and streams (in the :mod:`io` module). You can create your own ABC with the :mod:`abc` module.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les classes de base abstraites (ABC, suivant l'abbréviation anglaise) complètent le :term:`duck-typing` en fournissant un moyen de définir des interfaces pour les cas où d'autres techniques comme :func:`hasattr` seraient inélégantes. Python contient de nombreuses ABC pour les structures de données (dans le module :mod:`collections`), les nombres (dans le module :mod:`numbers`), et les flux (dans le module :mod:`io`). Vous pouvez créer vos propres ABC avec le module :mod:`abc`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A value passed to a function or method, assigned to a named local variable in the function body.  A function or method may have both positional arguments and keyword arguments in its definition. Positional and keyword arguments may be variable-length: ``*`` accepts or passes (if in the function definition or call) several positional arguments in a list, while ``**`` does the same for keyword arguments in a dictionary.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une valeur passée à une fonction ou une méthode, assignée à une variable locale nommée dans le corps de la fonction. Une fonction ou une méthode peut aussi bien avoir des arguments de position que des arguments clé dans sa définition. Les arguments de position et les arguments clé peuvent être de longueur variable: ``*`` accepte ou passe (selon si c'est lors de la définition ou lors de l'appel de la fonction) plusieurs arguments de position dans une liste, tandis que ``**`` effectue la même chose pour les arguments clé dans un dictionnaire.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Any expression may be used within the argument list, and the evaluated value is passed to the local variable.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une expression peut être utilisée dans la liste d'arguments, la valeur évaluée est alors assignée à la variable locale.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A value associated with an object which is referenced by name using dotted expressions.  For example, if an object *o* has an attribute *a* it would be referenced as *o.a*.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une valeur associée à un objet et référencé par un nom via une notation utilisant des points. Par exemple, si un objet *o* a un attribut *a*, il sera référencé par *o.a*.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Benevolent Dictator For Life, a.k.a. `Guido van Rossum &lt;http://www.python.org/~guido/&gt;`_, Python's creator.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Dictateur à vie bénévole, alias `Guido van Rossum &lt;http://www.python.org/~guido/&gt;`_, le créateur de Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python source code is compiled into bytecode, the internal representation of a Python program in the interpreter.  The bytecode is also cached in ``.pyc`` and ``.pyo`` files so that executing the same file is faster the second time (recompilation from source to bytecode can be avoided).  This "intermediate language" is said to run on a :term:`virtual machine` that executes the machine code corresponding to each bytecode.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Le code source Python est compilé en bytecode, la représentation interne d'un programme Python dans l'interpréteur. Le bytecode est également mis en cache dans les fichiers ``.pyc`` et ``.pyo`` de sorte que l'exécution du même fichier est plus rapide la seconde fois (la recompilation de la source en bytecode peut être évitée). Ce "langage intermédiaire" est exécuté dans un interpréteur appelé "machine virtuelle"  qui exécute le code machine de chaque bytecode correspondant.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A template for creating user-defined objects. Class definitions normally contain method definitions which operate on instances of the class.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Un modèle pour créer des objets définis par l'utilisateur. Les définitions de classes contiennent normalement des définitions de méthodes qui agissent sur les instances de classe.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>An extension of the familiar real number system in which all numbers are expressed as a sum of a real part and an imaginary part.  Imaginary numbers are real multiples of the imaginary unit (the square root of ``-1``), often written ``i`` in mathematics or ``j`` in engineering.  Python has built-in support for complex numbers, which are written with this latter notation; the imaginary part is written with a ``j`` suffix, e.g., ``3+1j``.  To get access to complex equivalents of the :mod:`math` module, use :mod:`cmath`.  Use of complex numbers is a fairly advanced mathematical feature.  If you're not aware of a need for them, it's almost certain you can safely ignore them.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une extension du système numéral réel familier dans laquelle tous les nombres sont exprimés sous la forme d'une somme d'un réel et d'un imaginaire. Les nombres imaginaures sont de réels multiples d'une unité imaginaire (la racine carrée de ``-1``), souvent écrite ``i`` en mathématiques ou ``j`` en ingénierie. Python supporte nativement les nombres complexes, écrits avec cette dernière notation; la partie imaginaire est écrite avec un suffixe ``j``, exemple, ``3+1j``. Pour utiliser les équivalents complexes à :mod:`math`, utilisez :mod:`cmath`. L'utilisation des nombres complexes est une caractéristiques des mathématiques avancées. Si vous n'en avez pas l'utilité, vous pouvez les ignorer en toute tranquilité.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The canonical implementation of the Python programming language.  The term "CPython" is used in contexts when necessary to distinguish this implementation from others such as Jython or IronPython.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>L'implémentation canonique du langage de programmation Python. Le terme "CPython" est utilisé dans certains contextes lorsqu'il est nécessaire de distingué cette implémentation des autres comme Jython ou IronPython</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A function returning another function, usually applied as a function transformation using the ``@wrapper`` syntax.  Common examples for decorators are :func:`classmethod` and :func:`staticmethod`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une fonction retournant une autre fonction, utilisé habituellement dans une transformation de fonction via la syntaxe ``@wrapper``.Les exemples habituels pour les décorateurs sont :func:`classmethod` et :func:`staticmethod`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The decorator syntax is merely syntactic sugar, the following two function definitions are semantically equivalent::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>La syntaxe decorator est simplement du sucre syntaxique, les définitions des deux fonctions suivantes sont sémantiquement équivalentes :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>def f(...):     ... f = staticmethod(f)  @staticmethod def f(...):     ...</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>def f(...): ... f = staticmethod(f) @staticmethod def f(...): ...</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The same concept exists for classes, but is less commonly used there.  See the documentation for :ref:`function definitions &lt;function&gt;` and :ref:`class definitions &lt;class&gt;` for more about decorators.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Quoique moins fréquemment utilisé, le même concept existe pour les classes. Consultez la documentation :ref:`définitions de fonctions &lt;function&gt; et :ref:`définitions de classes &lt;class&gt;` pour en savoir plus sur les decorators.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Any object which defines the methods :meth:`__get__`, :meth:`__set__`, or :meth:`__delete__`.  When a class attribute is a descriptor, its special binding behavior is triggered upon attribute lookup.  Normally, using *a.b* to get, set or delete an attribute looks up the object named *b* in the class dictionary for *a*, but if *b* is a descriptor, the respective descriptor method gets called.  Understanding descriptors is a key to a deep understanding of Python because they are the basis for many features including functions, methods, properties, class methods, static methods, and reference to super classes.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>N'importe quel objet définissant les méthodes :meth:`__get__`, :meth:`__set__`, ou :meth:`__delete__`. Lorsque l'attribut d'une classe est un descripteur, son comportement spécial est déclenché lors de la recherche des attributs. En utilisant *a.b* pour obtenir, valoriser ou effacer un attribut, il recherche l'objet nommé *b* dans la dictionnaire de la classe pour *a*, mais si *b* est un descripteur, la méthode de ce descripteur est alors appelée.Comprendre les descripteurs est la clé d'une compréhension approfondie de Python, ils sont la base de nombre de ses caractéristiques notamment les fonctions, méthodes, propriétés, méthodes de classe, méthodes statiques, et les références aux classes mères. </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>For more information about descriptors' methods, see :ref:`descriptors`.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Pour plus d'informations sur les méthodes des descripteurs, consultez :ref:`descriptors`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A piece of syntax which can be evaluated to some value.  In other words, an expression is an accumulation of expression elements like literals, names, attribute access, operators or function calls which all return a value.  In contrast to many other languages, not all language constructs are expressions.  There are also :term:`statement`\s which cannot be used as expressions, such as :keyword:`if`.  Assignments are also statements, not expressions.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une suite logique de termes et chiffres conformes à la syntaxe Python dont l'évaluation fournit une valeur. En d'autres termes, une expression est une suite d'éléments tels que des noms, opérateurs, littéraux, accès d'attributs, méthodes ou fonctions qui aboutissent à une valeur. Contrairement à beaucoup d'autres langages, les différentes constructions du langage ne sont pas toutes des expressions. Il y a également des :term:`statement`s qui ne peuvent pas être utilisés comme expressions, tel que :keyword:`if`. Les affectations sont également des :term:`statements` et non des expressions.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A module written in C or C++, using Python's C API to interact with the core and with user code.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Un module écrit en C ou C++, utilisant l'API C de Python afin d'intéragir avec le noyau et le code utilisateur.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>for i in range(len(food)):     print(food[i])</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>for i in range(len(food)): print(food[i])</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>About these documents</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Об этой документации</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>These documents are generated from `reStructuredText`_ sources by `Sphinx`_, a document processor specifically written for the Python documentation.</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Эта документация была сгенерирована с помощью `Sphinx`_ из исходных текстов в формате `reStructuredText`_. `Sphinx`_ - процессор документов, созданный специально для документации Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Development of the documentation and its toolchain takes place on the docs@python.org mailing list.  We're always looking for volunteers wanting to help with the docs, so feel free to send a mail there!</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Обсуждение разработки документации и набора инструментов для работы с ней происходит в списке рассылки docs@python.org. Мы всегда рады добровольцам, желающим помочь с документацией, поэтому не стесняйтесь отправлять туда письма!</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Many thanks go to:</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Мы выражаем особую благодарность:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Fred L. Drake, Jr., the creator of the original Python documentation toolset and writer of much of the content;</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Фреду Л.Дрейку младшему, создателю изначального инструментария документации Python и автору значительной части материала;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>the `Docutils &lt;http://docutils.sf.net/&gt;`_ project for creating reStructuredText and the Docutils suite;</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>проекту `Docutils &lt;http://docutils.sf.net/&gt;`, за создание reStructuredText и набора инструментов Docutils;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Fredrik Lundh for his `Alternative Python Reference &lt;http://effbot.org/zone/pyref.htm&gt;`_ project from which Sphinx got many good ideas.</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Фредерику Ландху, за его проект "Альтернативная документация для Python", из которого Sphinx почерпнул много хороших идей.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See :ref:`reporting-bugs` for information how to report bugs in this documentation, or Python itself.</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Для информации о том, как докладывать об ошибках в этой документации или в самом Python - cм. :ref:`reporting-bugs`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Contributors to the Python Documentation</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>Внёсшие вклад в Документацию Python</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This section lists people who have contributed in some way to the Python documentation.  It is probably not complete -- if you feel that you or anyone else should be on this list, please let us know (send email to docs@python.org), and we'll be glad to correct the problem.</seg>
+      </tuv>
+      <tuv xml:lang="ru">
+        <seg>В этом разделе перечислены люди, каким-либо образом внёсшие вклад в документацию Python. Список вероятно неполон - если вы считаете, что ваше или чьё-то ещё имя должно быть в этом списке, пожалуйста дайте нам знать (пошлите электронное письмо в docs@python.org), и мы с радостью это исправим.</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

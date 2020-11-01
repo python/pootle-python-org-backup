@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Building the documentation</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Construire la documentation</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You need to have Python 2.4 or higher installed; the toolset used to build the docs is written in Python.  It is called *Sphinx*, it is not included in this tree, but maintained separately.  Also needed are the docutils, supplying the base markup that Sphinx uses, Jinja, a templating engine, and optionally Pygments, a code highlighter.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>If vous faut Python 2.4 ou supérieur d’installé ; l’outil utilisé pour construire la documentation est écrit en Python. Il s’appele *Sphinx*, il n'est pas inclus dans cette arborescence mais maintenu séparément. Il faut également docutils, qui fournit le système de balisage de base utilisé par Sphinx, Jinja, un moteur de templates, et facultativement Pygments, un outil de coloration syntaxique.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Using make</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Utiliser make</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Luckily, a Makefile has been prepared so that on Unix, provided you have installed Python and Subversion, you can just run ::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Heureusement un fichier Makefile existe, de façon à ce que sous Unix, si vous avez installé Python et Subversion, vous puissiez lancer ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>make html</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>make html</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Available make targets are:</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les différentes cibles de make sont :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>"html", which builds standalone HTML files for offline viewing.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>"html", qui construit les fichiers HTML permettant une consultation en mode déconnecté.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>To create the CHM file, you need to run the Microsoft HTML Help Workshop over the generated project (.hhp) file.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Pour créer le fichier CHM, vous devez exécuter le Microsoft HTML Help Workshop sur le projet a généré (fichier .hhp).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You'll need to install the Sphinx package, either by checking it out via ::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Vous aurez besoin d'installer le paquet Sphinx, avec la commande suivante::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>svn co http://svn.python.org/projects/external/Sphinx-0.6.5/sphinx tools/sphinx</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>svn co http://svn.python.org/projects/external/Sphinx-0.6.5/sphinx tools/sphinx</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>svn co http://svn.python.org/projects/external/docutils-0.6/docutils tools/docutils</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>svn co http://svn.python.org/projects/external/docutils-0.6/docutils tools/docutils</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>svn co http://svn.python.org/projects/external/Jinja-2.3.1/jinja2 tools/jinja2</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>svn co http://svn.python.org/projects/external/Jinja-2.3.1/jinja2 tools/jinja2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>svn co http://svn.python.org/projects/external/Pygments-1.3.1/pygments tools/pygments</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>svn co http://svn.python.org/projects/external/Pygments-1.3.1/pygments tools/pygments</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

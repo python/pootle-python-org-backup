@@ -1,0 +1,759 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Whetting Your Appetite</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Mise en bouche</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If you do much work on computers, eventually you find that there's some task you'd like to automate.  For example, you may wish to perform a search-and-replace over a large number of text files, or rename and rearrange a bunch of photo files in a complicated way. Perhaps you'd like to write a small custom database, or a specialized GUI application, or a simple game.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Si vous faites beaucoup de travail sur ordinateur, vous finirez par vouloir automatiser certaines tâches. Par exemple vous pouvez avoir besoin d'effectuer une recherche et un remplacement sur un grand nombre de fichiers de texte, ou de renommer et réorganiser des photos d'une manière sophistiquée. Peut-être avez-vous besoin de créer une petite base de données ou une application graphique, ou un simple jeu.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If you're a professional software developer, you may have to work with several C/C++/Java libraries but find the usual write/compile/test/re-compile cycle is too slow.  Perhaps you're writing a test suite for such a library and find writing the testing code a tedious task.  Or maybe you've written a program that could use an extension language, and you don't want to design and implement a whole new language for your application.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Si vous êtes un développeur professionnel, vous pouvez avoir besoin de travailler avec certaines bibliothèques C/C++/Java, mais vous trouvez que le cycle habituel écriture/compilation/test/recompilation est trop lourd. Peut-être écrivez-vous une suite de tests pour une telle bibliothèque et trouvez-vous que l'écriture du code de test est pénible. Ou bien vous avez écrit un logiciel qui a besoin d'être extensible grâce à un langage de script, mais vous ne voulez pas concevoir ni implémenter un nouveau langage pour votre application.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python is just the language for you.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Python est le langage parfait pour vous.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You could write a Unix shell script or Windows batch files for some of these tasks, but shell scripts are best at moving around files and changing text data, not well-suited for GUI applications or games. You could write a C/C++/Java program, but it can take a lot of development time to get even a first-draft program.  Python is simpler to use, available on Windows, Mac OS X, and Unix operating systems, and will help you get the job done more quickly.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Vous pouvez écrire un script shell Unix ou des fichiers batch Windows pour certaines de ces tâches. Les scripts shell sont appropriés pour déplacer des fichiers et modifier des données textuelles, mais pas pour une application ayant une interface graphique ni pour des jeux. Vous pouvez écrire un programme en C/C++/Java, mais cela peut prendre beaucoup de temps, ne serait-ce que pour avoir une première maquette. Python est plus facile à utiliser, il est disponible sous Windows, Mac OS X et Unix, et il vous aidera à terminer plus rapidement votre travail.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python is simple to use, but it is a real programming language, offering much more structure and support for large programs than shell scripts or batch files can offer.  On the other hand, Python also offers much more error checking than C, and, being a *very-high-level language*, it has high-level data types built in, such as flexible arrays and dictionaries.  Because of its more general data types Python is applicable to a much larger problem domain than Awk or even Perl, yet many things are at least as easy in Python as in those languages.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Python est facile à utiliser, mais c'est un vrai langage de programmation, offrant une bien meilleure structure et prise en charge des grands programmes que les scripts shell ou les fichiers batch. D'un autre coté, Python offre beaucoup plus de méthodes de vérification d'erreurs que le langage C et, étant un *langage de très haut niveau*, il possède nativement des types de données très évolués tels que des tableaux flexibles ou des dictionnaires. Grâce à ses types de données plus universels, Python est utilisable pour des domaines beaucoup plus variés que Awk ou même Perl. Pourtant, de nombreuses choses sont au moins aussi faciles en Python que dans ces langages.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python allows you to split your program into modules that can be reused in other Python programs.  It comes with a large collection of standard modules that you can use as the basis of your programs --- or as examples to start learning to program in Python.  Some of these modules provide things like file I/O, system calls, sockets, and even interfaces to graphical user interface toolkits like Tk.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Python vous permet de découper votre programme en modules qui peuvent être réutilisés dans d'autres programmes en Python. Il est fourni avec une vaste collection de modules standards que vous pouvez utiliser comme base de vos programmes, ou comme exemples pour apprendre à programmer. Certains de ces modules fournissent des services tels que les entrées/sorties, les appels système, les sockets, et même des accès aux outils comme Tk pour créer des interfaces graphiques.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python is an interpreted language, which can save you considerable time during program development because no compilation and linking is necessary.  The interpreter can be used interactively, which makes it easy to experiment with features of the language, to write throw-away programs, or to test functions during bottom-up program development. It is also a handy desk calculator.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Python est un langage interprêté, ce qui peut vous faire gagner un temps considérable pendant le développement du programme car aucune compilation ni édition de liens n'est nécessaire. L'interprète peut être utilisé de manière interactive, pour vous permettre d'expérimenter avec les fonctionnalités du langage, d'écrire des programmes jetables ou de tester des fonctions lors d'un développement incrémental. Il constitue aussi une calculatrice de bureau pratique.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python enables programs to be written compactly and readably.  Programs written in Python are typically much shorter than equivalent C,  C++, or Java programs, for several reasons:</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Python permet d'écrire des programmes compacts et lisibles. Les programmes écrits en Python sont généralement beaucoup plus court que l'équivalent en C, C++, ou Java, pour plusieurs raisons :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>the high-level data types allow you to express complex operations in a single statement;</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>les types de données de haut niveau vous permettent d'exprimer des opérations complexes en une seule instruction ;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>statement grouping is done by indentation instead of beginning and ending brackets;</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>les instructions sont regroupées entre elles grâce à l'indentation, plutôt que par l'utilisation d'accolades ;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>no variable or argument declarations are necessary.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>aucune déclaration de variable ou d'argument n'est nécessaire.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python is *extensible*: if you know how to program in C it is easy to add a new built-in function or module to the interpreter, either to perform critical operations at maximum speed, or to link Python programs to libraries that may only be available in binary form (such as a vendor-specific graphics library). Once you are really hooked, you can link the Python interpreter into an application written in C and use it as an extension or command language for that application.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Python est *extensible* : si vous savez écrire un programme en C, il est aisé d'ajouter à l'interprète une nouvelle fonction primitive ou un module, soit pour effectuer des opérations critiques à vitesse maximale, soit pour lier des programmes en Python à des bibliothèques disponibles uniquement sous forme binaire (par exemple des bibliothèques graphiques dédiées à un matériel). Une fois que vous êtes à l'aise avec ces principes, vous pouvez relier l'interprète Python à une application écrite en C et l'utiliser comme un langage d'extensions ou de commandes pour cette application.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>By the way, the language is named after the BBC show "Monty Python's Flying Circus" and has nothing to do with reptiles.  Making references to Monty Python skits in documentation is not only allowed, it is encouraged!</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>À ce sujet, le nom du langage provient de l'émission de la BBC « Monty Python's Flying Circus » et n'a rien à voir avec les reptiles. Faire référence aux sketchs des Monty Python dans de la documentation n'est pas seulement permis, c'est encouragé !</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Now that you are all excited about Python, you'll want to examine it in some more detail.  Since the best way to learn a language is to use it, the tutorial invites you to play with the Python interpreter as you read.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Votre soudain enthousiasme à propos de Python va vous pousser à l'examiner un peu plus en détail. Comme la meilleure façon d'apprendre un langage est de l'utiliser, le tutoriel vous invite à jouer avec l'interprète pendant la lecture.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In the next chapter, the mechanics of using the interpreter are explained.  This is rather mundane information, but essential for trying out the examples shown later.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Dans le prochain chapitre, nous allons expliquer comment utiliser l'interprète. Ce n'est pas la section la plus passionnante, mais c'est un passage obligé pour tester les exemples montrés plus loin.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The rest of the tutorial introduces various features of the Python language and system through examples, beginning with simple expressions, statements and data types, through functions and modules, and finally touching upon advanced concepts like exceptions and user-defined classes.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Le reste du tutoriel présente diverses fonctionnalités du langage et du système Python au travers d'exemples, depuis les simples expressions, instructions ou types de données, jusqu'aux fonctions et modules, pour finalement aborder des concepts avancés comme les exceptions et les classes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Classes</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Classes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python's class mechanism adds classes to the language with a minimum of new syntax and semantics.  It is a mixture of the class mechanisms found in C++ and Modula-3.  As is true for modules, classes in Python do not put an absolute barrier between definition and user, but rather rely on the politeness of the user not to "break into the definition."  The most important features of classes are retained with full power, however: the class inheritance mechanism allows multiple base classes, a derived class can override any methods of its base class or classes, and a method can call the method of a base class with the same name.  Objects can contain an arbitrary amount of data.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Le mécanisme des classes Python ajoute au langage la notion de classes avec un minimum de syntaxe et sémantique nouvelles. C'est un mélange des mécanismes rencontrés dans C++ et Modula-3. De la même manière que pour les modules, les classes Python ne posent pas de barrière rigide entre leur définition et l'utilisateur, mais s'appuie sur le respect de l'utilisateur à ne pas causer d'effraction dans la définition. Cependant, les fonctionnalités les plus importantes des classes sont conservées avec toutes leur puissance : le mécanisme d'héritage autorise d'avoir plusieurs classes de base, une classe dérivée peut surcharger toutes les méthodes de sa (ou ses) classe(s) de base et une méthode peut faire appel à la méthode d'une classe de base portant le même nom. Les objets peuvent contenir un nombre arbitraire de données.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In C++ terminology, normally class members (including the data members) are *public* (except see below :ref:`tut-private`), and all member functions are *virtual*.  As in Modula-3, there are no shorthands for referencing the object's members from its methods: the method function is declared with an explicit first argument representing the object, which is provided implicitly by the call.  As in Smalltalk, classes themselves are objects.  This provides semantics for importing and renaming.  Unlike C++ and Modula-3, built-in types can be used as base classes for extension by the user. Also, like in C++, most built-in operators with special syntax (arithmetic operators, subscripting etc.) can be redefined for class instances.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Dans la terminologie C++, les membres des classes (y compris les données) sont *publics* (sauf exception, voir :ref:`tut-private`) et toutes les fonctions membres sont *virtuelles*. Comme avec Modulo-3, il n'y a aucune façon d'accéder aux membres d'un objet à partir de ses méthodes : une méthode est déclarée avec un premier argument explicite représentant l'objet, et cet argument est transmis de manière implicite lors de l'appel. Comme avec Smalltalk, les classes elles-mêmes sont des objets. Il existe ainsi une sémantique pour les importer et les renommer. Au contraire de C++ et Modulo-3, les types de base peuvent être utilisés comme classes de base pour que l'utilisateur puisse les étendre. Enfin, comme en C++, la plupart des opérateurs de base avec une syntaxe spéciale (opérateurs arithmétiques, sous-indiçage, etc.) peuvent être redéfinis pour les instances de classes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>(Lacking universally accepted terminology to talk about classes, I will make occasional use of Smalltalk and C++ terms.  I would use Modula-3 terms, since its object-oriented semantics are closer to those of Python than C++, but I expect that few readers have heard of it.)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>(Par manque d'une terminologie universellement acceptée pour parler des classes, nous ferons un usage occasionnel des termes de Smalltalk et C++. Nous voulions utiliser les termes de Modula-3 puisque sa sémantique orientée objet est plus proche de celle de Python que de C++, mais petit nombre de lecteurs est susceptibles de la connaître.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A Word About Names and Objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Quelques mots au sujet des noms et objets</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Objects have individuality, and multiple names (in multiple scopes) can be bound to the same object.  This is known as aliasing in other languages.  This is usually not appreciated on a first glance at Python, and can be safely ignored when dealing with immutable basic types (numbers, strings, tuples).  However, aliasing has a possibly surprising effect on the semantics of Python code involving mutable objects such as lists, dictionaries, and most other types. This is usually used to the benefit of the program, since aliases behave like pointers in some respects.  For example, passing an object is cheap since only a pointer is passed by the implementation; and if a function modifies an object passed as an argument, the caller will see the change --- this eliminates the need for two different argument passing mechanisms as in Pascal.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les objets possèdent une existence propre et plusieurs noms peuvent être utilisés (dans divers contextes) pour faire référence au même objet. Ceux-ci sont connus sous le nom d'alias dans d'autres langages. Ceci est habituellement peu apprécié lors d'un premier coup d'œil à Python et peut être ignoré lorsqu'on travaille avec des types de base non mutables (nombres, chaînes, tuples). Cependant, les alias ont éventuellement des effets surprenants sur la sémantique d'un code Python mettant en jeu des objets mutables comme les listes, les dictionnaires et la plupart des autres types. C'est généralement utilisé au bénéfice du programme car les alias se comportent, d'un certain point de vue, comme des pointeurs. Par exemple, transmettre un objet n'a aucun coût car c'est simplement un pointeur qui est transmis par l'implémentation ; et si une fonction modifie un objet passé en argument, le code à l'origine de l'appel verra le changement. Ceci élimine le besoin d'avoir deux mécanismes de transmission d'arguments comme en Pascal.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python Scopes and Namespaces</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Portées et espaces de noms en Python</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Before introducing classes, I first have to tell you something about Python's scope rules.  Class definitions play some neat tricks with namespaces, and you need to know how scopes and namespaces work to fully understand what's going on. Incidentally, knowledge about this subject is useful for any advanced Python programmer.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Avant de présenter les classes, nous devons parler un peu de la notion de portée en Python. Les définitions de classes font d'habiles manipulations avec les espaces de noms, et vous devez savoir comment les portées et les espaces de noms fonctionnent. Soit dit en passant, toute connaissance sur ce sujet est aussi utile aux développeurs Python expérimentés.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Let's begin with some definitions.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Tout d'abord, quelques définitions.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A *namespace* is a mapping from names to objects.  Most namespaces are currently implemented as Python dictionaries, but that's normally not noticeable in any way (except for performance), and it may change in the future.  Examples of namespaces are: the set of built-in names (functions such as :func:`abs`, and built-in exception names); the global names in a module; and the local names in a function invocation.  In a sense the set of attributes of an object also form a namespace.  The important thing to know about namespaces is that there is absolutely no relation between names in different namespaces; for instance, two different modules may both define a function ``maximize`` without confusion --- users of the modules must prefix it with the module name.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Un *espace de nom* est une table de correspondance entre des noms et des objets. La plupart des espaces de noms sont actuellement implémentés sous forme de dictionnaires Python, mais ceci n'est normalement pas visible (sauf pour les performances) et peut changer dans le futur. Comme exemples d'espaces de noms, nous pouvons citer les primitives (fonctions comme :func:`abs`, et les noms des exceptions de base) ; les noms globaux dans un module ; et les noms locaux lors d'un appel de fonction. D'une certaine manière, l'ensemble des attributs d'un objet forme lui-même un espace de noms. La chose importante à retenir à propos des espaces de noms est qu'il n'y absolument aucun lien entre les noms de plusieurs espaces de noms ; par exemple, deux modules différents peuvent définir une fonction ``maximize`` sans qu'il y ait de confusion. Les utilisateurs des modules doivent préfixer le nom de la fonction avec celui du module.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>By the way, I use the word *attribute* for any name following a dot --- for example, in the expression ``z.real``, ``real`` is an attribute of the object ``z``.  Strictly speaking, references to names in modules are attribute references: in the expression ``modname.funcname``, ``modname`` is a module object and ``funcname`` is an attribute of it.  In this case there happens to be a straightforward mapping between the module's attributes and the global names defined in the module: they share the same namespace!  [#]_</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>À ce propos, nous utilisons le mot *attribut* pour tout nom suivant un point. Par exemple, dans l'expression ``z.real``, ``real`` est un attribut de l'objet ``z``. Rigoureusement parlant, les références à des noms dans des modules sont des références d'attributs : dans l'expression ``modname.funcname``, ``modname`` est un objet module et ``funcname`` est un attribut de cet objet. Dans ces conditions, il existe une correspondance directe entre les attributs du module et les noms globaux définis dans le module : ils partagent le même espace de noms ! [#]_</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Attributes may be read-only or writable.  In the latter case, assignment to attributes is possible.  Module attributes are writable: you can write ``modname.the_answer = 42``.  Writable attributes may also be deleted with the :keyword:`del` statement.  For example, ``del modname.the_answer`` will remove the attribute :attr:`the_answer` from the object named by ``modname``.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les attributs peuvent être seulement lisibles ou aussi modifiables. S'ils sont modifiables, l'affectation à un attribut est possible. Les attributs de modules sont modifiables : vous pouvez écrire ``modname.the_answer = 42``. Les attributs modifiables peuvent aussi être effacés avec l'instruction :keyword:`del`. Par exemple, ``del modname.the_answer`` supprime l'attribut :attr:`the_answer` de l'objet nommé ``modname``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Namespaces are created at different moments and have different lifetimes.  The namespace containing the built-in names is created when the Python interpreter starts up, and is never deleted.  The global namespace for a module is created when the module definition is read in; normally, module namespaces also last until the interpreter quits.  The statements executed by the top-level invocation of the interpreter, either read from a script file or interactively, are considered part of a module called :mod:`__main__`, so they have their own global namespace.  (The built-in names actually also live in a module; this is called :mod:`builtins`.)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les espaces de noms sont créés à différents moments et ont différentes durées de vie. L'espace de noms contenant les primitives est créé au démarrage de l'interprète Python et n'est jamais effacé. L'espace de nom global pour un module est créé lorsque la définition du module est lue. Habituellement, les espaces de noms des modules durent aussi jusqu'à l'arrêt de l'interprète. Les instructions exécutées par la première invocation de l'interprète, qu'ils soient lus depuis un fichier de script ou de manière interactive, sont considérés comme faisant partie d'un module appelé :mod:`__main__`, de façon qu'elles possèdent leur propre espace de noms. (les primitives vivent elles-mêmes dans un module, appelé :mod:`builtins`.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The local namespace for a function is created when the function is called, and deleted when the function returns or raises an exception that is not handled within the function.  (Actually, forgetting would be a better way to describe what actually happens.)  Of course, recursive invocations each have their own local namespace.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>L'espace de noms local d'une fonction est créé lors de son appel, puis effacé lorsqu'elle renvoie un résultat ou lève une exception non prise en charge. (En fait, « oublier » serait une meilleure façon de décrire ce qui se passe réellement). Bien sûr, des invocations récursives ont chacune leur propre espace de noms.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A *scope* is a textual region of a Python program where a namespace is directly accessible.  "Directly accessible" here means that an unqualified reference to a name attempts to find the name in the namespace.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une *portée* est une zone textuelle d'un programme Python où un espace de noms est directement accessible. « Directement accessible » signifie ici qu'une référence non qualifée à un nom sera recherchée dans l'espace de nom.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Although scopes are determined statically, they are used dynamically. At any time during execution, there are at least three nested scopes whose namespaces are directly accessible:</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bien que les portées soient déterminées de manière statique, elles sont utilisées de manière dynamique. À n'importe quel moment de l'exécution, il y a au minimum trois portées imbriquées dont les espaces de noms sont directement accessibles :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>the innermost scope, which is searched first, contains the local names</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>La portée la plus au centre, celle qui est consultée en premier, contient les noms locaux</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>the scopes of any enclosing functions, which are searched starting with the nearest enclosing scope, contains non-local, but also non-global names</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>les portées des fonctions englobantes, qui sont consultées en commençant avec la portée englobante la plus proche, contiennent des noms non-locaux mais aussi non-globaux</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>the next-to-last scope contains the current module's global names</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>l'avant dernière portée contient les noms globaux du module courant</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>the outermost scope (searched last) is the namespace containing built-in names</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>la portée englobante, consultée en dernier, est l'espace de noms contenant les primitives</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If a name is declared global, then all references and assignments go directly to the middle scope containing the module's global names.  To rebind variables found outside of the innermost scope, the :keyword:`nonlocal` statement can be used; if not declared nonlocal, those variable are read-only (an attempt to write to such a variable will simply create a *new* local variable in the innermost scope, leaving the identically named outer variable unchanged).</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Si un nom est déclaré global, toutes les références et affectations vont directement dans la portée intermédiaire contenant les noms globaux du module. Pour réattacher des variables trouvées en dehors de la portée la plus au centre, l'instruction :keyword:`nonlocal` peut être utilisée. Si elles ne sont pas déclarées « nonlocal », ces variables sont en lecture seule (toute tentative de modifier une telle variable créera simplement une *nouvelle* variable locale dans la portée la plus au centre, en laissant inchangée la variable du même nom dans la portée englobante).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Usually, the local scope references the local names of the (textually) current function.  Outside functions, the local scope references the same namespace as the global scope: the module's namespace. Class definitions place yet another namespace in the local scope.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Habituellement, la portée locale référence les noms locaux de la fonction courante. En dehors des fonctions, la portée locale référence le même espace de noms que la portée globale : l'espace de noms du module. Les définitions de classes créent un nouvel espace de noms dans la portée locale.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>It is important to realize that scopes are determined textually: the global scope of a function defined in a module is that module's namespace, no matter from where or by what alias the function is called.  On the other hand, the actual search for names is done dynamically, at run time --- however, the language definition is evolving towards static name resolution, at "compile" time, so don't rely on dynamic name resolution!  (In fact, local variables are already determined statically.)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Il est important de réaliser que les portées sont déterminées de manière textuelle : la portée globale d'une fonction définie dans un module est l'espace de nom de ce module, quel que soit la provenance de cet appel. Par contre, la recherche réelle des noms est faite dynamiquement au moment de l'exécution. Cependant la définition du langage est en train d'évoluer vers une résolution statique des noms au moment de la « compilation », donc sans se baser sur une résolution dynamique ! (En réalité, les variables locales sont déjà déterminées de manière statique).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A special quirk of Python is that -- if no :keyword:`global` statement is in effect -- assignments to names always go into the innermost scope.  Assignments do not copy data --- they just bind names to objects.  The same is true for deletions: the statement ``del x`` removes the binding of ``x`` from the namespace referenced by the local scope.  In fact, all operations that introduce new names use the local scope: in particular, :keyword:`import` statements and function definitions bind the module or function name in the local scope.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une particularité de Python est que si aucune instruction :keyword:`global` n'est active, les affectations de noms vont toujours dans la portée la plus proche. Les affectations ne copient aucune données : elles se contentent de lier des noms à des objets. Ceci est également vrai pour l'effacement : l'instruction ``del x`` supprime la liaison de ``x`` dans l'espace de noms référencé par la portée locale. En réalité, toutes les opérations qui impliquent des nouveaux noms utilisent la portée locale : en particulier, les instructions keyword:`import` et les définitions de fonctions effectuent une liaison du module ou du nom de fonction dans la portée locale.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The :keyword:`global` statement can be used to indicate that particular variables live in the global scope and should be rebound there; the :keyword:`nonlocal` statement indicates that particular variables live in an enclosing scope and should be rebound there.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>L'instruction :keyword:`global` peut être utilisée pour indiquer que certaines variables existent dans la portée globale et doivent être reliées en local ; l'instruction :keyword:`nonlocal` indique que certaines variables existent dans une portée supérieure et doivent être reliées en local.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Scopes and Namespaces Example</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Exemple de portées et d'espaces de noms</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>This is an example demonstrating how to reference the different scopes and namespaces, and how :keyword:`global` and :keyword:`nonlocal` affect variable binding::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Ceci est un exemple montrant comment utiliser les différentes portées et espaces de noms, et comment :keyword:`global` et :keyword:`nonlocal` modifient l'affectation de variable ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>def scope_test():     def do_local():         spam = "local spam"     def do_nonlocal():         nonlocal spam         spam = "nonlocal spam"     def do_global():         global spam         spam = "global spam"      spam = "test spam"     do_local()     print("After local assignment:", spam)     do_nonlocal()     print("After nonlocal assignment:", spam)     do_global()     print("After global assignment:", spam)  scope_test() print("In global scope:", spam)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>def scope_test():     def do_local():         spam = "local spam"     def do_nonlocal():         nonlocal spam         spam = "nonlocal spam"     def do_global():         global spam         spam = "global spam"      spam = "test spam"     do_local()     print("After local assignment:", spam)     do_nonlocal()     print("After nonlocal assignment:", spam)     do_global()     print("After global assignment:", spam)  scope_test() print("In global scope:", spam)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The output of the example code is::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Ce code donne le résultat suivant ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>After local assignment: test spam After nonlocal assignment: nonlocal spam After global assignment: nonlocal spam In global scope: global spam</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>After local assignment: test spam After nonlocal assignment: nonlocal spam After global assignment: nonlocal spam In global scope: global spam</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Note how the *local* assignment (which is default) didn't change *scope_test*\'s binding of *spam*.  The :keyword:`nonlocal` assignment changed *scope_test*\'s binding of *spam*, and the :keyword:`global` assignment changed the module-level binding.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Vous pouvez constater que l'affectation *locale* (qui est effectuée par défaut) n'a pas modifié la liaison de *spam* dans *scope_test*. L'affectation :keyword:`nonlocal` a changé la liaison de *spam* dans *scope_test* et l'affectation :keyword:`global` a changé la liaison au niveau du module.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You can also see that there was no previous binding for *spam* before the :keyword:`global` assignment.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Vous pouvez également voir qu'aucune liaison pour *spam* n'a été faite avant l'affectation :keyword:`global`.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A First Look at Classes</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Une première approche des classes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Classes introduce a little bit of new syntax, three new object types, and some new semantics.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Le concept de classes introduit quelques nouveau éléments de syntaxe, trois nouveaux types d'objets ainsi que de nouveaux éléments de sémantique</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Class Definition Syntax</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Syntaxe de définition des classes</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The simplest form of class definition looks like this::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>La forme la plus simple de définition de classe ressemble à ceci ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>class ClassName:     &lt;statement-1&gt;     .     .     .     &lt;statement-N&gt;</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>class NomDeLaClasse: &lt;déclaration-1&gt;. . . &lt;déclaration-N&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Class definitions, like function definitions (:keyword:`def` statements) must be executed before they have any effect.  (You could conceivably place a class definition in a branch of an :keyword:`if` statement, or inside a function.)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les définitions de classes, comme les définitions de fonctions (définitions :keyword:`def`) doivent être exécutées avant d'avoir un effet. (Vous pouvez tout à fait placer une définition de classe dans une branche d'une instruction conditionnelle :keyword:`if` ou encore à l'intérieur d'une fonction.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In practice, the statements inside a class definition will usually be function definitions, but other statements are allowed, and sometimes useful --- we'll come back to this later.  The function definitions inside a class normally have a peculiar form of argument list, dictated by the calling conventions for methods --- again, this is explained later.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Dans la pratique, les déclarations dans une définition de classe seront généralement des définitions de fonctions, mais d'autres déclarations sont permises, et parfois utiles --- Nous reviendrons sur ce point plus tard. Les définitions de fonction à l'intérieur d'une classe ont normalement une forme particulière de liste d'arguments, dictée par les conventions d'appel aux méthodes --- Tout ceci sera expliqué plus tard.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When a class definition is entered, a new namespace is created, and used as the local scope --- thus, all assignments to local variables go into this new namespace.  In particular, function definitions bind the name of the new function here.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Quand une classe est définie, un nouvel espace de noms est créé et utilisé comme portée locale --- Ainsi, toutes les affectations de variables locales entrent dans ce nouvel espace de noms. En particulier, les définitions de fonctions y lient le nom de la nouvelle fonction.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Class Objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les objets classe</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Class objects support two kinds of operations: attribute references and instantiation.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les objets classe prennent en charge deux types d'opérations: des références à des attributs et l'instanciation.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>*Attribute references* use the standard syntax used for all attribute references in Python: ``obj.name``.  Valid attribute names are all the names that were in the class's namespace when the class object was created.  So, if the class definition looked like this::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les *références d'attributs* utilisent la syntaxe standard utilisée pour toutes les références d'attributs en Python: ``obj.nom``. Les noms d'attribut valides sont tous les noms qui se trouvaient dans l'espace de noms de la classe quand l'objet classe a été créé. Donc, si la définition de classe ressemble à ceci ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>class MyClass:     """A simple example class"""     i = 12345     def f(self):         return 'hello world'</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>class MaClasse: """Une simple classe d'exemple""" i = 12345 def f(self): return 'hello world'</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>then ``MyClass.i`` and ``MyClass.f`` are valid attribute references, returning an integer and a function object, respectively. Class attributes can also be assigned to, so you can change the value of ``MyClass.i`` by assignment. :attr:`__doc__` is also a valid attribute, returning the docstring belonging to the class: ``"A simple example class"``.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>alors ``MaClasse.i`` et ``MaClasse.f`` sont des références valides à des attributs, renvoyant respectivement un entier et un objet fonction. Les attributs de classes peuvent également être affectés, de sorte que vous pouvez modifier la valeur de ``MaClasse.i`` par affectation. :attr:`__doc__` est aussi un attribut valide, renvoyant la docstring appartenant à la classe : ``"Une simple classe d'exemple"``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Class *instantiation* uses function notation.  Just pretend that the class object is a parameterless function that returns a new instance of the class. For example (assuming the above class)::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>L'*instanciation* de classes utilise la notation des fonctions. Considérez simplement que l'objet classe est une fonction sans paramètre qui renvoie une nouvelle instance de la classe. Par exemple (en considérant la classe définie ci-dessus) ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>x = MyClass()</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>x = MaClasse()</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>creates a new *instance* of the class and assigns this object to the local variable ``x``.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>crée une nouvelle *instance* de la classe et affecte cet objet à la variable locale ``x``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The instantiation operation ("calling" a class object) creates an empty object. Many classes like to create objects with instances customized to a specific initial state. Therefore a class may define a special method named :meth:`__init__`, like this::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>L'opération d'instanciation ("appelant" un objet classe) crée un objet vide. De nombreuses classes aiment créer des objets personnalisés avec des instances personnalisées en fonction d'un état initial spécifique. Ainsi une classe peut définir une méthode spéciale nommée: meth:`__init__`, comme ceci ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>def __init__(self):     self.data = []</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>def __init__(self): self.data = []</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>When a class defines an :meth:`__init__` method, class instantiation automatically invokes :meth:`__init__` for the newly-created class instance.  So in this example, a new, initialized instance can be obtained by::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Quand une classe définit une méthode :meth:`__init__`, l'instanciation de la classe appelle automatiquement :meth:`__init__` pour la nouvelle instance de la classe. Donc, dans cet exemple, l'initialisation d'une nouvelle instance peut être obtenue par ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Of course, the :meth:`__init__` method may have arguments for greater flexibility.  In that case, arguments given to the class instantiation operator are passed on to :meth:`__init__`.  For example, ::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bien sûr, la méthode meth::`__init__` peut avoir des arguments pour une plus grande flexibilité. Dans ce cas, les arguments donnés à l'opérateur d'instanciation de classe sont transmis à :meth:`__init__`. Par exemple, ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>&gt;&gt;&gt; class Complex: ...     def __init__(self, realpart, imagpart): ...         self.r = realpart ...         self.i = imagpart ... &gt;&gt;&gt; x = Complex(3.0, -4.5) &gt;&gt;&gt; x.r, x.i (3.0, -4.5)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>&gt;&gt;&gt; class Complexe: ...     def __init__(self, partie_reelle, partie_imaginaire): ...         self.r = partie_reelle ...         self.i = partie_imaginaire ... &gt;&gt;&gt; x = Complexe(3.0, -4.5) &gt;&gt;&gt; x.r, x.i (3.0, -4.5)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Instance Objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Objets instance</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Now what can we do with instance objects?  The only operations understood by instance objects are attribute references.  There are two kinds of valid attribute names, data attributes and methods.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Maintenant, que pouvons-nous faire avec des objets instance ? Les seules opérations comprises par objets instance sont des références d'attribut. Il y a deux sortes de noms d'attributs valides, les attributs données et les méthodes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>x.counter = 1 while x.counter &lt; 10:     x.counter = x.counter * 2 print(x.counter) del x.counter</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>x.compteur = 1 while x.compteur &lt; 10:     x.compteur = x.compteur * 2 print(x.compteur) del x.compteur</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The other kind of instance attribute reference is a *method*. A method is a function that "belongs to" an object.  (In Python, the term method is not unique to class instances: other object types can have methods as well.  For example, list objects have methods called append, insert, remove, sort, and so on. However, in the following discussion, we'll use the term method exclusively to mean methods of class instance objects, unless explicitly stated otherwise.)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>L'autre type de référence à un attribut d'instance est une *méthode*. Une méthode est une fonction qui "appartient à" un objet. (En Python, le terme de méthode n'est pas unique aux instances de classe: d'autres types d'objets peuvent aussi avoir des méthodes. Par exemple, les objets liste ont des méthodes appelées append, insert, remove, sort, et ainsi de suite. Toutefois, dans la discussion qui suit, sauf indication contraire, nous allons utiliser le terme de méthode exclusivement en référence à des méthodes d'objets instance de classe.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Valid method names of an instance object depend on its class.  By definition, all attributes of a class that are function  objects define corresponding methods of its instances.  So in our example, ``x.f`` is a valid method reference, since ``MyClass.f`` is a function, but ``x.i`` is not, since ``MyClass.i`` is not.  But ``x.f`` is not the same thing as ``MyClass.f`` --- it is a *method object*, not a function object.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les noms de méthodes valides d'un objet instance dépendent de sa classe. Par définition, tous les attributs d'une classe qui sont des objets  fonction définissent les méthodes correspondantes de ses instances. Donc, dans notre exemple, ``x.f`` est une méthode de référence valide, car ``MaClasse.f`` est une fonction, mais pas ``x.i`` car ``MaClasse.i`` n'en est pas une. Attention cependant, ``x.f`` n'est pas la même chose que ``MaClasse.f`` --- Il s'agit d'un *objet méthode*, pas d'un objet fonction.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Method Objects</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les objets méthode</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Random Remarks</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Remarques diverses</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Data attributes override method attributes with the same name; to avoid accidental name conflicts, which may cause hard-to-find bugs in large programs, it is wise to use some kind of convention that minimizes the chance of conflicts.  Possible conventions include capitalizing method names, prefixing data attribute names with a small unique string (perhaps just an underscore), or using verbs for methods and nouns for data attributes.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les attributs de données surchargent les méthodes avec le même nom; pour éviter des conflits de nommage, qui peuvent causer des bugs difficiles à trouver dans de grands programmes, il est sage d'adopter certaines conventions qui minimisent les risques de conflits. Les conventions possibles comprennent la mise en majuscule des noms de méthodes, le préfixe des noms d'attributs de données par une chaîne courte et unique (parfois juste la caractère souligné), ou l'utilisation de verbes pour les méthodes et de noms pour les attributs de données.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Data attributes may be referenced by methods as well as by ordinary users ("clients") of an object.  In other words, classes are not usable to implement pure abstract data types.  In fact, nothing in Python makes it possible to enforce data hiding --- it is all based upon convention.  (On the other hand, the Python implementation, written in C, can completely hide implementation details and control access to an object if necessary; this can be used by extensions to Python written in C.)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les attributs de données peuvent être référencés par des méthodes comme par des utilisateurs ordinaires ("clients") d'un objet. En d'autres termes, les classes ne sont pas utilisables pour implémenter des types de données purement abstraits. En fait, rien en Python ne rend possible d'imposer de masquer des données --- tout est basé sur des conventions. (D'un autre coté, l'implémentation Python, écrite en C, peut complètement masquer les détails d'implémentation et contrôler l'accès à un objet si nécessaire ; ceci peut être utilisé par des extensions de Python écrites en C.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Clients should use data attributes with care --- clients may mess up invariants maintained by the methods by stamping on their data attributes.  Note that clients may add data attributes of their own to an instance object without affecting the validity of the methods, as long as name conflicts are avoided --- again, a naming convention can save a lot of headaches here.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les clients doivent utiliser les attributs de données avec précaution --- ils pourraient mettre le désordre dans les invariants gérés par les méthodes avec leurs propres valeurs d'attributs. Remarquez que les clients peuvent ajouter leurs propres attributs de données à une instance d'objet sans altérer la validité des méthodes, pour autant que les noms n'entrent pas en conflit --- aussi, adopter une convention de nommage peut éviter bien des problèmes.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Often, the first argument of a method is called ``self``.  This is nothing more than a convention: the name ``self`` has absolutely no special meaning to Python.  Note, however, that by not following the convention your code may be less readable to other Python programmers, and it is also conceivable that a *class browser* program might be written that relies upon such a convention.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Souvent, le premier argument d'une méthode est nommé ``self``. Ce n'est qu'une convention : le nom ``self`` n'a aucune signification particulière en Python. Notez cependant que si vous ne suivez pas cette convention, votre code risque d'être moins lisible pour d'autres programmeurs Python, et il est aussi possible qu'un programme qui fasse l'introspection de classes repose sur une telle convention.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Any function object that is a class attribute defines a method for instances of that class.  It is not necessary that the function definition is textually enclosed in the class definition: assigning a function object to a local variable in the class is also ok.  For example::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Tout objet fonction qui est un attribut de classe définit une méthode pour des instances de cette classe. Il n'est pas nécessaire que le texte de définition de la fonction soit dans la définition de la classe : il est possible d'affecter un objet fonction à une variable locale de la classe. Par exemple ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg># Function defined outside the class def f1(self, x, y):     return min(x, x+y)  class C:     f = f1     def g(self):         return 'hello world'     h = g</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg># Function définie à l'extérieur d'une classe def f1(self, x, y): return min(x, x+y) class C: f = f1 def g(self): return 'bonjour tout le monde' h = g</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Methods may call other methods by using method attributes of the ``self`` argument::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les méthodes peuvent appeler d'autres méthodes en utilisant des méthodes qui sont des attributs de l'argument ``self`` ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Methods may reference global names in the same way as ordinary functions.  The global scope associated with a method is the module containing the class definition.  (The class itself is never used as a global scope.)  While one rarely encounters a good reason for using global data in a method, there are many legitimate uses of the global scope: for one thing, functions and modules imported into the global scope can be used by methods, as well as functions and classes defined in it.  Usually, the class containing the method is itself defined in this global scope, and in the next section we'll find some good reasons why a method would want to reference its own class.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les méthodes peuvent faire référence à des noms globaux de la même manière que les fonctions. La portée globale associée à une méthode est le module contenant la définition de la classe. (La classe elle même n'est jamais utilisée en tant que portée globale.) Alors qu'on rencontre rarement une bonne raison d'utiliser des données globales dans une méthode, il y a de nombreuses utilisations légitimes d'une portée globale: par exemple, les fonctions et modules importés dans une portée globale peuvent être utilisés par des méthodes, de même que les fonctions et classes définies dans cette même portée. Habituellement, la classe contenant la méthode est elle même définie dans cette portée globale, et dans la section suivante, nous verrons de bonnes raisons pour qu'une méthode référence sa propre classe.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Each value is an object, and therefore has a *class* (also called its *type*). It is stored as ``object.__class__``.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Toute valeur est un objet, et a donc une *classe* (appelé aussi son *type*). Elle est stockée dans ``objet.__class__``.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Inheritance</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>L'héritage</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Of course, a language feature would not be worthy of the name "class" without supporting inheritance.  The syntax for a derived class definition looks like this::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Bien sûr, ce terme de «classe» ne serait pas utilisé s'il n'y avait pas l'héritage. La syntaxe pour définir une sous-classe ressemble à ceci ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>class DerivedClassName(BaseClassName):     &lt;statement-1&gt;     .     .     .     &lt;statement-N&gt;</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>class ClasseDerivee(ClasseDeBase): &lt;déclaration-1&gt; . . . &lt;déclaration-N&gt;</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The name :class:`BaseClassName` must be defined in a scope containing the derived class definition.  In place of a base class name, other arbitrary expressions are also allowed.  This can be useful, for example, when the base class is defined in another module::</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Le nom :class:`ClasseDeBase` doit être défini dans un espace contenant la définition de la classe dérivée. A la place du nom d'une classe de base, une expression est aussi autorisée. Ceci peut être utile, par exemple, lorsque la classe est définie dans un autre module ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>class DerivedClassName(modname.BaseClassName):</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>class ClasseDerivee(nommodule.ClasseDeBase):</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Execution of a derived class definition proceeds the same as for a base class. When the class object is constructed, the base class is remembered.  This is used for resolving attribute references: if a requested attribute is not found in the class, the search proceeds to look in the base class.  This rule is applied recursively if the base class itself is derived from some other class.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>L'exécution d'une définition de classe dérivée se déroule comme pour une classe de base. Quand l'objet de la classe est construit, la classe de base est mémorisée. Elle est utilisé pour la résolution des références d'attribut: si un attribut n'est pas trouvé dans la classe, la recherche procède en regardant dans la classe de base. Cette règle est appliquée récursivement si la classe de base est elle-même dérivée d'une autre classe.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Derived classes may override methods of their base classes.  Because methods have no special privileges when calling other methods of the same object, a method of a base class that calls another method defined in the same base class may end up calling a method of a derived class that overrides it.  (For C++ programmers: all methods in Python are effectively ``virtual``.)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les classes dérivées peuvent surcharger des méthodes de leurs classes de base. Comme les méthodes n'ont aucun privilège particulier quand elles appellent d'autres méthodes d'un même objet, une méthode d'une classe de base qui appelle une autre méthode définie dans la même classe peut en fait appeler une méthode d'une classe dérivée qui la surcharge. (Pour les programmeurs C++ : toutes les méthodes de Python sont en effet ``virtual``.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Multiple Inheritance</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>L'héritage multiple</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

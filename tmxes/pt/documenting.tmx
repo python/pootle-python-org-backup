@@ -1,0 +1,135 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Building the documentation</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Construindo a documentação</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You need to have Python 2.4 or higher installed; the toolset used to build the docs is written in Python.  It is called *Sphinx*, it is not included in this tree, but maintained separately.  Also needed are the docutils, supplying the base markup that Sphinx uses, Jinja, a templating engine, and optionally Pygments, a code highlighter.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Você precisa ter o Python 2.4 ou maior instalado; a caixa de ferramenta utilizada para construir é escrita em Python. Ela é chamada *Sphinx*, ela não é incluída na raiz, mas é mantida separadamente. Também necessário é o docutils, fornecendo a base de marcação que o Sphinx usa, Jinja, um mecanismo de template, e opcionalmente Pygments, um destacador de código.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Using make</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Usando o make</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>make html</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>make html</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>to check out the necessary toolset in the `tools/` subdirectory and build the HTML output files.  To view the generated HTML, point your favorite browser at the top-level index `build/html/index.html` after running "make".</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>para obter a caixa de ferramenta necessária no subdiretório `tools/` e construir os arquivos de saída HTML. Para visualizar o HTML gerado, aponte seu browser favorito no index `build/html/index.html` após executar "make".</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Available make targets are:</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Metas disponíveis do make são:</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>"html", which builds standalone HTML files for offline viewing.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>"html", que constrói arquivos HTML autônomos para visualização offline.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>To create the CHM file, you need to run the Microsoft HTML Help Workshop over the generated project (.hhp) file.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Para criar o arquivo CHM, você precisa executar o Microsoft HTML Help Workshop sobre o arquivo do projeto (.hhp) gerado.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>"latex", which builds LaTeX source files as input to "pdflatex" to produce PDF documents.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>"latex", que constrói arquivos de código LaTeX como entrada do "pdflatex" para produzir documentos PDF.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>"text", which builds a plain text file for each source file.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>"text", que constrói um arquivo de texto para cada arquivo de código.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Example::</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Exemplo::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See also</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Veja também</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Paragraphs</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Parágrafos </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Source Code</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Código Fonte</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Comments</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Comentários</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Style Guide</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Guia de Estilo</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Reporting Bugs</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Reportando erros</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Python is a mature programming language which has established a reputation for stability.  In order to maintain this reputation, the developers would like to know of any deficiencies you find in Python.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Python é uma linguagem de programação madura, que estabeleceu uma reputação por sua estabilidade. Para que seja mantida essa reputação, os desenvolvedores gostariam de saber sobre qualquer deficiência que você encontrar no Python.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Documentation bugs</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Erros na documentação</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If you find a bug in this documentation or would like to propose an improvement, please send an e-mail to docs@python.org describing the bug and where you found it.  If you have a suggestion how to fix it, include that as well.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Se você encontrar um erro nesta documentação ou quiser propor uma melhoria, por favor mande um e-mail para docs@python.org descrevendo o erro e onde você o encontrou. Se você tiver uma sugestão de como concertá-lo, inclua isso também.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>docs@python.org is a mailing list run by volunteers; your request will be noticed, even if it takes a while to be processed.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>docs@python.org é uma lista de e-mail administrada por voluntários; sua requisição será observada, mesmo que leve algum tempo para ser processada.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Of course, if you want a more persistent record of your issue, you can use the issue tracker for documentation bugs as well.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Claro que, se você quiser um registro mais persistente de seu problema, você pode usar o "issue tracker" para erros de documentação também.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Using the Python issue tracker</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Usando o "issue tracker" do Python</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Bug reports for Python itself should be submitted via the Python Bug Tracker (http://bugs.python.org/).  The bug tracker offers a Web form which allows pertinent information to be entered and submitted to the developers.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Relatórios de erros para o Python em si devem ser enviada através do Python "Bug Tracker" (http://bugs.python.org/). O "bug tracker" oferece um formulário Web que permite que as informações pertinentes sejam inscritas e submetidas para os desenvolvedores.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The first step in filing a report is to determine whether the problem has already been reported.  The advantage in doing so, aside from saving the developers time, is that you learn what has been done to fix it; it may be that the problem has already been fixed for the next release, or additional information is needed (in which case you are welcome to provide it if you can!). To do this, search the bug database using the search box on the top of the page.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>O primeiro passo na apresentação de um relatório é determinar se o problema já foi relatado. A vantagem em fazê-lo, além de poupar o tempo dos desenvolvedores, é que você saiba o que tem sido feito para corrigi-lo; pode ser que o problema já foi corrigido para o próximo "release" (lançamento), ou informações adicionais são necessárias (caso em que são bem-vindos para fornecê-las se puder!). Para fazer isso, procure o banco de erros usando a caixa de busca na parte superior da página.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>If the problem you're reporting is not already in the bug tracker, go back to the Python Bug Tracker and log in.  If you don't already have a tracker account, select the "Register" link or, if you use OpenID, one of the OpenID provider logos in the sidebar.  It is not possible to submit a bug report anonymously.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Se o problema que está relatando já não está no "bug tracker", volte para o "Python Bug Tracker" e faça o login. Se você não tiver uma conta "tracker", selecione o link "Register" (Registrar) ou, se você usar o OpenID, um dos logos dos provedores OpenID na barra lateral. Não é possível submeter um relatório de erro anonimamente.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Being now logged in, you can submit a bug.  Select the "Create New" link in the sidebar to open the bug reporting form.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Uma vez identificado, você pode submeter um erro. Selecione o link "Create New" (Criar novo) na barra lateral para abrir o formulário de notificação de erros.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The submission form has a number of fields.  For the "Title" field, enter a *very* short description of the problem; less than ten words is good.  In the "Type" field, select the type of your problem; also select the "Component" and "Versions" to which the bug relates.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>O formulário de submissão tem um número de campos. Para o campo "Title" (Título), digite uma descrição *muito* pequena do problema; menos de dez palavras está bom. No campo "Type" (Tipo), selecione o tipo do seu problema; também selecione o "Component" (Componente) e "Versions" (Versões) as que o erro se refere.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>In the "Comment" field, describe the problem in detail, including what you expected to happen and what did happen.  Be sure to include whether any extension modules were involved, and what hardware and software platform you were using (including version information as appropriate).</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>No campo "Comment" (Comentário), descreva o problema em detalhes, incluindo o que você esperava que acontecesse e o que aconteceu. Certifique-se de incluir se algum módulo de extensão estava envolvido, e que plataforma de hardware e software você estava usando (incluindo informações sobre a versão conforme o caso).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Each bug report will be assigned to a developer who will determine what needs to be done to correct the problem.  You will receive an update each time action is taken on the bug.  See http://www.python.org/dev/workflow/ for a detailed description of the issue workflow.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Cada relatório de erro será atribuído ao colaborador que irá determinar o que precisa ser feito para corrigir o problema. Você vai receber uma atualização a cada ação tomada sobre o erro. Veja http://www.python.org/dev/workflow/ para uma descrição detalhada do fluxo de trabalho do caso.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>See also</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Veja também</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Article which goes into some detail about how to create a useful bug report. This describes what kind of information is useful and why it is useful.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Artigo que entra em alguns detalhes sobre como criar um relatório de erro útil. Este artigo descreve que tipo de informação é útil e por que é útil.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Information about writing a good bug report.  Some of this is specific to the Mozilla project, but describes general good practices.</seg>
+      </tuv>
+      <tuv xml:lang="pt">
+        <seg>Informações sobre como escrever um bom relatório de erro. Algumas dessas são específicas para o projeto Mozilla, mas descrevem boas práticas em geral.</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

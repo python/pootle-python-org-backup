@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>What's New in Python 2.0</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Nouveautés de Python 2.0</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Author</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Auteur</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>A.M. Kuchling and Moshe Zadka</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>A.M. Kuchling et Moshe Zadka</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Introduction</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Introduction</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>New Development Process</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Nouveau processus de développement</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The *sqlite3* module has some new features:</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Le module *sqlite3* a quelques nouvelles fonctionnalités : </seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>(Contributed by Antoine Pitrou; :issue:`3001`.)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>(Contribution par Antoine Pitrou; :issue:`3001`.)</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Regular and recursive locks now accept an optional *timeout* argument to their ``acquire`` method. (Contributed by Antoine Pitrou; :issue:`7316`) Similarly, :meth:`threading.Semaphore.acquire` also gains a *timeout* argument. (Contributed by Torsten Landschoff; :issue:`850728`.)</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les verrous standards et récursifs acceptent désormais un argument optionnel *timeout* à leur méthode ``acquire``. (Contribution par Antoine Pitrou; :issue:`7316`). Pareillement, :meth:`threading.Semaphore.acquire` acquière d'un argument *timeout* (Contribution par Torsten Landschoff; :issue:`850728`).</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Porting to Python 3.2</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Portage vers Python 3.2</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>bytearray objects cannot be used anymore as filenames: convert them to bytes</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les objets bytearray ne peuvent plus être utilisés en tant que nom de fichiers : les convertir en octets</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>PyArg_Parse*() functions:</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les fonctions PyArg_Parse*() :</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>"t#" format has been removed: use "s#" or "s*" instead</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Le format "t#" a été supprimé : utiliser "s#" ou "s*" à la place</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>"w" and "w#" formats has been removed: use "w*" instead</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Les formats "w" et "w#" ont été supprimés : utiliser "w*" à la place</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>What's New in Python</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>Quoi de neuf dans Python</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>The "What's New in Python" series of essays takes tours through the most important changes between major Python versions.  They are a "must read" for anyone wishing to stay up-to-date after a new release.</seg>
+      </tuv>
+      <tuv xml:lang="fr">
+        <seg>La série d'essais "Quoi de neuf dans Python" reprend les plus importants changements entres les versions majeures de Python. Elles sont à lire pour quiconque souhaitant être à jour suite à une nouvelle sortie.</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>

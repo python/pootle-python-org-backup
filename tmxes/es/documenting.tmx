@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE tmx SYSTEM "tmx14.dtd">
+<tmx version="1.4">
+  <header creationtool="Translate Toolkit" creationtoolversion="3.1.1" segtype="sentence" o-tmf="UTF-8" adminlang="en" srclang="en" datatype="PlainText"/>
+  <body>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Building the documentation</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Construyendo la documentación</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>You need to have Python 2.4 or higher installed; the toolset used to build the docs is written in Python.  It is called *Sphinx*, it is not included in this tree, but maintained separately.  Also needed are the docutils, supplying the base markup that Sphinx uses, Jinja, a templating engine, and optionally Pygments, a code highlighter.</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Necesita tener instalado Python 2.4 o superior; el conjunto de herramientas usado para construir los documentos está escrito en Python. Se llama "Sphinx" y no se incluye en este árbol sino que se mantiene aparte. También son necesarias las docutils, que proporcionan el lenguaje de marcas base que usa Sphinx, Jinja, un motor de plantillas, y opcionalmente Pygments, un resaltador de sintáxis de código.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Using make</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Usando make</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>Luckily, a Makefile has been prepared so that on Unix, provided you have installed Python and Subversion, you can just run ::</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>Afortunadamente, se ha preparado un Makefile de tal manera que en Unix, contando con que tiene instalado Python y Subversion, puede simplemente ejecutar ::</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="en">
+        <seg>make html</seg>
+      </tuv>
+      <tuv xml:lang="es">
+        <seg>make html</seg>
+      </tuv>
+    </tu>
+  </body>
+</tmx>
