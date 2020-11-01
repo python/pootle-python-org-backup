@@ -1,0 +1,1568 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1990-2010, Python Software Foundation
+# This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-30 14:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.7.0\n"
+
+msgid "Abstract Objects Layer"
+msgstr ""
+
+msgid "The functions in this chapter interact with Python objects regardless of their type, or with wide classes of object types (e.g. all numerical types, or all sequence types).  When used on object types for which they do not apply, they will raise a Python exception."
+msgstr ""
+
+msgid "It is not possible to use these functions on objects that are not properly initialized, such as a list object that has been created by :cfunc:`PyList_New`, but whose items have not been set to some non-\\ ``NULL`` value yet."
+msgstr ""
+
+msgid "Allocating Objects on the Heap"
+msgstr ""
+
+msgid "See also"
+msgstr ""
+
+msgid "To allocate and create extension modules."
+msgstr ""
+
+msgid "Parsing arguments and building values"
+msgstr ""
+
+msgid "These functions are useful when creating your own extensions functions and methods.  Additional information and examples are available in :ref:`extending-index`."
+msgstr ""
+
+msgid "The first three of these functions described, :cfunc:`PyArg_ParseTuple`, :cfunc:`PyArg_ParseTupleAndKeywords`, and :cfunc:`PyArg_Parse`, all use *format strings* which are used to tell the function about the expected arguments.  The format strings use the same syntax for each of these functions."
+msgstr ""
+
+msgid "Parsing arguments"
+msgstr ""
+
+msgid "A format string consists of zero or more \"format units.\"  A format unit describes one Python object; it is usually a single character or a parenthesized sequence of format units.  With a few exceptions, a format unit that is not a parenthesized sequence normally corresponds to a single address argument to these functions.  In the following description, the quoted form is the format unit; the entry in (round) parentheses is the Python object type that matches the format unit; and the entry in [square] brackets is the type of the C variable(s) whose address should be passed."
+msgstr ""
+
+msgid "Strings and buffers"
+msgstr ""
+
+msgid "These formats do not expect you to provide raw storage for the returned string or bytes.  Also, you won't have to release any memory yourself, except with the ``es``, ``es#``, ``et`` and ``et#`` formats."
+msgstr ""
+
+msgid "However, when a :ctype:`Py_buffer` structure gets filled, the underlying buffer is locked so that the caller can subsequently use the buffer even inside a :ctype:`Py_BEGIN_ALLOW_THREADS` block without the risk of mutable data being resized or destroyed.  As a result, **you have to call** :cfunc:`PyBuffer_Release` after you have finished processing the data (or in any early abort case)."
+msgstr ""
+
+msgid "Unless otherwise stated, buffers are not NUL-terminated."
+msgstr ""
+
+msgid "For all ``#`` variants of formats (``s#``, ``y#``, etc.), the type of the length argument (int or :ctype:`Py_ssize_t`) is controlled by defining the macro :cmacro:`PY_SSIZE_T_CLEAN` before including :file:`Python.h`.  If the macro was defined, length is a :ctype:`Py_ssize_t` rather than an :ctype:`int`. This behavior will change in a future Python version to only support :ctype:`Py_ssize_t` and drop :ctype:`int` support. It is best to always define :cmacro:`PY_SSIZE_T_CLEAN`."
+msgstr ""
+
+msgid "Convert a Unicode object to a C pointer to a character string. A pointer to an existing string is stored in the character pointer variable whose address you pass.  The C string is NUL-terminated. The Python string must not contain embedded NUL bytes; if it does, a :exc:`TypeError` exception is raised. Unicode objects are converted to C strings using ``'utf-8'`` encoding. If this conversion fails, a :exc:`UnicodeError` is raised."
+msgstr ""
+
+msgid "This format does not accept bytes-like objects.  If you want to accept filesystem paths and convert them to C character strings, it is preferrable to use the ``O&`` format with :cfunc:`PyUnicode_FSConverter` as *converter*."
+msgstr ""
+
+msgid "This format accepts Unicode objects as well as objects supporting the buffer protocol. It fills a :ctype:`Py_buffer` structure provided by the caller. In this case the resulting C string may contain embedded NUL bytes. Unicode objects are converted to C strings using ``'utf-8'`` encoding."
+msgstr ""
+
+msgid "Like ``s*``, except that it doesn't accept mutable buffer-like objects such as :class:`bytearray`.  The result is stored into two C variables, the first one a pointer to a C string, the second one its length. The string may contain embedded null bytes. Unicode objects are converted to C strings using ``'utf-8'`` encoding."
+msgstr ""
+
+msgid "Like ``s``, but the Python object may also be ``None``, in which case the C pointer is set to *NULL*."
+msgstr ""
+
+msgid "Like ``s*``, but the Python object may also be ``None``, in which case the ``buf`` member of the :ctype:`Py_buffer` structure is set to *NULL*."
+msgstr ""
+
+msgid "Like ``s#``, but the Python object may also be ``None``, in which case the C pointer is set to *NULL*."
+msgstr ""
+
+msgid "This format converts a bytes-like object to a C pointer to a character string; it does not accept Unicode objects.  The bytes buffer must not contain embedded NUL bytes; if it does, a :exc:`TypeError` exception is raised."
+msgstr ""
+
+msgid "This variant on ``s*`` doesn't accept Unicode objects, only objects supporting the buffer protocol.  **This is the recommended way to accept binary data.**"
+msgstr ""
+
+msgid "This variant on ``s#`` doesn't accept Unicode objects, only bytes-like objects."
+msgstr ""
+
+msgid "Requires that the Python object is a :class:`bytes` object, without attempting any conversion.  Raises :exc:`TypeError` if the object is not a bytes object.  The C variable may also be declared as :ctype:`PyObject\\*`."
+msgstr ""
+
+msgid "Requires that the Python object is a :class:`bytearray` object, without attempting any conversion.  Raises :exc:`TypeError` if the object is not a :class:`bytearray` object. The C variable may also be declared as :ctype:`PyObject\\*`."
+msgstr ""
+
+msgid "Convert a Python Unicode object to a C pointer to a NUL-terminated buffer of Unicode characters.  You must pass the address of a :ctype:`Py_UNICODE` pointer variable, which will be filled with the pointer to an existing Unicode buffer.  Please note that the width of a :ctype:`Py_UNICODE` character depends on compilation options (it is either 16 or 32 bits). The Python string must not contain embedded NUL characters; if it does, a :exc:`TypeError` exception is raised."
+msgstr ""
+
+msgid "Since ``u`` doesn't give you back the length of the string, and it may contain embedded NUL characters, it is recommended to use ``u#`` or ``U`` instead."
+msgstr ""
+
+msgid "This variant on ``u`` stores into two C variables, the first one a pointer to a Unicode data buffer, the second one its length."
+msgstr ""
+
+msgid "Like ``u``, but the Python object may also be ``None``, in which case the :ctype:`Py_UNICODE` pointer is set to *NULL*."
+msgstr ""
+
+msgid "Like ``u#``, but the Python object may also be ``None``, in which case the :ctype:`Py_UNICODE` pointer is set to *NULL*."
+msgstr ""
+
+msgid "Requires that the Python object is a Unicode object, without attempting any conversion.  Raises :exc:`TypeError` if the object is not a Unicode object.  The C variable may also be declared as :ctype:`PyObject\\*`."
+msgstr ""
+
+msgid "This format accepts any object which implements the read-write buffer interface. It fills a :ctype:`Py_buffer` structure provided by the caller. The buffer may contain embedded null bytes. The caller have to call :cfunc:`PyBuffer_Release` when it is done with the buffer."
+msgstr ""
+
+msgid "This variant on ``s`` is used for encoding Unicode into a character buffer. It only works for encoded data without embedded NUL bytes."
+msgstr ""
+
+msgid "This format requires two arguments.  The first is only used as input, and must be a :ctype:`const char\\*` which points to the name of an encoding as a NUL-terminated string, or *NULL*, in which case ``'utf-8'`` encoding is used. An exception is raised if the named encoding is not known to Python.  The second argument must be a :ctype:`char\\*\\*`; the value of the pointer it references will be set to a buffer with the contents of the argument text. The text will be encoded in the encoding specified by the first argument."
+msgstr ""
+
+msgid ":cfunc:`PyArg_ParseTuple` will allocate a buffer of the needed size, copy the encoded data into this buffer and adjust *\\*buffer* to reference the newly allocated storage.  The caller is responsible for calling :cfunc:`PyMem_Free` to free the allocated buffer after use."
+msgstr ""
+
+msgid "Same as ``es`` except that byte string objects are passed through without recoding them.  Instead, the implementation assumes that the byte string object uses the encoding passed in as parameter."
+msgstr ""
+
+msgid "This variant on ``s#`` is used for encoding Unicode into a character buffer. Unlike the ``es`` format, this variant allows input data which contains NUL characters."
+msgstr ""
+
+msgid "It requires three arguments.  The first is only used as input, and must be a :ctype:`const char\\*` which points to the name of an encoding as a NUL-terminated string, or *NULL*, in which case ``'utf-8'`` encoding is used. An exception is raised if the named encoding is not known to Python.  The second argument must be a :ctype:`char\\*\\*`; the value of the pointer it references will be set to a buffer with the contents of the argument text. The text will be encoded in the encoding specified by the first argument. The third argument must be a pointer to an integer; the referenced integer will be set to the number of bytes in the output buffer."
+msgstr ""
+
+msgid "There are two modes of operation:"
+msgstr ""
+
+msgid "If *\\*buffer* points a *NULL* pointer, the function will allocate a buffer of the needed size, copy the encoded data into this buffer and set *\\*buffer* to reference the newly allocated storage.  The caller is responsible for calling :cfunc:`PyMem_Free` to free the allocated buffer after usage."
+msgstr ""
+
+msgid "If *\\*buffer* points to a non-*NULL* pointer (an already allocated buffer), :cfunc:`PyArg_ParseTuple` will use this location as the buffer and interpret the initial value of *\\*buffer_length* as the buffer size.  It will then copy the encoded data into the buffer and NUL-terminate it.  If the buffer is not large enough, a :exc:`ValueError` will be set."
+msgstr ""
+
+msgid "In both cases, *\\*buffer_length* is set to the length of the encoded data without the trailing NUL byte."
+msgstr ""
+
+msgid "Same as ``es#`` except that byte string objects are passed through without recoding them. Instead, the implementation assumes that the byte string object uses the encoding passed in as parameter."
+msgstr ""
+
+msgid "Numbers"
+msgstr ""
+
+msgid "Convert a nonnegative Python integer to an unsigned tiny int, stored in a C :ctype:`unsigned char`."
+msgstr ""
+
+msgid "Convert a Python integer to a tiny int without overflow checking, stored in a C :ctype:`unsigned char`."
+msgstr ""
+
+msgid "Convert a Python integer to a C :ctype:`short int`."
+msgstr ""
+
+msgid "Convert a Python integer to a C :ctype:`unsigned short int`, without overflow checking."
+msgstr ""
+
+msgid "Convert a Python integer to a plain C :ctype:`int`."
+msgstr ""
+
+msgid "Convert a Python integer to a C :ctype:`unsigned int`, without overflow checking."
+msgstr ""
+
+msgid "Convert a Python integer to a C :ctype:`long int`."
+msgstr ""
+
+msgid "Convert a Python integer to a C :ctype:`unsigned long` without overflow checking."
+msgstr ""
+
+msgid "Convert a Python integer to a C :ctype:`long long`.  This format is only available on platforms that support :ctype:`long long` (or :ctype:`_int64` on Windows)."
+msgstr ""
+
+msgid "Convert a Python integer to a C :ctype:`unsigned long long` without overflow checking.  This format is only available on platforms that support :ctype:`unsigned long long` (or :ctype:`unsigned _int64` on Windows)."
+msgstr ""
+
+msgid "Convert a Python integer to a C :ctype:`Py_ssize_t`."
+msgstr ""
+
+msgid "Convert a Python byte, represented as a :class:`bytes` object of length 1, to a C :ctype:`char`."
+msgstr ""
+
+msgid "Convert a Python character, represented as a :class:`str` object of length 1, to a C :ctype:`int`."
+msgstr ""
+
+msgid "Convert a Python floating point number to a C :ctype:`float`."
+msgstr ""
+
+msgid "Convert a Python floating point number to a C :ctype:`double`."
+msgstr ""
+
+msgid "Convert a Python complex number to a C :ctype:`Py_complex` structure."
+msgstr ""
+
+msgid "Other objects"
+msgstr ""
+
+msgid "Store a Python object (without any conversion) in a C object pointer.  The C program thus receives the actual object that was passed.  The object's reference count is not increased.  The pointer stored is not *NULL*."
+msgstr ""
+
+msgid "Store a Python object in a C object pointer.  This is similar to ``O``, but takes two C arguments: the first is the address of a Python type object, the second is the address of the C variable (of type :ctype:`PyObject\\*`) into which the object pointer is stored.  If the Python object does not have the required type, :exc:`TypeError` is raised."
+msgstr ""
+
+msgid "Convert a Python object to a C variable through a *converter* function.  This takes two arguments: the first is a function, the second is the address of a C variable (of arbitrary type), converted to :ctype:`void \\*`.  The *converter* function in turn is called as follows::"
+msgstr ""
+
+msgid "status = converter(object, address);"
+msgstr ""
+
+msgid "where *object* is the Python object to be converted and *address* is the :ctype:`void\\*` argument that was passed to the :cfunc:`PyArg_Parse\\*` function. The returned *status* should be ``1`` for a successful conversion and ``0`` if the conversion has failed.  When the conversion fails, the *converter* function should raise an exception and leave the content of *address* unmodified."
+msgstr ""
+
+msgid "If the *converter* returns Py_CLEANUP_SUPPORTED, it may get called a second time if the argument parsing eventually fails, giving the converter a chance to release any memory that it had already allocated. In this second call, the *object* parameter will be NULL; *address* will have the same value as in the original call."
+msgstr ""
+
+msgid "The object must be a Python sequence whose length is the number of format units in *items*.  The C arguments must correspond to the individual format units in *items*.  Format units for sequences may be nested."
+msgstr ""
+
+msgid "It is possible to pass \"long\" integers (integers whose value exceeds the platform's :const:`LONG_MAX`) however no proper range checking is done --- the most significant bits are silently truncated when the receiving field is too small to receive the value (actually, the semantics are inherited from downcasts in C --- your mileage may vary)."
+msgstr ""
+
+msgid "A few other characters have a meaning in a format string.  These may not occur inside nested parentheses.  They are:"
+msgstr ""
+
+msgid "Indicates that the remaining arguments in the Python argument list are optional. The C variables corresponding to optional arguments should be initialized to their default value --- when an optional argument is not specified, :cfunc:`PyArg_ParseTuple` does not touch the contents of the corresponding C variable(s)."
+msgstr ""
+
+msgid "The list of format units ends here; the string after the colon is used as the function name in error messages (the \"associated value\" of the exception that :cfunc:`PyArg_ParseTuple` raises)."
+msgstr ""
+
+msgid "The list of format units ends here; the string after the semicolon is used as the error message *instead* of the default error message.  ``:`` and ``;`` mutually exclude each other."
+msgstr ""
+
+msgid "Note that any Python object references which are provided to the caller are *borrowed* references; do not decrement their reference count!"
+msgstr ""
+
+msgid "Additional arguments passed to these functions must be addresses of variables whose type is determined by the format string; these are used to store values from the input tuple.  There are a few cases, as described in the list of format units above, where these parameters are used as input values; they should match what is specified for the corresponding format unit in that case."
+msgstr ""
+
+msgid "For the conversion to succeed, the *arg* object must match the format and the format must be exhausted.  On success, the :cfunc:`PyArg_Parse\\*` functions return true, otherwise they return false and raise an appropriate exception. When the :cfunc:`PyArg_Parse\\*` functions fail due to conversion failure in one of the format units, the variables at the addresses corresponding to that and the following format units are left untouched."
+msgstr ""
+
+msgid "API Functions"
+msgstr ""
+
+msgid "Building values"
+msgstr ""
+
+msgid "Boolean Objects"
+msgstr ""
+
+msgid "Booleans in Python are implemented as a subclass of integers.  There are only two booleans, :const:`Py_False` and :const:`Py_True`.  As such, the normal creation and deletion functions don't apply to booleans.  The following macros are available, however."
+msgstr ""
+
+msgid "Buffer Objects"
+msgstr ""
+
+msgid "Python objects implemented in C can export a \"buffer interface.\"  These functions can be used by an object to expose its data in a raw, byte-oriented format. Clients of the object can use the buffer interface to access the object data directly, without needing to copy it first."
+msgstr ""
+
+msgid "Two examples of objects that support the buffer interface are bytes and arrays. The bytes object exposes the character contents in the buffer interface's byte-oriented form. An array can also expose its contents, but it should be noted that array elements may be multi-byte values."
+msgstr ""
+
+msgid "An example user of the buffer interface is the file object's :meth:`write` method. Any object that can export a series of bytes through the buffer interface can be written to a file. There are a number of format codes to :cfunc:`PyArg_ParseTuple` that operate against an object's buffer interface, returning data from the target object."
+msgstr ""
+
+msgid "More information on the buffer interface is provided in the section :ref:`buffer-structs`, under the description for :ctype:`PyBufferProcs`."
+msgstr ""
+
+msgid "Buffer objects are useful as a way to expose the data from another object's buffer interface to the Python programmer.  They can also be used as a zero-copy slicing mechanism.  Using their ability to reference a block of memory, it is possible to expose any data to the Python programmer quite easily.  The memory could be a large, constant array in a C extension, it could be a raw block of memory for manipulation before passing to an operating system library, or it could be used to pass around structured data in its native, in-memory format."
+msgstr ""
+
+msgid "Buffer related functions"
+msgstr ""
+
+msgid "MemoryView objects"
+msgstr ""
+
+msgid "A memoryview object exposes the C level buffer interface to Python."
+msgstr ""
+
+msgid "Byte Array Objects"
+msgstr ""
+
+msgid "Type check macros"
+msgstr ""
+
+msgid "Direct API functions"
+msgstr ""
+
+msgid "Macros"
+msgstr ""
+
+msgid "These macros trade safety for speed and they don't check pointers."
+msgstr ""
+
+msgid "Bytes Objects"
+msgstr ""
+
+msgid "These functions raise :exc:`TypeError` when expecting a bytes parameter and are called with a non-bytes parameter."
+msgstr ""
+
+msgid "Capsules"
+msgstr ""
+
+msgid "Refer to :ref:`using-capsules` for more information on using these objects."
+msgstr ""
+
+msgid "Cell Objects"
+msgstr ""
+
+msgid "\"Cell\" objects are used to implement variables referenced by multiple scopes. For each such variable, a cell object is created to store the value; the local variables of each stack frame that references the value contains a reference to the cells from outer scopes which also use that variable.  When the value is accessed, the value contained in the cell is used instead of the cell object itself.  This de-referencing of the cell object requires support from the generated byte-code; these are not automatically de-referenced when accessed. Cell objects are not likely to be useful elsewhere."
+msgstr ""
+
+msgid "Code Objects"
+msgstr ""
+
+msgid "Code objects are a low-level detail of the CPython implementation. Each one represents a chunk of executable code that hasn't yet been bound into a function."
+msgstr ""
+
+msgid "Complex Number Objects"
+msgstr ""
+
+msgid "Python's complex number objects are implemented as two distinct types when viewed from the C API:  one is the Python object exposed to Python programs, and the other is a C structure which represents the actual complex number value. The API provides functions for working with both."
+msgstr ""
+
+msgid "Complex Numbers as C Structures"
+msgstr ""
+
+msgid "Note that the functions which accept these structures as parameters and return them as results do so *by value* rather than dereferencing them through pointers.  This is consistent throughout the API."
+msgstr ""
+
+msgid "Complex Numbers as Python Objects"
+msgstr ""
+
+msgid "Concrete Objects Layer"
+msgstr ""
+
+msgid "The functions in this chapter are specific to certain Python object types. Passing them an object of the wrong type is not a good idea; if you receive an object from a Python program and you are not sure that it has the right type, you must perform a type check first; for example, to check that an object is a dictionary, use :cfunc:`PyDict_Check`.  The chapter is structured like the \"family tree\" of Python object types."
+msgstr ""
+
+msgid "While the functions described in this chapter carefully check the type of the objects which are passed in, many of them do not check for *NULL* being passed instead of a valid object.  Allowing *NULL* to be passed in can cause memory access violations and immediate termination of the interpreter."
+msgstr ""
+
+msgid "Fundamental Objects"
+msgstr ""
+
+msgid "This section describes Python type objects and the singleton object ``None``."
+msgstr ""
+
+msgid "Numeric Objects"
+msgstr ""
+
+msgid "Sequence Objects"
+msgstr ""
+
+msgid "Generic operations on sequence objects were discussed in the previous chapter; this section deals with the specific kinds of sequence objects that are intrinsic to the Python language."
+msgstr ""
+
+msgid "Mapping Objects"
+msgstr ""
+
+msgid "Other Objects"
+msgstr ""
+
+msgid "String conversion and formatting"
+msgstr ""
+
+msgid "Functions for number conversion and formatted string output."
+msgstr ""
+
+msgid ":cfunc:`PyOS_snprintf` and :cfunc:`PyOS_vsnprintf` wrap the Standard C library functions :cfunc:`snprintf` and :cfunc:`vsnprintf`. Their purpose is to guarantee consistent behavior in corner cases, which the Standard C functions do not."
+msgstr ""
+
+msgid "The wrappers ensure that *str*[*size*-1] is always ``'\\0'`` upon return. They never write more than *size* bytes (including the trailing ``'\\0'``) into str. Both functions require that ``str != NULL``, ``size > 0`` and ``format != NULL``."
+msgstr ""
+
+msgid "If the platform doesn't have :cfunc:`vsnprintf` and the buffer size needed to avoid truncation exceeds *size* by more than 512 bytes, Python aborts with a *Py_FatalError*."
+msgstr ""
+
+msgid "The return value (*rv*) for these functions should be interpreted as follows:"
+msgstr ""
+
+msgid "When ``0 <= rv < size``, the output conversion was successful and *rv* characters were written to *str* (excluding the trailing ``'\\0'`` byte at *str*[*rv*])."
+msgstr ""
+
+msgid "When ``rv >= size``, the output conversion was truncated and a buffer with ``rv + 1`` bytes would have been needed to succeed. *str*[*size*-1] is ``'\\0'`` in this case."
+msgstr ""
+
+msgid "When ``rv < 0``, \"something bad happened.\" *str*[*size*-1] is ``'\\0'`` in this case too, but the rest of *str* is undefined. The exact cause of the error depends on the underlying platform."
+msgstr ""
+
+msgid "The following functions provide locale-independent string to number conversions."
+msgstr ""
+
+msgid "DateTime Objects"
+msgstr ""
+
+msgid "Various date and time objects are supplied by the :mod:`datetime` module. Before using any of these functions, the header file :file:`datetime.h` must be included in your source (note that this is not included by :file:`Python.h`), and the macro :cmacro:`PyDateTime_IMPORT` must be invoked, usually as part of the module initialisation function.  The macro puts a pointer to a C structure into a static variable, :cdata:`PyDateTimeAPI`, that is used by the following macros."
+msgstr ""
+
+msgid "Type-check macros:"
+msgstr ""
+
+msgid "Macros to create objects:"
+msgstr ""
+
+msgid "Macros to extract fields from date objects.  The argument must be an instance of :cdata:`PyDateTime_Date`, including subclasses (such as :cdata:`PyDateTime_DateTime`).  The argument must not be *NULL*, and the type is not checked:"
+msgstr ""
+
+msgid "Macros to extract fields from datetime objects.  The argument must be an instance of :cdata:`PyDateTime_DateTime`, including subclasses. The argument must not be *NULL*, and the type is not checked:"
+msgstr ""
+
+msgid "Macros to extract fields from time objects.  The argument must be an instance of :cdata:`PyDateTime_Time`, including subclasses. The argument must not be *NULL*, and the type is not checked:"
+msgstr ""
+
+msgid "Macros for the convenience of modules implementing the DB API:"
+msgstr ""
+
+msgid "Descriptor Objects"
+msgstr ""
+
+msgid "\"Descriptors\" are objects that describe some attribute of an object. They are found in the dictionary of type objects."
+msgstr ""
+
+msgid "Dictionary Objects"
+msgstr ""
+
+msgid "Exception Handling"
+msgstr ""
+
+msgid "The functions described in this chapter will let you handle and raise Python exceptions.  It is important to understand some of the basics of Python exception handling.  It works somewhat like the Unix :cdata:`errno` variable: there is a global indicator (per thread) of the last error that occurred.  Most functions don't clear this on success, but will set it to indicate the cause of the error on failure.  Most functions also return an error indicator, usually *NULL* if they are supposed to return a pointer, or ``-1`` if they return an integer (exception: the :cfunc:`PyArg_\\*` functions return ``1`` for success and ``0`` for failure)."
+msgstr ""
+
+msgid "When a function must fail because some function it called failed, it generally doesn't set the error indicator; the function it called already set it.  It is responsible for either handling the error and clearing the exception or returning after cleaning up any resources it holds (such as object references or memory allocations); it should *not* continue normally if it is not prepared to handle the error.  If returning due to an error, it is important to indicate to the caller that an error has been set.  If the error is not handled or carefully propagated, additional calls into the Python/C API may not behave as intended and may fail in mysterious ways."
+msgstr ""
+
+msgid "The error indicator consists of three Python objects corresponding to the result of ``sys.exc_info()``.  API functions exist to interact with the error indicator in various ways.  There is a separate error indicator for each thread."
+msgstr ""
+
+msgid "Exception Objects"
+msgstr ""
+
+msgid "Recursion Control"
+msgstr ""
+
+msgid "These two functions provide a way to perform safe recursive calls at the C level, both in the core and in extension modules.  They are needed if the recursive code does not necessarily invoke Python code (which tracks its recursion depth automatically)."
+msgstr ""
+
+msgid "Standard Exceptions"
+msgstr ""
+
+msgid "All standard Python exceptions are available as global variables whose names are ``PyExc_`` followed by the Python exception name.  These have the type :ctype:`PyObject\\*`; they are all class objects.  For completeness, here are all the variables:"
+msgstr ""
+
+msgid "C Name"
+msgstr ""
+
+msgid "Python Name"
+msgstr ""
+
+msgid "Notes"
+msgstr ""
+
+msgid ":cdata:`PyExc_BaseException`"
+msgstr ""
+
+msgid ":exc:`BaseException`"
+msgstr ""
+
+msgid "\\(1)"
+msgstr ""
+
+msgid ":cdata:`PyExc_Exception`"
+msgstr ""
+
+msgid ":exc:`Exception`"
+msgstr ""
+
+msgid ":cdata:`PyExc_ArithmeticError`"
+msgstr ""
+
+msgid ":exc:`ArithmeticError`"
+msgstr ""
+
+msgid ":cdata:`PyExc_LookupError`"
+msgstr ""
+
+msgid ":exc:`LookupError`"
+msgstr ""
+
+msgid ":cdata:`PyExc_AssertionError`"
+msgstr ""
+
+msgid ":exc:`AssertionError`"
+msgstr ""
+
+msgid ":cdata:`PyExc_AttributeError`"
+msgstr ""
+
+msgid ":exc:`AttributeError`"
+msgstr ""
+
+msgid ":cdata:`PyExc_EOFError`"
+msgstr ""
+
+msgid ":exc:`EOFError`"
+msgstr ""
+
+msgid ":cdata:`PyExc_EnvironmentError`"
+msgstr ""
+
+msgid ":exc:`EnvironmentError`"
+msgstr ""
+
+msgid ":cdata:`PyExc_FloatingPointError`"
+msgstr ""
+
+msgid ":exc:`FloatingPointError`"
+msgstr ""
+
+msgid ":cdata:`PyExc_IOError`"
+msgstr ""
+
+msgid ":exc:`IOError`"
+msgstr ""
+
+msgid ":cdata:`PyExc_ImportError`"
+msgstr ""
+
+msgid ":exc:`ImportError`"
+msgstr ""
+
+msgid ":cdata:`PyExc_IndexError`"
+msgstr ""
+
+msgid ":exc:`IndexError`"
+msgstr ""
+
+msgid ":cdata:`PyExc_KeyError`"
+msgstr ""
+
+msgid ":exc:`KeyError`"
+msgstr ""
+
+msgid ":cdata:`PyExc_KeyboardInterrupt`"
+msgstr ""
+
+msgid ":exc:`KeyboardInterrupt`"
+msgstr ""
+
+msgid ":cdata:`PyExc_MemoryError`"
+msgstr ""
+
+msgid ":exc:`MemoryError`"
+msgstr ""
+
+msgid ":cdata:`PyExc_NameError`"
+msgstr ""
+
+msgid ":exc:`NameError`"
+msgstr ""
+
+msgid ":cdata:`PyExc_NotImplementedError`"
+msgstr ""
+
+msgid ":exc:`NotImplementedError`"
+msgstr ""
+
+msgid ":cdata:`PyExc_OSError`"
+msgstr ""
+
+msgid ":exc:`OSError`"
+msgstr ""
+
+msgid ":cdata:`PyExc_OverflowError`"
+msgstr ""
+
+msgid ":exc:`OverflowError`"
+msgstr ""
+
+msgid ":cdata:`PyExc_ReferenceError`"
+msgstr ""
+
+msgid ":exc:`ReferenceError`"
+msgstr ""
+
+msgid "\\(2)"
+msgstr ""
+
+msgid ":cdata:`PyExc_RuntimeError`"
+msgstr ""
+
+msgid ":exc:`RuntimeError`"
+msgstr ""
+
+msgid ":cdata:`PyExc_SyntaxError`"
+msgstr ""
+
+msgid ":exc:`SyntaxError`"
+msgstr ""
+
+msgid ":cdata:`PyExc_SystemError`"
+msgstr ""
+
+msgid ":exc:`SystemError`"
+msgstr ""
+
+msgid ":cdata:`PyExc_SystemExit`"
+msgstr ""
+
+msgid ":exc:`SystemExit`"
+msgstr ""
+
+msgid ":cdata:`PyExc_TypeError`"
+msgstr ""
+
+msgid ":exc:`TypeError`"
+msgstr ""
+
+msgid ":cdata:`PyExc_ValueError`"
+msgstr ""
+
+msgid ":exc:`ValueError`"
+msgstr ""
+
+msgid ":cdata:`PyExc_WindowsError`"
+msgstr ""
+
+msgid ":exc:`WindowsError`"
+msgstr ""
+
+msgid "\\(3)"
+msgstr ""
+
+msgid ":cdata:`PyExc_ZeroDivisionError`"
+msgstr ""
+
+msgid ":exc:`ZeroDivisionError`"
+msgstr ""
+
+msgid "Notes:"
+msgstr ""
+
+msgid "This is a base class for other standard exceptions."
+msgstr ""
+
+msgid "This is the same as :exc:`weakref.ReferenceError`."
+msgstr ""
+
+msgid "Only defined on Windows; protect code that uses this by testing that the preprocessor macro ``MS_WINDOWS`` is defined."
+msgstr ""
+
+msgid "File Objects"
+msgstr ""
+
+msgid "These APIs are a minimal emulation of the Python 2 C API for built-in file objects, which used to rely on the buffered I/O (:ctype:`FILE\\*`) support from the C standard library.  In Python 3, files and streams use the new :mod:`io` module, which defines several layers over the low-level unbuffered I/O of the operating system.  The functions described below are convenience C wrappers over these new APIs, and meant mostly for internal error reporting in the interpreter; third-party code is advised to access the :mod:`io` APIs instead."
+msgstr ""
+
+msgid "Floating Point Objects"
+msgstr ""
+
+msgid "Function Objects"
+msgstr ""
+
+msgid "There are a few functions specific to Python functions."
+msgstr ""
+
+msgid "Supporting Cyclic Garbage Collection"
+msgstr ""
+
+msgid "Python's support for detecting and collecting garbage which involves circular references requires support from object types which are \"containers\" for other objects which may also be containers.  Types which do not store references to other objects, or which only store references to atomic types (such as numbers or strings), do not need to provide any explicit support for garbage collection."
+msgstr ""
+
+msgid "To create a container type, the :attr:`tp_flags` field of the type object must include the :const:`Py_TPFLAGS_HAVE_GC` and provide an implementation of the :attr:`tp_traverse` handler.  If instances of the type are mutable, a :attr:`tp_clear` implementation must also be provided."
+msgstr ""
+
+msgid "Objects with a type with this flag set must conform with the rules documented here.  For convenience these objects will be referred to as container objects."
+msgstr ""
+
+msgid "Constructors for container types must conform to two rules:"
+msgstr ""
+
+msgid "The memory for the object must be allocated using :cfunc:`PyObject_GC_New` or :cfunc:`PyObject_GC_NewVar`."
+msgstr ""
+
+msgid "Once all the fields which may contain references to other containers are initialized, it must call :cfunc:`PyObject_GC_Track`."
+msgstr ""
+
+msgid "Similarly, the deallocator for the object must conform to a similar pair of rules:"
+msgstr ""
+
+msgid "Before fields which refer to other containers are invalidated, :cfunc:`PyObject_GC_UnTrack` must be called."
+msgstr ""
+
+msgid "The object's memory must be deallocated using :cfunc:`PyObject_GC_Del`."
+msgstr ""
+
+msgid "The :attr:`tp_traverse` handler accepts a function parameter of this type:"
+msgstr ""
+
+msgid "The :attr:`tp_traverse` handler must have the following type:"
+msgstr ""
+
+msgid "To simplify writing :attr:`tp_traverse` handlers, a :cfunc:`Py_VISIT` macro is provided.  In order to use this macro, the :attr:`tp_traverse` implementation must name its arguments exactly *visit* and *arg*:"
+msgstr ""
+
+msgid "The :attr:`tp_clear` handler must be of the :ctype:`inquiry` type, or *NULL* if the object is immutable."
+msgstr ""
+
+msgid "Generator Objects"
+msgstr ""
+
+msgid "Generator objects are what Python uses to implement generator iterators. They are normally created by iterating over a function that yields values, rather than explicitly calling :cfunc:`PyGen_New`."
+msgstr ""
+
+msgid "Importing Modules"
+msgstr ""
+
+msgid "Python/C API Reference Manual"
+msgstr ""
+
+msgid "Release"
+msgstr ""
+
+msgid "|version|"
+msgstr ""
+
+msgid "Date"
+msgstr ""
+
+msgid "|today|"
+msgstr ""
+
+msgid "This manual documents the API used by C and C++ programmers who want to write extension modules or embed Python.  It is a companion to :ref:`extending-index`, which describes the general principles of extension writing but does not document the API functions in detail."
+msgstr ""
+
+msgid "Initialization, Finalization, and Threads"
+msgstr ""
+
+msgid "Thread State and the Global Interpreter Lock"
+msgstr ""
+
+msgid "The Python interpreter is not fully thread safe.  In order to support multi-threaded Python programs, there's a global lock, called the :dfn:`global interpreter lock` or :dfn:`GIL`, that must be held by the current thread before it can safely access Python objects. Without the lock, even the simplest operations could cause problems in a multi-threaded program: for example, when two threads simultaneously increment the reference count of the same object, the reference count could end up being incremented only once instead of twice."
+msgstr ""
+
+msgid "Therefore, the rule exists that only the thread that has acquired the global interpreter lock may operate on Python objects or call Python/C API functions. In order to support multi-threaded Python programs, the interpreter regularly releases and reacquires the lock --- by default, every 100 bytecode instructions (this can be changed with  :func:`sys.setcheckinterval`).  The lock is also released and reacquired around potentially blocking I/O operations like reading or writing a file, so that other threads can run while the thread that requests the I/O is waiting for the I/O operation to complete."
+msgstr ""
+
+msgid "The Python interpreter needs to keep some bookkeeping information separate per thread --- for this it uses a data structure called :ctype:`PyThreadState`. There's one global variable, however: the pointer to the current :ctype:`PyThreadState` structure.  Before the addition of :dfn:`thread-local storage` (:dfn:`TLS`) the current thread state had to be manipulated explicitly."
+msgstr ""
+
+msgid "This is easy enough in most cases.  Most code manipulating the global interpreter lock has the following simple structure::"
+msgstr ""
+
+msgid "Save the thread state in a local variable. Release the global interpreter lock. ...Do some blocking I/O operation... Reacquire the global interpreter lock. Restore the thread state from the local variable."
+msgstr ""
+
+msgid "This is so common that a pair of macros exists to simplify it::"
+msgstr ""
+
+msgid "Py_BEGIN_ALLOW_THREADS ...Do some blocking I/O operation... Py_END_ALLOW_THREADS"
+msgstr ""
+
+msgid "The :cmacro:`Py_BEGIN_ALLOW_THREADS` macro opens a new block and declares a hidden local variable; the :cmacro:`Py_END_ALLOW_THREADS` macro closes the block.  Another advantage of using these two macros is that when Python is compiled without thread support, they are defined empty, thus saving the thread state and GIL manipulations."
+msgstr ""
+
+msgid "When thread support is enabled, the block above expands to the following code::"
+msgstr ""
+
+msgid "PyThreadState *_save;  _save = PyEval_SaveThread(); ...Do some blocking I/O operation... PyEval_RestoreThread(_save);"
+msgstr ""
+
+msgid "Using even lower level primitives, we can get roughly the same effect as follows::"
+msgstr ""
+
+msgid "PyThreadState *_save;  _save = PyThreadState_Swap(NULL); PyEval_ReleaseLock(); ...Do some blocking I/O operation... PyEval_AcquireLock(); PyThreadState_Swap(_save);"
+msgstr ""
+
+msgid "There are some subtle differences; in particular, :cfunc:`PyEval_RestoreThread` saves and restores the value of the  global variable :cdata:`errno`, since the lock manipulation does not guarantee that :cdata:`errno` is left alone.  Also, when thread support is disabled, :cfunc:`PyEval_SaveThread` and :cfunc:`PyEval_RestoreThread` don't manipulate the GIL; in this case, :cfunc:`PyEval_ReleaseLock` and :cfunc:`PyEval_AcquireLock` are not available. This is done so that dynamically loaded extensions compiled with thread support enabled can be loaded by an interpreter that was compiled with disabled thread support."
+msgstr ""
+
+msgid "The global interpreter lock is used to protect the pointer to the current thread state.  When releasing the lock and saving the thread state, the current thread state pointer must be retrieved before the lock is released (since another thread could immediately acquire the lock and store its own thread state in the global variable). Conversely, when acquiring the lock and restoring the thread state, the lock must be acquired before storing the thread state pointer."
+msgstr ""
+
+msgid "It is important to note that when threads are created from C, they don't have the global interpreter lock, nor is there a thread state data structure for them.  Such threads must bootstrap themselves into existence, by first creating a thread state data structure, then acquiring the lock, and finally storing their thread state pointer, before they can start using the Python/C API.  When they are done, they should reset the thread state pointer, release the lock, and finally free their thread state data structure."
+msgstr ""
+
+msgid "Threads can take advantage of the :cfunc:`PyGILState_\\*` functions to do all of the above automatically.  The typical idiom for calling into Python from a C thread is now::"
+msgstr ""
+
+msgid "PyGILState_STATE gstate; gstate = PyGILState_Ensure();  /* Perform Python actions here.  */ result = CallSomeFunction(); /* evaluate result */  /* Release the thread. No Python API allowed beyond this point. */ PyGILState_Release(gstate);"
+msgstr ""
+
+msgid "Note that the :cfunc:`PyGILState_\\*` functions assume there is only one global interpreter (created automatically by :cfunc:`Py_Initialize`).  Python still supports the creation of additional interpreters (using :cfunc:`Py_NewInterpreter`), but mixing multiple interpreters and the :cfunc:`PyGILState_\\*` API is unsupported."
+msgstr ""
+
+msgid "Another important thing to note about threads is their behaviour in the face of the C :cfunc:`fork` call. On most systems with :cfunc:`fork`, after a process forks only the thread that issued the fork will exist. That also means any locks held by other threads will never be released. Python solves this for :func:`os.fork` by acquiring the locks it uses internally before the fork, and releasing them afterwards. In addition, it resets any :ref:`lock-objects` in the child. When extending or embedding Python, there is no way to inform Python of additional (non-Python) locks that need to be acquired before or reset after a fork. OS facilities such as :cfunc:`posix_atfork` would need to be used to accomplish the same thing. Additionally, when extending or embedding Python, calling :cfunc:`fork` directly rather than through :func:`os.fork` (and returning to or calling into Python) may result in a deadlock by one of Python's internal locks being held by a thread that is defunct after the fork. :cfunc:`PyOS_AfterFork` tries to reset the necessary locks, but is not always able to."
+msgstr ""
+
+msgid "The following macros are normally used without a trailing semicolon; look for example usage in the Python source distribution."
+msgstr ""
+
+msgid "All of the following functions are only available when thread support is enabled at compile time, and must be called only when the global interpreter lock has been created."
+msgstr ""
+
+msgid "Asynchronous Notifications"
+msgstr ""
+
+msgid "A mechanism is provided to make asynchronous notifications to the main interpreter thread.  These notifications take the form of a function pointer and a void argument."
+msgstr ""
+
+msgid "Every check interval, when the global interpreter lock is released and reacquired, Python will also call any such provided functions.  This can be used for example by asynchronous IO handlers.  The notification can be scheduled from a worker thread and the actual call than made at the earliest convenience by the main thread where it has possession of the global interpreter lock and can perform any Python API calls."
+msgstr ""
+
+msgid "Profiling and Tracing"
+msgstr ""
+
+msgid "The Python interpreter provides some low-level support for attaching profiling and execution tracing facilities.  These are used for profiling, debugging, and coverage analysis tools."
+msgstr ""
+
+msgid "This C interface allows the profiling or tracing code to avoid the overhead of calling through Python-level callable objects, making a direct C function call instead.  The essential attributes of the facility have not changed; the interface allows trace functions to be installed per-thread, and the basic events reported to the trace function are the same as had been reported to the Python-level trace functions in previous versions."
+msgstr ""
+
+msgid "Advanced Debugger Support"
+msgstr ""
+
+msgid "These functions are only intended to be used by advanced debugging tools."
+msgstr ""
+
+msgid "Introduction"
+msgstr ""
+
+msgid "The Application Programmer's Interface to Python gives C and C++ programmers access to the Python interpreter at a variety of levels.  The API is equally usable from C++, but for brevity it is generally referred to as the Python/C API.  There are two fundamentally different reasons for using the Python/C API. The first reason is to write *extension modules* for specific purposes; these are C modules that extend the Python interpreter.  This is probably the most common use.  The second reason is to use Python as a component in a larger application; this technique is generally referred to as :dfn:`embedding` Python in an application."
+msgstr ""
+
+msgid "Writing an extension module is a relatively well-understood process,  where a \"cookbook\" approach works well.  There are several tools  that automate the process to some extent.  While people have embedded  Python in other applications since its early existence, the process of  embedding Python is less straightforward than writing an extension."
+msgstr ""
+
+msgid "Many API functions are useful independent of whether you're embedding  or extending Python; moreover, most applications that embed Python  will need to provide a custom extension as well, so it's probably a  good idea to become familiar with writing an extension before  attempting to embed Python in a real application."
+msgstr ""
+
+msgid "Include Files"
+msgstr ""
+
+msgid "All function, type and macro definitions needed to use the Python/C API are included in your code by the following line::"
+msgstr ""
+
+msgid "#include \"Python.h\""
+msgstr ""
+
+msgid "This implies inclusion of the following standard headers: ``<stdio.h>``, ``<string.h>``, ``<errno.h>``, ``<limits.h>``, and ``<stdlib.h>`` (if available)."
+msgstr ""
+
+msgid "Since Python may define some pre-processor definitions which affect the standard headers on some systems, you *must* include :file:`Python.h` before any standard headers are included."
+msgstr ""
+
+msgid "All user visible names defined by Python.h (except those defined by the included standard headers) have one of the prefixes ``Py`` or ``_Py``.  Names beginning with ``_Py`` are for internal use by the Python implementation and should not be used by extension writers. Structure member names do not have a reserved prefix."
+msgstr ""
+
+msgid "**Important:** user code should never define names that begin with ``Py`` or ``_Py``.  This confuses the reader, and jeopardizes the portability of the user code to future Python versions, which may define additional names beginning with one of these prefixes."
+msgstr ""
+
+msgid "The header files are typically installed with Python.  On Unix, these  are located in the directories :file:`{prefix}/include/pythonversion/` and :file:`{exec_prefix}/include/pythonversion/`, where :envvar:`prefix` and :envvar:`exec_prefix` are defined by the corresponding parameters to Python's :program:`configure` script and *version* is ``sys.version[:3]``.  On Windows, the headers are installed in :file:`{prefix}/include`, where :envvar:`prefix` is the installation directory specified to the installer."
+msgstr ""
+
+msgid "To include the headers, place both directories (if different) on your compiler's search path for includes.  Do *not* place the parent directories on the search path and then use ``#include <pythonX.Y/Python.h>``; this will break on multi-platform builds since the platform independent headers under :envvar:`prefix` include the platform specific headers from :envvar:`exec_prefix`."
+msgstr ""
+
+msgid "C++ users should note that though the API is defined entirely using C, the header files do properly declare the entry points to be ``extern \"C\"``, so there is no need to do anything special to use the API from C++."
+msgstr ""
+
+msgid "Objects, Types and Reference Counts"
+msgstr ""
+
+msgid "Most Python/C API functions have one or more arguments as well as a return value of type :ctype:`PyObject\\*`.  This type is a pointer to an opaque data type representing an arbitrary Python object.  Since all Python object types are treated the same way by the Python language in most situations (e.g., assignments, scope rules, and argument passing), it is only fitting that they should be represented by a single C type.  Almost all Python objects live on the heap: you never declare an automatic or static variable of type :ctype:`PyObject`, only pointer variables of type :ctype:`PyObject\\*` can  be declared.  The sole exception are the type objects; since these must never be deallocated, they are typically static :ctype:`PyTypeObject` objects."
+msgstr ""
+
+msgid "All Python objects (even Python integers) have a :dfn:`type` and a :dfn:`reference count`.  An object's type determines what kind of object it is (e.g., an integer, a list, or a user-defined function; there are many more as explained in :ref:`types`).  For each of the well-known types there is a macro to check whether an object is of that type; for instance, ``PyList_Check(a)`` is true if (and only if) the object pointed to by *a* is a Python list."
+msgstr ""
+
+msgid "Reference Counts"
+msgstr ""
+
+msgid "The reference count is important because today's computers have a  finite (and often severely limited) memory size; it counts how many  different places there are that have a reference to an object.  Such a  place could be another object, or a global (or static) C variable, or  a local variable in some C function. When an object's reference count  becomes zero, the object is deallocated.  If it contains references to  other objects, their reference count is decremented. Those other  objects may be deallocated in turn, if this decrement makes their reference count become zero, and so on.  (There's an obvious problem  with objects that reference each other here; for now, the solution is  \"don't do that.\")"
+msgstr ""
+
+msgid "Reference counts are always manipulated explicitly.  The normal way is  to use the macro :cfunc:`Py_INCREF` to increment an object's reference count by one, and :cfunc:`Py_DECREF` to decrement it by   one.  The :cfunc:`Py_DECREF` macro is considerably more complex than the incref one, since it must check whether the reference count becomes zero and then cause the object's deallocator to be called. The deallocator is a function pointer contained in the object's type structure.  The type-specific deallocator takes care of decrementing the reference counts for other objects contained in the object if this is a compound object type, such as a list, as well as performing any additional finalization that's needed.  There's no chance that the reference count can overflow; at least as many bits are used to hold the reference count as there are distinct memory locations in virtual memory (assuming ``sizeof(Py_ssize_t) >= sizeof(void*)``). Thus, the reference count increment is a simple operation."
+msgstr ""
+
+msgid "It is not necessary to increment an object's reference count for every  local variable that contains a pointer to an object.  In theory, the  object's reference count goes up by one when the variable is made to  point to it and it goes down by one when the variable goes out of  scope.  However, these two cancel each other out, so at the end the  reference count hasn't changed.  The only real reason to use the  reference count is to prevent the object from being deallocated as  long as our variable is pointing to it.  If we know that there is at  least one other reference to the object that lives at least as long as our variable, there is no need to increment the reference count  temporarily. An important situation where this arises is in objects  that are passed as arguments to C functions in an extension module  that are called from Python; the call mechanism guarantees to hold a  reference to every argument for the duration of the call."
+msgstr ""
+
+msgid "However, a common pitfall is to extract an object from a list and hold on to it for a while without incrementing its reference count. Some other operation might conceivably remove the object from the list, decrementing its reference count and possible deallocating it. The real danger is that innocent-looking operations may invoke arbitrary Python code which could do this; there is a code path which allows control to flow back to the user from a :cfunc:`Py_DECREF`, so almost any operation is potentially dangerous."
+msgstr ""
+
+msgid "A safe approach is to always use the generic operations (functions  whose name begins with ``PyObject_``, ``PyNumber_``, ``PySequence_`` or ``PyMapping_``). These operations always increment the reference count of the object they return. This leaves the caller with the responsibility to call :cfunc:`Py_DECREF` when they are done with the result; this soon becomes second nature."
+msgstr ""
+
+msgid "Reference Count Details"
+msgstr ""
+
+msgid "The reference count behavior of functions in the Python/C API is best  explained in terms of *ownership of references*.  Ownership pertains to references, never to objects (objects are not owned: they are always shared).  \"Owning a reference\" means being responsible for calling Py_DECREF on it when the reference is no longer needed.  Ownership can also be transferred, meaning that the code that receives ownership of the reference then becomes responsible for eventually decref'ing it by calling :cfunc:`Py_DECREF` or :cfunc:`Py_XDECREF` when it's no longer needed---or passing on this responsibility (usually to its caller). When a function passes ownership of a reference on to its caller, the caller is said to receive a *new* reference.  When no ownership is transferred, the caller is said to *borrow* the reference. Nothing needs to be done for a borrowed reference."
+msgstr ""
+
+msgid "Conversely, when a calling function passes in a reference to an  object, there are two possibilities: the function *steals* a  reference to the object, or it does not.  *Stealing a reference* means that when you pass a reference to a function, that function assumes that it now owns that reference, and you are not responsible for it any longer."
+msgstr ""
+
+msgid "Few functions steal references; the two notable exceptions are :cfunc:`PyList_SetItem` and :cfunc:`PyTuple_SetItem`, which  steal a reference to the item (but not to the tuple or list into which the item is put!).  These functions were designed to steal a reference because of a common idiom for populating a tuple or list with newly created objects; for example, the code to create the tuple ``(1, 2, \"three\")`` could look like this (forgetting about error handling for the moment; a better way to code this is shown below)::"
+msgstr ""
+
+msgid "PyObject *t;  t = PyTuple_New(3); PyTuple_SetItem(t, 0, PyLong_FromLong(1L)); PyTuple_SetItem(t, 1, PyLong_FromLong(2L)); PyTuple_SetItem(t, 2, PyString_FromString(\"three\"));"
+msgstr ""
+
+msgid "Here, :cfunc:`PyLong_FromLong` returns a new reference which is immediately stolen by :cfunc:`PyTuple_SetItem`.  When you want to keep using an object although the reference to it will be stolen, use :cfunc:`Py_INCREF` to grab another reference before calling the reference-stealing function."
+msgstr ""
+
+msgid "Incidentally, :cfunc:`PyTuple_SetItem` is the *only* way to set tuple items; :cfunc:`PySequence_SetItem` and :cfunc:`PyObject_SetItem` refuse to do this since tuples are an immutable data type.  You should only use :cfunc:`PyTuple_SetItem` for tuples that you are creating yourself."
+msgstr ""
+
+msgid "Equivalent code for populating a list can be written using :cfunc:`PyList_New` and :cfunc:`PyList_SetItem`."
+msgstr ""
+
+msgid "However, in practice, you will rarely use these ways of creating and populating a tuple or list.  There's a generic function, :cfunc:`Py_BuildValue`, that can create most common objects from C values, directed by a :dfn:`format string`. For example, the above two blocks of code could be replaced by the following (which also takes care of the error checking)::"
+msgstr ""
+
+msgid "PyObject *tuple, *list;  tuple = Py_BuildValue(\"(iis)\", 1, 2, \"three\"); list = Py_BuildValue(\"[iis]\", 1, 2, \"three\");"
+msgstr ""
+
+msgid "It is much more common to use :cfunc:`PyObject_SetItem` and friends with items whose references you are only borrowing, like arguments that were passed in to the function you are writing.  In that case, their behaviour regarding reference counts is much saner, since you don't have to increment a reference count so you can give a reference away (\"have it be stolen\").  For example, this function sets all items of a list (actually, any mutable sequence) to a given item::"
+msgstr ""
+
+msgid "int set_all(PyObject *target, PyObject *item) {     int i, n;      n = PyObject_Length(target);     if (n < 0)         return -1;     for (i = 0; i < n; i++) {         PyObject *index = PyLong_FromLong(i);         if (!index)             return -1;         if (PyObject_SetItem(target, index, item) < 0)             return -1;         Py_DECREF(index);     }     return 0; }"
+msgstr ""
+
+msgid "The situation is slightly different for function return values.   While passing a reference to most functions does not change your  ownership responsibilities for that reference, many functions that  return a reference to an object give you ownership of the reference. The reason is simple: in many cases, the returned object is created  on the fly, and the reference you get is the only reference to the  object.  Therefore, the generic functions that return object references, like :cfunc:`PyObject_GetItem` and  :cfunc:`PySequence_GetItem`, always return a new reference (the caller becomes the owner of the reference)."
+msgstr ""
+
+msgid "It is important to realize that whether you own a reference returned  by a function depends on which function you call only --- *the plumage* (the type of the object passed as an argument to the function) *doesn't enter into it!* Thus, if you  extract an item from a list using :cfunc:`PyList_GetItem`, you don't own the reference --- but if you obtain the same item from the same list using :cfunc:`PySequence_GetItem` (which happens to take exactly the same arguments), you do own a reference to the returned object."
+msgstr ""
+
+msgid "Here is an example of how you could write a function that computes the sum of the items in a list of integers; once using  :cfunc:`PyList_GetItem`, and once using :cfunc:`PySequence_GetItem`. ::"
+msgstr ""
+
+msgid "long sum_list(PyObject *list) {     int i, n;     long total = 0;     PyObject *item;      n = PyList_Size(list);     if (n < 0)         return -1; /* Not a list */     for (i = 0; i < n; i++) {         item = PyList_GetItem(list, i); /* Can't fail */         if (!PyLong_Check(item)) continue; /* Skip non-integers */         total += PyLong_AsLong(item);     }     return total; }"
+msgstr ""
+
+msgid "long sum_sequence(PyObject *sequence) {     int i, n;     long total = 0;     PyObject *item;     n = PySequence_Length(sequence);     if (n < 0)         return -1; /* Has no length */     for (i = 0; i < n; i++) {         item = PySequence_GetItem(sequence, i);         if (item == NULL)             return -1; /* Not a sequence, or other failure */         if (PyLong_Check(item))             total += PyLong_AsLong(item);         Py_DECREF(item); /* Discard reference ownership */     }     return total; }"
+msgstr ""
+
+msgid "Types"
+msgstr ""
+
+msgid "There are few other data types that play a significant role in  the Python/C API; most are simple C types such as :ctype:`int`,  :ctype:`long`, :ctype:`double` and :ctype:`char\\*`.  A few structure types  are used to describe static tables used to list the functions exported  by a module or the data attributes of a new object type, and another is used to describe the value of a complex number.  These will  be discussed together with the functions that use them."
+msgstr ""
+
+msgid "Exceptions"
+msgstr ""
+
+msgid "The Python programmer only needs to deal with exceptions if specific  error handling is required; unhandled exceptions are automatically  propagated to the caller, then to the caller's caller, and so on, until they reach the top-level interpreter, where they are reported to the  user accompanied by a stack traceback."
+msgstr ""
+
+msgid "For C programmers, however, error checking always has to be explicit.   All functions in the Python/C API can raise exceptions, unless an  explicit claim is made otherwise in a function's documentation.  In  general, when a function encounters an error, it sets an exception,  discards any object references that it owns, and returns an  error indicator --- usually *NULL* or ``-1``.  A few functions  return a Boolean true/false result, with false indicating an error. Very few functions return no explicit error indicator or have an  ambiguous return value, and require explicit testing for errors with :cfunc:`PyErr_Occurred`."
+msgstr ""
+
+msgid "Exception state is maintained in per-thread storage (this is  equivalent to using global storage in an unthreaded application).  A  thread can be in one of two states: an exception has occurred, or not. The function :cfunc:`PyErr_Occurred` can be used to check for this: it returns a borrowed reference to the exception type object when an exception has occurred, and *NULL* otherwise.  There are a number of functions to set the exception state: :cfunc:`PyErr_SetString` is the most common (though not the most general) function to set the exception state, and :cfunc:`PyErr_Clear` clears the exception state."
+msgstr ""
+
+msgid "The full exception state consists of three objects (all of which can  be *NULL*): the exception type, the corresponding exception  value, and the traceback.  These have the same meanings as the Python result of ``sys.exc_info()``; however, they are not the same: the Python objects represent the last exception being handled by a Python  :keyword:`try` ... :keyword:`except` statement, while the C level exception state only exists while an exception is being passed on between C functions until it reaches the Python bytecode interpreter's  main loop, which takes care of transferring it to ``sys.exc_info()`` and friends."
+msgstr ""
+
+msgid "Note that starting with Python 1.5, the preferred, thread-safe way to access the exception state from Python code is to call the function :func:`sys.exc_info`, which returns the per-thread exception state for Python code.  Also, the semantics of both ways to access the exception state have changed so that a function which catches an exception will save and restore its thread's exception state so as to preserve the exception state of its caller.  This prevents common bugs in exception handling code caused by an innocent-looking function overwriting the exception being handled; it also reduces the often unwanted lifetime extension for objects that are referenced by the stack frames in the traceback."
+msgstr ""
+
+msgid "As a general principle, a function that calls another function to  perform some task should check whether the called function raised an  exception, and if so, pass the exception state on to its caller.  It  should discard any object references that it owns, and return an  error indicator, but it should *not* set another exception --- that would overwrite the exception that was just raised, and lose important information about the exact cause of the error."
+msgstr ""
+
+msgid "A simple example of detecting exceptions and passing them on is shown in the :cfunc:`sum_sequence` example above.  It so happens that that example doesn't need to clean up any owned references when it detects an error.  The following example function shows some error cleanup.  First, to remind you why you like Python, we show the equivalent Python code::"
+msgstr ""
+
+msgid "def incr_item(dict, key):     try:         item = dict[key]     except KeyError:         item = 0     dict[key] = item + 1"
+msgstr ""
+
+msgid "Here is the corresponding C code, in all its glory::"
+msgstr ""
+
+msgid "int incr_item(PyObject *dict, PyObject *key) {     /* Objects all initialized to NULL for Py_XDECREF */     PyObject *item = NULL, *const_one = NULL, *incremented_item = NULL;     int rv = -1; /* Return value initialized to -1 (failure) */      item = PyObject_GetItem(dict, key);     if (item == NULL) {         /* Handle KeyError only: */         if (!PyErr_ExceptionMatches(PyExc_KeyError))             goto error;          /* Clear the error and use zero: */         PyErr_Clear();         item = PyLong_FromLong(0L);         if (item == NULL)             goto error;     }     const_one = PyLong_FromLong(1L);     if (const_one == NULL)         goto error;      incremented_item = PyNumber_Add(item, const_one);     if (incremented_item == NULL)         goto error;      if (PyObject_SetItem(dict, key, incremented_item) < 0)         goto error;     rv = 0; /* Success */     /* Continue with cleanup code */   error:     /* Cleanup code, shared by success and failure path */      /* Use Py_XDECREF() to ignore NULL references */     Py_XDECREF(item);     Py_XDECREF(const_one);     Py_XDECREF(incremented_item);      return rv; /* -1 for error, 0 for success */ }"
+msgstr ""
+
+msgid "This example represents an endorsed use of the ``goto`` statement  in C! It illustrates the use of :cfunc:`PyErr_ExceptionMatches` and :cfunc:`PyErr_Clear` to handle specific exceptions, and the use of :cfunc:`Py_XDECREF` to dispose of owned references that may be *NULL* (note the ``'X'`` in the name; :cfunc:`Py_DECREF` would crash when confronted with a *NULL* reference).  It is important that the variables used to hold owned references are initialized to *NULL* for this to work; likewise, the proposed return value is initialized to ``-1`` (failure) and only set to success after the final call made is successful."
+msgstr ""
+
+msgid "Embedding Python"
+msgstr ""
+
+msgid "The one important task that only embedders (as opposed to extension writers) of the Python interpreter have to worry about is the initialization, and possibly the finalization, of the Python interpreter.  Most functionality of the interpreter can only be used after the interpreter has been initialized."
+msgstr ""
+
+msgid "The basic initialization function is :cfunc:`Py_Initialize`. This initializes the table of loaded modules, and creates the fundamental modules :mod:`builtins`, :mod:`__main__`, :mod:`sys`, and :mod:`exceptions`.  It also initializes the module search path (``sys.path``)."
+msgstr ""
+
+msgid ":cfunc:`Py_Initialize` does not set the \"script argument list\"  (``sys.argv``). If this variable is needed by Python code that will be executed later, it must be set explicitly with a call to  ``PySys_SetArgvEx(argc, argv, updatepath)`` after the call to :cfunc:`Py_Initialize`."
+msgstr ""
+
+msgid "On most systems (in particular, on Unix and Windows, although the details are slightly different), :cfunc:`Py_Initialize` calculates the module search path based upon its best guess for the location of the standard Python interpreter executable, assuming that the Python library is found in a fixed location relative to the Python interpreter executable.  In particular, it looks for a directory named :file:`lib/python{X.Y}` relative to the parent directory where the executable named :file:`python` is found on the shell command search path (the environment variable :envvar:`PATH`)."
+msgstr ""
+
+msgid "For instance, if the Python executable is found in :file:`/usr/local/bin/python`, it will assume that the libraries are in :file:`/usr/local/lib/python{X.Y}`.  (In fact, this particular path is also the \"fallback\" location, used when no executable file named :file:`python` is found along :envvar:`PATH`.)  The user can override this behavior by setting the environment variable :envvar:`PYTHONHOME`, or insert additional directories in front of the standard path by setting :envvar:`PYTHONPATH`."
+msgstr ""
+
+msgid "The embedding application can steer the search by calling ``Py_SetProgramName(file)`` *before* calling  :cfunc:`Py_Initialize`.  Note that :envvar:`PYTHONHOME` still overrides this and :envvar:`PYTHONPATH` is still inserted in front of the standard path.  An application that requires total control has to provide its own implementation of :cfunc:`Py_GetPath`, :cfunc:`Py_GetPrefix`, :cfunc:`Py_GetExecPrefix`, and :cfunc:`Py_GetProgramFullPath` (all defined in :file:`Modules/getpath.c`)."
+msgstr ""
+
+msgid "Sometimes, it is desirable to \"uninitialize\" Python.  For instance,  the application may want to start over (make another call to :cfunc:`Py_Initialize`) or the application is simply done with its  use of Python and wants to free memory allocated by Python.  This can be accomplished by calling :cfunc:`Py_Finalize`.  The function :cfunc:`Py_IsInitialized` returns true if Python is currently in the initialized state.  More information about these functions is given in a later chapter. Notice that :cfunc:`Py_Finalize` does *not* free all memory allocated by the Python interpreter, e.g. memory allocated by extension modules currently cannot be released."
+msgstr ""
+
+msgid "Debugging Builds"
+msgstr ""
+
+msgid "Python can be built with several macros to enable extra checks of the interpreter and extension modules.  These checks tend to add a large amount of overhead to the runtime so they are not enabled by default."
+msgstr ""
+
+msgid "A full list of the various types of debugging builds is in the file :file:`Misc/SpecialBuilds.txt` in the Python source distribution. Builds are available that support tracing of reference counts, debugging the memory allocator, or low-level profiling of the main interpreter loop.  Only the most frequently-used builds will be described in the remainder of this section."
+msgstr ""
+
+msgid "Compiling the interpreter with the :cmacro:`Py_DEBUG` macro defined produces what is generally meant by \"a debug build\" of Python. :cmacro:`Py_DEBUG` is enabled in the Unix build by adding :option:`--with-pydebug` to the :file:`configure` command.  It is also implied by the presence of the not-Python-specific :cmacro:`_DEBUG` macro.  When :cmacro:`Py_DEBUG` is enabled in the Unix build, compiler optimization is disabled."
+msgstr ""
+
+msgid "In addition to the reference count debugging described below, the following extra checks are performed:"
+msgstr ""
+
+msgid "Extra checks are added to the object allocator."
+msgstr ""
+
+msgid "Extra checks are added to the parser and compiler."
+msgstr ""
+
+msgid "Downcasts from wide types to narrow types are checked for loss of information."
+msgstr ""
+
+msgid "A number of assertions are added to the dictionary and set implementations. In addition, the set object acquires a :meth:`test_c_api` method."
+msgstr ""
+
+msgid "Sanity checks of the input arguments are added to frame creation."
+msgstr ""
+
+msgid "The storage for ints is initialized with a known invalid pattern to catch reference to uninitialized digits."
+msgstr ""
+
+msgid "Low-level tracing and extra exception checking are added to the runtime virtual machine."
+msgstr ""
+
+msgid "Extra checks are added to the memory arena implementation."
+msgstr ""
+
+msgid "Extra debugging is added to the thread module."
+msgstr ""
+
+msgid "There may be additional checks not mentioned here."
+msgstr ""
+
+msgid "Defining :cmacro:`Py_TRACE_REFS` enables reference tracing.  When defined, a circular doubly linked list of active objects is maintained by adding two extra fields to every :ctype:`PyObject`.  Total allocations are tracked as well.  Upon exit, all existing references are printed.  (In interactive mode this happens after every statement run by the interpreter.)  Implied by :cmacro:`Py_DEBUG`."
+msgstr ""
+
+msgid "Please refer to :file:`Misc/SpecialBuilds.txt` in the Python source distribution for more detailed information."
+msgstr ""
+
+msgid "Iterator Protocol"
+msgstr ""
+
+msgid "There are only a couple of functions specifically for working with iterators."
+msgstr ""
+
+msgid "To write a loop which iterates over an iterator, the C code should look something like this::"
+msgstr ""
+
+msgid "PyObject *iterator = PyObject_GetIter(obj); PyObject *item;  if (iterator == NULL) {     /* propagate error */ }  while (item = PyIter_Next(iterator)) {     /* do something with item */     ...     /* release reference when done */     Py_DECREF(item); }  Py_DECREF(iterator);  if (PyErr_Occurred()) {     /* propagate error */ } else {     /* continue doing useful work */ }"
+msgstr ""
+
+msgid "Iterator Objects"
+msgstr ""
+
+msgid "Python provides two general-purpose iterator objects.  The first, a sequence iterator, works with an arbitrary sequence supporting the :meth:`__getitem__` method.  The second works with a callable object and a sentinel value, calling the callable for each item in the sequence, and ending the iteration when the sentinel value is returned."
+msgstr ""
+
+msgid "List Objects"
+msgstr ""
+
+msgid "Integer Objects"
+msgstr ""
+
+msgid "All integers are implemented as \"long\" integer objects of arbitrary size."
+msgstr ""
+
+msgid "Mapping Protocol"
+msgstr ""
+
+msgid "Data marshalling support"
+msgstr ""
+
+msgid "These routines allow C code to work with serialized objects using the same data format as the :mod:`marshal` module.  There are functions to write data into the serialization format, and additional functions that can be used to read the data back.  Files used to store marshalled data must be opened in binary mode."
+msgstr ""
+
+msgid "Numeric values are stored with the least significant byte first."
+msgstr ""
+
+msgid "The module supports two versions of the data format: version 0 is the historical version, version 1 shares interned strings in the file, and upon unmarshalling.  Version 2 uses a binary format for floating point numbers. *Py_MARSHAL_VERSION* indicates the current file format (currently 2)."
+msgstr ""
+
+msgid "The following functions allow marshalled values to be read back in."
+msgstr ""
+
+msgid "XXX What about error detection?  It appears that reading past the end of the file will always result in a negative numeric value (where that's relevant), but it's not clear that negative values won't be handled properly when there's no error.  What's the right way to tell? Should only non-negative values be written using these routines?"
+msgstr ""
+
+msgid "Memory Management"
+msgstr ""
+
+msgid "Overview"
+msgstr ""
+
+msgid "Memory management in Python involves a private heap containing all Python objects and data structures. The management of this private heap is ensured internally by the *Python memory manager*.  The Python memory manager has different components which deal with various dynamic storage management aspects, like sharing, segmentation, preallocation or caching."
+msgstr ""
+
+msgid "At the lowest level, a raw memory allocator ensures that there is enough room in the private heap for storing all Python-related data by interacting with the memory manager of the operating system. On top of the raw memory allocator, several object-specific allocators operate on the same heap and implement distinct memory management policies adapted to the peculiarities of every object type. For example, integer objects are managed differently within the heap than strings, tuples or dictionaries because integers imply different storage requirements and speed/space tradeoffs. The Python memory manager thus delegates some of the work to the object-specific allocators, but ensures that the latter operate within the bounds of the private heap."
+msgstr ""
+
+msgid "It is important to understand that the management of the Python heap is performed by the interpreter itself and that the user has no control over it, even if she regularly manipulates object pointers to memory blocks inside that heap.  The allocation of heap space for Python objects and other internal buffers is performed on demand by the Python memory manager through the Python/C API functions listed in this document."
+msgstr ""
+
+msgid "To avoid memory corruption, extension writers should never try to operate on Python objects with the functions exported by the C library: :cfunc:`malloc`, :cfunc:`calloc`, :cfunc:`realloc` and :cfunc:`free`.  This will result in  mixed calls between the C allocator and the Python memory manager with fatal consequences, because they implement different algorithms and operate on different heaps.  However, one may safely allocate and release memory blocks with the C library allocator for individual purposes, as shown in the following example::"
+msgstr ""
+
+msgid "PyObject *res; char *buf = (char *) malloc(BUFSIZ); /* for I/O */  if (buf == NULL)     return PyErr_NoMemory(); ...Do some I/O operation involving buf... res = PyString_FromString(buf); free(buf); /* malloc'ed */ return res;"
+msgstr ""
+
+msgid "In this example, the memory request for the I/O buffer is handled by the C library allocator. The Python memory manager is involved only in the allocation of the string object returned as a result."
+msgstr ""
+
+msgid "In most situations, however, it is recommended to allocate memory from the Python heap specifically because the latter is under control of the Python memory manager. For example, this is required when the interpreter is extended with new object types written in C. Another reason for using the Python heap is the desire to *inform* the Python memory manager about the memory needs of the extension module. Even when the requested memory is used exclusively for internal, highly-specific purposes, delegating all memory requests to the Python memory manager causes the interpreter to have a more accurate image of its memory footprint as a whole. Consequently, under certain circumstances, the Python memory manager may or may not trigger appropriate actions, like garbage collection, memory compaction or other preventive procedures. Note that by using the C library allocator as shown in the previous example, the allocated memory for the I/O buffer escapes completely the Python memory manager."
+msgstr ""
+
+msgid "Memory Interface"
+msgstr ""
+
+msgid "The following function sets, modeled after the ANSI C standard, but specifying behavior when requesting zero bytes, are available for allocating and releasing memory from the Python heap:"
+msgstr ""
+
+msgid "The following type-oriented macros are provided for convenience.  Note  that *TYPE* refers to any C type."
+msgstr ""
+
+msgid "In addition, the following macro sets are provided for calling the Python memory allocator directly, without involving the C API functions listed above. However, note that their use does not preserve binary compatibility across Python versions and is therefore deprecated in extension modules."
+msgstr ""
+
+msgid ":cfunc:`PyMem_MALLOC`, :cfunc:`PyMem_REALLOC`, :cfunc:`PyMem_FREE`."
+msgstr ""
+
+msgid ":cfunc:`PyMem_NEW`, :cfunc:`PyMem_RESIZE`, :cfunc:`PyMem_DEL`."
+msgstr ""
+
+msgid "Examples"
+msgstr ""
+
+msgid "Here is the example from section :ref:`memoryoverview`, rewritten so that the I/O buffer is allocated from the Python heap by using the first function set::"
+msgstr ""
+
+msgid "PyObject *res; char *buf = (char *) PyMem_Malloc(BUFSIZ); /* for I/O */  if (buf == NULL)     return PyErr_NoMemory(); /* ...Do some I/O operation involving buf... */ res = PyString_FromString(buf); PyMem_Free(buf); /* allocated with PyMem_Malloc */ return res;"
+msgstr ""
+
+msgid "The same code using the type-oriented function set::"
+msgstr ""
+
+msgid "PyObject *res; char *buf = PyMem_New(char, BUFSIZ); /* for I/O */  if (buf == NULL)     return PyErr_NoMemory(); /* ...Do some I/O operation involving buf... */ res = PyString_FromString(buf); PyMem_Del(buf); /* allocated with PyMem_New */ return res;"
+msgstr ""
+
+msgid "Note that in the two examples above, the buffer is always manipulated via functions belonging to the same set. Indeed, it is required to use the same memory API family for a given memory block, so that the risk of mixing different allocators is reduced to a minimum. The following code sequence contains two errors, one of which is labeled as *fatal* because it mixes two different allocators operating on different heaps. ::"
+msgstr ""
+
+msgid "char *buf1 = PyMem_New(char, BUFSIZ); char *buf2 = (char *) malloc(BUFSIZ); char *buf3 = (char *) PyMem_Malloc(BUFSIZ); ... PyMem_Del(buf3);  /* Wrong -- should be PyMem_Free() */ free(buf2);       /* Right -- allocated via malloc() */ free(buf1);       /* Fatal -- should be PyMem_Del()  */"
+msgstr ""
+
+msgid "In addition to the functions aimed at handling raw memory blocks from the Python heap, objects in Python are allocated and released with :cfunc:`PyObject_New`, :cfunc:`PyObject_NewVar` and :cfunc:`PyObject_Del`."
+msgstr ""
+
+msgid "These will be explained in the next chapter on defining and implementing new object types in C."
+msgstr ""
+
+msgid "Instance Method Objects"
+msgstr ""
+
+msgid "An instance method is a wrapper for a :cdata:`PyCFunction` and the new way to bind a :cdata:`PyCFunction` to a class object. It replaces the former call ``PyMethod_New(func, NULL, class)``."
+msgstr ""
+
+msgid "Method Objects"
+msgstr ""
+
+msgid "Methods are bound function objects. Methods are always bound to an instance of an user-defined class. Unbound methods (methods bound to a class object) are no longer available."
+msgstr ""
+
+msgid "Module Objects"
+msgstr ""
+
+msgid "There are only a few functions special to module objects."
+msgstr ""
+
+msgid "Initializing C modules"
+msgstr ""
+
+msgid "These functions are usually used in the module initialization function."
+msgstr ""
+
+msgid "The None Object"
+msgstr ""
+
+msgid "Note that the :ctype:`PyTypeObject` for ``None`` is not directly exposed in the Python/C API.  Since ``None`` is a singleton, testing for object identity (using ``==`` in C) is sufficient. There is no :cfunc:`PyNone_Check` function for the same reason."
+msgstr ""
+
+msgid "Number Protocol"
+msgstr ""
+
+msgid "Buffer Protocol"
+msgstr ""
+
+msgid "Object Protocol"
+msgstr ""
+
+msgid "Subclass determination is done in a fairly straightforward way, but includes a wrinkle that implementors of extensions to the class system may want to be aware of.  If :class:`A` and :class:`B` are class objects, :class:`B` is a subclass of :class:`A` if it inherits from :class:`A` either directly or indirectly.  If either is not a class object, a more general mechanism is used to determine the class relationship of the two objects.  When testing if *B* is a subclass of *A*, if *A* is *B*, :cfunc:`PyObject_IsSubclass` returns true.  If *A* and *B* are different objects, *B*'s :attr:`__bases__` attribute is searched in a depth-first fashion for *A* --- the presence of the :attr:`__bases__` attribute is considered sufficient for this determination."
+msgstr ""
+
+msgid "Object Implementation Support"
+msgstr ""
+
+msgid "This chapter describes the functions, types, and macros used when defining new object types."
+msgstr ""
+
+msgid "Reference Counting"
+msgstr ""
+
+msgid "The macros in this section are used for managing reference counts of Python objects."
+msgstr ""
+
+msgid "The following functions are for runtime dynamic embedding of Python: ``Py_IncRef(PyObject *o)``, ``Py_DecRef(PyObject *o)``. They are simply exported function versions of :cfunc:`Py_XINCREF` and :cfunc:`Py_XDECREF`, respectively."
+msgstr ""
+
+msgid "The following functions or macros are only for use within the interpreter core: :cfunc:`_Py_Dealloc`, :cfunc:`_Py_ForgetReference`, :cfunc:`_Py_NewReference`, as well as the global variable :cdata:`_Py_RefTotal`."
+msgstr ""
+
+msgid "Reflection"
+msgstr ""
+
+msgid "Sequence Protocol"
+msgstr ""
+
+msgid "Set Objects"
+msgstr ""
+
+msgid "This section details the public API for :class:`set` and :class:`frozenset` objects.  Any functionality not listed below is best accessed using the either the abstract object protocol (including :cfunc:`PyObject_CallMethod`, :cfunc:`PyObject_RichCompareBool`, :cfunc:`PyObject_Hash`, :cfunc:`PyObject_Repr`, :cfunc:`PyObject_IsTrue`, :cfunc:`PyObject_Print`, and :cfunc:`PyObject_GetIter`) or the abstract number protocol (including :cfunc:`PyNumber_And`, :cfunc:`PyNumber_Subtract`, :cfunc:`PyNumber_Or`, :cfunc:`PyNumber_Xor`, :cfunc:`PyNumber_InPlaceAnd`, :cfunc:`PyNumber_InPlaceSubtract`, :cfunc:`PyNumber_InPlaceOr`, and :cfunc:`PyNumber_InPlaceXor`)."
+msgstr ""
+
+msgid "The following type check macros work on pointers to any Python object. Likewise, the constructor functions work with any iterable Python object."
+msgstr ""
+
+msgid "The following functions and macros are available for instances of :class:`set` or :class:`frozenset` or instances of their subtypes."
+msgstr ""
+
+msgid "The following functions are available for instances of :class:`set` or its subtypes but not for instances of :class:`frozenset` or its subtypes."
+msgstr ""
+
+msgid "Slice Objects"
+msgstr ""
+
+msgid "Common Object Structures"
+msgstr ""
+
+msgid "There are a large number of structures which are used in the definition of object types for Python.  This section describes these structures and how they are used."
+msgstr ""
+
+msgid "All Python objects ultimately share a small number of fields at the beginning of the object's representation in memory.  These are represented by the :ctype:`PyObject` and :ctype:`PyVarObject` types, which are defined, in turn, by the expansions of some macros also used, whether directly or indirectly, in the definition of all other Python objects."
+msgstr ""
+
+msgid "These macros are used in the definition of :ctype:`PyObject` and :ctype:`PyVarObject`:"
+msgstr ""
+
+msgid "The :attr:`ml_meth` is a C function pointer.  The functions may be of different types, but they always return :ctype:`PyObject\\*`.  If the function is not of the :ctype:`PyCFunction`, the compiler will require a cast in the method table. Even though :ctype:`PyCFunction` defines the first parameter as :ctype:`PyObject\\*`, it is common that the method implementation uses a the specific C type of the *self* object."
+msgstr ""
+
+msgid "The :attr:`ml_flags` field is a bitfield which can include the following flags. The individual flags indicate either a calling convention or a binding convention.  Of the calling convention flags, only :const:`METH_VARARGS` and :const:`METH_KEYWORDS` can be combined (but note that :const:`METH_KEYWORDS` alone is equivalent to ``METH_VARARGS | METH_KEYWORDS``). Any of the calling convention flags can be combined with a binding flag."
+msgstr ""
+
+msgid "This is the typical calling convention, where the methods have the type :ctype:`PyCFunction`. The function expects two :ctype:`PyObject\\*` values. The first one is the *self* object for methods; for module functions, it is the module object.  The second parameter (often called *args*) is a tuple object representing all arguments. This parameter is typically processed using :cfunc:`PyArg_ParseTuple` or :cfunc:`PyArg_UnpackTuple`."
+msgstr ""
+
+msgid "Methods with these flags must be of type :ctype:`PyCFunctionWithKeywords`. The function expects three parameters: *self*, *args*, and a dictionary of all the keyword arguments.  The flag is typically combined with :const:`METH_VARARGS`, and the parameters are typically processed using :cfunc:`PyArg_ParseTupleAndKeywords`."
+msgstr ""
+
+msgid "Methods without parameters don't need to check whether arguments are given if they are listed with the :const:`METH_NOARGS` flag.  They need to be of type :ctype:`PyCFunction`.  The first parameter is typically named *self* and will hold a reference to the module or object instance.  In all cases the second parameter will be *NULL*."
+msgstr ""
+
+msgid "Methods with a single object argument can be listed with the :const:`METH_O` flag, instead of invoking :cfunc:`PyArg_ParseTuple` with a ``\"O\"`` argument. They have the type :ctype:`PyCFunction`, with the *self* parameter, and a :ctype:`PyObject\\*` parameter representing the single argument."
+msgstr ""
+
+msgid "These two constants are not used to indicate the calling convention but the binding when use with methods of classes.  These may not be used for functions defined for modules.  At most one of these flags may be set for any given method."
+msgstr ""
+
+msgid "The method will be passed the type object as the first parameter rather than an instance of the type.  This is used to create *class methods*, similar to what is created when using the :func:`classmethod` built-in function."
+msgstr ""
+
+msgid "The method will be passed *NULL* as the first parameter rather than an instance of the type.  This is used to create *static methods*, similar to what is created when using the :func:`staticmethod` built-in function."
+msgstr ""
+
+msgid "One other constant controls whether a method is loaded in place of another definition with the same method name."
+msgstr ""
+
+msgid "The method will be loaded in place of existing definitions.  Without *METH_COEXIST*, the default is to skip repeated definitions.  Since slot wrappers are loaded before the method table, the existence of a *sq_contains* slot, for example, would generate a wrapped method named :meth:`__contains__` and preclude the loading of a corresponding PyCFunction with the same name.  With the flag defined, the PyCFunction will be loaded in place of the wrapper object and will co-exist with the slot.  This is helpful because calls to PyCFunctions are optimized more than wrapper object calls."
+msgstr ""
+
+msgid "Operating System Utilities"
+msgstr ""
+
+msgid "System Functions"
+msgstr ""
+
+msgid "These are utility functions that make functionality from the :mod:`sys` module accessible to C code.  They all work with the current interpreter thread's :mod:`sys` module's dict, which is contained in the internal thread state structure."
+msgstr ""
+
+msgid "Process Control"
+msgstr ""
+
+msgid "Tuple Objects"
+msgstr ""
+
+msgid "Type Objects"
+msgstr ""
+
+msgid "Perhaps one of the most important structures of the Python object system is the structure that defines a new type: the :ctype:`PyTypeObject` structure.  Type objects can be handled using any of the :cfunc:`PyObject_\\*` or :cfunc:`PyType_\\*` functions, but do not offer much that's interesting to most Python applications. These objects are fundamental to how objects behave, so they are very important to the interpreter itself and to any extension module that implements new types."
+msgstr ""
+
+msgid "Type objects are fairly large compared to most of the standard types. The reason for the size is that each type object stores a large number of values, mostly C function pointers, each of which implements a small part of the type's functionality.  The fields of the type object are examined in detail in this section.  The fields will be described in the order in which they occur in the structure."
+msgstr ""
+
+msgid "Typedefs: unaryfunc, binaryfunc, ternaryfunc, inquiry, intargfunc, intintargfunc, intobjargproc, intintobjargproc, objobjargproc, destructor, freefunc, printfunc, getattrfunc, getattrofunc, setattrfunc, setattrofunc, reprfunc, hashfunc"
+msgstr ""
+
+msgid "The structure definition for :ctype:`PyTypeObject` can be found in :file:`Include/object.h`.  For convenience of reference, this repeats the definition found there:"
+msgstr ""
+
+msgid "typedef struct _typeobject {     PyObject_VAR_HEAD     char *tp_name; /* For printing, in format \"<module>.<name>\" */     int tp_basicsize, tp_itemsize; /* For allocation */      /* Methods to implement standard operations */      destructor tp_dealloc;     printfunc tp_print;     getattrfunc tp_getattr;     setattrfunc tp_setattr;     void *tp_reserved;     reprfunc tp_repr;      /* Method suites for standard classes */      PyNumberMethods *tp_as_number;     PySequenceMethods *tp_as_sequence;     PyMappingMethods *tp_as_mapping;      /* More standard operations (here for binary compatibility) */      hashfunc tp_hash;     ternaryfunc tp_call;     reprfunc tp_str;     getattrofunc tp_getattro;     setattrofunc tp_setattro;      /* Functions to access object as input/output buffer */     PyBufferProcs *tp_as_buffer;      /* Flags to define presence of optional/expanded features */     long tp_flags;      char *tp_doc; /* Documentation string */      /* call function for all accessible objects */     traverseproc tp_traverse;      /* delete references to contained objects */     inquiry tp_clear;      /* rich comparisons */     richcmpfunc tp_richcompare;      /* weak reference enabler */     long tp_weaklistoffset;      /* Iterators */     getiterfunc tp_iter;     iternextfunc tp_iternext;      /* Attribute descriptor and subclassing stuff */     struct PyMethodDef *tp_methods;     struct PyMemberDef *tp_members;     struct PyGetSetDef *tp_getset;     struct _typeobject *tp_base;     PyObject *tp_dict;     descrgetfunc tp_descr_get;     descrsetfunc tp_descr_set;     long tp_dictoffset;     initproc tp_init;     allocfunc tp_alloc;     newfunc tp_new;     freefunc tp_free; /* Low-level free-memory routine */     inquiry tp_is_gc; /* For PyObject_IS_GC */     PyObject *tp_bases;     PyObject *tp_mro; /* method resolution order */     PyObject *tp_cache;     PyObject *tp_subclasses;     PyObject *tp_weaklist;  } PyTypeObject;"
+msgstr ""
+
+msgid "The type object structure extends the :ctype:`PyVarObject` structure. The :attr:`ob_size` field is used for dynamic types (created by  :func:`type_new`, usually called from a class statement). Note that :cdata:`PyType_Type` (the metatype) initializes :attr:`tp_itemsize`, which means that its instances (i.e. type objects) *must* have the :attr:`ob_size` field."
+msgstr ""
+
+msgid "The remaining fields are only defined if the feature test macro :const:`COUNT_ALLOCS` is defined, and are for internal use only. They are documented here for completeness.  None of these fields are inherited by subtypes."
+msgstr ""
+
+msgid "Also, note that, in a garbage collected Python, tp_dealloc may be called from any Python thread, not just the thread which created the object (if the object becomes part of a refcount cycle, that cycle might be collected by a garbage collection on any thread).  This is not a problem for Python API calls, since the thread on which tp_dealloc is called will own the Global Interpreter Lock (GIL). However, if the object being destroyed in turn destroys objects from some other C or C++ library, care should be taken to ensure that destroying those objects on the thread which called tp_dealloc will not violate any assumptions of the library."
+msgstr ""
+
+msgid "Number Object Structures"
+msgstr ""
+
+msgid "Mapping Object Structures"
+msgstr ""
+
+msgid "Sequence Object Structures"
+msgstr ""
+
+msgid "Buffer Object Structures"
+msgstr ""
+
+msgid "The buffer interface exports a model where an object can expose its internal data."
+msgstr ""
+
+msgid "If an object does not export the buffer interface, then its :attr:`tp_as_buffer` member in the :ctype:`PyTypeObject` structure should be *NULL*.  Otherwise, the :attr:`tp_as_buffer` will point to a :ctype:`PyBufferProcs` structure."
+msgstr ""
+
+msgid "Unicode Objects and Codecs"
+msgstr ""
+
+msgid "Unicode Objects"
+msgstr ""
+
+msgid "Unicode Type"
+msgstr ""
+
+msgid "These are the basic Unicode object types used for the Unicode implementation in Python:"
+msgstr ""
+
+msgid "Note that UCS2 and UCS4 Python builds are not binary compatible. Please keep this in mind when writing extensions or interfaces."
+msgstr ""
+
+msgid "The following APIs are really C macros and can be used to do fast checks and to access internal read-only data of Unicode objects:"
+msgstr ""
+
+msgid "Unicode Character Properties"
+msgstr ""
+
+msgid "Unicode provides many different character properties. The most often needed ones are available through these macros which are mapped to C functions depending on the Python configuration."
+msgstr ""
+
+msgid "These APIs can be used for fast direct character conversions:"
+msgstr ""
+
+msgid "Plain Py_UNICODE"
+msgstr ""
+
+msgid "To create Unicode objects and access their basic sequence properties, use these APIs:"
+msgstr ""
+
+msgid "If the platform supports :ctype:`wchar_t` and provides a header file wchar.h, Python can interface directly to this type using the following functions. Support is optimized if Python's own :ctype:`Py_UNICODE` type is identical to the system's :ctype:`wchar_t`."
+msgstr ""
+
+msgid "File System Encoding"
+msgstr ""
+
+msgid "To encode and decode file names and other environment strings, :cdata:`Py_FileSystemEncoding` should be used as the encoding, and ``\"surrogateescape\"`` should be used as the error handler (:pep:`383`). To encode file names during argument parsing, the ``\"O&\"`` converter should be used, passsing :func:PyUnicode_FSConverter as the conversion function:"
+msgstr ""
+
+msgid "wchar_t Support"
+msgstr ""
+
+msgid "wchar_t support for platforms which support it:"
+msgstr ""
+
+msgid "Built-in Codecs"
+msgstr ""
+
+msgid "Python provides a set of built-in codecs which are written in C for speed. All of these codecs are directly usable via the following functions."
+msgstr ""
+
+msgid "Many of the following APIs take two arguments encoding and errors. These parameters encoding and errors have the same semantics as the ones of the built-in :func:`unicode` Unicode object constructor."
+msgstr ""
+
+msgid "Setting encoding to *NULL* causes the default encoding to be used which is ASCII.  The file system calls should use :cfunc:`PyUnicode_FSConverter` for encoding file names. This uses the variable :cdata:`Py_FileSystemDefaultEncoding` internally. This variable should be treated as read-only: On some systems, it will be a pointer to a static string, on others, it will change at run-time (such as when the application invokes setlocale)."
+msgstr ""
+
+msgid "Error handling is set by errors which may also be set to *NULL* meaning to use the default handling defined for the codec.  Default error handling for all built-in codecs is \"strict\" (:exc:`ValueError` is raised)."
+msgstr ""
+
+msgid "The codecs all use a similar interface.  Only deviation from the following generic ones are documented for simplicity."
+msgstr ""
+
+msgid "Generic Codecs"
+msgstr ""
+
+msgid "These are the generic codec APIs:"
+msgstr ""
+
+msgid "UTF-8 Codecs"
+msgstr ""
+
+msgid "These are the UTF-8 codec APIs:"
+msgstr ""
+
+msgid "UTF-32 Codecs"
+msgstr ""
+
+msgid "These are the UTF-32 codec APIs:"
+msgstr ""
+
+msgid "UTF-16 Codecs"
+msgstr ""
+
+msgid "These are the UTF-16 codec APIs:"
+msgstr ""
+
+msgid "Unicode-Escape Codecs"
+msgstr ""
+
+msgid "These are the \"Unicode Escape\" codec APIs:"
+msgstr ""
+
+msgid "Raw-Unicode-Escape Codecs"
+msgstr ""
+
+msgid "These are the \"Raw Unicode Escape\" codec APIs:"
+msgstr ""
+
+msgid "Latin-1 Codecs"
+msgstr ""
+
+msgid "These are the Latin-1 codec APIs: Latin-1 corresponds to the first 256 Unicode ordinals and only these are accepted by the codecs during encoding."
+msgstr ""
+
+msgid "ASCII Codecs"
+msgstr ""
+
+msgid "These are the ASCII codec APIs.  Only 7-bit ASCII data is accepted. All other codes generate errors."
+msgstr ""
+
+msgid "Character Map Codecs"
+msgstr ""
+
+msgid "These are the mapping codec APIs:"
+msgstr ""
+
+msgid "This codec is special in that it can be used to implement many different codecs (and this is in fact what was done to obtain most of the standard codecs included in the :mod:`encodings` package). The codec uses mapping to encode and decode characters."
+msgstr ""
+
+msgid "Decoding mappings must map single string characters to single Unicode characters, integers (which are then interpreted as Unicode ordinals) or None (meaning \"undefined mapping\" and causing an error)."
+msgstr ""
+
+msgid "Encoding mappings must map single Unicode characters to single string characters, integers (which are then interpreted as Latin-1 ordinals) or None (meaning \"undefined mapping\" and causing an error)."
+msgstr ""
+
+msgid "The mapping objects provided must only support the __getitem__ mapping interface."
+msgstr ""
+
+msgid "If a character lookup fails with a LookupError, the character is copied as-is meaning that its ordinal value will be interpreted as Unicode or Latin-1 ordinal resp. Because of this, mappings only need to contain those mappings which map characters to different code points."
+msgstr ""
+
+msgid "The following codec API is special in that maps Unicode to Unicode."
+msgstr ""
+
+msgid "These are the MBCS codec APIs. They are currently only available on Windows and use the Win32 MBCS converters to implement the conversions.  Note that MBCS (or DBCS) is a class of encodings, not just one.  The target encoding is defined by the user settings on the machine running the codec."
+msgstr ""
+
+msgid "MBCS codecs for Windows"
+msgstr ""
+
+msgid "Methods & Slots"
+msgstr ""
+
+msgid "Methods and Slot Functions"
+msgstr ""
+
+msgid "The following APIs are capable of handling Unicode objects and strings on input (we refer to them as strings in the descriptions) and return Unicode objects or integers as appropriate."
+msgstr ""
+
+msgid "They all return *NULL* or ``-1`` if an exception occurs."
+msgstr ""
+
+msgid "Utilities"
+msgstr ""
+
+msgid "The functions in this chapter perform various utility tasks, ranging from helping C code be more portable across platforms, using Python modules from C, and parsing function arguments and constructing Python values from C values."
+msgstr ""
+
+msgid "The Very High Level Layer"
+msgstr ""
+
+msgid "The functions in this chapter will let you execute Python source code given in a file or a buffer, but they will not let you interact in a more detailed way with the interpreter."
+msgstr ""
+
+msgid "Several of these functions accept a start symbol from the grammar as a parameter.  The available start symbols are :const:`Py_eval_input`, :const:`Py_file_input`, and :const:`Py_single_input`.  These are described following the functions which accept them as parameters."
+msgstr ""
+
+msgid "Note also that several of these functions take :ctype:`FILE\\*` parameters.  One particular issue which needs to be handled carefully is that the :ctype:`FILE` structure for different C libraries can be different and incompatible.  Under Windows (at least), it is possible for dynamically linked extensions to actually use different libraries, so care should be taken that :ctype:`FILE\\*` parameters are only passed to these functions if it is certain that they were created by the same library that the Python runtime is using."
+msgstr ""
+
+msgid "Weak Reference Objects"
+msgstr ""
+
+msgid "Python supports *weak references* as first-class objects.  There are two specific object types which directly implement weak references.  The first is a simple reference object, and the second acts as a proxy for the original object as much as it can."
+msgstr ""

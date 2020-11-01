@@ -1,0 +1,689 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1990-2010, Python Software Foundation
+# This file is distributed under the same license as the Python package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-30 14:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 1.7.0\n"
+
+msgid "About these documents"
+msgstr "これらのドキュメントについて"
+
+msgid "These documents are generated from `reStructuredText`_ sources by `Sphinx`_, a document processor specifically written for the Python documentation."
+msgstr ""
+
+msgid "Development of the documentation and its toolchain takes place on the docs@python.org mailing list.  We're always looking for volunteers wanting to help with the docs, so feel free to send a mail there!"
+msgstr ""
+
+msgid "Many thanks go to:"
+msgstr ""
+
+msgid "Fred L. Drake, Jr., the creator of the original Python documentation toolset and writer of much of the content;"
+msgstr ""
+
+msgid "the `Docutils <http://docutils.sf.net/>`_ project for creating reStructuredText and the Docutils suite;"
+msgstr ""
+
+msgid "Fredrik Lundh for his `Alternative Python Reference <http://effbot.org/zone/pyref.htm>`_ project from which Sphinx got many good ideas."
+msgstr ""
+
+msgid "See :ref:`reporting-bugs` for information how to report bugs in this documentation, or Python itself."
+msgstr ""
+
+msgid "Contributors to the Python Documentation"
+msgstr "Python ドキュメントへの貢献"
+
+msgid "This section lists people who have contributed in some way to the Python documentation.  It is probably not complete -- if you feel that you or anyone else should be on this list, please let us know (send email to docs@python.org), and we'll be glad to correct the problem."
+msgstr ""
+
+msgid "Aahz"
+msgstr "Aahz"
+
+msgid "Michael Abbott"
+msgstr "Michael Abbott"
+
+msgid "Steve Alexander"
+msgstr "Steve Alexander"
+
+msgid "Jim Ahlstrom"
+msgstr "Jim Ahlstrom"
+
+msgid "Fred Allen"
+msgstr "Fred Allen"
+
+msgid "A. Amoroso"
+msgstr "A. Amoroso"
+
+msgid "Pehr Anderson"
+msgstr "Pehr Anderson"
+
+msgid "Oliver Andrich"
+msgstr "Oliver Andrich"
+
+msgid "Heidi Annexstad"
+msgstr "Heidi Annexstad"
+
+msgid "Jesús Cea Avión"
+msgstr "Jesús Cea Avión"
+
+msgid "Manuel Balsera"
+msgstr "Manuel Balsera"
+
+msgid "Daniel Barclay"
+msgstr "Daniel Barclay"
+
+msgid "Chris Barker"
+msgstr "Chris Barker"
+
+msgid "Don Bashford"
+msgstr "Don Bashford"
+
+msgid "Anthony Baxter"
+msgstr "Anthony Baxter"
+
+msgid "Alexander Belopolsky"
+msgstr "Alexander Belopolsky"
+
+msgid "Bennett Benson"
+msgstr "Bennett Benson"
+
+msgid "Jonathan Black"
+msgstr "Jonathan Black"
+
+msgid "Robin Boerdijk"
+msgstr "Robin Boerdijk"
+
+msgid "Michal Bozon"
+msgstr "Michal Bozon"
+
+msgid "Aaron Brancotti"
+msgstr "Aaron Brancotti"
+
+msgid "Georg Brandl"
+msgstr "Georg Brandl"
+
+msgid "Keith Briggs"
+msgstr "Keith Briggs"
+
+msgid "Ian Bruntlett"
+msgstr "Ian Bruntlett"
+
+msgid "Lee Busby"
+msgstr "Lee Busby"
+
+msgid "Lorenzo M. Catucci"
+msgstr "Lorenzo M. Catucci"
+
+msgid "Carl Cerecke"
+msgstr "Carl Cerecke"
+
+msgid "Mauro Cicognini"
+msgstr "Mauro Cicognini"
+
+msgid "Gilles Civario"
+msgstr "Gilles Civario"
+
+msgid "Mike Clarkson"
+msgstr "Mike Clarkson"
+
+msgid "Steve Clift"
+msgstr "Steve Clift"
+
+msgid "Dave Cole"
+msgstr "Dave Cole"
+
+msgid "Matthew Cowles"
+msgstr "Matthew Cowles"
+
+msgid "Jeremy Craven"
+msgstr "Jeremy Craven"
+
+msgid "Andrew Dalke"
+msgstr "Andrew Dalke"
+
+msgid "Ben Darnell"
+msgstr "Ben Darnell"
+
+msgid "L. Peter Deutsch"
+msgstr "L. Peter Deutsch"
+
+msgid "Robert Donohue"
+msgstr "Robert Donohue"
+
+msgid "Fred L. Drake, Jr."
+msgstr "Fred L. Drake, Jr."
+
+msgid "Josip Dzolonga"
+msgstr "Josip Dzolonga"
+
+msgid "Jeff Epler"
+msgstr "Jeff Epler"
+
+msgid "Michael Ernst"
+msgstr "Michael Ernst"
+
+msgid "Blame Andy Eskilsson"
+msgstr "Blame Andy Eskilsson"
+
+msgid "Carey Evans"
+msgstr "Carey Evans"
+
+msgid "Martijn Faassen"
+msgstr "Martijn Faassen"
+
+msgid "Carl Feynman"
+msgstr ""
+
+msgid "Dan Finnie"
+msgstr ""
+
+msgid "Hernán Martínez Foffani"
+msgstr ""
+
+msgid "Stefan Franke"
+msgstr ""
+
+msgid "Jim Fulton"
+msgstr ""
+
+msgid "Peter Funk"
+msgstr ""
+
+msgid "Lele Gaifax"
+msgstr ""
+
+msgid "Matthew Gallagher"
+msgstr ""
+
+msgid "Gabriel Genellina"
+msgstr ""
+
+msgid "Ben Gertzfield"
+msgstr ""
+
+msgid "Nadim Ghaznavi"
+msgstr ""
+
+msgid "Jonathan Giddy"
+msgstr ""
+
+msgid "Matt Giuca"
+msgstr ""
+
+msgid "Shelley Gooch"
+msgstr ""
+
+msgid "Nathaniel Gray"
+msgstr ""
+
+msgid "Grant Griffin"
+msgstr ""
+
+msgid "Thomas Guettler"
+msgstr ""
+
+msgid "Anders Hammarquist"
+msgstr ""
+
+msgid "Mark Hammond"
+msgstr ""
+
+msgid "Harald Hanche-Olsen"
+msgstr ""
+
+msgid "Manus Hand"
+msgstr ""
+
+msgid "Gerhard Häring"
+msgstr ""
+
+msgid "Travis B. Hartwell"
+msgstr ""
+
+msgid "Tim Hatch"
+msgstr ""
+
+msgid "Janko Hauser"
+msgstr ""
+
+msgid "Thomas Heller"
+msgstr ""
+
+msgid "Bernhard Herzog"
+msgstr ""
+
+msgid "Magnus L. Hetland"
+msgstr ""
+
+msgid "Konrad Hinsen"
+msgstr ""
+
+msgid "Stefan Hoffmeister"
+msgstr ""
+
+msgid "Albert Hofkamp"
+msgstr ""
+
+msgid "Gregor Hoffleit"
+msgstr ""
+
+msgid "Steve Holden"
+msgstr ""
+
+msgid "Thomas Holenstein"
+msgstr ""
+
+msgid "Gerrit Holl"
+msgstr ""
+
+msgid "Rob Hooft"
+msgstr ""
+
+msgid "Brian Hooper"
+msgstr ""
+
+msgid "Randall Hopper"
+msgstr ""
+
+msgid "Michael Hudson"
+msgstr ""
+
+msgid "Eric Huss"
+msgstr ""
+
+msgid "Jeremy Hylton"
+msgstr ""
+
+msgid "Roger Irwin"
+msgstr ""
+
+msgid "Jack Jansen"
+msgstr ""
+
+msgid "Philip H. Jensen"
+msgstr ""
+
+msgid "Pedro Diaz Jimenez"
+msgstr ""
+
+msgid "Kent Johnson"
+msgstr ""
+
+msgid "Lucas de Jonge"
+msgstr ""
+
+msgid "Andreas Jung"
+msgstr ""
+
+msgid "Robert Kern"
+msgstr ""
+
+msgid "Jim Kerr"
+msgstr ""
+
+msgid "Jan Kim"
+msgstr ""
+
+msgid "Greg Kochanski"
+msgstr ""
+
+msgid "Guido Kollerie"
+msgstr ""
+
+msgid "Peter A. Koren"
+msgstr ""
+
+msgid "Daniel Kozan"
+msgstr ""
+
+msgid "Andrew M. Kuchling"
+msgstr ""
+
+msgid "Dave Kuhlman"
+msgstr ""
+
+msgid "Erno Kuusela"
+msgstr ""
+
+msgid "Thomas Lamb"
+msgstr ""
+
+msgid "Detlef Lannert"
+msgstr ""
+
+msgid "Piers Lauder"
+msgstr ""
+
+msgid "Glyph Lefkowitz"
+msgstr ""
+
+msgid "Robert Lehmann"
+msgstr ""
+
+msgid "Marc-André Lemburg"
+msgstr ""
+
+msgid "Ross Light"
+msgstr ""
+
+msgid "Ulf A. Lindgren"
+msgstr ""
+
+msgid "Everett Lipman"
+msgstr ""
+
+msgid "Mirko Liss"
+msgstr ""
+
+msgid "Martin von Löwis"
+msgstr ""
+
+msgid "Fredrik Lundh"
+msgstr ""
+
+msgid "Jeff MacDonald"
+msgstr ""
+
+msgid "John Machin"
+msgstr ""
+
+msgid "Andrew MacIntyre"
+msgstr ""
+
+msgid "Vladimir Marangozov"
+msgstr ""
+
+msgid "Vincent Marchetti"
+msgstr ""
+
+msgid "Laura Matson"
+msgstr ""
+
+msgid "Daniel May"
+msgstr ""
+
+msgid "Rebecca McCreary"
+msgstr ""
+
+msgid "Doug Mennella"
+msgstr ""
+
+msgid "Paolo Milani"
+msgstr ""
+
+msgid "Skip Montanaro"
+msgstr ""
+
+msgid "Paul Moore"
+msgstr ""
+
+msgid "Ross Moore"
+msgstr ""
+
+msgid "Sjoerd Mullender"
+msgstr ""
+
+msgid "Dale Nagata"
+msgstr ""
+
+msgid "Ng Pheng Siong"
+msgstr ""
+
+msgid "Koray Oner"
+msgstr ""
+
+msgid "Tomas Oppelstrup"
+msgstr ""
+
+msgid "Denis S. Otkidach"
+msgstr ""
+
+msgid "Zooko O'Whielacronx"
+msgstr ""
+
+msgid "Shriphani Palakodety"
+msgstr ""
+
+msgid "William Park"
+msgstr ""
+
+msgid "Joonas Paalasmaa"
+msgstr ""
+
+msgid "Harri Pasanen"
+msgstr ""
+
+msgid "Bo Peng"
+msgstr ""
+
+msgid "Tim Peters"
+msgstr ""
+
+msgid "Benjamin Peterson"
+msgstr ""
+
+msgid "Christopher Petrilli"
+msgstr ""
+
+msgid "Justin D. Pettit"
+msgstr ""
+
+msgid "Chris Phoenix"
+msgstr ""
+
+msgid "François Pinard"
+msgstr ""
+
+msgid "Paul Prescod"
+msgstr ""
+
+msgid "Eric S. Raymond"
+msgstr ""
+
+msgid "Edward K. Ream"
+msgstr ""
+
+msgid "Terry J. Reedy"
+msgstr ""
+
+msgid "Sean Reifschneider"
+msgstr ""
+
+msgid "Bernhard Reiter"
+msgstr ""
+
+msgid "Armin Rigo"
+msgstr ""
+
+msgid "Wes Rishel"
+msgstr ""
+
+msgid "Armin Ronacher"
+msgstr ""
+
+msgid "Jim Roskind"
+msgstr ""
+
+msgid "Guido van Rossum"
+msgstr ""
+
+msgid "Donald Wallace Rouse II"
+msgstr ""
+
+msgid "Mark Russell"
+msgstr ""
+
+msgid "Nick Russo"
+msgstr ""
+
+msgid "Chris Ryland"
+msgstr ""
+
+msgid "Constantina S."
+msgstr ""
+
+msgid "Hugh Sasse"
+msgstr ""
+
+msgid "Bob Savage"
+msgstr ""
+
+msgid "Scott Schram"
+msgstr ""
+
+msgid "Neil Schemenauer"
+msgstr ""
+
+msgid "Barry Scott"
+msgstr ""
+
+msgid "Joakim Sernbrant"
+msgstr ""
+
+msgid "Justin Sheehy"
+msgstr ""
+
+msgid "Charlie Shepherd"
+msgstr ""
+
+msgid "Michael Simcich"
+msgstr ""
+
+msgid "Ionel Simionescu"
+msgstr ""
+
+msgid "Michael Sloan"
+msgstr ""
+
+msgid "Gregory P. Smith"
+msgstr ""
+
+msgid "Roy Smith"
+msgstr ""
+
+msgid "Clay Spence"
+msgstr ""
+
+msgid "Nicholas Spies"
+msgstr ""
+
+msgid "Tage Stabell-Kulo"
+msgstr ""
+
+msgid "Frank Stajano"
+msgstr ""
+
+msgid "Anthony Starks"
+msgstr ""
+
+msgid "Greg Stein"
+msgstr ""
+
+msgid "Peter Stoehr"
+msgstr ""
+
+msgid "Mark Summerfield"
+msgstr ""
+
+msgid "Reuben Sumner"
+msgstr ""
+
+msgid "Kalle Svensson"
+msgstr ""
+
+msgid "Jim Tittsler"
+msgstr ""
+
+msgid "David Turner"
+msgstr ""
+
+msgid "Ville Vainio"
+msgstr ""
+
+msgid "Martijn Vries"
+msgstr ""
+
+msgid "Charles G. Waldman"
+msgstr ""
+
+msgid "Greg Ward"
+msgstr ""
+
+msgid "Barry Warsaw"
+msgstr ""
+
+msgid "Corran Webster"
+msgstr ""
+
+msgid "Glyn Webster"
+msgstr ""
+
+msgid "Bob Weiner"
+msgstr ""
+
+msgid "Eddy Welbourne"
+msgstr ""
+
+msgid "Jeff Wheeler"
+msgstr ""
+
+msgid "Mats Wichmann"
+msgstr ""
+
+msgid "Gerry Wiener"
+msgstr ""
+
+msgid "Timothy Wild"
+msgstr ""
+
+msgid "Paul Winkler"
+msgstr ""
+
+msgid "Collin Winter"
+msgstr ""
+
+msgid "Blake Winton"
+msgstr ""
+
+msgid "Dan Wolfe"
+msgstr ""
+
+msgid "Steven Work"
+msgstr ""
+
+msgid "Thomas Wouters"
+msgstr ""
+
+msgid "Ka-Ping Yee"
+msgstr ""
+
+msgid "Rory Yorke"
+msgstr ""
+
+msgid "Moshe Zadka"
+msgstr ""
+
+msgid "Milan Zamazal"
+msgstr ""
+
+msgid "Cheng Zhang"
+msgstr ""
+
+msgid "Trent Nelson"
+msgstr ""
+
+msgid "Michael Foord"
+msgstr "Michael Foord"
+
+msgid "It is only with the input and contributions of the Python community that Python has such wonderful documentation -- Thank You!"
+msgstr ""
