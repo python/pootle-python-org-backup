@@ -6,18 +6,20 @@ from pathlib import Path
 from subprocess import call
 
 
-def merge(translationdirectory: str) -> None:
+def merge(translationdirectory: str, language: str) -> None:
     for dirpath, dirnames, filenames in walk(Path(translationdirectory)):
         for filename in filenames:
             if filename.endswith(".po"):
                 directory = Path(dirpath)
-                set = directory.name
+                parent = directory.name
                 source = directory / filename
-                potential_target = Path("pos/locale/python/pl") / source.name
+                potential_target = Path("pos/locale/python") / language / source.name
                 if potential_target.exists():
                     merge_po(potential_target, source)
                 else:
-                    potential_target = Path("pos/locale/python/pl") / f"{set}.po"
+                    potential_target = (
+                        Path("pos/locale/python") / language / f"{parent}.po"
+                    )
                     if potential_target.exists():
                         merge_po(potential_target, source)
                     else:
@@ -52,6 +54,7 @@ def merge_po(potential_target, source):
 if __name__ == "__main__":
     parser = ArgumentParser()
     parser.add_argument('translationdirectory')
+    parser.add_argument('language')
     args = parser.parse_args()
 
-    merge(args.translationdirectory)
+    merge(args.translationdirectory, args.language)
