@@ -21,7 +21,7 @@ def merge(translationdirectory: str) -> None:
                     if potential_target.exists():
                         merge_po(potential_target, source)
                     else:
-                        print(f":( {source.name}")
+                        print(f"no match in 3.1 translations for {source}")
 
 
 def merge_po(potential_target, source):
