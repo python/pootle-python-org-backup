@@ -13,20 +13,19 @@ def merge(translationdirectory: str, language: str) -> None:
                 directory = Path(dirpath)
                 parent = directory.name
                 source = directory / filename
-                potential_target = Path("pos/locale/python") / language / source.name
+                old_translations_directory = Path("pos/locale/python") / language
+                potential_target = old_translations_directory / source.name
                 if potential_target.exists():
                     merge_po(potential_target, source)
+                elif (
+                    potential_target := old_translations_directory / f"{parent}.po"
+                ).exists():
+                    merge_po(potential_target, source)
                 else:
-                    potential_target = (
-                        Path("pos/locale/python") / language / f"{parent}.po"
-                    )
-                    if potential_target.exists():
-                        merge_po(potential_target, source)
-                    else:
-                        print(f"no match in 3.1 translations for {source}")
+                    print(f"no match in 3.1 translations for {source}")
 
 
-def merge_po(potential_target, source):
+def merge_po(potential_target: Path, source: Path) -> None:
     call(
         f"msgcat --use-first {source} {potential_target} -o tmpsum.po",
         shell=True,
